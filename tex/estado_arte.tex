@@ -1,0 +1,121 @@
+% !TEX root = ../ejemplo-memoria.tex
+% Contenidos del capítulo.
+% Las secciones presentadas son orientativas y no representan
+% necesariamente la organización que debe tener este capítulo.
+
+\section{Análisis de aplicaciones similares}
+% Qué aplicaciones similares hay y en qué se diferencia de ellas la propuesta
+
+En el desarrollo de “DONA’m MÓN”, resulta esencial analizar aplicaciones existentes que, de manera similar, combinan geolocalización y realidad aumentada (RA) para ofrecer experiencias inmersivas y educativas. Este análisis nos permite identificar características, estrategias y tecnologías clave que podrían ser adaptadas para cumplir con los objetivos específicos del proyecto. A continuación, se presentan algunas aplicaciones relevantes cuyos enfoques, funcionalidades y tecnologías han inspirado aspectos concretos del diseño conceptual de este TFG.
+
+\subsubsection{2.1.1 Pokémon GO}
+
+
+Una de las referencias más notables es Pokémon GO, que revolucionó el mercado de aplicaciones móviles al combinar geolocalización y RA para motivar a los usuarios a explorar el mundo real. En este caso, los jugadores buscan y capturan criaturas virtuales que aparecen en puntos geográficos específicos. La aplicación también implementa un sistema de recompensas y niveles que fomenta la participación constante. Aunque el enfoque principal de Pokémon GO es el entretenimiento, su éxito demuestra cómo las tecnologías inmersivas pueden transformar la forma en que las personas interactúan con su entorno. En “DONA’m MÓN”, se busca adaptar esta dinámica de exploración y descubrimiento, pero con un enfoque educativo y cultural, utilizando los puntos de interés como portales hacia las historias de mujeres que dejaron una huella significativa en Valencia.
+
+\subsubsection{2.1.2 Streetmuseum}
+
+Por otro lado, Streetmuseum es una aplicación que también aprovecha la RA, pero con un objetivo más centrado en la historia y la cultura. Esta herramienta permite a los usuarios visualizar imágenes y escenas históricas superpuestas al paisaje actual, ofreciendo una perspectiva del pasado en tiempo real. La capacidad de conectar visualmente el entorno moderno con eventos y figuras históricas es una inspiración directa para el proyecto. En “DONA’m MÓN”, esta idea se adapta al permitir que los usuarios accedan a contenido multimedia –como imágenes, textos y modelos 3D– que contextualice la vida y obra de mujeres relevantes en cada ubicación geolocalizada.
+
+\subsubsection{2.1.3 GeoHistorias}
+
+Otra aplicación significativa es GeoHistorias, una herramienta educativa que utiliza la geolocalización para guiar a los usuarios a través de rutas históricas temáticas. Esta aplicación se centra en fomentar el aprendizaje activo, permitiendo que los usuarios descubran hechos históricos mientras recorren puntos clave de diferentes ciudades españolas. GeoHistorias pone de manifiesto la importancia de ofrecer una estructura narrativa coherente, algo que “DONA’m MÓN” planea integrar a través de rutas que conecten lugares emblemáticos con las historias de mujeres olvidadas, enriqueciendo la experiencia educativa y haciendo que el recorrido sea significativo.
+
+\subsubsection{2.1.4 Historypin}
+
+Finalmente, Historypin se presenta como una plataforma colaborativa que permite a los usuarios subir y explorar fotografías, eventos y recuerdos históricos asociados a ubicaciones específicas. Lo más destacable de esta aplicación es su enfoque participativo, donde los usuarios pueden contribuir activamente al contenido disponible. Este modelo de colaboración inspira la posibilidad de que, en futuras versiones de “DONA’m MÓN”, los usuarios también puedan agregar información o enriquecer las narrativas existentes sobre mujeres de Valencia, convirtiendo la aplicación en una herramienta dinámica y viva.
+
+\subsubsection{}
+Estas cuatro aplicaciones ilustran diversas maneras de utilizar la tecnología para crear experiencias inmersivas e interactivas. Cada una de ellas presenta fortalezas únicas que se alinean, en mayor o menor medida, con los objetivos de “DONA’m MÓN”. De Pokémon GO tomamos la dinámica de exploración y gamificación; de Streetmuseum, la idea de superponer contenido histórico en el entorno actual; de GeoHistorias, la narrativa estructurada para la educación activa; y de Historypin, el potencial de colaboración comunitaria. Esta combinación de estrategias y conceptos pretende hacer de “DONA’m MÓN” una aplicación única que conecte a los usuarios con la historia de manera inclusiva, educativa e innovadora.
+
+\section{Tecnologías}
+% Análisis crítico de las tecnologías y sistemas de despliegue posibles y por qué se han seleccionado unas concretas.
+En este apartado se analizan las tecnologías disponibles y las soluciones existentes en el mercado que pueden ser aplicadas al desarrollo de la aplicación móvil. Este análisis incluye una revisión de herramientas de geolocalización, realidad aumentada, bases de datos y frameworks de desarrollo multiplataforma, así como una comparativa con aplicaciones similares. La selección de las tecnologías se justifica considerando la funcionalidad, compatibilidad y eficiencia necesarias para cumplir con los objetivos del proyecto.
+
+\subsubsection{2.2.1 Tecnologías aplicables al proyecto}
+
+\subsubsection{Geolocalización}
+
+
+La geolocalización es uno de los pilares fundamentales de la aplicación, ya que permite situar puntos de interés específicos en un mapa, facilitando a los usuarios explorar la ciudad de Valencia mientras descubren la historia de mujeres destacadas. Para implementar esta funcionalidad, existen diferentes herramientas ampliamente utilizadas en el desarrollo de aplicaciones móviles:
+
+	•	Google Maps API: Es una solución robusta y versátil que permite integrar mapas interactivos, obtener datos de ubicación en tiempo real y personalizar la visualización según las necesidades del proyecto. Ofrece documentación detallada y soporte técnico, lo que facilita su integración. Sin embargo, su principal desventaja es el coste, especialmente en proyectos con un gran número de usuarios o solicitudes.
+    
+	•	Mapbox: Es una alternativa que combina funcionalidades avanzadas, personalización estética y una política de precios más flexible que Google Maps API. Es especialmente útil para aplicaciones que requieren diseños únicos en sus mapas. No obstante, su integración puede ser algo más compleja para desarrolladores menos experimentados.
+    
+	•	OpenStreetMap (OSM): Esta opción de código abierto permite a los desarrolladores utilizar mapas de manera gratuita y personalizarlos según las necesidades del proyecto. Aunque carece de algunas funcionalidades avanzadas, como la generación de rutas en tiempo real, resulta una opción económica y funcional para aplicaciones con presupuestos ajustados.
+    
+Se ha seleccionado Google Maps API debido a su precisión, facilidad de uso y amplio conjunto de funcionalidades. Aunque implica costes adicionales, estos son compensados por las ventajas que ofrece en términos de experiencia de usuario y fiabilidad, aspectos esenciales para el éxito del proyecto.
+
+\subsubsection{Realidad Aumentada (RA)}
+
+La realidad aumentada es una tecnología clave para crear una experiencia inmersiva e interactiva que permita a los usuarios visualizar elementos históricos en sus dispositivos móviles al acercarse a puntos geolocalizados. Existen varias herramientas que permiten implementar RA en aplicaciones móviles:
+
+	•	ARCore (Android) y ARKit (iOS): Estas son las plataformas nativas de RA desarrolladas por Google y Apple, respectivamente. Ofrecen alto rendimiento y precisión en la detección de superficies y objetos, pero no son compatibles entre sí, lo que obliga a desarrollar y mantener dos versiones separadas de la aplicación.
+    
+	•	Vuforia: Es una solución multiplataforma ampliamente utilizada que ofrece soporte para una variedad de dispositivos y funcionalidades avanzadas, como el reconocimiento de imágenes y objetos. Sin embargo, puede ser costosa para proyectos a gran escala debido a su modelo de licencias.
+    
+	•	Unity con AR Foundation: Esta herramienta permite integrar ARCore y ARKit en una única plataforma, lo que facilita el desarrollo multiplataforma y reduce los costes de mantenimiento. Además, Unity es conocido por su versatilidad en proyectos que requieren gráficos avanzados o contenido interactivo.
+    
+Se ha optado por Unity con AR Foundation, ya que permite desarrollar una aplicación multiplataforma sin sacrificar funcionalidades avanzadas de RA. Además, Unity ofrece herramientas para integrar elementos gráficos y multimedia de manera eficiente, alineándose con los objetivos del proyecto.
+
+\subsubsection{2.2.2 Tecnologías para la Base de Datos}
+
+\subsubsection{Django y su arquitectura MVT}
+
+Django, un framework de desarrollo web de alto nivel para Python, se basa en la arquitectura Modelo-Vista-Plantilla (MVT), similar al patrón Model-View-Controller (MVC). Este enfoque organiza el desarrollo en tres componentes principales:
+
+Modelo (Model): Encargado de gestionar los datos y la lógica de acceso a ellos. Los modelos en Django permiten definir estructuras de datos mediante clases que corresponden a tablas en una base de datos relacional.
+
+Vista (View): Procesa las solicitudes de los usuarios, interactúa con los modelos y devuelve las respuestas adecuadas, ya sea en formato HTML o en otros formatos como JSON.
+
+Plantilla (Template): Se ocupa de presentar la información al usuario mediante código HTML enriquecido con etiquetas dinámicas de Django.
+
+Django es conocido por su facilidad para integrarse con múltiples bases de datos, además de ofrecer un potente panel de administración, generación automática de esquemas, y herramientas avanzadas de validación de datos.
+
+\subsubsection{MariaDB como Sistema de Gestión de Bases de Datos (SGBD)}
+MariaDB es un SGBD robusto y de código abierto, ampliamente utilizado como alternativa a MySQL. Se ha elegido MariaDB para este proyecto por varias razones:
+
+Escalabilidad: MariaDB permite manejar grandes volúmenes de datos, una ventaja frente a opciones como SQLite, que está más orientada a aplicaciones de menor escala.
+
+Compatibilidad: Es completamente compatible con Django, lo que facilita su configuración mediante un controlador como mysqlclient o mariadb.
+
+Rendimiento: MariaDB ofrece mejoras en la velocidad de consulta y procesamiento de datos en comparación con otras bases de datos relacionales, siendo especialmente eficiente para aplicaciones con múltiples usuarios.
+
+Comunidad y soporte: La comunidad activa detrás de MariaDB asegura actualizaciones frecuentes y soporte técnico sólido.
+
+La elección de MariaDB garantiza una base de datos estable y con capacidades suficientes para manejar tanto la información de las figuras históricas como los datos de geolocalización y multimedia asociados al proyecto.
+
+Comparativa entre SQLite, MySQL y MariaDB
+\begin{table}
+    \centering
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        \textbf{Característica} & \textbf{SQLite} & \textbf{MySQL} & \textbf{MariaDB} \\ \hline
+        Escalabilidad & Baja & Alta & Alta \\ \hline
+        Rendimiento & Medio & Alto & Muy Alto \\ \hline
+        Compatibilidad con Django & Nativa & Completa & Completa \\ \hline
+        Comunidad y soporte & Moderada & Activa & Activa \\ \hline
+        Facilidad de configuración & Muy fácil & Media & Media \\ \hline
+    \end{tabular}
+    \caption{Comparativa entre SQLite, MySQL y MariaDB.}
+    \label{tabla:comparativa_bases_datos}
+\end{table}
+
+
+MariaDB es preferida frente a MySQL por sus optimizaciones en rendimiento y su modelo completamente de código abierto, que evita restricciones de licencias comerciales. Aunque SQLite es una opción sencilla, no es adecuada para este proyecto debido a su limitada capacidad de manejo de grandes volúmenes de datos y usuarios simultáneos.
+
+\subsubsection{2.2.3 Lenguajes y frameworks de desarrollo}
+
+El desarrollo de la aplicación requiere un lenguaje y un framework que ofrezcan soporte multiplataforma y compatibilidad con las tecnologías de geolocalización y RA. Las opciones consideradas son:
+
+	•	React Native: Este framework basado en JavaScript permite desarrollar aplicaciones móviles para Android e iOS desde un único código base. Es fácil de aprender y tiene una amplia comunidad de desarrolladores, pero no es ideal para proyectos que requieren gráficos avanzados o RA.
+    
+	•	Flutter: Es un framework de Google que utiliza el lenguaje Dart. Es conocido por su rendimiento y capacidad para crear interfaces modernas. Sin embargo, su soporte para RA sigue siendo limitado en comparación con otras opciones.
+    
+	•	Unity: Aunque no es un framework móvil tradicional, es una opción robusta para proyectos que requieren gráficos avanzados y tecnologías como RA. Permite integrar fácilmente funcionalidades de geolocalización y RA en un entorno multiplataforma.
+    
+Selección y justificación: Se ha seleccionado Unity debido a su versatilidad y capacidad para integrar tecnologías avanzadas como RA y gráficos 3D. Aunque su curva de aprendizaje puede ser más pronunciada, sus beneficios superan con creces sus desventajas en el contexto del proyecto.
+Revisión de aplicaciones similares
+
+Para el modelo vista control se ha usado Django que es un framework de desarrollo rápido de aplicaciones web basado en python. 

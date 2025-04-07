@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: ejemplo-memoria.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+Database file #1: bib/bibliografia.bib
+Warning--empty publisher in notsoshort
+You've used 4 entries,
+            1791 wiz_defined-function locations,
+            467 strings with 4022 characters,
+and the built_in function-call counts, 737 in all, are:
+= -- 58
+> -- 33
+< -- 0
++ -- 13
+- -- 9
+* -- 40
+:= -- 122
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 34
+empty$ -- 81
+format.name$ -- 9
+if$ -- 162
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 5
+newline$ -- 23
+num.names$ -- 4
+pop$ -- 19
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 14
+stack$ -- 0
+substring$ -- 25
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 6
+width$ -- 5
+write$ -- 42
+(There was 1 warning)
