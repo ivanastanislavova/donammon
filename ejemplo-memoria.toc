@@ -15,42 +15,42 @@
 \contentsline {subsection}{\numberline {2.2.2}Definición formal y primeros prototipos (1990–2000)}{25}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}La visibilización de las mujeres en el espacio urbano: una cuestión de justicia histórica}{26}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Referentes femeninos en la ciudad: biografías y puntos de interés}{27}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Análisis de aplicaciones similares}{28}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Análisis de aplicaciones similares}{29}{section.2.4}%
 \contentsline {subsubsection}{Pokémon GO}{29}{section*.3}%
-\contentsline {subsubsection}{Streetmuseum}{29}{section*.4}%
+\contentsline {subsubsection}{Streetmuseum}{30}{section*.4}%
 \contentsline {subsubsection}{CultuAR}{30}{section*.5}%
-\contentsline {subsubsection}{Historypin}{30}{section*.6}%
+\contentsline {subsubsection}{Historypin}{31}{section*.6}%
 \contentsline {subsubsection}{}{31}{section*.7}%
-\contentsline {section}{\numberline {2.5}Tecnologías}{31}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Plataformas de desarrollo de aplicaciones móviles}{31}{subsection.2.5.1}%
+\contentsline {section}{\numberline {2.5}Tecnologías}{32}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Plataformas de desarrollo de aplicaciones móviles}{32}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Geolocalización}{33}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Realidad Aumentada (RA)}{34}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.5.4}Base de Datos}{36}{subsection.2.5.4}%
-\contentsline {subsection}{\numberline {2.5.5}Arquitectura de persistencia y gestión de datos}{36}{subsection.2.5.5}%
-\contentsline {subsubsection}{Persistencia de datos en entornos relacionales y no relacionales}{36}{section*.8}%
+\contentsline {subsection}{\numberline {2.5.4}Base de Datos}{37}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Arquitectura de persistencia y gestión de datos}{37}{subsection.2.5.5}%
+\contentsline {subsubsection}{Persistencia de datos en entornos relacionales y no relacionales}{37}{section*.8}%
 \contentsline {subsubsection}{Django y la arquitectura MVT}{37}{section*.9}%
-\contentsline {subsubsection}{Sistema de Gestión de Bases de Datos: MySQL}{37}{section*.10}%
-\contentsline {subsubsection}{Comparativa entre sistemas de bases de datos}{37}{section*.11}%
+\contentsline {subsubsection}{Sistema de Gestión de Bases de Datos: MySQL}{38}{section*.10}%
+\contentsline {subsubsection}{Comparativa entre sistemas de bases de datos}{38}{section*.11}%
 \contentsline {subsubsection}{Consideraciones sobre otras tecnologías: MariaDB, SQLite, MongoDB y Cassandra}{38}{section*.12}%
-\contentsline {chapter}{\numberline {3}Requisitos, especificaciones, coste, riesgos, viabilidad}{39}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Requisitos}{39}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Requisitos funcionales}{39}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Requisitos no funcionales}{41}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Especificaciones}{42}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Costes}{44}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Riesgos}{44}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Viabilidad}{44}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Análisis}{45}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Diseño}{47}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Implementación y pruebas}{49}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Implementación}{49}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Pruebas funcionales}{49}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Pruebas de rendimiento}{49}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Pruebas de usabilidad}{49}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Conclusiones}{51}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Revisión de costes}{51}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Conclusiones}{51}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Trabajo futuro}{51}{section.7.3}%
-\contentsline {chapter}{\numberline {A}Apéndice}{53}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Ejemplos del lenguaje de marcado Latex}{53}{section.Alph1.1}%
-\contentsline {chapter}{Bibliografía}{54}{lstnumber.-2.4}%
+\contentsline {chapter}{\numberline {3}Requisitos, especificaciones, coste, riesgos, viabilidad}{41}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Requisitos}{41}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Requisitos funcionales}{41}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Requisitos no funcionales}{43}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Especificaciones}{44}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Costes}{46}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Riesgos}{46}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Viabilidad}{46}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Análisis}{47}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Diseño}{49}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Implementación y pruebas}{51}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Implementación}{51}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Pruebas funcionales}{51}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Pruebas de rendimiento}{51}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Pruebas de usabilidad}{51}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Conclusiones}{53}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Revisión de costes}{53}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Conclusiones}{53}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Trabajo futuro}{53}{section.7.3}%
+\contentsline {chapter}{\numberline {A}Apéndice}{55}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Ejemplos del lenguaje de marcado Latex}{55}{section.Alph1.1}%
+\contentsline {chapter}{Bibliografía}{56}{lstnumber.-2.4}%
