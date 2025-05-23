@@ -5,37 +5,52 @@
 \contentsline {section}{\numberline {1.3}Objetivos}{18}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Organización de la memoria}{19}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Estado del arte}{21}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Análisis de aplicaciones similares}{21}{section.2.1}%
-\contentsline {subsubsection}{2.1.1 Pokémon GO}{21}{section*.2}%
-\contentsline {subsubsection}{2.1.2 Streetmuseum}{21}{section*.3}%
-\contentsline {subsubsection}{2.1.3 GeoHistorias}{22}{section*.4}%
-\contentsline {subsubsection}{2.1.4 Historypin}{22}{section*.5}%
-\contentsline {subsubsection}{}{22}{section*.6}%
-\contentsline {section}{\numberline {2.2}Tecnologías}{22}{section.2.2}%
-\contentsline {subsubsection}{2.2.1 Tecnologías aplicables al proyecto}{23}{section*.7}%
-\contentsline {subsubsection}{Geolocalización}{23}{section*.8}%
-\contentsline {subsubsection}{Realidad Aumentada (RA)}{23}{section*.9}%
-\contentsline {subsubsection}{2.2.2 Tecnologías para la Base de Datos}{24}{section*.10}%
-\contentsline {subsubsection}{Django y su arquitectura MVT}{24}{section*.11}%
-\contentsline {subsubsection}{MariaDB como Sistema de Gestión de Bases de Datos (SGBD)}{24}{section*.12}%
-\contentsline {subsubsection}{2.2.3 Lenguajes y frameworks de desarrollo}{25}{section*.13}%
-\contentsline {chapter}{\numberline {3}Requisitos, especificaciones, coste, riesgos, viabilidad}{27}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Requisitos}{27}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Especificaciones}{27}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Costes}{27}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Riesgos}{27}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Viabilidad}{27}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Análisis}{29}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Diseño}{31}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Implementación y pruebas}{33}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Implementación}{33}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Pruebas funcionales}{33}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Pruebas de rendimiento}{33}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Pruebas de usabilidad}{33}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Conclusiones}{35}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Revisión de costes}{35}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Conclusiones}{35}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Trabajo futuro}{35}{section.7.3}%
-\contentsline {chapter}{\numberline {A}Apéndice}{37}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Ejemplos del lenguaje de marcado Latex}{37}{section.Alph1.1}%
-\contentsline {chapter}{Bibliografía}{38}{lstnumber.-2.4}%
+\contentsline {section}{\numberline {2.1}Historia, evolución e impacto de las aplicaciones móviles}{21}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Origen y evolución de los dispositivos móviles}{21}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Ecosistemas y sistemas operativos móviles}{21}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Tipos de aplicaciones móviles}{22}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Impacto económico y social}{22}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Evolución de la Realidad Aumentada en el Contexto de las Aplicaciones Móviles}{24}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Fundamentos y primeras ideas (1960–1990)}{24}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Definición formal y primeros prototipos (1990–2000)}{25}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}La visibilización de las mujeres en el espacio urbano: una cuestión de justicia histórica}{26}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Referentes femeninos en la ciudad: biografías y puntos de interés}{27}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Análisis de aplicaciones similares}{28}{section.2.4}%
+\contentsline {subsubsection}{Pokémon GO}{29}{section*.3}%
+\contentsline {subsubsection}{Streetmuseum}{29}{section*.4}%
+\contentsline {subsubsection}{CultuAR}{30}{section*.5}%
+\contentsline {subsubsection}{Historypin}{30}{section*.6}%
+\contentsline {subsubsection}{}{31}{section*.7}%
+\contentsline {section}{\numberline {2.5}Tecnologías}{31}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Plataformas de desarrollo de aplicaciones móviles}{31}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Geolocalización}{33}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Realidad Aumentada (RA)}{34}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Base de Datos}{36}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Arquitectura de persistencia y gestión de datos}{36}{subsection.2.5.5}%
+\contentsline {subsubsection}{Persistencia de datos en entornos relacionales y no relacionales}{36}{section*.8}%
+\contentsline {subsubsection}{Django y la arquitectura MVT}{37}{section*.9}%
+\contentsline {subsubsection}{Sistema de Gestión de Bases de Datos: MySQL}{37}{section*.10}%
+\contentsline {subsubsection}{Comparativa entre sistemas de bases de datos}{37}{section*.11}%
+\contentsline {subsubsection}{Consideraciones sobre otras tecnologías: MariaDB, SQLite, MongoDB y Cassandra}{38}{section*.12}%
+\contentsline {chapter}{\numberline {3}Requisitos, especificaciones, coste, riesgos, viabilidad}{39}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Requisitos}{39}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Requisitos funcionales}{39}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Requisitos no funcionales}{41}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Especificaciones}{42}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Costes}{44}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Riesgos}{44}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Viabilidad}{44}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Análisis}{45}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Diseño}{47}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Implementación y pruebas}{49}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Implementación}{49}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Pruebas funcionales}{49}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Pruebas de rendimiento}{49}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Pruebas de usabilidad}{49}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Conclusiones}{51}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Revisión de costes}{51}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Conclusiones}{51}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Trabajo futuro}{51}{section.7.3}%
+\contentsline {chapter}{\numberline {A}Apéndice}{53}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Ejemplos del lenguaje de marcado Latex}{53}{section.Alph1.1}%
+\contentsline {chapter}{Bibliografía}{54}{lstnumber.-2.4}%

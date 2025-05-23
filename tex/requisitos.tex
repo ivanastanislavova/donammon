@@ -4,10 +4,157 @@
 % necesariamente la organización que debe tener este capítulo.
 
 \section{Requisitos}
-% Requisitos del sistema
+\subsection{Requisitos funcionales}
+Los requisitos funcionales describen las acciones que el sistema debe poder realizar para satisfacer las necesidades del usuario y del administrador. En este proyecto, se centran en el uso de geolocalización, realidad aumentada, gestión de contenido y experiencia interactiva.
+
+Lista de requisitos funcionales:
+
+\begin{itemize}
+    \item[RF1:] La aplicación debe permitir a los usuarios visualizar un mapa interactivo con los puntos geolocalizados de interés.
+    \item[RF2:] El sistema debe detectar la ubicación actual del usuario mediante GPS.
+    \item[RF3:] Al acercarse físicamente a un punto geolocalizado, la aplicación debe desbloquear el contenido asociado.
+    \item[RF4:] Cada punto geolocalizado debe estar vinculado a una mujer histórica, con contenido educativo multimedia.
+    \item[RF5:] La aplicación debe mostrar una ficha informativa con texto, imágenes y/o audio sobre cada figura femenina.
+    \item[RF6:] La app debe permitir visualizar elementos de realidad aumentada (como imágenes, objetos 3D o figuras animadas) al enfocar con la cámara.
+    \item[RF7:] El sistema debe disponer de un sistema de recompensas o logros por visitar y desbloquear varios puntos.
+    \item[RF8:] El usuario debe poder ver cuántos puntos ha desbloqueado y cuántos le faltan.
+    \item[RF9:] La aplicación debe permitir consultar la lista completa de mujeres disponibles con sus respectivas ubicaciones.
+    \item[RF10:] El usuario debe recibir una notificación cuando esté cerca de un punto no visitado.
+    \item[RF11:] Debe existir un sistema de rutas que conecten diferentes puntos de interés temáticamente.
+    \item[RF12:] El contenido multimedia debe poder reproducirse dentro de la aplicación sin necesidad de conexión externa.
+    \item[RF13:] El sistema debe permitir guardar el progreso del usuario (puntos visitados y logros conseguidos).
+    \item[RF14:] Debe haber un modo accesible con texto ampliado y opción de audio narrado.
+    \item[RF15:] La aplicación debe ser funcional tanto en dispositivos Android como iOS.
+    \item[RF16:] Debe existir un panel de administración web para gestionar los puntos, contenidos y figuras históricas.
+    \item[RF17:] El administrador debe poder añadir, editar o eliminar mujeres, ubicaciones y materiales multimedia desde el panel.
+    \item[RF18:] El sistema debe permitir importar imágenes, vídeos y modelos 3D desde el panel de administración.
+    \item[RF19:] El sistema debe validar que no se puede desbloquear un punto si el usuario no está físicamente cerca.
+    \item[RF20:] La app debe ofrecer retroalimentación visual y sonora al desbloquear contenido.
+    \item[RF21:] La aplicación debe funcionar correctamente en modo offline si el usuario ya ha descargado previamente los contenidos.
+    \item[RF22:] El sistema debe registrar métricas básicas (como número de visitas por punto) para su análisis posterior.
+    \item[RF23:] Debe haber una opción para que el usuario pueda dejar comentarios o feedback sobre los contenidos.
+    \item[RF24:] El sistema debe enviar datos al backend para mantener sincronizado el progreso del usuario.
+    \item[RF25:] La aplicación debe cargarse en menos de 5 segundos desde su apertura inicial.
+    \item[RF26:] La aplicación debe permitir a los usuarios registrarse y acceder mediante un sistema de inicio de sesión.
+    \item[RF27:] Los usuarios deben poder iniciar sesión con un correo electrónico y contraseña.
+    \item[RF28:] La aplicación debe mantener la sesión iniciada hasta que el usuario decida cerrarla.
+    \item[RF29:] El administrador debe poder acceder, desde el panel de gestión, a la lista de usuarios registrados.
+    \item[RF30:] El administrador debe poder visualizar el perfil de cada usuario, incluyendo su progreso, logros y puntos visitados.
+    \item[RF31:] El sistema debe permitir al administrador eliminar usuarios o restablecer sus datos si es necesario.
+\end{itemize}
+
+\subsection{Requisitos no funcionales}
+Los requisitos no funcionales indican cómo debe comportarse el sistema más allá de lo que hace: establecen criterios de calidad, restricciones técnicas o normativas, y condiciones necesarias para su correcto desarrollo, despliegue y uso.
+
+\textbf{Requisitos no funcionales del producto}
+
+Estos requisitos definen las propiedades internas del sistema y sus comportamientos esperados, como rendimiento, usabilidad, seguridad o compatibilidad técnica.
+
+\begin{itemize}
+    \item[RNF1:] La aplicación debe cargarse completamente en menos de 5 segundos desde su apertura.
+    \item[RNF2:] El sistema debe ser capaz de gestionar al menos 100 usuarios simultáneos sin caída de rendimiento.
+    \item[RNF3:] Los modelos 3D deben estar optimizados para dispositivos móviles, con un tamaño inferior a 10~MB por unidad.
+    \item[RNF4:] El consumo de batería durante el uso continuo no debe superar el 10\% por hora.
+    \item[RNF5:] La interfaz debe ser intuitiva y permitir su uso sin formación previa.
+    \item[RNF6:] La tipografía y botones deben adaptarse automáticamente a diferentes resoluciones de pantalla.
+    \item[RNF7:] La aplicación debe ofrecer un modo accesible con texto ampliado y audio narrado.
+    \item[RNF8:] La navegación debe ser posible con una sola mano (diseño mobile-first).
+    \item[RNF9:] Compatible con Android 10+ y iOS 13+.
+    \item[RNF10:] El panel de administración debe ser accesible desde navegadores modernos (Chrome, Firefox, Safari, Edge).
+    \item[RNF11:] Las contraseñas de los usuarios deben almacenarse cifradas en la base de datos.
+    \item[RNF12:] La comunicación entre cliente y servidor debe estar cifrada mediante HTTPS.
+    \item[RNF13:] El backend debe estar desarrollado en Django y utilizar MariaDB como sistema gestor de bases de datos.
+    \item[RNF14:] La aplicación debe estar desarrollada con Unity, integrando geolocalización y RA mediante AR Foundation.
+    \item[RNF15:] La arquitectura debe ser modular y permitir añadir nuevos puntos o contenidos sin modificar el código base.
+    \item[RNF16:] Se debe estructurar el código y documentarlo adecuadamente para facilitar mantenimiento y ampliación.
+\end{itemize}
+
+\textbf{Requisitos no funcionales de la organización}
+
+Estos requisitos están relacionados con decisiones internas del equipo desarrollador o institución que afectan a los métodos de trabajo, tecnologías permitidas o estructura del proyecto.
+
+\begin{itemize}
+    \item[RNF17:] El sistema debe permitir su despliegue en un servidor que soporte Django y MariaDB (según los medios disponibles en la UV).
+    \item[RNF18:] Debe evitarse el uso de servicios de alto coste por uso intensivo, priorizando soluciones open source cuando sea posible (por ejemplo, evitar cuotas de Google Maps si es viable usar OpenStreetMap).
+    \item[RNF19:] El panel de administración debe incluir autenticación de administradores con control de permisos.
+    \item[RNF20:] El proyecto debe desarrollarse siguiendo buenas prácticas de ingeniería del software: control de versiones, pruebas, documentación técnica y separación por capas.
+\end{itemize}
+
+\textbf{Requisitos no funcionales externos}
+
+Son aquellos impuestos por normativas legales, estándares externos o políticas públicas que el sistema debe cumplir.
+
+\begin{itemize}
+    \item[RNF21:] El sistema debe cumplir con el Reglamento General de Protección de Datos (RGPD) en lo referente al tratamiento de datos personales.
+    \item[RNF22:] Los usuarios deben aceptar la política de privacidad y condiciones de uso antes de registrarse.
+    \item[RNF23:] El acceso a los datos de usuario debe estar restringido y protegido contra accesos no autorizados.
+    \item[RNF24:] El almacenamiento de datos personales (nombre, email, localización) debe hacerse de forma segura y limitada a lo estrictamente necesario.
+\end{itemize}
 
 \section{Especificaciones}
-% Especificación del sistema a partir de lo recogido en los requisitos
+Una vez definidos los requisitos funcionales del sistema, es posible descomponerlos en funcionalidades concretas que formarán parte de la aplicación y su panel de gestión. A continuación se detalla el conjunto de acciones que los usuarios (tanto visitantes como administradores) podrán realizar.
+
+\textbf{\textsf{\large Funcionalidades relacionadas con la geolocalización y el mapa}}
+
+\begin{itemize}
+    \item[F1.] Visualizar un mapa interactivo con los puntos de interés distribuidos por Valencia.
+    \item[F2.] Detectar en tiempo real la ubicación actual del usuario.
+    \item[F3.] Mostrar puntos cercanos en función de la ubicación.
+    \item[F4.] Notificar al usuario cuando se acerque a un punto no visitado.
+    \item[F5.] Restringir el acceso al contenido si el usuario no está físicamente cerca del punto.
+\end{itemize}
+
+\textbf{\textsf{\large Funcionalidades educativas y de contenido}}
+
+\begin{itemize}
+    \item[F6.] Acceder a la ficha de una mujer histórica al llegar a un punto.
+    \item[F7.] Mostrar contenido multimedia asociado: texto, imágenes, audios o vídeos.
+    \item[F8.] Activar realidad aumentada al enfocar con la cámara del dispositivo.
+    \item[F9.] Visualizar objetos 3D o elementos históricos en RA.
+    \item[F10.] Consultar un listado general de todas las mujeres incluidas en la app.
+    \item[F11.] Reproducir contenido offline si ya ha sido descargado previamente.
+\end{itemize}
+
+\textbf{\textsf{\large Funcionalidades de interacción y gamificación}}
+
+\begin{itemize}
+    \item[F12.] Desbloquear logros al visitar puntos o completar rutas temáticas.
+    \item[F13.] Mostrar estadísticas personales (puntos visitados, logros obtenidos).
+    \item[F14.] Ofrecer retroalimentación visual y sonora al desbloquear un nuevo punto.
+\end{itemize}
+
+\textbf{\textsf{\large Funcionalidades de usuario}}
+
+\begin{itemize}
+    \item[F15.] Registrar un nuevo usuario mediante correo electrónico y contraseña.
+    \item[F16.] Iniciar sesión en la aplicación.
+    \item[F17.] Mantener la sesión activa entre usos.
+    \item[F18.] Cerrar sesión manualmente.
+    \item[F19.] Aceptar política de privacidad y condiciones de uso al registrarse.
+\end{itemize}
+
+\textbf{\textsf{\large Funcionalidades del panel de administración}}
+
+\begin{itemize}
+    \item[F20.] Iniciar sesión como administrador desde el backend web.
+    \item[F21.] Añadir nuevas figuras históricas con nombre, descripción y material multimedia.
+    \item[F22.] Asociar cada mujer con un punto geolocalizado.
+    \item[F23.] Cargar imágenes, audios, vídeos y modelos 3D desde el panel.
+    \item[F24.] Editar o eliminar puntos o figuras ya creadas.
+    \item[F25.] Ver la lista de usuarios registrados.
+    \item[F26.] Consultar el progreso de cada usuario (puntos desbloqueados, logros).
+    \item[F27.] Eliminar usuarios si fuese necesario.
+    \item[F28.] Consultar métricas de uso: puntos más visitados, número de usuarios activos, etc.
+\end{itemize}
+
+\textbf{\textsf{\large Funcionalidades generales}}
+
+\begin{itemize}
+    \item[F29.] Adaptar la interfaz a distintos tamaños de pantalla.
+    \item[F30.] Activar modo accesible con texto grande y audio.
+    \item[F31.] Navegar por la app de forma intuitiva y con accesibilidad mobile-first.
+    \item[F32.] Garantizar el uso fluido y sin errores tanto en Android como en iOS.
+\end{itemize}
 
 \section{Costes}
 % Costes temporales y económicos

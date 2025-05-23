@@ -1,24 +1,229 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{notsoshort}
-Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl.
-\newblock {\em The Not So Short Introduction to LaTeX}.
-\newblock 202.
-\newblock Version 4.22.
+\bibitem{unesco2021}
+UNESCO.
+\newblock Science report: The race against time for smarter development.
+\newblock \url{https://unesdoc.unesco.org/ark:/48223/pf0000377433}, 2021.
+\newblock United Nations Educational, Scientific and Cultural Organization.
 
-\bibitem{latexcompanion}
-Michel Goossens, Frank Mittelbach, and Alexander Samarin.
-\newblock {\em The \LaTeX\ Companion}.
-\newblock Addison-Wesley, Reading, Massachusetts, 1993.
+\bibitem{cientificas2021}
+{Ministerio de Ciencia e Innovación}.
+\newblock Científicas en cifras 2021: Estadísticas e indicadores de la
+  (des)igualdad de género en la formación y profesión científica.
+\newblock
+  \url{https://www.ciencia.gob.es/dam/jcr:dc8689c4-2c47-4aaf-97ce-874bd0b5a081/Cientificas_en_Cifras_2021.pdf},
+  2022.
+\newblock Secretaría General de Investigación.
 
-\bibitem{einstein}
-Albert Einstein.
-\newblock {Zur Elektrodynamik bewegter K{\"o}rper}. ({German}) [{On} the
-  electrodynamics of moving bodies].
-\newblock {\em Annalen der Physik}, 322(10):891--921, 1905.
+\bibitem{agar2004}
+Jon Agar.
+\newblock {\em Constant Touch: A Global History of the Mobile Phone}.
+\newblock Icon Books, 2004.
 
-\bibitem{knuthwebsite}
-Donald Knuth.
-\newblock Knuth: Computers and typesetting.
+\bibitem{west2010}
+J.~West and M.~Mace.
+\newblock Browsing as the killer app: Explaining the rapid success of apple’s
+  iphone.
+\newblock {\em Telecommunications Policy}, 34(5-6):270--286, 2010.
+
+\bibitem{murphy2014}
+M.~Murphy, M.~Meeker, and L.~Smith.
+\newblock {\em Internet Trends Report}.
+\newblock Kleiner Perkins, 2014.
+
+\bibitem{statcounter2024}
+StatCounter.
+\newblock Mobile operating system market share worldwide, 2024.
+
+\bibitem{statista2024}
+Statista.
+\newblock Smartphone os market share worldwide 2024, 2024.
+
+\bibitem{androidpolice2017}
+AndroidPolice.
+\newblock Android versus ios software updates revisited, 2017.
+
+\bibitem{nguyen2018}
+Q.~K. Nguyen, J.~Luo, and C.~C. Lin.
+\newblock Performance analysis of mobile app development approaches.
+\newblock {\em Journal of Computer Science \& Information Technology},
+  6(5):45--58, 2018.
+
+\bibitem{gartner2022}
+Gartner.
+\newblock Market guide for multiexperience development platforms, 2022.
+
+\bibitem{dataai2023}
+Data.ai.
+\newblock State of mobile 2023, 2023.
+
+\bibitem{appannie2022}
+App Annie.
+\newblock State of mobile report 2022, 2022.
+
+\bibitem{parsons2020}
+D.~Parsons and J.~Adhikari.
+\newblock Bringing the world to the classroom with mobile learning.
+\newblock {\em International Journal of Mobile and Blended Learning},
+  12(1):1--16, 2020.
+
+\bibitem{azuma1997}
+Ronald~T. Azuma.
+\newblock A survey of augmented reality.
+\newblock {\em Presence: Teleoperators and Virtual Environments},
+  6(4):355--385, 1997.
+\newblock \url{https://doi.org/10.1162/pres.1997.6.4.355}.
+
+\bibitem{billinghurst2015}
+Mark Billinghurst, Adrian Clark, and Gun Lee.
+\newblock A survey of augmented reality.
+\newblock {\em Foundations and Trends in Human–Computer Interaction},
+  8(2--3):73--272, 2015.
+\newblock \url{https://doi.org/10.1561/1100000049}.
+
+\bibitem{feiner1993}
+Steven Feiner, Blair MacIntyre, and Dorée Seligmann.
+\newblock Knowledge-based augmented reality.
+\newblock {\em Communications of the ACM}, 36(7):53--62, 1993.
+\newblock \url{https://doi.org/10.1145/159544.159587}.
+
+\bibitem{kato1999}
+Hirokazu Kato and Mark Billinghurst.
+\newblock Marker tracking and hmd calibration for a video-based augmented
+  reality conferencing system.
+\newblock In {\em Proceedings 2nd IEEE and ACM International Workshop on
+  Augmented Reality (IWAR'99)}, pages 85--94, 1999.
+\newblock \url{https://doi.org/10.1109/IWAR.1999.803809}.
+
+\bibitem{wagner2003}
+Daniel Wagner and Dieter Schmalstieg.
+\newblock First steps towards handheld augmented reality.
+\newblock In {\em Proceedings of the 7th IEEE International Symposium on
+  Wearable Computers}, pages 127--135, 2003.
+\newblock \url{https://doi.org/10.1109/ISWC.2003.1241409}.
+
+\bibitem{womenslegacy2022}
+Women’s legacy. proyecto europeo cofinanciado por la unión europea, 2022.
+\newblock Conselleria d’Educació, Cultura i Esport de la Generalitat
+  Valenciana.
+
+\bibitem{lasnaves2020}
+Dones de ciència: Murals que inspiren, 2020.
+\newblock Las Naves \& UPV.
+
+\bibitem{ayuntamientovalencia2023}
+Callejero con perspectiva de género: iniciativas y actuaciones, 2023.
+\newblock Ayuntamiento de València.
+
+\bibitem{portimujer2023}
+Asociación Por~Ti Mujer.
+\newblock Ruta violeta de mujeres en valencia, 2023.
+\newblock Recuperado de
+  \url{https://asociacionportimujer.org/ruta-violeta-de-mujeres-en-valencia}.
+
+\bibitem{assemblea2023}
+Assemblea~Feminista de~València.
+\newblock Ruta pels espais del patronato de protección a la mujer, 2023.
+\newblock Recuperado de
+  \url{https://www.feministas.org/ruta-pels-espais-del-patronato-de.html}.
+
+\bibitem{assemblea2024}
+Assemblea~Feminista de~València.
+\newblock Ruta de memorias lesbianas en valencia: visibilización y lucha
+  feminista, 2024.
+\newblock Recuperado de
+  \url{https://www.levante-emv.com/valencia/2024/10/27/mapa-memorias-lesbianas-valencia-lesbianismo-lgtbi-ruta-assemblea-feminista-feminismo-110410679.html}.
+
+\bibitem{guijarro2021}
+R.~Guijarro-Garzón et~al.
+\newblock Pioneras de la medicina: Concepción aleixandre y la visibilización
+  de la mujer en la ciencia.
+\newblock {\em Revista de Historia de la Medicina}, 12(2):134--148, 2021.
+
+\bibitem{alborch1999}
+Carmen Alborch.
+\newblock {\em Solas}.
+\newblock Espasa Calpe, 1999.
+
+\bibitem{gonzalez2006}
+Amelia González.
+\newblock {\em Clara Campoamor: el sufragio femenino en España}.
+\newblock Cátedra, 2006.
+
+\bibitem{rueda2013}
+Carmen~Rueda Ramos.
+\newblock {\em Isabel de Villena y la espiritualidad femenina en la Valencia
+  del siglo XV}.
+\newblock Tirant lo Blanch, 2013.
+
+\bibitem{martinez2019}
+J.~Martínez Pérez.
+\newblock {\em Médicas en Valencia: mujeres que abrieron camino}.
+\newblock Editorial UV, 2019.
+
+\bibitem{shiva2005}
+Vandana Shiva.
+\newblock {\em Earth Democracy: Justice, Sustainability, and Peace}.
+\newblock South End Press, 2005.
+
+\bibitem{googlemaps2024}
+Google Developers.
+\newblock Google maps platform documentation.
+\newblock \url{https://developers.google.com/maps/documentation}.
+
+\bibitem{mapbox2024}
+Mapbox.
+\newblock Mapbox documentation.
+\newblock \url{https://docs.mapbox.com/}.
+
+\bibitem{osm2024}
+OpenStreetMap Foundation.
+\newblock Openstreetmap wiki.
+\newblock \url{https://wiki.openstreetmap.org/}.
+
+\bibitem{reactnativemaps2024}
+React Native~Maps Contributors.
+\newblock react-native-maps: React native mapview component for ios + android.
+\newblock \url{https://github.com/react-native-maps/react-native-maps}.
+
+\bibitem{django2024}
+Django~Software Foundation.
+\newblock Django documentation, 2024.
+
+\bibitem{elmasri2017}
+Ramez Elmasri and Shamkant~B. Navathe.
+\newblock {\em Fundamentals of database systems}.
+\newblock Pearson, 7th edition, 2017.
+
+\bibitem{stonebraker2011}
+Michael Stonebraker and Rick Cattell.
+\newblock 10 rules for scalable performance in ‘simple operation’
+  datastores.
+\newblock {\em Communications of the ACM}, 54(6):72--80, 2011.
+
+\bibitem{vincent2020}
+Antonio~Mele Vincent.
+\newblock {\em Mastering Django: Core}.
+\newblock Independently published, 2020.
+
+\bibitem{oracle2023}
+Oracle Corporation.
+\newblock Mysql 8.0 reference manual, 2023.
+
+\bibitem{mariadb2023}
+MariaDB Foundation.
+\newblock Mariadb vs mysql, 2023.
+
+\bibitem{mongodb2024}
+Inc. MongoDB.
+\newblock Mongodb manual, 2024.
+
+\bibitem{django_sqlite2024}
+Django~Software Foundation.
+\newblock Using sqlite with django, 2024.
+
+\bibitem{cassandra2023}
+Apache~Software Foundation.
+\newblock Apache cassandra documentation, 2023.
 
 \end{thebibliography}
