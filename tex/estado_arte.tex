@@ -5,10 +5,10 @@
 
 % filepath: c:\Users\isiva\Documents\memoria_TFG\donammon\tex\estado_arte.tex
 
-
 \section{Historia, evolución e impacto de las aplicaciones móviles}
 
 \subsection{Origen y evolución de los dispositivos móviles}
+\vspace{-1.5ex}
 
 El desarrollo de las aplicaciones móviles no puede entenderse sin revisar primero la evolución histórica de los dispositivos que las alojan. La telefonía móvil nace en 1946 con el sistema móvil de AT\&T, que permitía realizar llamadas desde vehículos utilizando dispositivos de más de 30 kg. Este sistema inicial, basado en la tecnología Push-To-Talk y gestionado por operadoras humanas, tenía una cobertura muy limitada y altos costes de uso~\cite{agar2004}.
 
@@ -18,7 +18,15 @@ Durante las décadas siguientes se sucedieron avances importantes: la introducci
 
 El cambio de paradigma llegó en 2007 con la aparición del iPhone, que introdujo una interfaz multitáctil intuitiva y eliminó el teclado físico, inaugurando así la era del smartphone moderno. Un año más tarde, Apple lanzó la App Store, permitiendo a desarrolladores externos distribuir aplicaciones fácilmente. Ese mismo año, Google presentó Android junto con el HTC Dream, diversificando el ecosistema y facilitando el acceso masivo al desarrollo y consumo de aplicaciones móviles~\cite{murphy2014}.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figs/evolucion_moviles.jpg}
+    \caption{Evolución histórica de los dispositivos móviles.}
+    \label{fig:evolucion_moviles}
+\end{figure}
+
 \subsection{Ecosistemas y sistemas operativos móviles}
+\vspace{-1.5ex}
 
 El auge de las aplicaciones móviles está estrechamente vinculado al desarrollo de los sistemas operativos (SO) móviles. Durante los primeros años del siglo XXI, Symbian OS dominaba el mercado, especialmente en terminales de Nokia. Sin embargo, fue rápidamente desplazado por iOS (2007) y Android (2008), que ofrecían interfaces gráficas avanzadas, tiendas de aplicaciones centralizadas y acceso optimizado a hardware~\cite{statcounter2024}.
 
@@ -115,7 +123,7 @@ Ronald Azuma estableció en 1997 la definición académica más citada de RA, ba
 
 Durante esta década se desarrollaron los primeros sistemas funcionales de RA. En 1993, el sistema KARMA, creado por Steve Feiner y su equipo, permitía la superposición de información contextual durante tareas físicas~\cite{feiner1993}. En 1997, se presentó el prototipo MARS, un sistema de RA móvil diseñado para guiar a turistas mediante visualización aumentada en tiempo real. Estas iniciativas fueron posibles gracias al desarrollo de dispositivos portables y técnicas de tracking visual.
 
-\subsection*{Herramientas abiertas y salto a lo portátil (1999–2010)}
+\subsection{Herramientas abiertas y salto a lo portátil (1999–2010)}
 Uno de los hitos más relevantes en esta etapa fue el desarrollo de ARToolKit por Hirokazu Kato y Mark Billinghurst en 1999. Esta librería de código abierto permitió detectar marcadores visuales en video y superponer contenido digital 3D en tiempo real~\cite{kato1999}. Supuso una democratización de la RA, facilitando la experimentación por parte de investigadores y desarrolladores independientes.
 
 \begin{figure}[H]
@@ -128,6 +136,23 @@ Uno de los hitos más relevantes en esta etapa fue el desarrollo de ARToolKit po
 
 Entre 2001 y 2004, surgieron los primeros sistemas de RA sobre dispositivos móviles, como PDAs y teléfonos inteligentes de primera generación. En 2003, Wagner y Schmalstieg presentaron un sistema de RA completamente autónomo en un dispositivo de mano~\cite{wagner2003}. Otros experimentos destacados fueron ARQuake (2000), un videojuego de RA en primera persona, y Invisible Train (2004), una aplicación colaborativa con varios usuarios simultáneos.
 
+
+\subsection{Consolidación y tendencias actuales (2010–2025)}
+
+Durante la última década, la Realidad Aumentada ha pasado de ser una tecnología emergente a consolidarse como una herramienta madura y transversal en múltiples sectores. El desarrollo de kits como ARToolKit, ARCore (Google) y ARKit (Apple) permitió la integración de funcionalidades de RA en dispositivos móviles de forma nativa, facilitando su adopción masiva y el desarrollo de aplicaciones accesibles sin necesidad de hardware especializado~\cite{apple2017,google2018}.
+
+Uno de los catalizadores clave de esta expansión fue el éxito comercial de Pokémon GO (2016), que demostró el potencial de la RA móvil como forma de interacción lúdica y geolocalizada~\cite{paavilainen2017}. Paralelamente, surgieron dispositivos avanzados como Microsoft HoloLens y Magic Leap One, que ofrecieron experiencias inmersivas mediante visores ópticos, reconocimiento espacial y control gestual~\cite{microsoft2016,krevelen2010}.
+
+En el plano técnico, los avances en visión por computador y en algoritmos de localización y mapeo simultáneo (SLAM) mejoraron notablemente la precisión del registro espacial tridimensional~\cite{klein2007}. También se consolidaron nuevas formas de interacción como la RA tangible y la RA colaborativa, que permiten manipular objetos físicos para modificar contenidos digitales o interactuar con varios usuarios en tiempo real~\cite{ishii1997,billinghurst2002}.
+
+Actualmente, la RA se aplica con éxito en campos como la educación, la salud, la industria, la arquitectura o el comercio, y su desarrollo se orienta hacia una fusión más natural entre el mundo físico y el digital mediante técnicas de spatial computing y nuevos dispositivos como el Apple Vision Pro (2024)~\cite{apple2024}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figs/hololens.jpg}
+    \caption{HoloLens 2 de Microsoft en labores de asistencia remota y formación.}
+    \label{fig:hololens}
+\end{figure}
 
 \section{La visibilización de las mujeres en el espacio urbano: una cuestión de justicia histórica}
 
@@ -176,7 +201,7 @@ La aplicación también incluye representaciones artísticas contemporáneas de 
 
 En el desarrollo de “DONA’m MÓN”, resulta esencial analizar aplicaciones existentes que, de manera similar, combinan geolocalización y realidad aumentada (RA) para ofrecer experiencias inmersivas y educativas. Este análisis nos permite identificar características, estrategias y tecnologías clave que podrían ser adaptadas para cumplir con los objetivos específicos del proyecto. A continuación, se presentan algunas aplicaciones relevantes cuyos enfoques, funcionalidades y tecnologías han inspirado aspectos concretos del diseño conceptual de este TFG.
 
-\subsubsection{Pokémon GO}
+\subsection{Pokémon GO}
 
 Una de las referencias más notables es Pokémon GO, que revolucionó el mercado de aplicaciones móviles al combinar geolocalización y RA para motivar a los usuarios a explorar el mundo real. En este caso, los jugadores buscan y capturan criaturas virtuales que aparecen en puntos geográficos específicos. La aplicación también implementa un sistema de recompensas y niveles que fomenta la participación constante. Aunque el enfoque principal de Pokémon GO es el entretenimiento, su éxito demuestra cómo las tecnologías inmersivas pueden transformar la forma en que las personas interactúan con su entorno. En “DONA’m MÓN”, se busca adaptar esta dinámica de exploración y descubrimiento, pero con un enfoque educativo y cultural, utilizando los puntos de interés como portales hacia las historias de mujeres que dejaron una huella significativa en Valencia.
 
@@ -187,7 +212,7 @@ Una de las referencias más notables es Pokémon GO, que revolucionó el mercado
     \label{fig:pokemon_go}
 \end{figure}
 
-\subsubsection{Streetmuseum}
+\subsection{Streetmuseum}
 
 Por otro lado, Streetmuseum es una aplicación que también aprovecha la RA, pero con un objetivo más centrado en la historia y la cultura. Esta herramienta permite a los usuarios visualizar imágenes y escenas históricas superpuestas al paisaje actual, ofreciendo una perspectiva del pasado en tiempo real. La capacidad de conectar visualmente el entorno moderno con eventos y figuras históricas es una inspiración directa para el proyecto. En nuestro proyecto, esta idea se adapta al permitir que los usuarios accedan a contenido multimedia –como imágenes, textos y modelos 3D– que contextualice la vida y obra de las mujeres en cada ubicación geolocalizada.
 
@@ -198,7 +223,7 @@ Por otro lado, Streetmuseum es una aplicación que también aprovecha la RA, per
     \label{fig:streetmuseum}
 \end{figure}
 
-\subsubsection{CultuAR}
+\subsection{CultuAR}
 
 CultuAR, desarrollada por la empresa española AR Vision, es una aplicación que combina la geolocalización con la realidad aumentada para ofrecer visitas culturales interactivas en más de 200 municipios. Mediante la cámara del dispositivo, los usuarios pueden visualizar reconstrucciones históricas, personajes del pasado o información multimedia superpuesta al entorno real. Una de sus características más valiosas es la capacidad de personalizar rutas culturales por municipios, integrando elementos inmersivos que enriquecen la experiencia turística y patrimonial. Esta aplicación destaca por su integración fluida con el entorno urbano y su enfoque didáctico, lo que representa una clara inspiración para DONA'm MÓN en cuanto a accesibilidad y diseño de experiencias geolocalizadas con RA.
 
@@ -209,7 +234,7 @@ CultuAR, desarrollada por la empresa española AR Vision, es una aplicación que
     \label{fig:cultuar}
 \end{figure}
 
-\subsubsection{Historypin}
+\subsection{Historypin}
 
 Finalmente, Historypin se presenta como una plataforma colaborativa que permite a los usuarios subir y explorar fotografías, eventos y recuerdos históricos asociados a ubicaciones específicas. Lo más destacable de esta aplicación es su enfoque participativo, donde los usuarios pueden contribuir activamente al contenido disponible. Este modelo de colaboración inspira la posibilidad de que, en futuras versiones de “DONA’m MÓN”, los usuarios también puedan agregar información o enriquecer las narrativas existentes sobre mujeres de Valencia, convirtiendo la aplicación en una herramienta dinámica y viva.
 

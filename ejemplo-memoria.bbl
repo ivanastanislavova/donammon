@@ -102,6 +102,56 @@ Daniel Wagner and Dieter Schmalstieg.
   Wearable Computers}, pages 127--135, 2003.
 \newblock \url{https://doi.org/10.1109/ISWC.2003.1241409}.
 
+\bibitem{apple2017}
+Apple.
+\newblock Arkit: Augmented reality for ios.
+\newblock \url{https://developer.apple.com/augmented-reality/}, 2017.
+
+\bibitem{google2018}
+Google.
+\newblock Arcore: Google developers.
+\newblock \url{https://developers.google.com/ar}, 2018.
+
+\bibitem{paavilainen2017}
+J.~Paavilainen, J.~Hamari, J.~Stenros, and J.~Kinnunen.
+\newblock The pokémon go experience: A location-based augmented reality mobile
+  game goes mainstream.
+\newblock In {\em Proceedings of CHI 2017}, 2017.
+
+\bibitem{microsoft2016}
+Microsoft.
+\newblock Hololens product page.
+\newblock \url{https://www.microsoft.com/en-us/hololens}, 2016.
+
+\bibitem{krevelen2010}
+D.~W. F.~van Krevelen and R.~Poelman.
+\newblock A survey of augmented reality technologies, applications and
+  limitations.
+\newblock {\em The International Journal of Virtual Reality}, 9(2):1--20, 2010.
+
+\bibitem{klein2007}
+G.~Klein and D.~Murray.
+\newblock Parallel tracking and mapping for small ar workspaces.
+\newblock In {\em ISMAR 2007}, 2007.
+
+\bibitem{ishii1997}
+Hiroshi Ishii and Brygg Ullmer.
+\newblock Tangible bits: towards seamless interfaces between people, bits and
+  atoms.
+\newblock In {\em Proceedings of the ACM SIGCHI Conference on Human Factors in
+  Computing Systems}, pages 234--241, 1997.
+\newblock \url{https://doi.org/10.1145/258549.258715}.
+
+\bibitem{billinghurst2002}
+M.~Billinghurst and H.~Kato.
+\newblock Collaborative mixed reality.
+\newblock In {\em ISMAR 2002}, 2002.
+
+\bibitem{apple2024}
+Apple.
+\newblock Introducing apple vision pro.
+\newblock \url{https://www.apple.com/apple-vision-pro/}, 2024.
+
 \bibitem{womenslegacy2022}
 Women’s legacy. proyecto europeo cofinanciado por la unión europea, 2022.
 \newblock Conselleria d’Educació, Cultura i Esport de la Generalitat

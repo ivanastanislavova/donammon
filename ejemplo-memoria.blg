@@ -9,45 +9,45 @@ Warning--I didn't find a database entry for "notsoshort"
 Warning--I didn't find a database entry for "latexcompanion"
 Warning--I didn't find a database entry for "einstein"
 Warning--I didn't find a database entry for "knuthwebsite"
-You've used 43 entries,
+You've used 52 entries,
             1791 wiz_defined-function locations,
-            653 strings with 8758 characters,
-and the built_in function-call counts, 6845 in all, are:
-= -- 586
-> -- 219
-< -- 2
-+ -- 98
-- -- 55
-* -- 238
-:= -- 1021
-add.period$ -- 121
-call.type$ -- 43
-change.case$ -- 35
+            695 strings with 9900 characters,
+and the built_in function-call counts, 8504 in all, are:
+= -- 725
+> -- 281
+< -- 3
++ -- 123
+- -- 71
+* -- 298
+:= -- 1267
+add.period$ -- 149
+call.type$ -- 52
+change.case$ -- 44
 chr.to.int$ -- 0
-cite$ -- 43
-duplicate$ -- 322
-empty$ -- 859
-format.name$ -- 55
-if$ -- 1599
+cite$ -- 52
+duplicate$ -- 408
+empty$ -- 1065
+format.name$ -- 71
+if$ -- 1994
 int.to.chr$ -- 0
-int.to.str$ -- 43
-missing$ -- 28
-newline$ -- 210
-num.names$ -- 40
-pop$ -- 238
+int.to.str$ -- 52
+missing$ -- 33
+newline$ -- 256
+num.names$ -- 49
+pop$ -- 289
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 170
+skip$ -- 214
 stack$ -- 0
-substring$ -- 226
-swap$ -- 61
-text.length$ -- 2
+substring$ -- 274
+swap$ -- 83
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 62
-width$ -- 45
-write$ -- 423
+while$ -- 76
+width$ -- 54
+write$ -- 517
 (There were 4 warnings)

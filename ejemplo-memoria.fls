@@ -271,6 +271,8 @@ INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
 INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\latex\tools\tabularx.sty
 INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
 INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\ejemplo-memoria.aux
@@ -360,6 +362,13 @@ INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm120
 INPUT .\tex\estado_arte.tex
 INPUT .\tex\estado_arte.tex
 INPUT tex\estado_arte.tex
+INPUT .\figs\evolucion_moviles.jpg
+INPUT .\figs\evolucion_moviles.jpg
+INPUT .\figs\evolucion_moviles.jpg
+INPUT .\figs\evolucion_moviles.jpg
+INPUT .\figs\evolucion_moviles.jpg
+INPUT .\figs\evolucion_moviles.jpg
+INPUT .\figs\evolucion_moviles.jpg
 INPUT .\figs\Sword-of-Damocles.png
 INPUT .\figs\Sword-of-Damocles.png
 INPUT .\figs\Sword-of-Damocles.png
@@ -381,6 +390,13 @@ INPUT .\figs\artoolkit.jpg
 INPUT .\figs\artoolkit.jpg
 INPUT .\figs\artoolkit.jpg
 INPUT .\figs\artoolkit.jpg
+INPUT .\figs\hololens.jpg
+INPUT .\figs\hololens.jpg
+INPUT .\figs\hololens.jpg
+INPUT .\figs\hololens.jpg
+INPUT .\figs\hololens.jpg
+INPUT .\figs\hololens.jpg
+INPUT .\figs\hololens.jpg
 INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti1200.tfm
 INPUT .\figs\mapa.png
 INPUT .\figs\mapa.png
