@@ -39,38 +39,60 @@
 \contentsline {subsection}{\numberline {3.1.1}Requisitos funcionales}{43}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Requisitos funcionales}{43}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}Requisitos no funcionales}{45}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Especificaciones}{46}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Ciclo de vida del software}{48}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Planificaci\'on temporal}{49}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Descomposición de tareas por fases}{49}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Estimación temporal}{51}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Diagrama de Gantt}{52}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Estimación de costes}{54}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Costes directos de personal}{54}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Asignación temporal por perfil}{55}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Costes directos de material}{55}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Costes indirectos}{56}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Coste total del proyecto}{56}{subsection.3.5.5}%
-\contentsline {section}{\numberline {3.6}Viabilidad del proyecto}{57}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Viabilidad económica}{57}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Viabilidad legal}{57}{subsection.3.6.2}%
-\contentsline {section}{\numberline {3.7}Análisis de riesgos}{58}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Principales riesgos identificados}{58}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Matriz de riesgos}{59}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Resumen de evaluación de riesgos}{60}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}Estrategias de mitigación}{60}{subsection.3.7.4}%
-\contentsline {subsection}{\numberline {3.7.5}Planes de contingencia}{61}{subsection.3.7.5}%
+\contentsline {section}{\numberline {3.2}Especificaciones}{47}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Ciclo de vida del software}{49}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Planificaci\'on temporal}{50}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Descomposición de tareas por fases}{50}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Estimación temporal}{52}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Diagrama de Gantt}{53}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Estimación de costes}{55}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Costes directos de personal}{55}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Asignación temporal por perfil}{56}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Costes directos de material}{56}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Costes indirectos}{57}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Coste total del proyecto}{57}{subsection.3.5.5}%
+\contentsline {section}{\numberline {3.6}Viabilidad del proyecto}{58}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Viabilidad económica}{58}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Viabilidad legal}{58}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Análisis de riesgos}{59}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Principales riesgos identificados}{59}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Matriz de riesgos}{60}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Resumen de evaluación de riesgos}{61}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Estrategias de mitigación}{61}{subsection.3.7.4}%
+\contentsline {subsection}{\numberline {3.7.5}Planes de contingencia}{62}{subsection.3.7.5}%
 \contentsline {chapter}{\numberline {4}Análisis}{63}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Diseño}{65}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Implementación y pruebas}{67}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Implementación}{67}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Pruebas funcionales}{67}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Pruebas de rendimiento}{67}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Pruebas de usabilidad}{67}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Conclusiones}{69}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Revisión de costes}{69}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Conclusiones}{69}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Trabajo futuro}{69}{section.7.3}%
-\contentsline {chapter}{\numberline {A}Apéndice}{71}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Ejemplos del lenguaje de marcado Latex}{71}{section.Alph1.1}%
-\contentsline {chapter}{Bibliografía}{72}{lstnumber.-2.4}%
+\contentsline {section}{\numberline {4.1}Diagramas de casos de uso}{63}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Especificación de casos de uso}{64}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Caso de uso 1: Login de usuario}{65}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Caso de uso 2: Registro de usuario}{66}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Caso de uso 3: Ver mapa con puntos de interés}{67}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Caso de uso 4: Ver listado de puntos ordenado por cercanía}{68}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Caso de uso 5: Ver ficha del lugar}{69}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Caso de uso 6: Ver rutas y consultar puntos de una ruta}{70}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}Caso de uso 7: Escanear QR de punto de ruta}{71}{subsection.4.2.7}%
+\contentsline {subsection}{\numberline {4.2.8}Caso de uso 8: Ver puntos RA disponibles}{72}{subsection.4.2.8}%
+\contentsline {subsection}{\numberline {4.2.9}Caso de uso 1.9: Visualizar contenido RA}{73}{subsection.4.2.9}%
+\contentsline {subsection}{\numberline {4.2.10}Caso de uso 10: Editar perfil de usuario}{74}{subsection.4.2.10}%
+\contentsline {subsection}{\numberline {4.2.11}Caso de uso 11: Ver historial de lugares visitados y rutas completadas}{75}{subsection.4.2.11}%
+\contentsline {subsection}{\numberline {4.2.12}Caso de uso 12: Cerrar sesión}{76}{subsection.4.2.12}%
+\contentsline {subsection}{\numberline {4.2.13}Caso de uso 13: Iniciar sesión como administrador}{77}{subsection.4.2.13}%
+\contentsline {subsection}{\numberline {4.2.14}Caso de uso 14: Gestionar mujeres históricas}{78}{subsection.4.2.14}%
+\contentsline {subsection}{\numberline {4.2.15}Caso de uso 15: Gestionar puntos geolocalizados}{79}{subsection.4.2.15}%
+\contentsline {subsection}{\numberline {4.2.16}Caso de uso 16: Gestionar rutas temáticas}{80}{subsection.4.2.16}%
+\contentsline {subsection}{\numberline {4.2.17}Caso de uso 17: Consultar lista de usuarios}{81}{subsection.4.2.17}%
+\contentsline {subsection}{\numberline {4.2.18}Caso de uso 18: Gestionar materiales multimedia}{82}{subsection.4.2.18}%
+\contentsline {subsection}{\numberline {4.2.19}Caso de uso 19: Consultar métricas de uso}{83}{subsection.4.2.19}%
+\contentsline {subsection}{\numberline {4.2.20}Caso de uso 20: Gestionar áreas de investigación}{84}{subsection.4.2.20}%
+\contentsline {chapter}{\numberline {5}Diseño}{85}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Implementación y pruebas}{87}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Implementación}{87}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Pruebas funcionales}{87}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Pruebas de rendimiento}{87}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Pruebas de usabilidad}{87}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Conclusiones}{89}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Revisión de costes}{89}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Conclusiones}{89}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Trabajo futuro}{89}{section.7.3}%
+\contentsline {chapter}{\numberline {A}Apéndice}{91}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Ejemplos del lenguaje de marcado Latex}{91}{section.Alph1.1}%
+\contentsline {chapter}{Bibliografía}{92}{lstnumber.-2.4}%

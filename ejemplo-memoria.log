@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  16 JUN 2025 00:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  17 JUN 2025 00:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -783,7 +783,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<figs/etse_titulo.png, id=282, 374.39874pt x 64.24pt>
+<figs/etse_titulo.png, id=370, 374.39874pt x 64.24pt>
 File: figs/etse_titulo.png Graphic file (type png)
 <use figs/etse_titulo.png>
 Package pdftex.def Info: figs/etse_titulo.png  used on input line 49.
@@ -796,7 +796,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
  (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<figs/escudo_logo_UV_narrow.png, id=283, 602.25pt x 782.925pt>
+<figs/escudo_logo_UV_narrow.png, id=371, 602.25pt x 782.925pt>
 File: figs/escudo_logo_UV_narrow.png Graphic file (type png)
 <use figs/escudo_logo_UV_narrow.png>
 Package pdftex.def Info: figs/escudo_logo_UV_narrow.png  used on input line 49.
@@ -810,7 +810,7 @@ Package pdftex.def Info: figs/escudo_logo_UV_narrow.png  used on input line 49.
 [2
 
 ]
-<figs/logo-contraportada.png, id=297, 722.7pt x 100.375pt>
+<figs/logo-contraportada.png, id=385, 722.7pt x 100.375pt>
 File: figs/logo-contraportada.png Graphic file (type png)
 <use figs/logo-contraportada.png>
 Package pdftex.def Info: figs/logo-contraportada.png  used on input line 51.
@@ -859,6 +859,9 @@ LaTeX Info: Redefining \% on input line 1.
 [15
 
 ]
+Underfull \vbox (badness 1067) has occurred while \output is active []
+
+
 
 [16])
 \tf@toc=\write5
@@ -886,7 +889,7 @@ Underfull \vbox (badness 1442) has occurred while \output is active []
 [22]
 Cap\'{\i }tulo 2.
 (tex/estado_arte.tex
-<figs/evolucion_moviles.jpg, id=466, 642.4pt x 481.8pt>
+<figs/evolucion_moviles.jpg, id=576, 642.4pt x 481.8pt>
 File: figs/evolucion_moviles.jpg Graphic file (type jpg)
 <use figs/evolucion_moviles.jpg>
 Package pdftex.def Info: figs/evolucion_moviles.jpg  used on input line 23.
@@ -960,7 +963,7 @@ l.90
 
 LaTeX Warning: Citation `parsons2020' on page 26 undefined on input line 93.
 
-<figs/Sword-of-Damocles.png, id=497, 236.5638pt x 172.9662pt>
+<figs/Sword-of-Damocles.png, id=607, 236.5638pt x 172.9662pt>
 File: figs/Sword-of-Damocles.png Graphic file (type png)
 <use figs/Sword-of-Damocles.png>
 Package pdftex.def Info: figs/Sword-of-Damocles.png  used on input line 106.
@@ -973,12 +976,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) h
                                                   \__shipout_drop_firstpage_...
 l.112 
        <./figs/Sword-of-Damocles.png>]
-<figs/karma.jpg, id=510, 1188.44pt x 786.94pt>
+<figs/karma.jpg, id=620, 1188.44pt x 786.94pt>
 File: figs/karma.jpg Graphic file (type jpg)
 <use figs/karma.jpg>
 Package pdftex.def Info: figs/karma.jpg  used on input line 118.
 (pdftex.def)             Requested size: 273.14923pt x 180.87231pt.
-<figs/artoolkit.jpg, id=513, 213.79875pt x 301.125pt>
+<figs/artoolkit.jpg, id=623, 213.79875pt x 301.125pt>
 File: figs/artoolkit.jpg Graphic file (type jpg)
 <use figs/artoolkit.jpg>
 Package pdftex.def Info: figs/artoolkit.jpg  used on input line 131.
@@ -994,7 +997,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) h
                                                   \__shipout_drop_firstpage_...
 l.136 
        <./figs/karma.jpg>]
-<figs/hololens.jpg, id=532, 519.44063pt x 292.09125pt>
+<figs/hololens.jpg, id=642, 519.44063pt x 292.09125pt>
 File: figs/hololens.jpg Graphic file (type jpg)
 <use figs/hololens.jpg>
 Package pdftex.def Info: figs/hololens.jpg  used on input line 152.
@@ -1024,7 +1027,7 @@ Overfull \hbox (21.29373pt too wide) in paragraph at lines 178--179
 
 
 [30]
-<figs/mapa.png, id=579, 1445.4pt x 813.0375pt>
+<figs/mapa.png, id=689, 1445.4pt x 813.0375pt>
 File: figs/mapa.png Graphic file (type png)
 <use figs/mapa.png>
 Package pdftex.def Info: figs/mapa.png  used on input line 192.
@@ -1040,12 +1043,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) h
                                                   \__shipout_drop_firstpage_...
 l.203 
        <./figs/mapa.png (PNG copy)>]
-<figs/pokemon_go.jpg, id=589, 803.0pt x 451.6875pt>
+<figs/pokemon_go.jpg, id=699, 803.0pt x 451.6875pt>
 File: figs/pokemon_go.jpg Graphic file (type jpg)
 <use figs/pokemon_go.jpg>
 Package pdftex.def Info: figs/pokemon_go.jpg  used on input line 210.
 (pdftex.def)             Requested size: 227.62206pt x 128.03615pt.
-<figs/streetmuseum.png, id=590, 369.38pt x 246.42062pt>
+<figs/streetmuseum.png, id=700, 369.38pt x 246.42062pt>
 File: figs/streetmuseum.png Graphic file (type png)
 <use figs/streetmuseum.png>
 Package pdftex.def Info: figs/streetmuseum.png  used on input line 221.
@@ -1061,12 +1064,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7}) h
                                                   \__shipout_drop_firstpage_...
 l.225 
        <./figs/pokemon_go.jpg>]
-<figs/cultuar.jpeg, id=596, 702.625pt x 421.575pt>
+<figs/cultuar.jpeg, id=706, 702.625pt x 421.575pt>
 File: figs/cultuar.jpeg Graphic file (type jpg)
 <use figs/cultuar.jpeg>
 Package pdftex.def Info: figs/cultuar.jpeg  used on input line 232.
 (pdftex.def)             Requested size: 227.62206pt x 136.57281pt.
-<figs/history-pin.png, id=597, 805.0075pt x 516.93124pt>
+<figs/history-pin.png, id=707, 805.0075pt x 516.93124pt>
 File: figs/history-pin.png Graphic file (type png)
 <use figs/history-pin.png>
 Package pdftex.def Info: figs/history-pin.png  used on input line 243.
@@ -1137,72 +1140,74 @@ Cap\'{\i }tulo 3.
 [46]
 
 [47]
-<figs/modelo_incremental.png, id=697, 485.815pt x 241.90375pt>
-File: figs/modelo_incremental.png Graphic file (type png)
-<use figs/modelo_incremental.png>
-Package pdftex.def Info: figs/modelo_incremental.png  used on input line 181.
-(pdftex.def)             Requested size: 409.71692pt x 204.00981pt.
-
 
 [48]
 
-[49
+[49]
+<figs/modelo_incremental.png, id=817, 485.815pt x 241.90375pt>
+File: figs/modelo_incremental.png Graphic file (type png)
+<use figs/modelo_incremental.png>
+Package pdftex.def Info: figs/modelo_incremental.png  used on input line 218.
+(pdftex.def)             Requested size: 409.71692pt x 204.00981pt.
+
+
+[50
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.211 \end{itemize}
-                    <./figs/modelo_incremental.png>]
+l.245   \item M
+               odelado inicial del sistema: navegaci√≥n y casos de uso <./figs/modelo_incremental.png>]
 
-[50]
+[51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[51]
-<figs/gantt.jpg, id=722, 248.3679pt x 474.8139pt>
+[52]
+<figs/gantt.jpg, id=837, 248.3679pt x 474.8139pt>
 File: figs/gantt.jpg Graphic file (type jpg)
 <use figs/gantt.jpg>
-Package pdftex.def Info: figs/gantt.jpg  used on input line 320.
+Package pdftex.def Info: figs/gantt.jpg  used on input line 357.
 (pdftex.def)             Requested size: 356.30032pt x 681.15225pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[52
+[53
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.324 
+l.361 
       ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[53
+[54
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.326 
+l.363 
        <./figs/gantt.jpg>]
-Overfull \hbox (36.97372pt too wide) in paragraph at lines 356--369
+Overfull \hbox (36.97372pt too wide) in paragraph at lines 393--406
  [][] 
  []
 
 
 
-[54]
-Underfull \hbox (badness 1675) in paragraph at lines 390--390
+[55]
+Underfull \hbox (badness 1675) in paragraph at lines 427--427
 []|\T1/cmr/m/n/12 IntegraciÛn AR.js, ac-ti-va-ciÛn por
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 392--392
+Underfull \hbox (badness 1521) in paragraph at lines 429--429
 []|\T1/cmr/m/n/12 Pruebas fun-cio-na-les, prue-bas con
  []
 
 
-Overfull \hbox (31.01535pt too wide) in paragraph at lines 380--399
+Overfull \hbox (31.01535pt too wide) in paragraph at lines 417--436
  [][] 
  []
 
@@ -1211,77 +1216,77 @@ Underfull \vbox (badness 1803) has occurred while \output is active []
 
 
 
-[55
+[56
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.433 
+l.470 
       
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.433 
+l.470 
       ]
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 446.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 483.
 
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 446.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 483.
 
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 446.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 483.
 
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 446.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 483.
 
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 446.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 483.
 
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 446.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 483.
 
 Missing character: There is no ø in font cmr12!
 Missing character: There is no ø in font cmr12!
 Missing character: There is no ø in font cmr12!
 
 
-[56
+[57
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.476 
+l.513 
       
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.476 
+l.513 
       ]
 
-[57]
-Underfull \hbox (badness 2189) in paragraph at lines 522--522
+[58]
+Underfull \hbox (badness 2189) in paragraph at lines 559--559
 []|\T1/cmr/m/n/12 Cambios en de-pen-den-cias
  []
 
 
-Underfull \hbox (badness 2894) in paragraph at lines 522--522
+Underfull \hbox (badness 2894) in paragraph at lines 559--559
 []|\T1/cmr/m/n/12 Problemas le-ga-les (da-tos,
  []
 
 
 
-[58
+[59
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.542 
+l.579 
       ]
-<figs/matriz_riesgos.jpg, id=783, 673.01437pt x 465.99094pt>
+<figs/matriz_riesgos.jpg, id=898, 673.01437pt x 465.99094pt>
 File: figs/matriz_riesgos.jpg Graphic file (type jpg)
 <use figs/matriz_riesgos.jpg>
-Package pdftex.def Info: figs/matriz_riesgos.jpg  used on input line 565.
+Package pdftex.def Info: figs/matriz_riesgos.jpg  used on input line 602.
 (pdftex.def)             Requested size: 295.90588pt x 204.8802pt.
 
-Underfull \hbox (badness 1199) in paragraph at lines 581--581
+Underfull \hbox (badness 1199) in paragraph at lines 618--618
 []|\T1/cmr/m/n/12 Estimaciones tem-po-ra-les im-
  []
 
@@ -1290,83 +1295,333 @@ Underfull \vbox (badness 3428) has occurred while \output is active []
 
 
 
-[59
+[60
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.590 
+l.627 
        <./figs/matriz_riesgos.jpg>]
 
-[60
+[61
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.607 
+l.644 
       ])
 
-[61]
+[62]
+Cap\'{\i }tulo 4.
+(tex/analisis.tex
+<figs/diagrama_usuario_no_registrado.png, id=918, 275.8305pt x 124.66576pt>
+File: figs/diagrama_usuario_no_registrado.png Graphic file (type png)
+<use figs/diagrama_usuario_no_registrado.png>
+Package pdftex.def Info: figs/diagrama_usuario_no_registrado.png  used on input line 20.
+(pdftex.def)             Requested size: 318.66948pt x 144.03598pt.
 
-[62
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[63
 
 ]
-Cap\'{\i }tulo 4.
-(tex/analisis.tex)
+<figs/diagrama_usuario_registrado.png, id=923, 1007.56425pt x 464.937pt>
+File: figs/diagrama_usuario_registrado.png Graphic file (type png)
+<use figs/diagrama_usuario_registrado.png>
+Package pdftex.def Info: figs/diagrama_usuario_registrado.png  used on input line 26.
+(pdftex.def)             Requested size: 318.66948pt x 147.05185pt.
+<figs/diagrama_administrador.png, id=924, 633.567pt x 463.7325pt>
+File: figs/diagrama_administrador.png Graphic file (type png)
+<use figs/diagrama_administrador.png>
+Package pdftex.def Info: figs/diagrama_administrador.png  used on input line 32.
+(pdftex.def)             Requested size: 318.66948pt x 233.24548pt.
 
-[63]
 
 [64
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.81 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.81 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.81 
+      <./figs/diagrama_usuario_no_registrado.png> <./figs/diagrama_usuario_registrado.png> <./figs/diagrama_administrador.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+
+
+[65
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.126 ...e uso 3: Ver mapa con puntos de inter√©s}
+                                                  ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[66
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.171 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[67
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.219 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[68
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.263 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[69
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.303 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[70
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.349 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[71
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.389 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[72
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.431 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[73
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.475 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[74
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.515 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[75
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.554 
+      ]
+Underfull \hbox (badness 1097) in paragraph at lines 585--585
+[]|\T1/cmr/m/n/12 El ad-mi-nis-tra-dor in-tro-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[76
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.597 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[77
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.641 
+      ]
+Underfull \hbox (badness 1009) in paragraph at lines 673--673
+\T1/cmr/m/n/12 tos co-mo nom-bre, des-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[78
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.685 
+      ]
+Underfull \hbox (badness 1009) in paragraph at lines 717--717
+\T1/cmr/m/n/12 tos co-mo nom-bre, des-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[79
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.729 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[80
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.769 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[81
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.17}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.811 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[82
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.847 
+      ]
+Underfull \hbox (badness 3769) in paragraph at lines 879--879
+\T1/cmr/m/n/12 tro-du-ce o mo-di-fi-ca el
+ []
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[83
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.19}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.103 
+      ]
+
+[84
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.20}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.104 \chapter
+              {Dise√±o}]
 Cap\'{\i }tulo 5.
 (tex/diseno.tex)
 
-[65]
+[85
 
-[66
+]
+
+[86
 
 ]
 Cap\'{\i }tulo 6.
 (tex/implementacion_pruebas.tex)
 
-[67]
+[87]
 
-[68
+[88
 
 ]
 Cap\'{\i }tulo 7.
 (tex/conclusiones.tex)
 
-[69]
+[89]
 
-[70
+[90
 
 ]
 Ap\'{e}ndice A.
 (tex/apendice.tex
 
-LaTeX Warning: Citation `notsoshort' on page 71 undefined on input line 11.
+LaTeX Warning: Citation `notsoshort' on page 91 undefined on input line 11.
 
 
-LaTeX Warning: Citation `latexcompanion' on page 71 undefined on input line 20.
+LaTeX Warning: Citation `latexcompanion' on page 91 undefined on input line 20.
 
 
-LaTeX Warning: Citation `einstein' on page 71 undefined on input line 21.
+LaTeX Warning: Citation `einstein' on page 91 undefined on input line 21.
 
 
-LaTeX Warning: Citation `knuthwebsite' on page 71 undefined on input line 21.
+LaTeX Warning: Citation `knuthwebsite' on page 91 undefined on input line 21.
 
 
-LaTeX Warning: Citation `latexcompanion' on page 71 undefined on input line 22.
+LaTeX Warning: Citation `latexcompanion' on page 91 undefined on input line 22.
 
 
-LaTeX Warning: Citation `knuthwebsite' on page 71 undefined on input line 22.
+LaTeX Warning: Citation `knuthwebsite' on page 91 undefined on input line 22.
 
 
 Overfull \hbox (41.5594pt too wide) in paragraph at lines 52--53
 []\T1/cmr/m/n/12 En la fi-gu-ra [][]A.1[][] se mues-tra un dia-gra-ma rea-li-za-do con [][]https://www.yworks.com/products/yed[][]: 
  []
 
-<figs/diagrama.pdf, id=847, 420.57124pt x 221.82875pt>
+<figs/diagrama.pdf, id=1072, 420.57124pt x 221.82875pt>
 File: figs/diagrama.pdf Graphic file (type pdf)
 <use figs/diagrama.pdf>
 Package pdftex.def Info: figs/diagrama.pdf  used on input line 55.
@@ -1381,22 +1636,22 @@ Package pdftex.def Info: figs/diagrama.pdf  used on input line 62.
 (pdftex.def)             Requested size: 182.09486pt x 96.04453pt.
 
 
-[71]
+[91]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 87.
 ) (ejemplo-memoria.bbl
 
-[72
+[92
 pdfTeX warning (ext4): destination with the same identifier (name{figure.Alph1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.1 \begin{thebibliography}{10}
                                 <./figs/diagrama.pdf>]
 
-[73
+[93
 
 ]
 
-[74]
+[94]
 Underfull \hbox (badness 10000) in paragraph at lines 273--279
 []\T1/cmr/m/n/12 Glassdoor.  Suel-do de je-fe de pro-yec-to.  [][]$\T1/cmr/m/n/8 https : / / www . glassdoor . es / Sueldos /
  []
@@ -1418,9 +1673,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 312--318
 
 
 
-[75])
+[95])
 
-[76] (ejemplo-memoria.aux
+[96] (ejemplo-memoria.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -1433,20 +1688,20 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `ejemplo-memoria.out' has not changed.
-(rerunfilecheck)             Checksum: 21F253D0DD46E8849A520ED9620B9275;15412.
+(rerunfilecheck)             Checksum: BDAE3BFBE9EAF8A9298A45F38B0FFF27;22696.
  ) 
 Here is how much of TeX's memory you used:
- 28171 strings out of 473523
- 525817 string characters out of 5714631
- 1039575 words of memory out of 5000000
- 50625 multiletter control sequences out of 15000+600000
- 585206 words of font info for 96 fonts, out of 8000000 for 9000
+ 28285 strings out of 473523
+ 527890 string characters out of 5714631
+ 1039576 words of memory out of 5000000
+ 50672 multiletter control sequences out of 15000+600000
+ 586745 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,105p,984b,1099s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2074.pk><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on ejemplo-memoria.pdf (76 pages, 5186673 bytes).
+ <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2074.pk><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on ejemplo-memoria.pdf (96 pages, 5522766 bytes).
 PDF statistics:
- 1754 PDF objects out of 2073 (max. 8388607)
- 244 named destinations out of 1000 (max. 500000)
- 650 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2027 PDF objects out of 2073 (max. 8388607)
+ 309 named destinations out of 1000 (max. 500000)
+ 841 words of extra memory for PDF output out of 10000 (max. 10000000)
 

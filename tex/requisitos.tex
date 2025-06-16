@@ -30,6 +30,9 @@ Lista de requisitos funcionales:
 \item[RF16:] Debe existir un panel de administración web para gestionar los puntos, contenidos y figuras históricas.
 \item[RF17:] El administrador debe poder añadir, editar o eliminar mujeres, ubicaciones y materiales multimedia desde el panel.
 \item[RF18:] El sistema debe permitir importar imágenes, vídeos y modelos 3D desde el panel de administración.
+\item[RF18b:] El administrador debe poder gestionar áreas de investigación y rutas temáticas desde el panel de administración. % (nuevo)
+\item[RF18c:] El administrador debe poder consultar métricas y estadísticas de uso, como puntos más visitados y usuarios activos. % (nuevo)
+\item[RF18d:] El administrador debe poder gestionar los permisos de otros administradores si existen varios roles. % (nuevo, opcional)
 \item[RF19:] El sistema debe validar que no se puede desbloquear un punto si el usuario no está físicamente cerca.
 \item[RF20:] La app debe ofrecer retroalimentación visual y sonora al desbloquear contenido.
 \item[RF21:] El sistema debe enviar datos al backend para mantener sincronizado el progreso del usuario.
@@ -46,6 +49,15 @@ Lista de requisitos funcionales:
 \item[RF32:] Los filtros por estado de visita y por ámbito deben poder aplicarse de forma combinada.
 \item[RF33:] El listado de puntos debe estar ordenado por cercanía al usuario.
 \item[RF34:] La distancia en tiempo real entre el usuario y cada punto debe mostrarse junto a cada entrada del listado.
+\item[RF35:] La lista de puntos debe mostrar de forma resumida información del lugar y de la mujer representada.
+\item[RF36:] Desde la ficha detallada de un punto debe poder compartirse su contenido por redes sociales.
+\item[RF37:] El usuario debe poder acceder a una sección de rutas temáticas disponibles y ver los puntos que componen cada una.
+\item[RF38:] Los puntos de una ruta no pueden marcarse como visitados manualmente: sólo se desbloquean escaneando el código QR correspondiente.
+\item[RF39:] La aplicación debe permitir escanear un código QR para desbloquear un punto dentro de una ruta.
+\item[RF40:] Debe existir una pestaña específica con los puntos que disponen de realidad aumentada, accesibles si el usuario está dentro de un radio determinado.
+\item[RF41:] Al seleccionar un punto con RA disponible, debe abrirse la cámara y mostrarse el modelo correspondiente.
+\item[RF42:] El usuario debe poder consultar una sección de perfil donde editar sus datos personales, ver su historial de lugares visitados y rutas completadas, y cerrar sesión.
+
 \end{itemize}
 
 \subsection{Requisitos no funcionales}
@@ -146,6 +158,9 @@ Una vez definidos los requisitos funcionales del sistema, es posible descomponer
     \item[F22.] Asociar cada mujer con un punto geolocalizado.
     \item[F23.] Cargar imágenes, audios, vídeos y modelos 3D desde el panel.
     \item[F24.] Editar o eliminar puntos o figuras ya creadas.
+    \item[F24b.] Gestionar áreas de investigación y rutas temáticas (crear, editar, eliminar). % (nuevo)
+    \item[F24c.] Consultar y descargar métricas de uso: puntos más visitados, número de usuarios activos, etc. % (nuevo)
+    \item[F24d.] Gestionar permisos y roles de administradores (si aplica). % (nuevo, opcional)
     \item[F25.] Ver la lista de usuarios registrados.
     \item[F26.] Consultar el progreso de cada usuario (puntos desbloqueados, logros).
     \item[F27.] Eliminar usuarios si fuese necesario.
@@ -160,6 +175,28 @@ Una vez definidos los requisitos funcionales del sistema, es posible descomponer
     \item[F31.] Navegar por la app de forma intuitiva y con accesibilidad mobile-first.
     \item[F32.] Garantizar el uso fluido y sin errores tanto en Android como en iOS.
 \end{itemize}
+
+\textsf{\large Funcionalidades relacionadas con rutas y QR}
+
+\item[F33.] Ver una lista de rutas temáticas con sus nombres y descripciones.
+\item[F34.] Consultar los puntos que forman parte de cada ruta.
+\item[F35.] Escanear códigos QR para desbloquear puntos de una ruta.
+\item[F36.] Impedir que los puntos de una ruta se marquen como visitados sin escanear su QR.
+\item[F37.] Registrar en el historial del usuario las rutas completadas.
+
+\textsf{\large Funcionalidades de realidad aumentada (RA)}
+
+\item[F38.] Ver una lista filtrada de los puntos con contenido RA disponible.
+\item[F39.] Mostrar únicamente los puntos con RA que estén a una distancia determinada del usuario.
+\item[F40.] Al seleccionar uno de estos puntos, abrir automáticamente la cámara y cargar el modelo RA asociado.
+
+\textsf{\large Funcionalidades del perfil de usuario}
+
+\item[F41.] Acceder a la pantalla de perfil desde el menú principal.
+\item[F42.] Editar los datos personales del usuario.
+\item[F43.] Consultar el historial de puntos visitados, con fecha y hora.
+\item[F44.] Consultar las rutas temáticas que el usuario ha completado.
+
 
 \section{Ciclo de vida del software}
 
