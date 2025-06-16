@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  26 MAY 2025 10:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  16 JUN 2025 00:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/isiva/Documents/memoria_TFG/donammon/ejemplo-memoria.tex
-(c:/Users/isiva/Documents/memoria_TFG/donammon/ejemplo-memoria.tex
+**c:/Users/isiva/Documents/donammon/ejemplo-memoria.tex
+(c:/Users/isiva/Documents/donammon/ejemplo-memoria.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (tfg.cls
@@ -628,10 +628,74 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidth=\dimen298
 \titlewidthlast=\dimen299
 \titlewidthfirst=\dimen300
-) (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+) (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/eurosym\eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box72
+) (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/pgfgantt\pgfgantt.sty
+Package: pgfgantt 2024/06/19 v5.0a Draw Gantt diagrams with TikZ
+ (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen301
+)) (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@layerbox@background=\box73
+\pgf@layerboxsaved@background=\box74
+) (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfcalendar.sty (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfcalendar.code.tex
+File: pgfcalendar.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfcalendarcurrentjulian=\count337
+\pgf@cal@easter@Y=\count338
+\pgf@cal@easter@G=\count339
+\pgf@cal@easter@C=\count340
+\pgf@cal@easter@X=\count341
+\pgf@cal@easter@Z=\count342
+\pgf@cal@easter@D=\count343
+\pgf@cal@easter@E=\count344
+\pgf@cal@easter@N=\count345
+\pgf@cal@easter@M=\count346
+\pgf@cal@easter@julianday=\count347
+))
+\gtt@currentline=\count348
+\gtt@lasttitleline=\count349
+\gtt@currgrid=\count350
+\gtt@chartwidth=\count351
+\gtt@lasttitleslot=\count352
+\gtt@elementid=\count353
+\gtt@today@slot=\count354
+\gtt@startjulian=\count355
+\gtt@endjulian=\count356
+\gtt@chartid=\count357
+\gtt@vrule@slot=\count358
+\gtt@calendar@slots=\count359
+\gtt@calendar@weeknumber=\count360
+\gtt@calendar@startofweek=\count361
+\gtt@left@slot=\count362
+\gtt@right@slot=\count363
+) (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)) (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count337
-\l__pdf_internal_box=\box72
+\l__color_backend_stack_int=\count364
+\l__pdf_internal_box=\box75
 ) (ejemplo-memoria.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -640,44 +704,44 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `ejemplo-memoria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
-\c@lstlisting=\count338
-Package hyperref Info: Link coloring ON on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
+\c@lstlisting=\count365
+Package hyperref Info: Link coloring ON on input line 46.
  (ejemplo-memoria.out) (ejemplo-memoria.out)
 \@outlinefile=\write4
 \openout4 = `ejemplo-memoria.out'.
 
  (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count339
-\scratchdimen=\dimen301
-\scratchbox=\box73
-\nofMPsegments=\count340
-\nofMParguments=\count341
+\scratchcounter=\count366
+\scratchdimen=\dimen302
+\scratchbox=\box76
+\nofMPsegments=\count367
+\nofMParguments=\count368
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count342
-\MPscratchDim=\dimen302
-\MPnumerator=\count343
-\makeMPintoPDFobject=\count344
+\MPscratchCnt=\count369
+\MPscratchDim=\dimen303
+\MPnumerator=\count370
+\makeMPintoPDFobject=\count371
 \everyMPtoPDFconversion=\toks54
 ) (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -702,7 +766,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
 * \topmargin=-33.0119pt
-* \headheight=12.0pt
+* \headheight=14.5pt
 * \headsep=19.8738pt
 * \topskip=12.0pt
 * \footskip=30.0pt
@@ -719,23 +783,23 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<figs/etse_titulo.png, id=210, 374.39874pt x 64.24pt>
+<figs/etse_titulo.png, id=282, 374.39874pt x 64.24pt>
 File: figs/etse_titulo.png Graphic file (type png)
 <use figs/etse_titulo.png>
-Package pdftex.def Info: figs/etse_titulo.png  used on input line 42.
+Package pdftex.def Info: figs/etse_titulo.png  used on input line 49.
 (pdftex.def)             Requested size: 250.38562pt x 42.96214pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
 (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
  (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<figs/escudo_logo_UV_narrow.png, id=211, 602.25pt x 782.925pt>
+<figs/escudo_logo_UV_narrow.png, id=283, 602.25pt x 782.925pt>
 File: figs/escudo_logo_UV_narrow.png Graphic file (type png)
 <use figs/escudo_logo_UV_narrow.png>
-Package pdftex.def Info: figs/escudo_logo_UV_narrow.png  used on input line 42.
+Package pdftex.def Info: figs/escudo_logo_UV_narrow.png  used on input line 49.
 (pdftex.def)             Requested size: 182.09485pt x 236.71907pt.
 
 
@@ -746,10 +810,10 @@ Package pdftex.def Info: figs/escudo_logo_UV_narrow.png  used on input line 42.
 [2
 
 ]
-<figs/logo-contraportada.png, id=225, 722.7pt x 100.375pt>
+<figs/logo-contraportada.png, id=297, 722.7pt x 100.375pt>
 File: figs/logo-contraportada.png Graphic file (type png)
 <use figs/logo-contraportada.png>
-Package pdftex.def Info: figs/logo-contraportada.png  used on input line 44.
+Package pdftex.def Info: figs/logo-contraportada.png  used on input line 51.
 (pdftex.def)             Requested size: 455.24408pt x 63.22891pt.
 
 
@@ -794,59 +858,35 @@ LaTeX Info: Redefining \% on input line 1.
 
 [15
 
-])
+]
+
+[16])
 \tf@toc=\write5
 \openout5 = `ejemplo-memoria.toc'.
 
 
 
+[17]
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+[18
 
-[16]
+]
 Cap\'{\i }tulo 1.
 (tex/introduccion.tex
 Underfull \vbox (badness 1442) has occurred while \output is active []
 
 
 
-[17
-
-]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[18]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[19])
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+[19]
 
 [20]
+
+[21])
+
+[22]
 Cap\'{\i }tulo 2.
 (tex/estado_arte.tex
-<figs/evolucion_moviles.jpg, id=368, 642.4pt x 481.8pt>
+<figs/evolucion_moviles.jpg, id=466, 642.4pt x 481.8pt>
 File: figs/evolucion_moviles.jpg Graphic file (type jpg)
 <use figs/evolucion_moviles.jpg>
 Package pdftex.def Info: figs/evolucion_moviles.jpg  used on input line 23.
@@ -856,18 +896,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[21
+[23
 
 ]
 
+LaTeX Warning: Citation `nguyen2018' on page 24 undefined on input line 42.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22
+
+[24
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -914,45 +951,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--79
 
 
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[23
+[25
 pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.90 
      ]
-<figs/Sword-of-Damocles.png, id=401, 236.5638pt x 172.9662pt>
+
+LaTeX Warning: Citation `parsons2020' on page 26 undefined on input line 93.
+
+<figs/Sword-of-Damocles.png, id=497, 236.5638pt x 172.9662pt>
 File: figs/Sword-of-Damocles.png Graphic file (type png)
 <use figs/Sword-of-Damocles.png>
 Package pdftex.def Info: figs/Sword-of-Damocles.png  used on input line 106.
 (pdftex.def)             Requested size: 227.62206pt x 166.42834pt.
 
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[24
+[26
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.112 
        <./figs/Sword-of-Damocles.png>]
-<figs/karma.jpg, id=415, 1188.44pt x 786.94pt>
+<figs/karma.jpg, id=510, 1188.44pt x 786.94pt>
 File: figs/karma.jpg Graphic file (type jpg)
 <use figs/karma.jpg>
 Package pdftex.def Info: figs/karma.jpg  used on input line 118.
 (pdftex.def)             Requested size: 273.14923pt x 180.87231pt.
-<figs/artoolkit.jpg, id=418, 213.79875pt x 301.125pt>
+<figs/artoolkit.jpg, id=513, 213.79875pt x 301.125pt>
 File: figs/artoolkit.jpg Graphic file (type jpg)
 <use figs/artoolkit.jpg>
 Package pdftex.def Info: figs/artoolkit.jpg  used on input line 131.
@@ -962,20 +988,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[25
+[27
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.136 
        <./figs/karma.jpg>]
-<figs/hololens.jpg, id=438, 519.44063pt x 292.09125pt>
+<figs/hololens.jpg, id=532, 519.44063pt x 292.09125pt>
 File: figs/hololens.jpg Graphic file (type jpg)
 <use figs/hololens.jpg>
 Package pdftex.def Info: figs/hololens.jpg  used on input line 152.
@@ -985,28 +1004,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[26
+[28
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.156 
        <./figs/artoolkit.jpg>]
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[27
+[29
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1018,15 +1023,8 @@ Overfull \hbox (21.29373pt too wide) in paragraph at lines 178--179
 
 
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[28]
-<figs/mapa.png, id=485, 1445.4pt x 813.0375pt>
+[30]
+<figs/mapa.png, id=579, 1445.4pt x 813.0375pt>
 File: figs/mapa.png Graphic file (type png)
 <use figs/mapa.png>
 Package pdftex.def Info: figs/mapa.png  used on input line 192.
@@ -1036,25 +1034,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[29
+[31
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.203 
        <./figs/mapa.png (PNG copy)>]
-<figs/pokemon_go.jpg, id=494, 803.0pt x 451.6875pt>
+<figs/pokemon_go.jpg, id=589, 803.0pt x 451.6875pt>
 File: figs/pokemon_go.jpg Graphic file (type jpg)
 <use figs/pokemon_go.jpg>
 Package pdftex.def Info: figs/pokemon_go.jpg  used on input line 210.
 (pdftex.def)             Requested size: 227.62206pt x 128.03615pt.
-<figs/streetmuseum.png, id=495, 369.38pt x 246.42062pt>
+<figs/streetmuseum.png, id=590, 369.38pt x 246.42062pt>
 File: figs/streetmuseum.png Graphic file (type png)
 <use figs/streetmuseum.png>
 Package pdftex.def Info: figs/streetmuseum.png  used on input line 221.
@@ -1064,39 +1055,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[30
+[32
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.225 
        <./figs/pokemon_go.jpg>]
-<figs/cultuar.jpeg, id=501, 702.625pt x 421.575pt>
+<figs/cultuar.jpeg, id=596, 702.625pt x 421.575pt>
 File: figs/cultuar.jpeg Graphic file (type jpg)
 <use figs/cultuar.jpeg>
 Package pdftex.def Info: figs/cultuar.jpeg  used on input line 232.
 (pdftex.def)             Requested size: 227.62206pt x 136.57281pt.
-<figs/history-pin.png, id=502, 805.0075pt x 516.93124pt>
+<figs/history-pin.png, id=597, 805.0075pt x 516.93124pt>
 File: figs/history-pin.png Graphic file (type png)
 <use figs/history-pin.png>
 Package pdftex.def Info: figs/history-pin.png  used on input line 243.
 (pdftex.def)             Requested size: 227.62206pt x 146.15955pt.
 
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[31
+[33
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1108,14 +1085,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9}) h
 l.247 \subsubsection{}
                        <./figs/streetmuseum.png> <./figs/cultuar.jpeg>]
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[32
+[34
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1125,229 +1095,278 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+[35]
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[33]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[34]
+[36]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[35]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[36]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [37]
+
+[38]
+
+[39]
 Overfull \hbox (13.93388pt too wide) in paragraph at lines 382--394
  [][] 
  []
 
 
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[38
+[40
 pdfTeX warning (ext4): destination with the same identifier (name{table.2.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.401 
       ])
 
+[41]
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[39]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[40
+[42
 
 ]
 Cap\'{\i }tulo 3.
 (tex/requisitos.tex
 
-[41]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[42]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [43]
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[44])
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+[44]
 
 [45]
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [46]
+
+[47]
+<figs/modelo_incremental.png, id=697, 485.815pt x 241.90375pt>
+File: figs/modelo_incremental.png Graphic file (type png)
+<use figs/modelo_incremental.png>
+Package pdftex.def Info: figs/modelo_incremental.png  used on input line 181.
+(pdftex.def)             Requested size: 409.71692pt x 204.00981pt.
+
+
+[48]
+
+[49
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.211 \end{itemize}
+                    <./figs/modelo_incremental.png>]
+
+[50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[51]
+<figs/gantt.jpg, id=722, 248.3679pt x 474.8139pt>
+File: figs/gantt.jpg Graphic file (type jpg)
+<use figs/gantt.jpg>
+Package pdftex.def Info: figs/gantt.jpg  used on input line 320.
+(pdftex.def)             Requested size: 356.30032pt x 681.15225pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[52
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.324 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[53
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.326 
+       <./figs/gantt.jpg>]
+Overfull \hbox (36.97372pt too wide) in paragraph at lines 356--369
+ [][] 
+ []
+
+
+
+[54]
+Underfull \hbox (badness 1675) in paragraph at lines 390--390
+[]|\T1/cmr/m/n/12 Integración AR.js, ac-ti-va-ción por
+ []
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 392--392
+[]|\T1/cmr/m/n/12 Pruebas fun-cio-na-les, prue-bas con
+ []
+
+
+Overfull \hbox (31.01535pt too wide) in paragraph at lines 380--399
+ [][] 
+ []
+
+
+Underfull \vbox (badness 1803) has occurred while \output is active []
+
+
+
+[55
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.433 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.433 
+      ]
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 446.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 446.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 446.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 446.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 446.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 446.
+
+Missing character: There is no ¿ in font cmr12!
+Missing character: There is no ¿ in font cmr12!
+Missing character: There is no ¿ in font cmr12!
+
+
+[56
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.476 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.476 
+      ]
+
+[57]
+Underfull \hbox (badness 2189) in paragraph at lines 522--522
+[]|\T1/cmr/m/n/12 Cambios en de-pen-den-cias
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 522--522
+[]|\T1/cmr/m/n/12 Problemas le-ga-les (da-tos,
+ []
+
+
+
+[58
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.542 
+      ]
+<figs/matriz_riesgos.jpg, id=783, 673.01437pt x 465.99094pt>
+File: figs/matriz_riesgos.jpg Graphic file (type jpg)
+<use figs/matriz_riesgos.jpg>
+Package pdftex.def Info: figs/matriz_riesgos.jpg  used on input line 565.
+(pdftex.def)             Requested size: 295.90588pt x 204.8802pt.
+
+Underfull \hbox (badness 1199) in paragraph at lines 581--581
+[]|\T1/cmr/m/n/12 Estimaciones tem-po-ra-les im-
+ []
+
+
+Underfull \vbox (badness 3428) has occurred while \output is active []
+
+
+
+[59
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.590 
+       <./figs/matriz_riesgos.jpg>]
+
+[60
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.607 
+      ])
+
+[61]
+
+[62
+
+]
 Cap\'{\i }tulo 4.
 (tex/analisis.tex)
 
-[47
+[63]
 
-]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[48
+[64
 
 ]
 Cap\'{\i }tulo 5.
 (tex/diseno.tex)
 
-[49]
+[65]
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[50
+[66
 
 ]
 Cap\'{\i }tulo 6.
 (tex/implementacion_pruebas.tex)
 
-[51]
+[67]
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[52
+[68
 
 ]
 Cap\'{\i }tulo 7.
 (tex/conclusiones.tex)
 
-[53]
+[69]
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[54
+[70
 
 ]
 Ap\'{e}ndice A.
 (tex/apendice.tex
 
-LaTeX Warning: Citation `notsoshort' on page 55 undefined on input line 11.
+LaTeX Warning: Citation `notsoshort' on page 71 undefined on input line 11.
 
 
-LaTeX Warning: Citation `latexcompanion' on page 55 undefined on input line 20.
+LaTeX Warning: Citation `latexcompanion' on page 71 undefined on input line 20.
 
 
-LaTeX Warning: Citation `einstein' on page 55 undefined on input line 21.
+LaTeX Warning: Citation `einstein' on page 71 undefined on input line 21.
 
 
-LaTeX Warning: Citation `knuthwebsite' on page 55 undefined on input line 21.
+LaTeX Warning: Citation `knuthwebsite' on page 71 undefined on input line 21.
 
 
-LaTeX Warning: Citation `latexcompanion' on page 55 undefined on input line 22.
+LaTeX Warning: Citation `latexcompanion' on page 71 undefined on input line 22.
 
 
-LaTeX Warning: Citation `knuthwebsite' on page 55 undefined on input line 22.
+LaTeX Warning: Citation `knuthwebsite' on page 71 undefined on input line 22.
 
 
 Overfull \hbox (41.5594pt too wide) in paragraph at lines 52--53
 []\T1/cmr/m/n/12 En la fi-gu-ra [][]A.1[][] se mues-tra un dia-gra-ma rea-li-za-do con [][]https://www.yworks.com/products/yed[][]: 
  []
 
-<figs/diagrama.pdf, id=647, 420.57124pt x 221.82875pt>
+<figs/diagrama.pdf, id=847, 420.57124pt x 221.82875pt>
 File: figs/diagrama.pdf Graphic file (type pdf)
 <use figs/diagrama.pdf>
 Package pdftex.def Info: figs/diagrama.pdf  used on input line 55.
@@ -1362,45 +1381,46 @@ Package pdftex.def Info: figs/diagrama.pdf  used on input line 62.
 (pdftex.def)             Requested size: 182.09486pt x 96.04453pt.
 
 
-[55]
+[71]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 87.
 ) (ejemplo-memoria.bbl
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[56
+[72
 pdfTeX warning (ext4): destination with the same identifier (name{figure.Alph1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.1 \begin{thebibliography}{10}
                                 <./figs/diagrama.pdf>]
 
-[57
+[73
 
 ]
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[58])
+[74]
+Underfull \hbox (badness 10000) in paragraph at lines 273--279
+[]\T1/cmr/m/n/12 Glassdoor.  Suel-do de je-fe de pro-yec-to.  [][]$\T1/cmr/m/n/8 https : / / www . glassdoor . es / Sueldos /
+ []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+Underfull \hbox (badness 1448) in paragraph at lines 281--287
+[]\T1/cmr/m/n/12 Glassdoor.  Suel-do de de-sa-rro-lla-dor react na-ti-ve.  [][]$\T1/cmr/m/n/8 https : / / www . glassdoor . es / Sueldos /
+ []
 
-[59] (ejemplo-memoria.aux
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--310
+[]\T1/cmr/m/n/12 Glassdoor.  Suel-do de mo-de-la-dor 3d.  [][]$\T1/cmr/m/n/8 https : / / www . glassdoor . es / Sueldos /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--318
+[]\T1/cmr/m/n/12 Glassdoor.  Suel-do de di-se-ña-dor grá-fi-co.  [][]$\T1/cmr/m/n/8 https : / / www . glassdoor . es / Sueldos /
+ []
+
+
+
+[75])
+
+[76] (ejemplo-memoria.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -1413,20 +1433,20 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `ejemplo-memoria.out' has not changed.
-(rerunfilecheck)             Checksum: 9D86933130DA8D102376E90A159B8494;11226.
+(rerunfilecheck)             Checksum: 21F253D0DD46E8849A520ED9620B9275;15412.
  ) 
 Here is how much of TeX's memory you used:
- 25962 strings out of 473523
- 468027 string characters out of 5714631
- 1038577 words of memory out of 5000000
- 48530 multiletter control sequences out of 15000+600000
- 580654 words of font info for 85 fonts, out of 8000000 for 9000
+ 28171 strings out of 473523
+ 525817 string characters out of 5714631
+ 1039575 words of memory out of 5000000
+ 50625 multiletter control sequences out of 15000+600000
+ 585206 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,105p,996b,1099s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2074.pk><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on ejemplo-memoria.pdf (59 pages, 4261132 bytes).
+ 99i,12n,105p,984b,1099s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2074.pk><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on ejemplo-memoria.pdf (76 pages, 5186673 bytes).
 PDF statistics:
- 1381 PDF objects out of 1440 (max. 8388607)
- 187 named destinations out of 1000 (max. 500000)
- 491 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1754 PDF objects out of 2073 (max. 8388607)
+ 244 named destinations out of 1000 (max. 500000)
+ 650 words of extra memory for PDF output out of 10000 (max. 10000000)
 

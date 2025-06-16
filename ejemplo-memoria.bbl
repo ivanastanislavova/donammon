@@ -17,37 +17,36 @@ UNESCO.
 
 \bibitem{agar2004}
 Jon Agar.
-\newblock {\em Constant Touch: A Global History of the Mobile Phone}.
-\newblock Icon Books, 2004.
+\newblock Constant touch: A global history of the mobile phone, 2004.
+\newblock ISBN 978-1840465413.
 
 \bibitem{west2010}
-J.~West and M.~Mace.
-\newblock Browsing as the killer app: Explaining the rapid success of apple’s
-  iphone.
-\newblock {\em Telecommunications Policy}, 34(5-6):270--286, 2010.
+Joel West and Jason Dedrick.
+\newblock Globalization and the evolution of the mobile phone industry.
+\newblock {\em International Journal of Technology and Globalisation},
+  5(1/2):65--80, 2010.
 
 \bibitem{murphy2014}
-M.~Murphy, M.~Meeker, and L.~Smith.
-\newblock {\em Internet Trends Report}.
-\newblock Kleiner Perkins, 2014.
+Jamie Murphy.
+\newblock Mobile marketing: The future of marketing, or just another fad?
+\newblock {\em International Journal of Mobile Marketing}, 9(1):47--59, 2014.
 
 \bibitem{statcounter2024}
 StatCounter.
-\newblock Mobile operating system market share worldwide, 2024.
+\newblock Mobile operating system market share worldwide.
+\newblock \url{https://gs.statcounter.com/os-market-share/mobile/worldwide},
+  2024.
 
 \bibitem{statista2024}
 Statista.
-\newblock Smartphone os market share worldwide 2024, 2024.
+\newblock Number of smartphone users worldwide from 2016 to 2024.
+\newblock
+  \url{https://www.statista.com/statistics/330695/number-of-smartphone-users-worldwide/},
+  2024.
 
 \bibitem{androidpolice2017}
 AndroidPolice.
 \newblock Android versus ios software updates revisited, 2017.
-
-\bibitem{nguyen2018}
-Q.~K. Nguyen, J.~Luo, and C.~C. Lin.
-\newblock Performance analysis of mobile app development approaches.
-\newblock {\em Journal of Computer Science \& Information Technology},
-  6(5):45--58, 2018.
 
 \bibitem{gartner2022}
 Gartner.
@@ -60,12 +59,6 @@ Data.ai.
 \bibitem{appannie2022}
 App Annie.
 \newblock State of mobile report 2022, 2022.
-
-\bibitem{parsons2020}
-D.~Parsons and J.~Adhikari.
-\newblock Bringing the world to the classroom with mobile learning.
-\newblock {\em International Journal of Mobile and Blended Learning},
-  12(1):1--16, 2020.
 
 \bibitem{azuma1997}
 Ronald~T. Azuma.
@@ -275,5 +268,60 @@ Django~Software Foundation.
 \bibitem{cassandra2023}
 Apache~Software Foundation.
 \newblock Apache cassandra documentation, 2023.
+
+\bibitem{glassdoorJefeProyecto}
+{Glassdoor}.
+\newblock Sueldo de jefe de proyecto.
+\newblock
+  \url{https://www.glassdoor.es/Sueldos/jefe-de-proyectos-sueldo-SRCH_KO0,17.htm},
+  2025.
+\newblock Consultado el 11 de junio de 2025.
+
+\bibitem{glassdoorFrontend}
+{Glassdoor}.
+\newblock Sueldo de desarrollador react native.
+\newblock
+  \url{https://www.glassdoor.es/Sueldos/react-native-developer-sueldo-SRCH_KO0,22.htm},
+  2025.
+\newblock Consultado el 11 de junio de 2025.
+
+\bibitem{glassdoorBackend}
+{Glassdoor}.
+\newblock Sueldo de desarrollador python/django.
+\newblock
+  \url{https://www.glassdoor.es/Sueldos/django-developer-sueldo-SRCH_KO0,16.htm},
+  2025.
+\newblock Consultado el 11 de junio de 2025.
+
+\bibitem{glassdoorTester}
+{Glassdoor}.
+\newblock Sueldo de qa tester.
+\newblock
+  \url{https://www.glassdoor.es/Sueldos/qa-tester-sueldo-SRCH_KO0,9.htm}, 2025.
+\newblock Consultado el 11 de junio de 2025.
+
+\bibitem{glassdoorModelador3D}
+{Glassdoor}.
+\newblock Sueldo de modelador 3d.
+\newblock
+  \url{https://www.glassdoor.es/Sueldos/modelador-de-3d-sueldo-SRCH_KO0,15.htm},
+  2025.
+\newblock Consultado el 11 de junio de 2025.
+
+\bibitem{glassdoorDiseñadr}
+{Glassdoor}.
+\newblock Sueldo de diseñador gráfico.
+\newblock
+  \url{https://www.glassdoor.es/Sueldos/disenador-grafico-sueldo-SRCH_KO0,17.htm},
+  2025.
+\newblock Consultado el 11 de junio de 2025.
+
+\bibitem{glassdoorARDeveloper}
+{Glassdoor}.
+\newblock Sueldo de desarrollador de realidad aumentada/virtual.
+\newblock
+  \url{https://www.glassdoor.es/Sueldos/virtual-reality-developer-sueldo-SRCH_KO0,25.htm},
+  2025.
+\newblock Consultado el 13 de junio de 2025.
 
 \end{thebibliography}
