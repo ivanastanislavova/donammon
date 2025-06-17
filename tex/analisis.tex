@@ -3,6 +3,7 @@
 % Las secciones presentadas son orientativas y no representan
 % necesariamente la organización que debe tener este capítulo.
 
+
 \section*{Introducción}
 
 En este capítulo se realiza el análisis del sistema desde el punto de vista de la Ingeniería del Software. El objetivo es especificar, de manera estructurada y rigurosa, cómo debe comportarse la aplicación y qué funcionalidades debe ofrecer a los distintos tipos de usuarios, siguiendo las metodologías y herramientas propias de la disciplina.
@@ -15,30 +16,34 @@ A continuación, se presentan los diagramas de casos de uso, que permiten visual
 
 A continuación se presentan los diagramas de casos de uso para los diferentes roles del sistema:
 
+
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{figs/diagrama_usuario_no_registrado.png}
+    \includegraphics[width=1\textwidth]{figs/diagrama_administrador.png}
+    \caption{Diagrama de casos de uso: Administrador}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figs/diagrama_usuario_no_registrado.png}
     \caption{Diagrama de casos de uso: Usuario no registrado}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{figs/diagrama_usuario_registrado.png}
-    \caption{Diagrama de casos de uso: Usuario registrado}
-\end{figure}
 
-\begin{figure}[H]
+\begin{sidewaysfigure}
     \centering
-    \includegraphics[width=0.7\textwidth]{figs/diagrama_administrador.png}
-    \caption{Diagrama de casos de uso: Administrador}
-\end{figure}
+    \includegraphics[width=1\textwidth]{figs/diagrama_usuario_registrado.png}
+    \caption{Diagrama de casos de uso: Usuario registrado}
+\end{sidewaysfigure}
+
 
 \section{Especificación de casos de uso}
 
 A continuación se detallan los casos de uso principales de la aplicación:
-
+\titlespacing{\subsection}{0pt}{*1}{*0.5} % {izq}{antes}{después}
 \subsection{Caso de uso 1: Login de usuario}
-
+\captionsetup{skip=0pt}
 \begin{table}[H]
 \centering
 \caption{Caso de uso 1 - Login de usuario}
@@ -886,3 +891,17 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \hline
 \end{tabular}
 \end{table}
+
+\section{Diagramas de Actividad}
+
+Los diagramas de actividad son una herramienta utilizada en el modelado de procesos y flujos de trabajo dentro de un sistema. Permiten representar gráficamente la secuencia de actividades, decisiones y flujos alternativos que pueden ocurrir durante la ejecución de un proceso. Son especialmente útiles para visualizar el comportamiento dinámico de un sistema y entender cómo interactúan los distintos componentes o usuarios.
+
+A continuación se muestra un ejemplo de diagrama de actividad correspondiente al flujo de registro e inicio de sesión de usuarios:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/diagrama_actividad_usuario_no_registrado.png}
+    \caption{Diagrama de actividad de usuario no registrado}
+\end{figure}
+
+En este diagrama se observa el proceso que sigue un usuario desde que accede a la aplicación, pasando por las opciones de registro o inicio de sesión, la validación de datos y la visualización de la aplicación, incluyendo el manejo de errores en caso de datos
