@@ -314,6 +314,8 @@ INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
 INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
 INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
 INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\latex\capt-of\capt-of.sty
+INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\latex\capt-of\capt-of.sty
 INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
 INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
 INPUT C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
@@ -548,6 +550,13 @@ INPUT .\figs\diagrama_actividad_usuario_no_registrado.png
 INPUT .\figs\diagrama_actividad_usuario_no_registrado.png
 INPUT .\figs\diagrama_actividad_usuario_no_registrado.png
 INPUT .\figs\diagrama_actividad_usuario_no_registrado.png
+INPUT .\figs\diagrama_actividad_usuario_registrado.png
+INPUT .\figs\diagrama_actividad_usuario_registrado.png
+INPUT .\figs\diagrama_actividad_usuario_registrado.png
+INPUT .\figs\diagrama_actividad_usuario_registrado.png
+INPUT .\figs\diagrama_actividad_usuario_registrado.png
+INPUT .\figs\diagrama_actividad_usuario_registrado.png
+INPUT .\figs\diagrama_actividad_usuario_registrado.png
 INPUT .\tex\diseno.tex
 INPUT .\tex\diseno.tex
 INPUT tex\diseno.tex

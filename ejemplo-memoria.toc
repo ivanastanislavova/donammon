@@ -62,7 +62,7 @@
 \contentsline {subsection}{\numberline {3.7.5}Planes de contingencia}{62}{subsection.3.7.5}%
 \contentsline {chapter}{\numberline {4}Análisis}{63}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Diagramas de casos de uso}{63}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Especificación de casos de uso}{64}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Especificación de casos de uso}{66}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Caso de uso 1: Login de usuario}{66}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Caso de uso 2: Registro de usuario}{67}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Caso de uso 3: Ver mapa con puntos de interés}{68}{subsection.4.2.3}%

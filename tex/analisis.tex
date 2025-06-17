@@ -31,11 +31,16 @@ A continuación se presentan los diagramas de casos de uso para los diferentes r
 \end{figure}
 
 
-\begin{sidewaysfigure}
+\begin{landscape}
+    \vfill
     \centering
-    \includegraphics[width=1\textwidth]{figs/diagrama_usuario_registrado.png}
-    \caption{Diagrama de casos de uso: Usuario registrado}
-\end{sidewaysfigure}
+    \makebox[\paperwidth]{%
+        \includegraphics[width=1.2\paperwidth]{figs/diagrama_usuario_registrado.png}
+    }
+    \par\vspace{1ex}
+    \textbf{Figura 4.3: Diagrama de casos de uso: Usuario registrado}
+    \vfill
+\end{landscape}
 
 
 \section{Especificación de casos de uso}
@@ -894,6 +899,7 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 
 \section{Diagramas de Actividad}
 
+
 Los diagramas de actividad son una herramienta utilizada en el modelado de procesos y flujos de trabajo dentro de un sistema. Permiten representar gráficamente la secuencia de actividades, decisiones y flujos alternativos que pueden ocurrir durante la ejecución de un proceso. Son especialmente útiles para visualizar el comportamiento dinámico de un sistema y entender cómo interactúan los distintos componentes o usuarios.
 
 A continuación se muestra un ejemplo de diagrama de actividad correspondiente al flujo de registro e inicio de sesión de usuarios:
@@ -905,3 +911,11 @@ A continuación se muestra un ejemplo de diagrama de actividad correspondiente a
 \end{figure}
 
 En este diagrama se observa el proceso que sigue un usuario desde que accede a la aplicación, pasando por las opciones de registro o inicio de sesión, la validación de datos y la visualización de la aplicación, incluyendo el manejo de errores en caso de datos
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/diagrama_actividad_usuario_registrado.png}
+    \caption{Diagrama de actividad de usuario registrado}
+\end{figure}
+
+El diagrama anterior representa el flujo de actividades que puede realizar un usuario registrado, en este caso el administrador, dentro del sistema. Tras iniciar sesión y validar sus credenciales, el administrador accede al panel de administración, donde puede gestionar diferentes entidades del sistema: mujeres históricas, puntos geolocalizados, rutas temáticas, áreas de investigación, materiales multimedia, usuarios y métricas de uso. Cada una de estas gestiones implica la posibilidad de añadir, editar o eliminar información, así como la validación de los datos y la actualización de la base de datos correspondiente. El diagrama muestra cómo estas acciones pueden realizarse de forma paralela e independiente, permitiendo al administrador un control completo sobre los contenidos y usuarios de la aplicación.

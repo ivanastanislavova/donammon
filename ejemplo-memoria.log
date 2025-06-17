@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  17 JUN 2025 12:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  17 JUN 2025 13:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -722,6 +722,8 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
+) (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/capt-of\capt-of.sty
+Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
 ) (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowinset=\dimen310
@@ -740,28 +742,28 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `ejemplo-memoria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Info: Redefining \. on input line 50.
-LaTeX Info: Redefining \% on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Info: Redefining \. on input line 52.
+LaTeX Info: Redefining \% on input line 52.
 \c@lstlisting=\count368
-Package hyperref Info: Link coloring ON on input line 50.
+Package hyperref Info: Link coloring ON on input line 52.
  (ejemplo-memoria.out) (ejemplo-memoria.out)
 \@outlinefile=\write4
 \openout4 = `ejemplo-memoria.out'.
@@ -824,20 +826,20 @@ Package caption Info: End \AtBeginDocument code.
 <figs/etse_titulo.png, id=374, 374.39874pt x 64.24pt>
 File: figs/etse_titulo.png Graphic file (type png)
 <use figs/etse_titulo.png>
-Package pdftex.def Info: figs/etse_titulo.png  used on input line 53.
+Package pdftex.def Info: figs/etse_titulo.png  used on input line 55.
 (pdftex.def)             Requested size: 250.38562pt x 42.96214pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
 (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
  (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <figs/escudo_logo_UV_narrow.png, id=375, 602.25pt x 782.925pt>
 File: figs/escudo_logo_UV_narrow.png Graphic file (type png)
 <use figs/escudo_logo_UV_narrow.png>
-Package pdftex.def Info: figs/escudo_logo_UV_narrow.png  used on input line 53.
+Package pdftex.def Info: figs/escudo_logo_UV_narrow.png  used on input line 55.
 (pdftex.def)             Requested size: 182.09485pt x 236.71907pt.
 
 
@@ -851,7 +853,7 @@ Package pdftex.def Info: figs/escudo_logo_UV_narrow.png  used on input line 53.
 <figs/logo-contraportada.png, id=389, 722.7pt x 100.375pt>
 File: figs/logo-contraportada.png Graphic file (type png)
 <use figs/logo-contraportada.png>
-Package pdftex.def Info: figs/logo-contraportada.png  used on input line 55.
+Package pdftex.def Info: figs/logo-contraportada.png  used on input line 57.
 (pdftex.def)             Requested size: 455.24408pt x 63.22891pt.
 
 
@@ -1258,24 +1260,26 @@ File: figs/diagrama_usuario_no_registrado.png Graphic file (type png)
 <use figs/diagrama_usuario_no_registrado.png>
 Package pdftex.def Info: figs/diagrama_usuario_no_registrado.png  used on input line 29.
 (pdftex.def)             Requested size: 364.19667pt x 164.61444pt.
-<figs/diagrama_usuario_registrado.png, id=932, 1007.56425pt x 464.937pt>
-File: figs/diagrama_usuario_registrado.png Graphic file (type png)
-<use figs/diagrama_usuario_registrado.png>
-Package pdftex.def Info: figs/diagrama_usuario_registrado.png  used on input line 36.
-(pdftex.def)             Requested size: 717.00946pt x 330.88086pt.
-
-Underfull \vbox (badness 6032) has occurred while \output is active []
-
 
 
 [64 <./figs/diagrama_administrador.png> <./figs/diagrama_usuario_no_registrado.png>]
+<figs/diagrama_usuario_registrado.png, id=940, 1007.56425pt x 464.937pt>
+File: figs/diagrama_usuario_registrado.png Graphic file (type png)
+<use figs/diagrama_usuario_registrado.png>
+Package pdftex.def Info: figs/diagrama_usuario_registrado.png  used on input line 39.
+(pdftex.def)             Requested size: 717.00761pt x 330.88086pt.
 
-[65 <./figs/diagrama_usuario_registrado.png>]
+
+[65
+
+ <./figs/diagrama_usuario_registrado.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[66]
+[66
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1326,7 +1330,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [76]
-Underfull \hbox (badness 1097) in paragraph at lines 590--590
+Underfull \hbox (badness 1097) in paragraph at lines 595--595
 []|\T1/cmr/m/n/12 El ad-mi-nis-tra-dor in-tro-
  []
 
@@ -1341,7 +1345,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [78]
-Underfull \hbox (badness 1009) in paragraph at lines 678--678
+Underfull \hbox (badness 1009) in paragraph at lines 683--683
 \T1/cmr/m/n/12 tos co-mo nom-bre, des-
  []
 
@@ -1351,7 +1355,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [79]
-Underfull \hbox (badness 1009) in paragraph at lines 722--722
+Underfull \hbox (badness 1009) in paragraph at lines 727--727
 \T1/cmr/m/n/12 tos co-mo nom-bre, des-
  []
 
@@ -1376,7 +1380,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [83]
-Underfull \hbox (badness 3769) in paragraph at lines 884--884
+Underfull \hbox (badness 3769) in paragraph at lines 889--889
 \T1/cmr/m/n/12 tro-du-ce o mo-di-fi-ca el
  []
 
@@ -1386,19 +1390,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [84]
-<figs/diagrama_actividad_usuario_no_registrado.png, id=1047, 1218.80344pt x 429.85594pt>
+<figs/diagrama_actividad_usuario_no_registrado.png, id=1046, 1218.80344pt x 429.85594pt>
 File: figs/diagrama_actividad_usuario_no_registrado.png Graphic file (type png)
 <use figs/diagrama_actividad_usuario_no_registrado.png>
-Package pdftex.def Info: figs/diagrama_actividad_usuario_no_registrado.png  used on input line 903.
+Package pdftex.def Info: figs/diagrama_actividad_usuario_no_registrado.png  used on input line 909.
 (pdftex.def)             Requested size: 455.24411pt x 160.55934pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[85])
+[85]
+<figs/diagrama_actividad_usuario_registrado.png, id=1053, 1778.645pt x 966.61125pt>
+File: figs/diagrama_actividad_usuario_registrado.png Graphic file (type png)
+<use figs/diagrama_actividad_usuario_registrado.png>
+Package pdftex.def Info: figs/diagrama_actividad_usuario_registrado.png  used on input line 917.
+(pdftex.def)             Requested size: 455.24411pt x 247.40443pt.
+)
 
-[86 <./figs/diagrama_actividad_usuario_no_registrado.png>]
+[86 <./figs/diagrama_actividad_usuario_no_registrado.png> <./figs/diagrama_actividad_usuario_registrado.png (PNG copy)>]
 Cap\'{\i }tulo 5.
 (tex/diseno.tex)
 
@@ -1450,7 +1460,7 @@ Overfull \hbox (41.5594pt too wide) in paragraph at lines 52--53
 []\T1/cmr/m/n/12 En la fi-gu-ra [][]A.1[][] se mues-tra un dia-gra-ma rea-li-za-do con [][]https://www.yworks.com/products/yed[][]: 
  []
 
-<figs/diagrama.pdf, id=1092, 420.57124pt x 221.82875pt>
+<figs/diagrama.pdf, id=1093, 420.57124pt x 221.82875pt>
 File: figs/diagrama.pdf Graphic file (type pdf)
 <use figs/diagrama.pdf>
 Package pdftex.def Info: figs/diagrama.pdf  used on input line 55.
@@ -1515,17 +1525,17 @@ Package rerunfilecheck Info: File `ejemplo-memoria.out' has not changed.
 (rerunfilecheck)             Checksum: C9B3F1154C1E35636257B970A8AD6B38;22890.
  ) 
 Here is how much of TeX's memory you used:
- 30047 strings out of 473523
- 564985 string characters out of 5714631
+ 30070 strings out of 473523
+ 565879 string characters out of 5714631
  1039577 words of memory out of 5000000
- 52414 multiletter control sequences out of 15000+600000
+ 52433 multiletter control sequences out of 15000+600000
  586745 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,105p,984b,1103s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2074.pk><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on ejemplo-memoria.pdf (98 pages, 5551917 bytes).
+Output written on ejemplo-memoria.pdf (98 pages, 5667344 bytes).
 PDF statistics:
- 2048 PDF objects out of 2073 (max. 8388607)
+ 2049 PDF objects out of 2073 (max. 8388607)
  313 named destinations out of 1000 (max. 500000)
- 854 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 859 words of extra memory for PDF output out of 10000 (max. 10000000)
 
