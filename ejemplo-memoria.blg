@@ -20,50 +20,49 @@ Warning--entry type for "glassdoorDiseñadr" isn't style-file defined
 Warning--entry type for "glassdoorARDeveloper" isn't style-file defined
 --line 883 of file bib/bibliografia.bib
 Warning--I didn't find a database entry for "nguyen2018"
-Warning--I didn't find a database entry for "parsons2020"
 Warning--I didn't find a database entry for "notsoshort"
 Warning--I didn't find a database entry for "latexcompanion"
 Warning--I didn't find a database entry for "einstein"
 Warning--I didn't find a database entry for "knuthwebsite"
-You've used 57 entries,
+You've used 58 entries,
             1791 wiz_defined-function locations,
-            722 strings with 10958 characters,
-and the built_in function-call counts, 9034 in all, are:
-= -- 783
-> -- 283
+            726 strings with 11086 characters,
+and the built_in function-call counts, 9202 in all, are:
+= -- 797
+> -- 291
 < -- 3
-+ -- 128
-- -- 71
-* -- 272
-:= -- 1352
-add.period$ -- 173
-call.type$ -- 57
++ -- 131
+- -- 73
+* -- 278
+:= -- 1379
+add.period$ -- 176
+call.type$ -- 58
 change.case$ -- 51
 chr.to.int$ -- 0
-cite$ -- 57
-duplicate$ -- 419
-empty$ -- 1148
-format.name$ -- 71
-if$ -- 2129
+cite$ -- 58
+duplicate$ -- 429
+empty$ -- 1167
+format.name$ -- 73
+if$ -- 2169
 int.to.chr$ -- 0
-int.to.str$ -- 57
-missing$ -- 28
-newline$ -- 290
-num.names$ -- 54
-pop$ -- 321
+int.to.str$ -- 58
+missing$ -- 30
+newline$ -- 295
+num.names$ -- 55
+pop$ -- 327
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 221
+skip$ -- 224
 stack$ -- 0
 substring$ -- 252
-swap$ -- 88
+swap$ -- 89
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 79
-width$ -- 59
-write$ -- 584
-(There were 13 warnings)
+while$ -- 80
+width$ -- 60
+write$ -- 595
+(There were 12 warnings)

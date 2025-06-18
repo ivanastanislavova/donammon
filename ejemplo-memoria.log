@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  17 JUN 2025 13:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  18 JUN 2025 14:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -990,10 +990,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--79
 
 
 [25]
-
-LaTeX Warning: Citation `parsons2020' on page 26 undefined on input line 93.
-
-<figs/Sword-of-Damocles.png, id=612, 236.5638pt x 172.9662pt>
+<figs/Sword-of-Damocles.png, id=614, 236.5638pt x 172.9662pt>
 File: figs/Sword-of-Damocles.png Graphic file (type png)
 <use figs/Sword-of-Damocles.png>
 Package pdftex.def Info: figs/Sword-of-Damocles.png  used on input line 106.
@@ -1001,12 +998,12 @@ Package pdftex.def Info: figs/Sword-of-Damocles.png  used on input line 106.
 
 
 [26 <./figs/Sword-of-Damocles.png>]
-<figs/karma.jpg, id=625, 1188.44pt x 786.94pt>
+<figs/karma.jpg, id=628, 1188.44pt x 786.94pt>
 File: figs/karma.jpg Graphic file (type jpg)
 <use figs/karma.jpg>
 Package pdftex.def Info: figs/karma.jpg  used on input line 118.
 (pdftex.def)             Requested size: 273.14923pt x 180.87231pt.
-<figs/artoolkit.jpg, id=628, 213.79875pt x 301.125pt>
+<figs/artoolkit.jpg, id=631, 213.79875pt x 301.125pt>
 File: figs/artoolkit.jpg Graphic file (type jpg)
 <use figs/artoolkit.jpg>
 Package pdftex.def Info: figs/artoolkit.jpg  used on input line 131.
@@ -1017,7 +1014,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [27 <./figs/karma.jpg>]
-<figs/hololens.jpg, id=647, 519.44063pt x 292.09125pt>
+<figs/hololens.jpg, id=650, 519.44063pt x 292.09125pt>
 File: figs/hololens.jpg Graphic file (type jpg)
 <use figs/hololens.jpg>
 Package pdftex.def Info: figs/hololens.jpg  used on input line 152.
@@ -1037,7 +1034,7 @@ Overfull \hbox (21.29373pt too wide) in paragraph at lines 178--179
 
 
 [30]
-<figs/mapa.png, id=694, 1445.4pt x 813.0375pt>
+<figs/mapa.png, id=697, 1445.4pt x 813.0375pt>
 File: figs/mapa.png Graphic file (type png)
 <use figs/mapa.png>
 Package pdftex.def Info: figs/mapa.png  used on input line 192.
@@ -1048,12 +1045,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [31 <./figs/mapa.png (PNG copy)>]
-<figs/pokemon_go.jpg, id=704, 803.0pt x 451.6875pt>
+<figs/pokemon_go.jpg, id=707, 803.0pt x 451.6875pt>
 File: figs/pokemon_go.jpg Graphic file (type jpg)
 <use figs/pokemon_go.jpg>
 Package pdftex.def Info: figs/pokemon_go.jpg  used on input line 210.
 (pdftex.def)             Requested size: 227.62206pt x 128.03615pt.
-<figs/streetmuseum.png, id=705, 369.38pt x 246.42062pt>
+<figs/streetmuseum.png, id=708, 369.38pt x 246.42062pt>
 File: figs/streetmuseum.png Graphic file (type png)
 <use figs/streetmuseum.png>
 Package pdftex.def Info: figs/streetmuseum.png  used on input line 221.
@@ -1064,12 +1061,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [32 <./figs/pokemon_go.jpg>]
-<figs/cultuar.jpeg, id=711, 702.625pt x 421.575pt>
+<figs/cultuar.jpeg, id=714, 702.625pt x 421.575pt>
 File: figs/cultuar.jpeg Graphic file (type jpg)
 <use figs/cultuar.jpeg>
 Package pdftex.def Info: figs/cultuar.jpeg  used on input line 232.
 (pdftex.def)             Requested size: 227.62206pt x 136.57281pt.
-<figs/history-pin.png, id=712, 805.0075pt x 516.93124pt>
+<figs/history-pin.png, id=715, 805.0075pt x 516.93124pt>
 File: figs/history-pin.png Graphic file (type png)
 <use figs/history-pin.png>
 Package pdftex.def Info: figs/history-pin.png  used on input line 243.
@@ -1124,7 +1121,7 @@ Cap\'{\i }tulo 3.
 [48]
 
 [49]
-<figs/modelo_incremental.png, id=825, 485.815pt x 241.90375pt>
+<figs/modelo_incremental.png, id=828, 485.815pt x 241.90375pt>
 File: figs/modelo_incremental.png Graphic file (type png)
 <use figs/modelo_incremental.png>
 Package pdftex.def Info: figs/modelo_incremental.png  used on input line 218.
@@ -1139,7 +1136,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [52]
-<figs/gantt.jpg, id=845, 248.3679pt x 474.8139pt>
+<figs/gantt.jpg, id=848, 248.3679pt x 474.8139pt>
 File: figs/gantt.jpg Graphic file (type jpg)
 <use figs/gantt.jpg>
 Package pdftex.def Info: figs/gantt.jpg  used on input line 357.
@@ -1220,7 +1217,7 @@ Underfull \hbox (badness 2894) in paragraph at lines 559--559
 
 
 [59]
-<figs/matriz_riesgos.jpg, id=906, 673.01437pt x 465.99094pt>
+<figs/matriz_riesgos.jpg, id=909, 673.01437pt x 465.99094pt>
 File: figs/matriz_riesgos.jpg Graphic file (type jpg)
 <use figs/matriz_riesgos.jpg>
 Package pdftex.def Info: figs/matriz_riesgos.jpg  used on input line 602.
@@ -1242,7 +1239,7 @@ Underfull \vbox (badness 3646) has occurred while \output is active []
 [62]
 Cap\'{\i }tulo 4.
 (tex/analisis.tex
-<figs/diagrama_administrador.png, id=926, 633.567pt x 463.7325pt>
+<figs/diagrama_administrador.png, id=929, 633.567pt x 463.7325pt>
 File: figs/diagrama_administrador.png Graphic file (type png)
 <use figs/diagrama_administrador.png>
 Package pdftex.def Info: figs/diagrama_administrador.png  used on input line 23.
@@ -1255,7 +1252,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [63
 
 ]
-<figs/diagrama_usuario_no_registrado.png, id=931, 275.8305pt x 124.66576pt>
+<figs/diagrama_usuario_no_registrado.png, id=934, 275.8305pt x 124.66576pt>
 File: figs/diagrama_usuario_no_registrado.png Graphic file (type png)
 <use figs/diagrama_usuario_no_registrado.png>
 Package pdftex.def Info: figs/diagrama_usuario_no_registrado.png  used on input line 29.
@@ -1263,7 +1260,7 @@ Package pdftex.def Info: figs/diagrama_usuario_no_registrado.png  used on input 
 
 
 [64 <./figs/diagrama_administrador.png> <./figs/diagrama_usuario_no_registrado.png>]
-<figs/diagrama_usuario_registrado.png, id=940, 1007.56425pt x 464.937pt>
+<figs/diagrama_usuario_registrado.png, id=943, 1007.56425pt x 464.937pt>
 File: figs/diagrama_usuario_registrado.png Graphic file (type png)
 <use figs/diagrama_usuario_registrado.png>
 Package pdftex.def Info: figs/diagrama_usuario_registrado.png  used on input line 39.
@@ -1273,6 +1270,12 @@ Package pdftex.def Info: figs/diagrama_usuario_registrado.png  used on input lin
 [65
 
  <./figs/diagrama_usuario_registrado.png>]
+<figs/caso1.png, id=949, 860.21375pt x 534.99875pt>
+File: figs/caso1.png Graphic file (type png)
+<use figs/caso1.png>
+Package pdftex.def Info: figs/caso1.png  used on input line 94.
+(pdftex.def)             Requested size: 364.19667pt x 226.51021pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1280,11 +1283,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [66
 
 ]
+<figs/caso2.png, id=955, 881.2925pt x 549.05125pt>
+File: figs/caso2.png Graphic file (type png)
+<use figs/caso2.png>
+Package pdftex.def Info: figs/caso2.png  used on input line 144.
+(pdftex.def)             Requested size: 364.19667pt x 226.89694pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[67]
+[67 <./figs/caso1.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1294,7 +1303,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[69]
+[69 <./figs/caso2.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1330,11 +1339,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [76]
-Underfull \hbox (badness 1097) in paragraph at lines 595--595
-[]|\T1/cmr/m/n/12 El ad-mi-nis-tra-dor in-tro-
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1345,8 +1349,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [78]
-Underfull \hbox (badness 1009) in paragraph at lines 683--683
-\T1/cmr/m/n/12 tos co-mo nom-bre, des-
+Underfull \hbox (badness 1097) in paragraph at lines 608--608
+[]|\T1/cmr/m/n/12 El ad-mi-nis-tra-dor in-tro-
  []
 
 
@@ -1355,7 +1359,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [79]
-Underfull \hbox (badness 1009) in paragraph at lines 727--727
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[80]
+Underfull \hbox (badness 1009) in paragraph at lines 696--696
 \T1/cmr/m/n/12 tos co-mo nom-bre, des-
  []
 
@@ -1364,12 +1373,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[80]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
 [81]
+Underfull \hbox (badness 1009) in paragraph at lines 740--740
+\T1/cmr/m/n/12 tos co-mo nom-bre, des-
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1380,7 +1389,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [83]
-Underfull \hbox (badness 3769) in paragraph at lines 889--889
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[84]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[85]
+Underfull \hbox (badness 3769) in paragraph at lines 902--902
 \T1/cmr/m/n/12 tro-du-ce o mo-di-fi-ca el
  []
 
@@ -1389,78 +1408,78 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[84]
-<figs/diagrama_actividad_usuario_no_registrado.png, id=1046, 1218.80344pt x 429.85594pt>
+[86]
+<figs/diagrama_actividad_usuario_no_registrado.png, id=1062, 1218.80344pt x 429.85594pt>
 File: figs/diagrama_actividad_usuario_no_registrado.png Graphic file (type png)
 <use figs/diagrama_actividad_usuario_no_registrado.png>
-Package pdftex.def Info: figs/diagrama_actividad_usuario_no_registrado.png  used on input line 909.
+Package pdftex.def Info: figs/diagrama_actividad_usuario_no_registrado.png  used on input line 922.
 (pdftex.def)             Requested size: 455.24411pt x 160.55934pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[85]
-<figs/diagrama_actividad_usuario_registrado.png, id=1053, 1778.645pt x 966.61125pt>
+[87]
+<figs/diagrama_actividad_usuario_registrado.png, id=1068, 1778.645pt x 966.61125pt>
 File: figs/diagrama_actividad_usuario_registrado.png Graphic file (type png)
 <use figs/diagrama_actividad_usuario_registrado.png>
-Package pdftex.def Info: figs/diagrama_actividad_usuario_registrado.png  used on input line 917.
+Package pdftex.def Info: figs/diagrama_actividad_usuario_registrado.png  used on input line 930.
 (pdftex.def)             Requested size: 455.24411pt x 247.40443pt.
 )
 
-[86 <./figs/diagrama_actividad_usuario_no_registrado.png> <./figs/diagrama_actividad_usuario_registrado.png (PNG copy)>]
+[88 <./figs/diagrama_actividad_usuario_no_registrado.png> <./figs/diagrama_actividad_usuario_registrado.png (PNG copy)>]
 Cap\'{\i }tulo 5.
 (tex/diseno.tex)
 
-[87
+[89
 
 ]
-
-[88
-
-]
-Cap\'{\i }tulo 6.
-(tex/implementacion_pruebas.tex)
-
-[89]
 
 [90
 
 ]
-Cap\'{\i }tulo 7.
-(tex/conclusiones.tex)
+Cap\'{\i }tulo 6.
+(tex/implementacion_pruebas.tex)
 
 [91]
 
 [92
 
 ]
+Cap\'{\i }tulo 7.
+(tex/conclusiones.tex)
+
+[93]
+
+[94
+
+]
 Ap\'{e}ndice A.
 (tex/apendice.tex
 
-LaTeX Warning: Citation `notsoshort' on page 93 undefined on input line 11.
+LaTeX Warning: Citation `notsoshort' on page 95 undefined on input line 11.
 
 
-LaTeX Warning: Citation `latexcompanion' on page 93 undefined on input line 20.
+LaTeX Warning: Citation `latexcompanion' on page 95 undefined on input line 20.
 
 
-LaTeX Warning: Citation `einstein' on page 93 undefined on input line 21.
+LaTeX Warning: Citation `einstein' on page 95 undefined on input line 21.
 
 
-LaTeX Warning: Citation `knuthwebsite' on page 93 undefined on input line 21.
+LaTeX Warning: Citation `knuthwebsite' on page 95 undefined on input line 21.
 
 
-LaTeX Warning: Citation `latexcompanion' on page 93 undefined on input line 22.
+LaTeX Warning: Citation `latexcompanion' on page 95 undefined on input line 22.
 
 
-LaTeX Warning: Citation `knuthwebsite' on page 93 undefined on input line 22.
+LaTeX Warning: Citation `knuthwebsite' on page 95 undefined on input line 22.
 
 
 Overfull \hbox (41.5594pt too wide) in paragraph at lines 52--53
 []\T1/cmr/m/n/12 En la fi-gu-ra [][]A.1[][] se mues-tra un dia-gra-ma rea-li-za-do con [][]https://www.yworks.com/products/yed[][]: 
  []
 
-<figs/diagrama.pdf, id=1093, 420.57124pt x 221.82875pt>
+<figs/diagrama.pdf, id=1108, 420.57124pt x 221.82875pt>
 File: figs/diagrama.pdf Graphic file (type pdf)
 <use figs/diagrama.pdf>
 Package pdftex.def Info: figs/diagrama.pdf  used on input line 55.
@@ -1475,41 +1494,41 @@ Package pdftex.def Info: figs/diagrama.pdf  used on input line 62.
 (pdftex.def)             Requested size: 182.09486pt x 96.04453pt.
 
 
-[93]
+[95]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 87.
 ) (ejemplo-memoria.bbl
 
-[94 <./figs/diagrama.pdf>]
+[96 <./figs/diagrama.pdf>]
 
-[95
+[97
 
 ]
 
-[96]
-Underfull \hbox (badness 10000) in paragraph at lines 273--279
+[98]
+Underfull \hbox (badness 10000) in paragraph at lines 279--285
 []\T1/cmr/m/n/12 Glassdoor.  Suel-do de je-fe de pro-yec-to.  [][]$\T1/cmr/m/n/8 https : / / www . glassdoor . es / Sueldos /
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 281--287
+Underfull \hbox (badness 1448) in paragraph at lines 287--293
 []\T1/cmr/m/n/12 Glassdoor.  Suel-do de de-sa-rro-lla-dor react na-ti-ve.  [][]$\T1/cmr/m/n/8 https : / / www . glassdoor . es / Sueldos /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--310
+Underfull \hbox (badness 10000) in paragraph at lines 310--316
 []\T1/cmr/m/n/12 Glassdoor.  Suel-do de mo-de-la-dor 3d.  [][]$\T1/cmr/m/n/8 https : / / www . glassdoor . es / Sueldos /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--318
+Underfull \hbox (badness 10000) in paragraph at lines 318--324
 []\T1/cmr/m/n/12 Glassdoor.  Suel-do de di-se-ña-dor grá-fi-co.  [][]$\T1/cmr/m/n/8 https : / / www . glassdoor . es / Sueldos /
  []
 
 
 
-[97])
+[99])
 
-[98] (ejemplo-memoria.aux
+[100] (ejemplo-memoria.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -1525,17 +1544,17 @@ Package rerunfilecheck Info: File `ejemplo-memoria.out' has not changed.
 (rerunfilecheck)             Checksum: C9B3F1154C1E35636257B970A8AD6B38;22890.
  ) 
 Here is how much of TeX's memory you used:
- 30070 strings out of 473523
- 565879 string characters out of 5714631
+ 30090 strings out of 473523
+ 566249 string characters out of 5714631
  1039577 words of memory out of 5000000
- 52433 multiletter control sequences out of 15000+600000
+ 52448 multiletter control sequences out of 15000+600000
  586745 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,105p,984b,1103s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2074.pk><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on ejemplo-memoria.pdf (98 pages, 5667344 bytes).
+Output written on ejemplo-memoria.pdf (100 pages, 5756691 bytes).
 PDF statistics:
- 2049 PDF objects out of 2073 (max. 8388607)
- 313 named destinations out of 1000 (max. 500000)
- 859 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2064 PDF objects out of 2073 (max. 8388607)
+ 318 named destinations out of 1000 (max. 500000)
+ 869 words of extra memory for PDF output out of 10000 (max. 10000000)
 
