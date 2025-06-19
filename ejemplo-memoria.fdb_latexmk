@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex ejemplo-memoria"] 1750293718.379 "ejemplo-memoria.aux" "ejemplo-memoria.bbl" "ejemplo-memoria" 1750293724.06173 0
+["bibtex ejemplo-memoria"] 1750333616.44487 "ejemplo-memoria.aux" "ejemplo-memoria.bbl" "ejemplo-memoria" 1750333815.76465 0
   "./bib/bibliografia.bib" 1750248159 14563 c92b71b793cdf58b469b982caea27869 ""
   "C:/Users/isiva/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/unsrt.bst" 1291864736 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "ejemplo-memoria.aux" 1750293722 30449 f313c6fe94683a48b092ae89d55f67d7 "pdflatex"
+  "ejemplo-memoria.aux" 1750333814 31486 aaa12b11452755fdcf354b9bdf10bf66 "pdflatex"
   (generated)
   "ejemplo-memoria.bbl"
   "ejemplo-memoria.blg"
   (rewritten before read)
-["pdflatex"] 1750293719.14631 "c:/Users/isiva/Documents/donammon/ejemplo-memoria.tex" "ejemplo-memoria.pdf" "ejemplo-memoria" 1750293724.06237 0
+["pdflatex"] 1750333811.2599 "c:/Users/isiva/Documents/donammon/ejemplo-memoria.tex" "ejemplo-memoria.pdf" "ejemplo-memoria" 1750333815.76529 0
   "C:/Users/isiva/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1750158367 81107 70b8516c68c2e617189c5e44bfd16b96 ""
   "C:/Users/isiva/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1749639281 28976 195d39d36c4aa803e4dcc1d201481942 ""
   "C:/Users/isiva/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1744046804 31952 ea233e1498e7ecc86b9928e6e6f5c3fb ""
@@ -257,11 +257,11 @@
   "C:/Users/isiva/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/isiva/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "c:/Users/isiva/Documents/donammon/ejemplo-memoria.tex" 1750174982 3176 759c8584798de75ace0c3ce859f913aa ""
-  "ejemplo-memoria.aux" 1750293722 30449 f313c6fe94683a48b092ae89d55f67d7 "pdflatex"
-  "ejemplo-memoria.bbl" 1750293718 10815 f45905ce084ec39ed9cf63ba230e59fc "bibtex ejemplo-memoria"
-  "ejemplo-memoria.out" 1750293722 24023 a5c6a3540c96ff4172df9e64576fac5e "pdflatex"
+  "ejemplo-memoria.aux" 1750333814 31486 aaa12b11452755fdcf354b9bdf10bf66 "pdflatex"
+  "ejemplo-memoria.bbl" 1750333616 10815 f45905ce084ec39ed9cf63ba230e59fc "bibtex ejemplo-memoria"
+  "ejemplo-memoria.out" 1750333814 25172 d06ded777cfde0d0d26df3e27458ab3f "pdflatex"
   "ejemplo-memoria.tex" 1750174982 3176 759c8584798de75ace0c3ce859f913aa ""
-  "ejemplo-memoria.toc" 1750293722 10104 712bd82461216c5c511457a828b137e4 "pdflatex"
+  "ejemplo-memoria.toc" 1750333814 10475 70b339f275ad3930a38752760a3cbda0 "pdflatex"
   "figs/Sword-of-Damocles.png" 1749553520 213012 a61a663bbe390dc6c503b06452a99bbf ""
   "figs/artoolkit.jpg" 1749553520 11609 6972ec60384242ee13a76a10bc441c7f ""
   "figs/caso1.png" 1750175334 43369 c536d77b61f138815d12a5e670570ce8 ""
@@ -272,7 +272,7 @@
   "figs/diagrama_actividad_usuario_no_registrado.png" 1750153704 32440 7b56bd30c6e9467fd2bad2a216393570 ""
   "figs/diagrama_actividad_usuario_registrado.png" 1750278501 144180 2e5e489be88418271122720d89c32948 ""
   "figs/diagrama_administrador.png" 1750114361 128999 4f64075697d2204907415eba4715a8d2 ""
-  "figs/diagrama_clases.png" 1750292684 75597 5a872f223d241190f3b32d0129a1f4ce ""
+  "figs/diagrama_clases.png" 1750328035 136434 6ad293c7a08300071b6ba10df69e155e ""
   "figs/diagrama_usuario_no_registrado.png" 1750093280 10790 dd26f6b7ce97831ca19657969002a870 ""
   "figs/diagrama_usuario_registrado.png" 1750097939 183280 2e73696e4f9cb2966be96662e8b7dcb2 ""
   "figs/escudo_logo_UV_narrow.png" 1749553520 49571 bd803c5cbf409c7acd94152809da0e9b ""
@@ -290,11 +290,12 @@
   "figs/matriz_riesgos.jpg" 1750019942 109831 3e1aa108bb3a53a556dff493542a1e27 ""
   "figs/modelo_incremental.png" 1749641564 6328 9075758f076d1062c78ad1fcb2af7404 ""
   "figs/pokemon_go.jpg" 1749553520 109947 d38c618c218dcad6aa71bbb3b6d00798 ""
+  "figs/prueba.png" 1750328587 302775 767cd21eee3cd2028cf0472ae2523848 ""
   "figs/streetmuseum.png" 1749553520 581869 c98bddca3c4030ff5fcb419baeb98e3f ""
   "tex/analisis.tex" 1750291627 40928 5a5d2858ca829032406e19e5192dd73d ""
   "tex/apendice.tex" 1749553520 2773 1bc234ba14382ed6a0b7338b63f46d86 ""
   "tex/conclusiones.tex" 1749553520 1139 72dbeb6260524c91492193eb06739b0b ""
-  "tex/diseno.tex" 1750293712 5109 6d5f1ef0828932dcb5af3e91ec09401a ""
+  "tex/diseno.tex" 1750333810 10472 6e1245299a7a6e34ef72dc14de9e92c2 ""
   "tex/estado_arte.tex" 1750248169 52588 d047310012bb2806f05ccd698605c876 ""
   "tex/implementacion_pruebas.tex" 1749553520 333 2e86fc66bb19ae8b833840e61b70afcd ""
   "tex/introduccion.tex" 1749553520 10652 8724e76ae98c51c0d37d90a9b17725ff ""
