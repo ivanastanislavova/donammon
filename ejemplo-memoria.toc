@@ -84,16 +84,22 @@
 \contentsline {subsection}{\numberline {4.2.19}Caso de uso 19: Consultar métricas de uso}{86}{subsection.4.2.19}%
 \contentsline {subsection}{\numberline {4.2.20}Caso de uso 20: Gestionar áreas de investigación}{87}{subsection.4.2.20}%
 \contentsline {section}{\numberline {4.3}Diagramas de Actividad}{87}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Diseño}{89}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Implementación y pruebas}{91}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Implementación}{91}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Pruebas funcionales}{91}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Pruebas de rendimiento}{91}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Pruebas de usabilidad}{91}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Conclusiones}{93}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Revisión de costes}{93}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Conclusiones}{93}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Trabajo futuro}{93}{section.7.3}%
-\contentsline {chapter}{\numberline {A}Apéndice}{95}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Ejemplos del lenguaje de marcado Latex}{95}{section.Alph1.1}%
-\contentsline {chapter}{Bibliografía}{96}{lstnumber.-2.4}%
+\contentsline {section}{\numberline {4.4}Diagramas de Estado}{89}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Diseño}{93}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Diseño de base de datos}{93}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Tablas principales}{93}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Relaciones}{94}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Esquema de tablas}{95}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Justificación del diseño}{95}{subsection.5.1.4}%
+\contentsline {chapter}{\numberline {6}Implementación y pruebas}{97}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Implementación}{97}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Pruebas funcionales}{97}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Pruebas de rendimiento}{97}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Pruebas de usabilidad}{97}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Conclusiones}{99}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Revisión de costes}{99}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Conclusiones}{99}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Trabajo futuro}{99}{section.7.3}%
+\contentsline {chapter}{\numberline {A}Apéndice}{101}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Ejemplos del lenguaje de marcado Latex}{101}{section.Alph1.1}%
+\contentsline {chapter}{Bibliografía}{102}{lstnumber.-2.4}%

@@ -910,12 +910,12 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \end{tabular}
 \end{table}
 
-\section{Diagramas de Actividad}
 
+\section{Diagramas de Actividad}
 
 Los diagramas de actividad son una herramienta utilizada en el modelado de procesos y flujos de trabajo dentro de un sistema. Permiten representar gráficamente la secuencia de actividades, decisiones y flujos alternativos que pueden ocurrir durante la ejecución de un proceso. Son especialmente útiles para visualizar el comportamiento dinámico de un sistema y entender cómo interactúan los distintos componentes o usuarios.
 
-A continuación se muestra un ejemplo de diagrama de actividad correspondiente al flujo de registro e inicio de sesión de usuarios:
+A continuación se muestran los diagramas de actividad:
 
 \begin{figure}[H]
     \centering
@@ -923,7 +923,7 @@ A continuación se muestra un ejemplo de diagrama de actividad correspondiente a
     \caption{Diagrama de actividad de usuario no registrado}
 \end{figure}
 
-En este diagrama se observa el proceso que sigue un usuario desde que accede a la aplicación, pasando por las opciones de registro o inicio de sesión, la validación de datos y la visualización de la aplicación, incluyendo el manejo de errores en caso de datos
+En este diagrama se observan los primeros pasos que sigue un usuario al acceder a la aplicación, pasando por las opciones de registro o inicio de sesión, la validación de datos para llegar a la visualización de la aplicación.
 
 \begin{figure}[H]
     \centering
@@ -931,4 +931,44 @@ En este diagrama se observa el proceso que sigue un usuario desde que accede a l
     \caption{Diagrama de actividad de usuario registrado}
 \end{figure}
 
-El diagrama anterior representa el flujo de actividades que puede realizar un usuario registrado, en este caso el administrador, dentro del sistema. Tras iniciar sesión y validar sus credenciales, el administrador accede al panel de administración, donde puede gestionar diferentes entidades del sistema: mujeres históricas, puntos geolocalizados, rutas temáticas, áreas de investigación, materiales multimedia, usuarios y métricas de uso. Cada una de estas gestiones implica la posibilidad de añadir, editar o eliminar información, así como la validación de los datos y la actualización de la base de datos correspondiente. El diagrama muestra cómo estas acciones pueden realizarse de forma paralela e independiente, permitiendo al administrador un control completo sobre los contenidos y usuarios de la aplicación.
+El diagrama anterior muestra, de forma paralela, todas las funcionalidades principales a las que puede acceder un usuario tras iniciar sesión en la aplicación. Cada partición corresponde a una sección clave del menú (mapa interactivo, listado de lugares, rutas temáticas, realidad aumentada y perfil personal) o a las notificaciones de proximidad. En cada bloque se detallan las acciones posibles y las decisiones que puede tomar el usuario.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/diagrama_actividad_administrador.png}
+    \caption{Diagrama de actividad del panel de administración}
+\end{figure}
+
+Este diagrama de actividad corresponde al panel de administración. Ilustra los principales procesos y decisiones que puede realizar un administrador tras iniciar sesión en la plataforma web. El flujo se divide en varias particiones, cada una dedicada a una funcionalidad específica: gestión de mujeres históricas, gestión de lugares geolocalizados, gestión de usuarios, gestión de visitas e historial, y gestión de rutas temáticas. En cada sección se muestran las operaciones CRUD (crear, leer, actualizar, eliminar) correspondientes, así como acciones adicionales como el registro de nuevos usuarios, la consulta y eliminación de historiales de visitas y rutas, y el reinicio de visitas en rutas para usuarios concretos.
+
+\section{Diagramas de Estado}
+Los diagramas de estado son una herramienta fundamental en el modelado de sistemas software, especialmente útil para describir el comportamiento dinámico de un objeto o componente a lo largo de su ciclo de vida. Un diagrama de estado representa los diferentes estados que puede adoptar un elemento del sistema y las transiciones entre ellos, que se producen como respuesta a eventos o acciones. Estos diagramas permiten visualizar de manera clara cómo reacciona el sistema ante distintas situaciones, facilitando la comprensión y el diseño de su lógica interna.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/estado_usuario_no_registrado.png}
+    \caption{Diagrama de estado de usuario no registrado}
+\end{figure}
+
+\begin{landscape}
+    \vfill
+    \centering
+    \makebox[\paperwidth]{%
+        \includegraphics[width=1.2\paperwidth]{figs/estado_usuario_registrado.png}
+    }
+    \par\vspace{1ex}
+    \textbf{Figura 4.9: Diagrama de estado de usuario registrado}
+    \vfill
+\end{landscape}
+
+
+\begin{landscape}
+    \vfill
+    \centering
+    \makebox[\paperwidth]{%
+        \includegraphics[width=1.2\paperwidth]{figs/estado_administrador.png}
+    }
+    \par\vspace{1ex}
+    \textbf{Figura 4.10: Diagrama de estado del panel de administración}
+    \vfill
+\end{landscape}
