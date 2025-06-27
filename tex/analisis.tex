@@ -90,6 +90,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 2: Registro de usuario}
 
 \begin{table}[H]
@@ -134,6 +135,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 3: Ver mapa con puntos de interés}
 
 \begin{table}[H]
@@ -180,6 +182,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 4: Ver listado de puntos ordenado por cercanía}
 
 \begin{table}[H]
@@ -228,6 +231,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 5: Ver ficha del lugar}
 
 \begin{table}[H]
@@ -272,6 +276,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 6: Ver rutas y consultar puntos de una ruta}
 
 \begin{table}[H]
@@ -312,6 +317,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 7: Escanear QR de punto de ruta}
 
 \begin{table}[H]
@@ -358,6 +364,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 8: Ver puntos RA disponibles}
 
 \begin{table}[H]
@@ -398,6 +405,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 9: Visualizar contenido RA}
 
 \begin{table}[H]
@@ -440,6 +448,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 10: Editar perfil de usuario}
 
 \begin{table}[H]
@@ -484,6 +493,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 11: Ver historial de lugares visitados y rutas completadas}
 
 \begin{table}[H]
@@ -524,7 +534,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \end{tabular}
 \end{table}
 
-
+\clearpage
 \subsection{Caso de uso 12: Cerrar sesión}
 
 \begin{table}[H]
@@ -563,7 +573,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \end{tabular}
 \end{table}
 
-
+\clearpage
 \subsection{Caso de uso 13: Iniciar sesión como administrador}
 
 \begin{table}[H]
@@ -606,6 +616,7 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 14: Gestionar mujeres históricas}
 
 \begin{table}[H]
@@ -650,6 +661,7 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 15: Gestionar puntos geolocalizados}
 
 \begin{table}[H]
@@ -694,6 +706,7 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 16: Gestionar rutas temáticas}
 
 \begin{table}[H]
@@ -738,6 +751,7 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 17: Consultar lista de usuarios}
 
 \begin{table}[H]
@@ -778,6 +792,7 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 18: Gestionar materiales multimedia}
 
 \begin{table}[H]
@@ -820,6 +835,7 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Caso de uso 19: Consultar métricas de uso}
 
 \begin{table}[H]
@@ -855,7 +871,7 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \hline
 \end{tabular}
 \end{table}
-
+\clearpage
 \subsection{Caso de uso 20: Gestionar áreas de investigación}
 
 \begin{table}[H]
@@ -899,42 +915,50 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \end{table}
 
 
+\clearpage
 \section{Diagramas de Actividad}
 
 Los diagramas de actividad son una herramienta utilizada en el modelado de procesos y flujos de trabajo dentro de un sistema. Permiten representar gráficamente la secuencia de actividades, decisiones y flujos alternativos que pueden ocurrir durante la ejecución de un proceso. Son especialmente útiles para visualizar el comportamiento dinámico de un sistema y entender cómo interactúan los distintos componentes o usuarios.
 
-A continuación se muestran los diagramas de actividad:
+El diagrama de la Figura~\ref{fig:diagrama-actividad-usuario-registrado} muestra, de forma paralela, todas las funcionalidades principales a las que puede acceder un usuario tras iniciar sesión en la aplicación. Cada partición corresponde a una sección clave del menú (mapa interactivo, listado de lugares, rutas temáticas, realidad aumentada y perfil personal) o a las notificaciones de proximidad. En cada bloque se detallan las acciones posibles y las decisiones que puede tomar el usuario.
+
+Este diagrama de actividad (véase la Figura~\ref{fig:diagrama-actividad-administrador}) corresponde al panel de administración. Ilustra los principales procesos y decisiones que puede realizar un administrador tras iniciar sesión en la plataforma web. El flujo se divide en varias particiones, cada una dedicada a una funcionalidad específica: gestión de mujeres históricas, gestión de lugares geolocalizados, gestión de usuarios, gestión de visitas e historial, y gestión de rutas temáticas. En cada sección se muestran las operaciones CRUD (crear, leer, actualizar, eliminar) correspondientes, así como acciones adicionales como el registro de nuevos usuarios, la consulta y eliminación de historiales de visitas y rutas, y el reinicio de visitas en rutas para usuarios concretos.
+
+
+En este diagrama se observan los primeros pasos que sigue un usuario al acceder a la aplicación, pasando por las opciones de registro o inicio de sesión, la validación de datos para llegar a la visualización de la aplicación (véase la Figura~\ref{fig:diagrama-actividad-usuario-no-registrado}).
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{figs/diagrama_actividad_usuario_no_registrado.png}
     \caption{Diagrama de actividad de usuario no registrado}
+    \label{fig:diagrama-actividad-usuario-no-registrado}
 \end{figure}
 
-En este diagrama se observan los primeros pasos que sigue un usuario al acceder a la aplicación, pasando por las opciones de registro o inicio de sesión, la validación de datos para llegar a la visualización de la aplicación.
+\begin{landscape}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1.5\textwidth]{figs/diagrama_actividad_usuario_registrado.png}
+        \caption{Diagrama de actividad de usuario registrado}
+        \label{fig:diagrama-actividad-usuario-registrado}
+    \end{figure}
+\end{landscape}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{figs/diagrama_actividad_usuario_registrado.png}
-    \caption{Diagrama de actividad de usuario registrado}
-\end{figure}
+\begin{landscape}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1.5\textwidth]{figs/diagrama_actividad_administrador.png}
+        \caption{Diagrama de actividad del panel de administración}
+        \label{fig:diagrama-actividad-administrador}
+    \end{figure}
+\end{landscape}
 
-El diagrama anterior muestra, de forma paralela, todas las funcionalidades principales a las que puede acceder un usuario tras iniciar sesión en la aplicación. Cada partición corresponde a una sección clave del menú (mapa interactivo, listado de lugares, rutas temáticas, realidad aumentada y perfil personal) o a las notificaciones de proximidad. En cada bloque se detallan las acciones posibles y las decisiones que puede tomar el usuario.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{figs/diagrama_actividad_administrador.png}
-    \caption{Diagrama de actividad del panel de administración}
-\end{figure}
-
-Este diagrama de actividad corresponde al panel de administración. Ilustra los principales procesos y decisiones que puede realizar un administrador tras iniciar sesión en la plataforma web. El flujo se divide en varias particiones, cada una dedicada a una funcionalidad específica: gestión de mujeres históricas, gestión de lugares geolocalizados, gestión de usuarios, gestión de visitas e historial, y gestión de rutas temáticas. En cada sección se muestran las operaciones CRUD (crear, leer, actualizar, eliminar) correspondientes, así como acciones adicionales como el registro de nuevos usuarios, la consulta y eliminación de historiales de visitas y rutas, y el reinicio de visitas en rutas para usuarios concretos.
 
 \section{Diagramas de Estado}
 Los diagramas de estado son una herramienta fundamental en el modelado de sistemas software, especialmente útil para describir el comportamiento dinámico de un objeto o componente a lo largo de su ciclo de vida. Un diagrama de estado representa los diferentes estados que puede adoptar un elemento del sistema y las transiciones entre ellos, que se producen como respuesta a eventos o acciones. Estos diagramas permiten visualizar de manera clara cómo reacciona el sistema ante distintas situaciones, facilitando la comprensión y el diseño de su lógica interna.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{figs/estado_usuario_no_registrado.png}
+    \includegraphics[width=0.85\textwidth]{figs/estado_usuario_no_registrado.png}
     \caption{Diagrama de estado de usuario no registrado}
 \end{figure}
 

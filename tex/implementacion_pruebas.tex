@@ -587,3 +587,365 @@ Esta solución es suficiente para lo que necesita la aplicación ahora mismo: pe
 \end{itemize}
 
 En una posible evolución, si en algún momento se necesitan consultas espaciales más avanzadas o funcionalidades GIS (por ejemplo, búsquedas por proximidad o rutas optimizadas), se podría migrar a campos GIS y aprovechar tanto PostGIS como \mbox{\texttt{djangorestframework-gis}} sin demasiada dificultad.
+\section{Implementación del frontend}
+
+\subsection{Herramientas, frameworks y lenguajes utilizados}
+
+El frontend de la aplicación se ha desarrollado utilizando el framework \textbf{React Native} para asegurar la compatibilidad multiplataforma (Android, iOS y web). Se ha utilizado \textbf{Expo} para simplificar el desarrollo, pruebas y despliegue, así como para acceder a funcionalidades nativas como la cámara, la geolocalización y las notificaciones.
+
+Las principales herramientas y librerías utilizadas son:
+\begin{itemize}
+    \item \textbf{React Native} (v0.79.2)
+    \item \textbf{Expo} (v53.0.9)
+    \item \textbf{React Navigation} para la gestión de la navegación entre pantallas
+    \item \texttt{@react-native-async-storage/async-storage} para almacenamiento local seguro
+    \item \texttt{axios} para peticiones HTTP
+    \item \texttt{expo-location} y \texttt{expo-notifications} para geolocalización y notificaciones push
+    \item \texttt{react-native-maps} para mostrar mapas y marcadores
+    \item \texttt{react-native-vector-icons} para iconografía
+    \item \texttt{expo-camera} para escaneo de QR en rutas
+    \item \texttt{@react-native-picker/picker} para selectores personalizados
+\end{itemize}
+
+\subsection{Estructura del proyecto y organización del código}
+
+El código fuente del frontend se encuentra en la carpeta \texttt{donam-mon-frontend/my-app/}, que contiene los componentes, utilidades, estilos y recursos gráficos. La estructura principal es la siguiente:
+
+\begin{lstlisting}[language=bash, caption={Estructura principal del frontend}]
+my-app/
+    App.js
+    apiConfig.js
+    index.js
+    assets/
+        # Imágenes y recursos gráficos
+        ...
+    Donammon/
+        Main.js
+        Mapa.js
+        Mujeres.js
+        PerfilUsuario.js
+        Detail.js
+        RutaDetail.js
+        HistorialLugares.js
+        HistorialRutas.js
+        NotificacionProximidad.js
+        AR.js
+        Filtros.js
+        FiltrosContext.js
+        Login.js
+        Register.js
+        Welcome.js
+        NavigationApp.js
+        Rutas.js
+        ...
+    styles/
+        styles.js
+        styles-detail.js
+        styles-filtros.js
+        styles-perfil.js
+        ...
+\end{lstlisting}
+
+\texttt{App.js}: Punto de entrada principal, configura el proveedor de filtros y la navegación.
+
+\texttt{Donammon/}: Carpeta principal de componentes de pantalla y utilidades.
+
+\texttt{assets/}: Imágenes y recursos gráficos usados en la interfaz.
+
+\subsection{Navegación y estructura de pantallas}
+
+La navegación principal se gestiona mediante un \textbf{Bottom Tab Navigator} definido en \texttt{Main.js}, que organiza la aplicación en pestañas: Mapa, Mujeres, Rutas, Realidad Aumentada (RA) y Perfil.
+
+\begin{lstlisting}[language=, caption={Definición de pestañas en Main.js}]
+<Tab.Navigator
+    screenOptions={{
+        tabBarActiveTintColor: '#5f68c4',
+        tabBarInactiveTintColor: '#000000',
+        tabBarStyle: { backgroundColor: '#edebff' },
+    }}
+>
+    <Tab.Screen 
+        name="Mapa" 
+        component={Mapa} 
+        initialParams={route.params} 
+        options={{ 
+            headerShown: false,
+            tabBarIcon: ({ color, size }) => (
+                <Image source={require('../assets/mapa.png')} />
+            ),
+        }} 
+    />
+    <Tab.Screen name="Mujeres" component={MujeresCombinadas} ... />
+    <Tab.Screen name="Rutas" component={Rutas} ... />
+    <Tab.Screen name="RA" component={AR} ... />
+    <Tab.Screen name="Perfil" component={PerfilUsuario} ... />
+</Tab.Navigator>
+\end{lstlisting}
+
+Cada pantalla principal se implementa como un componente independiente, facilitando la escalabilidad y el mantenimiento.
+
+Además, la navegación global de la app se gestiona mediante un \textbf{Stack Navigator} definido en \texttt{NavigationApp.js}, que permite acceder a pantallas como el login, registro, detalle de lugar, historial de visitas o filtros, además de la pantalla principal con pestañas. El componente \texttt{App.js} monta el contexto global de filtros y notificaciones, y envuelve toda la navegación de la aplicación.
+\subsection{Gestión de usuarios y autenticación}
+
+La autenticación de usuarios se realiza mediante peticiones a la API del backend. El login y el registro almacenan el token de autenticación en \texttt{AsyncStorage} para su uso en futuras peticiones.
+
+\begin{lstlisting}[language=, caption={Ejemplo de login en Login.js}]
+const validateLogin = async () => {
+    try {
+        const response = await fetch('http://192.168.1.44:8000/api/api-token-auth/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username, password }),
+        });
+        if (response.ok) {
+            const data = await response.json();
+            await AsyncStorage.setItem('token', data.token);
+            navigation.navigate('Main');
+        } else {
+            Alert.alert('Error', 'Usuario o contraseña incorrectos');
+        }
+    } catch (error) {
+        Alert.alert('Error', 'No se pudo conectar con el servidor');
+    }
+};
+\end{lstlisting}
+
+El perfil de usuario permite cambiar el nombre de usuario y cerrar sesión, eliminando el token almacenado.
+
+\subsection{Visualización de mujeres y lugares}
+
+La pantalla \texttt{Mujeres.js} muestra una lista de lugares destacados asociados a mujeres relevantes, permitiendo filtrar por área, visitados y búsqueda por nombre.
+
+\begin{lstlisting}[language=, caption={Filtrado y renderizado de lugares}]
+const filteredLugares = allLugares
+    .filter(lugar => selectedSection === 'Todas' || lugar.area === selectedSection)
+    .filter(lugar => selectedVisited === 'Todas' || (selectedVisited === 'Visitadas' ? lugar.visited : !lugar.visited))
+    .filter(lugar => !searchTerm || lugar.nombre.toLowerCase().includes(searchTerm.toLowerCase()));
+\end{lstlisting}
+
+Cada tarjeta de lugar muestra la imagen, nombre, área, distancia y estado de visita, y permite acceder al detalle.
+
+\subsection{Detalle de lugar y gestión de visitas}
+
+La pantalla \texttt{Detail.js} muestra la información completa de un lugar, incluyendo la mujer asociada, descripción, dirección, fechas, imagen y estado de visita. Permite marcar el lugar como visitado o no visitado, sincronizando el estado con el backend mediante una petición HTTP autenticada. Además, la pantalla ofrece funcionalidades avanzadas para mejorar la experiencia del usuario:
+
+\begin{itemize}
+    \item \textbf{Compartir información del lugar:} El usuario puede compartir el lugar y su imagen a través de las opciones nativas del dispositivo. Se genera un mensaje con los datos relevantes y, si existe, se adjunta la imagen descargada temporalmente.
+    \item \textbf{Visualización de imágenes ampliadas:} Al pulsar sobre la imagen de la mujer o del lugar, se muestra la imagen en grande en un modal.
+    \item \textbf{Visualización de información enriquecida:} Se muestran áreas de investigación como chips, fechas, ámbito, descripción, dirección, un mapa con la localización exacta y la distancia al usuario.
+\end{itemize}
+
+A continuación se muestra un ejemplo de la función para marcar un lugar como visitado o no visitado:
+
+\begin{lstlisting}[language=, caption={Marcar como visitado}]
+const toggleVisited = async () => {
+    const updatedLugar = { ...lugar, visited: !lugar.visited };
+    navigation.setParams({ lugar: updatedLugar });
+    const token = await AsyncStorage.getItem('token');
+    if (!token) return;
+    if (!lugar.visited) {
+        // Marcar como visitado
+        try {
+            const response = await fetch('http://192.168.1.44:8000/api/visit-lugar/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Authorization': `Token ${token}` },
+                body: JSON.stringify({ lugar_id: lugar.id }),
+            });
+            const data = await response.json().catch(() => ({}));
+            if (!response.ok) {
+                throw new Error(`Error ${response.status}: ${JSON.stringify(data)}`);
+            }
+        } catch (error) {
+            console.error('Error registrando visita:', error);
+        }
+    } else {
+        // Marcar como no visitado (eliminar del historial)
+        try {
+            await fetch('http://192.168.1.44:8000/api/visited-lugares/', {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json', 'Authorization': `Token ${token}` },
+                body: JSON.stringify({ lugar_id: lugar.id }),
+            });
+        } catch (error) {
+            console.error('Error eliminando visita:', error);
+        }
+    }
+};
+\end{lstlisting}
+
+Y la función para compartir la información del lugar:
+
+\begin{lstlisting}[language=, caption={Función para compartir la información del lugar}]
+const compartirLugar = async () => {
+    try {
+        let message = "Echa un vistazo a este lugar de la aplicación Dona'm Món!\n\n";
+        message += `Nombre del lugar: ${lugar.nombre}\n`;
+        if (lugar.mujer_nombre) message += `Mujer destacada: ${lugar.mujer_nombre}\n`;
+        if (lugar.mujer_descripcion) message += `Sobre ella: ${lugar.mujer_descripcion}\n`;
+        if (lugar.direccion) message += `Dirección: ${lugar.direccion}\n`;
+        if (lugar.descripcion) message += `Descripción: ${lugar.descripcion}\n`;
+        let options = { message };
+        if (lugar.foto) {
+            // Descargar la imagen a un archivo temporal
+            const fileUri = FileSystem.cacheDirectory + 'lugar.jpg';
+            const downloadRes = await FileSystem.downloadAsync(lugar.foto, fileUri);
+            if (downloadRes.status === 200) {
+                options = { ...options, url: downloadRes.uri };
+            }
+        }
+        await Share.share(options);
+    } catch (error) {
+        console.error('Error al compartir el lugar:', error);
+    }
+};
+\end{lstlisting}
+
+
+\subsection{Mapas y geolocalización}
+
+La pantalla \texttt{Mapa.js} utiliza \texttt{react-native-maps} para mostrar todos los lugares en un mapa, con iconos personalizados y colores según el estado de visita. Permite filtrar lugares y ver detalles al pulsar sobre un marcador.
+
+\begin{lstlisting}[language=, caption={Marcadores en el mapa}]
+<MapView>
+    {filteredLugares.map(lugar => (
+        <Marker
+            key={lugar.id}
+            coordinate={{ latitude: lugar.latitud, longitude: lugar.longitud }}
+            pinColor={lugar.visited ? '#43a047' : '#5f68c4'}
+        >
+            <Callout>
+                <Text>{lugar.nombre}</Text>
+                <Text>{lugar.mujer_nombre}</Text>
+            </Callout>
+        </Marker>
+    ))}
+</MapView>
+\end{lstlisting}
+
+La ubicación del usuario se obtiene con \texttt{expo-location}, permitiendo calcular distancias y mostrar solo lugares cercanos si se desea.
+
+\subsection{Gestión de rutas temáticas}
+
+La pantalla \texttt{Rutas.js} y \texttt{RutaDetail.js} permiten visualizar rutas temáticas, ver los lugares que las componen y marcar cada lugar como visitado mediante escaneo de QR. El progreso de la ruta se muestra visualmente y se puede reiniciar la ruta si se desea.
+
+\begin{lstlisting}[language=, caption={Escaneo de QR y registro de visita}]
+const handleBarcodeScanned = async ({ data }) => {
+    const lugar = ruta.lugares.find(l => l.nombre.toLowerCase() === data.toLowerCase());
+    if (lugar) {
+        await fetch('http://192.168.1.44:8000/api/visit-lugar-ruta/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Authorization': `Token ${token}` },
+            body: JSON.stringify({ ruta_id: ruta.id, lugar_id: lugar.id }),
+        });
+        setScanMsg('Lugar de ruta marcado como visitado!');
+        await fetchVisitedRuta();
+    } else {
+        setScanMsg('QR no corresponde a ningun lugar de la ruta.');
+    }
+};
+\end{lstlisting}
+
+\subsection{Historial de lugares y rutas visitadas}
+
+Las pantallas \texttt{HistorialLugares.js} y \texttt{HistorialRutas.js} muestran el historial de lugares y rutas visitadas por el usuario, permitiendo borrar el historial si se desea.
+
+\begin{lstlisting}[language=, caption={Borrado de historial de rutas}]
+const handleClearHistory = async () => {
+    const token = await AsyncStorage.getItem('token');
+    for (const ruta of rutasCompletadas) {
+        await fetch(`http://192.168.1.44:8000/api/visited-lugares-ruta/?ruta_id=${ruta.id}`, {
+            method: 'DELETE',
+            headers: { 'Authorization': `Token ${token}` },
+        });
+    }
+    setRutasCompletadas([]);
+    Alert.alert('Éxito', 'Historial de rutas completadas borrado.');
+};
+\end{lstlisting}
+
+\subsection{Notificaciones y proximidad}
+
+La app utiliza \texttt{expo-notifications} y \texttt{expo-location} para enviar notificaciones cuando el usuario se acerca a un lugar destacado. El componente \texttt{NotificacionProximidad.js} gestiona esta lógica, comprobando la distancia a los lugares y mostrando alertas contextuales.
+
+\begin{lstlisting}[language=, caption={Notificación de proximidad}]
+if (dist !== null && dist <= 3 && !notifiedIds.current.has(lugar.id)) {
+    await Notifications.scheduleNotificationAsync({
+        content: {
+            title: 'Estas cerca de un lugar destacado!',
+            body: `Te encuentras a ${dist.toFixed(2)} km de ${lugar.nombre} (${lugar.mujer_nombre})`,
+        },
+        trigger: null,
+    });
+    notifiedIds.current.add(lugar.id);
+}
+\end{lstlisting}
+
+\subsection{Realidad aumentada}
+
+La pantalla \texttt{AR.js} permite acceder a experiencias de realidad aumentada asociadas a ciertos lugares, abriendo el visor web correspondiente si el usuario está cerca del lugar.
+
+\begin{lstlisting}[language=, caption={Acceso a AR}]
+if (distance <= 3) {
+    openURL(lugar.ar_url);
+}
+\end{lstlisting}
+
+\subsection{Gestión de estilos y diseño}
+
+Los estilos se gestionan en archivos como \texttt{styles.js} y \texttt{styles-perfil.js}, utilizando \texttt{StyleSheet} de React Native para mantener la coherencia visual y facilitar la personalización.
+
+\begin{lstlisting}[language=, caption={Ejemplo de estilos en styles.js}]
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#f9efe8',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    filterButton: {
+        backgroundColor: '#7196e4',
+        paddingVertical: 0,
+        paddingHorizontal: 30,
+        borderRadius: 10,
+        marginTop: 23,
+        alignSelf: 'center',
+        width: width + 20,
+        height: 39,
+        alignItems: 'center',
+    },
+    // otros estilos...
+});
+\end{lstlisting}
+
+\subsection{Gestión de almacenamiento local}
+
+Se utiliza \texttt{AsyncStorage} para guardar el token de usuario, preferencias y otros datos persistentes, asegurando que la sesión se mantenga entre reinicios de la app.
+
+\begin{lstlisting}[language=, caption={Uso de AsyncStorage}]
+await AsyncStorage.setItem('token', data.token);
+const token = await AsyncStorage.getItem('token');
+\end{lstlisting}
+
+\subsection{Integración con la API y manejo de errores}
+
+Todas las peticiones a la API del backend se realizan mediante \texttt{fetch} o \texttt{axios}, gestionando los errores y mostrando mensajes claros al usuario en caso de fallo.
+
+\begin{lstlisting}[language=, caption={Manejo de errores en peticiones}]
+try {
+    const response = await fetch('http://192.168.1.44:8000/api/visited-lugares/', { /* ... */ });
+    if (!response.ok) throw new Error('Error al cargar lugares visitados');
+    const data = await response.json();
+    setVisitedCount(data.length);
+} catch (error) {
+    Alert.alert('Error', 'No se pudo cargar el historial');
+}
+\end{lstlisting}
+
+\subsection{Pruebas y depuración}
+
+Durante el desarrollo, se han utilizado logs en consola y mensajes de alerta para depurar la lógica de la app y asegurar el correcto funcionamiento de todas las funcionalidades.
+
+\begin{lstlisting}[language=, caption={Ejemplo de logs y alertas}]
+console.log('Detalle lugar:', lugar);
+Alert.alert('Éxito', 'Nombre de usuario actualizado');
+\end{lstlisting}

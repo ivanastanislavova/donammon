@@ -200,25 +200,27 @@ Una vez definidos los requisitos funcionales del sistema, es posible descomponer
 
 \section{Ciclo de vida del software}
 
-Para llevar a cabo el desarrollo del proyecto \textbf{DONA'm M\'ON}, se ha adoptado el \textbf{modelo incremental}, una estrategia que permite construir el software en entregas funcionales sucesivas. Cada uno de estos incrementos representa un subconjunto del sistema completo que puede desarrollarse, evaluarse y refinarse de forma independiente, favoreciendo una mejora continua y una respuesta ágil ante cambios.
+Para el desarrollo del proyecto \textbf{DONA'm MÓN}, se ha adoptado el \textbf{modelo de desarrollo en cascada}, una metodología secuencial en la que cada fase del ciclo de vida del software debe completarse completamente antes de pasar a la siguiente. Este enfoque estructurado es especialmente útil en proyectos en los que los requisitos están claramente definidos desde el inicio, como es el caso de esta aplicación, cuya funcionalidad ha sido minuciosamente detallada y delimitada en la fase de análisis.
 
-\subsection*{Ventajas del modelo incremental con prototipos}
+\subsection*{Ventajas del modelo en cascada}
 \begin{itemize}
-    \item \textbf{Adaptabilidad:} permite integrar cambios o mejoras frecuentes sin rehacer el sistema completo.
-    \item \textbf{Validación progresiva:} permite obtener retroalimentación temprana y recurrente tras cada incremento funcional.
-    \item \textbf{Reducción de riesgos:} al trabajar sobre versiones funcionales, se detectan errores antes de que escalen.
-    \item \textbf{Mejora continua:} la calidad del producto se incrementa con cada iteración, sin necesidad de esperar al final para realizar pruebas.
+\item \textbf{Claridad y estructura:} permite dividir el proyecto en fases bien diferenciadas, con objetivos y entregables específicos en cada una.
+\item \textbf{Planificación precisa:} facilita la estimación de tiempos y recursos al establecer un flujo lineal de trabajo sin iteraciones constantes.
+\item \textbf{Documentación completa:} promueve una elaboración detallada de documentación desde las primeras etapas del proyecto.
+\item \textbf{Control de calidad:} permite realizar revisiones sistemáticas al finalizar cada fase, asegurando la solidez del sistema antes de avanzar.
 \end{itemize}
 
 \subsection*{Justificación de su elección}
-El proyecto consiste en una aplicación educativa con módulos interdependientes como realidad aumentada, geolocalización y escaneo QR. Estas funcionalidades requieren una validación continua y pueden experimentar ajustes según el diseño, pruebas con usuarios o cambios técnicos. Por ello, el modelo incremental permite desarrollar cada componente por separado, verificar su funcionamiento de forma aislada y luego integrarlo, asegurando una base estable en todo momento.
+El modelo en cascada ha resultado adecuado para este proyecto debido a la existencia de una base de requisitos bien definidos y una visión clara de las funcionalidades esperadas desde el principio. La aplicación combina tecnologías como geolocalización, escaneo de códigos QR y realidad aumentada, pero todas estas funcionalidades están organizadas en módulos claramente separados, lo que ha permitido planificar su desarrollo de forma lineal. Además, el hecho de que el proyecto haya sido desarrollado por una sola persona favorece un enfoque ordenado y controlado, minimizando el riesgo de desviaciones.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{figs/modelo_incremental.png}
-    \caption{Representación del modelo incremental.}
-    \label{fig:modelo-incremental}
+\centering
+\includegraphics[width=0.9\textwidth]{figs/modelo_cascada.jpg}
+\caption{Representación del modelo de desarrollo en cascada.}
+\label{fig:modelo-cascada}
 \end{figure}
+
+
 
 \section{Planificaci\'on temporal}
 \subsection{Descomposición de tareas por fases}
@@ -294,6 +296,7 @@ La planificación se ha dividido en siete bloques principales: \textbf{Inicio, E
   \item Revisión completa, maquetación y anexos finales
 \end{itemize}
 
+\clearpage
 \subsection{Estimación temporal}
 La técnica de estimación utilizada es la media beta de probabilidad. Para cada tarea se ha asignado un tiempo optimista (TO), pesimista (TP) y más probable (TM), y se ha calculado la duración estimada (TE) con la siguiente fórmula:
 
@@ -350,14 +353,7 @@ Revisión y entrega final & 2 & 4 & 3 & 3.00 \\
 
 \subsection{Diagrama de Gantt}
 
-Para representar la planificación temporal del proyecto de forma visual, se ha elaborado un diagrama de Gantt utilizando \texttt{Microsoft Project}, teniendo en cuenta las dependencias y la posibilidad de solapar tareas como la documentación progresiva.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth,height=0.95\textheight,keepaspectratio]{figs/gantt.jpg}
-    \caption{Diagrama de Gantt detallado del proyecto.}
-    \label{fig:gantt}
-\end{figure} 
+Para representar la planificación temporal del proyecto de forma visual, se ha elaborado un diagrama de Gantt  (véase la Figura~\ref{fig:gantt}) utilizando \texttt{Microsoft Project}, teniendo en cuenta las dependencias y la posibilidad de solapar tareas como la documentación progresiva.
 
 A pesar de que la estimación por tres valores del proyecto arroja una duración total de aproximadamente \textbf{100 días} (equivalente a \textbf{800 horas}), el desarrollo real se ha planificado a lo largo de \textbf{80 días laborables} (como puede observarse en el diagrama de Gantt), lo que supone un total de \textbf{640 horas efectivas} de trabajo, distribuidas en jornadas de \textbf{8 horas al día}.
 
@@ -369,6 +365,14 @@ Cabe destacar que:
 \end{itemize}
 
 La fecha de inicio del proyecto fue el \textbf{3 de marzo de 2025}, y la fecha de finalización fue el \textbf{20 de junio de 2025}. El proyecto ha sido planificado y ejecutado con el objetivo de ser presentado en la \textbf{primera convocatoria}.
+\clearpage
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.95\textheight,keepaspectratio]{figs/gantt.jpg}
+    \caption{Diagrama de Gantt detallado del proyecto.}
+    \label{fig:gantt}
+\end{figure} 
+
 \section{Estimación de costes}
 
 La estimación económica del proyecto se ha realizado distinguiendo entre:
