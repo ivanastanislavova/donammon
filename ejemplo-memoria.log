@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  26 JUN 2025 21:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  6 JUL 2025 13:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -742,28 +742,28 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `ejemplo-memoria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Info: Redefining \. on input line 71.
+LaTeX Info: Redefining \% on input line 71.
 \c@lstlisting=\count368
-Package hyperref Info: Link coloring ON on input line 65.
+Package hyperref Info: Link coloring ON on input line 71.
  (ejemplo-memoria.out) (ejemplo-memoria.out)
 \@outlinefile=\write4
 \openout4 = `ejemplo-memoria.out'.
@@ -826,20 +826,20 @@ Package caption Info: End \AtBeginDocument code.
 <figs/etse_titulo.png, id=626, 374.39874pt x 64.24pt>
 File: figs/etse_titulo.png Graphic file (type png)
 <use figs/etse_titulo.png>
-Package pdftex.def Info: figs/etse_titulo.png  used on input line 68.
+Package pdftex.def Info: figs/etse_titulo.png  used on input line 74.
 (pdftex.def)             Requested size: 250.38562pt x 42.96214pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
 (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
  (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <figs/escudo_logo_UV_narrow.png, id=627, 602.25pt x 782.925pt>
 File: figs/escudo_logo_UV_narrow.png Graphic file (type png)
 <use figs/escudo_logo_UV_narrow.png>
-Package pdftex.def Info: figs/escudo_logo_UV_narrow.png  used on input line 68.
+Package pdftex.def Info: figs/escudo_logo_UV_narrow.png  used on input line 74.
 (pdftex.def)             Requested size: 182.09485pt x 236.71907pt.
 
 
@@ -853,7 +853,7 @@ Package pdftex.def Info: figs/escudo_logo_UV_narrow.png  used on input line 68.
 <figs/logo-contraportada.png, id=641, 722.7pt x 100.375pt>
 File: figs/logo-contraportada.png Graphic file (type png)
 <use figs/logo-contraportada.png>
-Package pdftex.def Info: figs/logo-contraportada.png  used on input line 70.
+Package pdftex.def Info: figs/logo-contraportada.png  used on input line 76.
 (pdftex.def)             Requested size: 455.24408pt x 63.22891pt.
 
 
@@ -964,52 +964,17 @@ LaTeX Warning: Citation `nguyen2018' on page 28 undefined on input line 42.
 
 
 [28 <./figs/evolucion_moviles.jpg>]
-Overfull \hbox (15.43095pt too wide) in paragraph at lines 79--79
-[]|\T1/cmr/m/n/12 Experiencia
- []
-
-
-Overfull \hbox (5.15013pt too wide) in paragraph at lines 79--79
-[]|\T1/cmr/m/n/12 Velocidad
- []
-
-
-Overfull \hbox (6.13327pt too wide) in paragraph at lines 79--79
-[]|\T1/cmr/m/n/12 Seguridad| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
-[]|\T1/cmr/m/n/12 App
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
-[]|\T1/cmr/m/n/12 Función
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
-[]|\T1/cmr/m/n/12 Tiempo
- []
-
-
-Overfull \hbox (32.56015pt too wide) in paragraph at lines 79--79
-[]|\T1/cmr/m/n/12 Mantenimiento| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
-\T1/cmr/m/n/12 De-sa-rro-
+Overfull \hbox (9.04501pt too wide) in paragraph at lines 58--70
+ [][] 
  []
 
 
 
 [29]
-<figs/Sword-of-Damocles.png, id=960, 236.5638pt x 172.9662pt>
+<figs/Sword-of-Damocles.png, id=962, 236.5638pt x 172.9662pt>
 File: figs/Sword-of-Damocles.png Graphic file (type png)
 <use figs/Sword-of-Damocles.png>
-Package pdftex.def Info: figs/Sword-of-Damocles.png  used on input line 106.
+Package pdftex.def Info: figs/Sword-of-Damocles.png  used on input line 97.
 (pdftex.def)             Requested size: 227.62206pt x 166.42834pt.
 
 
@@ -1017,12 +982,12 @@ Package pdftex.def Info: figs/Sword-of-Damocles.png  used on input line 106.
 <figs/karma.jpg, id=974, 1188.44pt x 786.94pt>
 File: figs/karma.jpg Graphic file (type jpg)
 <use figs/karma.jpg>
-Package pdftex.def Info: figs/karma.jpg  used on input line 118.
+Package pdftex.def Info: figs/karma.jpg  used on input line 109.
 (pdftex.def)             Requested size: 273.14923pt x 180.87231pt.
 <figs/artoolkit.jpg, id=977, 213.79875pt x 301.125pt>
 File: figs/artoolkit.jpg Graphic file (type jpg)
 <use figs/artoolkit.jpg>
-Package pdftex.def Info: figs/artoolkit.jpg  used on input line 131.
+Package pdftex.def Info: figs/artoolkit.jpg  used on input line 122.
 (pdftex.def)             Requested size: 136.57462pt x 192.35634pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1033,7 +998,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <figs/hololens.jpg, id=997, 519.44063pt x 292.09125pt>
 File: figs/hololens.jpg Graphic file (type jpg)
 <use figs/hololens.jpg>
-Package pdftex.def Info: figs/hololens.jpg  used on input line 152.
+Package pdftex.def Info: figs/hololens.jpg  used on input line 143.
 (pdftex.def)             Requested size: 273.14923pt x 153.59532pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1043,7 +1008,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [32 <./figs/artoolkit.jpg>]
 
 [33 <./figs/hololens.jpg>]
-Overfull \hbox (21.29373pt too wide) in paragraph at lines 178--179
+Overfull \hbox (21.29373pt too wide) in paragraph at lines 169--170
 []\T1/cmr/m/n/12 Otra mu-jer fun-da-men-tal en la his-to-ria re-cien-te de Va-len-cia es Car-men Al-borch (1947^^U2018).
  []
 
@@ -1053,7 +1018,7 @@ Overfull \hbox (21.29373pt too wide) in paragraph at lines 178--179
 <figs/mapa.png, id=1044, 1445.4pt x 813.0375pt>
 File: figs/mapa.png Graphic file (type png)
 <use figs/mapa.png>
-Package pdftex.def Info: figs/mapa.png  used on input line 192.
+Package pdftex.def Info: figs/mapa.png  used on input line 183.
 (pdftex.def)             Requested size: 455.24411pt x 256.07095pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1064,12 +1029,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <figs/pokemon_go.jpg, id=1053, 803.0pt x 451.6875pt>
 File: figs/pokemon_go.jpg Graphic file (type jpg)
 <use figs/pokemon_go.jpg>
-Package pdftex.def Info: figs/pokemon_go.jpg  used on input line 210.
+Package pdftex.def Info: figs/pokemon_go.jpg  used on input line 201.
 (pdftex.def)             Requested size: 227.62206pt x 128.03615pt.
 <figs/streetmuseum.png, id=1054, 369.38pt x 246.42062pt>
 File: figs/streetmuseum.png Graphic file (type png)
 <use figs/streetmuseum.png>
-Package pdftex.def Info: figs/streetmuseum.png  used on input line 221.
+Package pdftex.def Info: figs/streetmuseum.png  used on input line 212.
 (pdftex.def)             Requested size: 227.62206pt x 151.85045pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1080,12 +1045,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <figs/cultuar.jpeg, id=1060, 702.625pt x 421.575pt>
 File: figs/cultuar.jpeg Graphic file (type jpg)
 <use figs/cultuar.jpeg>
-Package pdftex.def Info: figs/cultuar.jpeg  used on input line 232.
+Package pdftex.def Info: figs/cultuar.jpeg  used on input line 223.
 (pdftex.def)             Requested size: 227.62206pt x 136.57281pt.
 <figs/history-pin.png, id=1061, 805.0075pt x 516.93124pt>
 File: figs/history-pin.png Graphic file (type png)
 <use figs/history-pin.png>
-Package pdftex.def Info: figs/history-pin.png  used on input line 243.
+Package pdftex.def Info: figs/history-pin.png  used on input line 234.
 (pdftex.def)             Requested size: 227.62206pt x 146.15955pt.
 
 
@@ -1108,7 +1073,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [42]
 
 [43]
-Overfull \hbox (13.93388pt too wide) in paragraph at lines 382--394
+Overfull \hbox (13.93388pt too wide) in paragraph at lines 373--385
  [][] 
  []
 
@@ -1832,15 +1797,15 @@ Package rerunfilecheck Info: File `ejemplo-memoria.out' has not changed.
 (rerunfilecheck)             Checksum: E209AF2ED5AD82237B1DE4A7D9AA1671;45162.
  ) 
 Here is how much of TeX's memory you used:
- 31757 strings out of 473523
- 592278 string characters out of 5714631
- 1483048 words of memory out of 5000000
- 53386 multiletter control sequences out of 15000+600000
+ 31759 strings out of 473523
+ 592314 string characters out of 5714631
+ 1483132 words of memory out of 5000000
+ 53388 multiletter control sequences out of 15000+600000
  587061 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,105p,2013b,2141s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,105p,2013b,2141s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecit1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2074.pk><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on ejemplo-memoria.pdf (144 pages, 8015717 bytes).
+Output written on ejemplo-memoria.pdf (144 pages, 8015404 bytes).
 PDF statistics:
  3561 PDF objects out of 3580 (max. 8388607)
  1040 named destinations out of 1200 (max. 500000)

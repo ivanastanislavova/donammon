@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex ejemplo-memoria"] 1750965367.38407 "ejemplo-memoria.aux" "ejemplo-memoria.bbl" "ejemplo-memoria" 1750965376.57415 0
+["bibtex ejemplo-memoria"] 1751454378.45968 "ejemplo-memoria.aux" "ejemplo-memoria.bbl" "ejemplo-memoria" 1751802113.06478 0
   "./bib/bibliografia.bib" 1750963596 15507 a5bda8777a11f6ddd4d35067b5924ba0 ""
   "C:/Users/isiva/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/unsrt.bst" 1291864736 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "ejemplo-memoria.aux" 1750965374 52420 006fb89178bd437d54781e167b251de1 "pdflatex"
+  "ejemplo-memoria.aux" 1751802111 52543 88939636d88485c43b24ccab6c00158c "pdflatex"
   (generated)
   "ejemplo-memoria.bbl"
   "ejemplo-memoria.blg"
   (rewritten before read)
-["pdflatex"] 1750965368.09911 "c:/Users/isiva/Documents/donammon/ejemplo-memoria.tex" "ejemplo-memoria.pdf" "ejemplo-memoria" 1750965376.57634 0
+["pdflatex"] 1751802106.67995 "c:/Users/isiva/Documents/donammon/ejemplo-memoria.tex" "ejemplo-memoria.pdf" "ejemplo-memoria" 1751802113.06583 0
   "C:/Users/isiva/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1750158367 81107 70b8516c68c2e617189c5e44bfd16b96 ""
   "C:/Users/isiva/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1749639281 28976 195d39d36c4aa803e4dcc1d201481942 ""
   "C:/Users/isiva/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1744046804 31952 ea233e1498e7ecc86b9928e6e6f5c3fb ""
@@ -258,12 +258,12 @@
   "C:/Users/isiva/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1730400552 7243 e5dac1240636811edb77568b81818372 ""
   "C:/Users/isiva/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/isiva/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/isiva/Documents/donammon/ejemplo-memoria.tex" 1750340782 3510 a9756c63f4baf213cd66a0e4bdd46e35 ""
-  "ejemplo-memoria.aux" 1750965374 52420 006fb89178bd437d54781e167b251de1 "pdflatex"
-  "ejemplo-memoria.bbl" 1750965367 11671 f2db75747f6641cf4ab9d3ebca8a0b70 "bibtex ejemplo-memoria"
-  "ejemplo-memoria.out" 1750965374 45162 e209af2ed5ad82237b1de4a7d9aa1671 "pdflatex"
-  "ejemplo-memoria.tex" 1750340782 3510 a9756c63f4baf213cd66a0e4bdd46e35 ""
-  "ejemplo-memoria.toc" 1750965374 17151 feedfedcc7f11211181d5d84f280d988 "pdflatex"
+  "c:/Users/isiva/Documents/donammon/ejemplo-memoria.tex" 1751454294 3669 3bd69df1f5ab50db41a7576a0e2a5f9e ""
+  "ejemplo-memoria.aux" 1751802111 52543 88939636d88485c43b24ccab6c00158c "pdflatex"
+  "ejemplo-memoria.bbl" 1751454378 11671 f2db75747f6641cf4ab9d3ebca8a0b70 "bibtex ejemplo-memoria"
+  "ejemplo-memoria.out" 1751802111 45162 e209af2ed5ad82237b1de4a7d9aa1671 "pdflatex"
+  "ejemplo-memoria.tex" 1751454294 3669 3bd69df1f5ab50db41a7576a0e2a5f9e ""
+  "ejemplo-memoria.toc" 1751802111 17151 feedfedcc7f11211181d5d84f280d988 "pdflatex"
   "figs/Sword-of-Damocles.png" 1749553520 213012 a61a663bbe390dc6c503b06452a99bbf ""
   "figs/artoolkit.jpg" 1749553520 11609 6972ec60384242ee13a76a10bc441c7f ""
   "figs/back.jpg" 1750942156 27819 adc372bae66da5c24495511f4fea646b ""
@@ -317,7 +317,7 @@
   "tex/apendice.tex" 1749553520 2773 1bc234ba14382ed6a0b7338b63f46d86 ""
   "tex/conclusiones.tex" 1749553520 1139 72dbeb6260524c91492193eb06739b0b ""
   "tex/diseno.tex" 1750960935 16782 b7c0ce3f09ad03a74377511a64356a49 ""
-  "tex/estado_arte.tex" 1750937907 52607 4d23eef735e15a0b9cf64a326a7c9847 ""
+  "tex/estado_arte.tex" 1751802104 52735 a62f98a061ad71d531747f6a8da17aae ""
   "tex/implementacion_pruebas.tex" 1750953237 45609 3b395f05eb70c6c79521acb83126afcc ""
   "tex/introduccion.tex" 1750965347 12860 523342d5abb75794fc972bc937be642d ""
   "tex/requisitos.tex" 1750962809 43452 90ff110ade1feed5b5838ba533b3f615 ""
