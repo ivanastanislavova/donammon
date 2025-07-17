@@ -1,5 +1,23 @@
 \begin{thebibliography}{10}
 
+\bibitem{elmasri2017}
+Ramez Elmasri and Shamkant~B. Navathe.
+\newblock {\em Fundamentals of database systems}.
+\newblock Pearson, 7th edition, 2017.
+
+\bibitem{postgresql2024}
+{PostgreSQL Global Development Group}.
+\newblock Postgresql 16 documentation.
+\newblock \url{https://www.postgresql.org/docs/16/}, 2024.
+
+\bibitem{mariadb2023}
+MariaDB Foundation.
+\newblock Mariadb vs mysql, 2023.
+
+\bibitem{mongodb2024}
+Inc. MongoDB.
+\newblock Mongodb manual, 2024.
+
 \bibitem{unesco2021}
 UNESCO.
 \newblock Science report: The race against time for smarter development.
@@ -71,6 +89,11 @@ Statista.
 \bibitem{androidpolice2017}
 AndroidPolice.
 \newblock Android versus ios software updates revisited, 2017.
+
+\bibitem{nguyen2018}
+T.~Nguyen and J.~Smith.
+\newblock Mobile application development trends.
+\newblock {\em International Journal of Computer Science}, 15(3):45--62, 2018.
 
 \bibitem{gartner2022}
 Gartner.
@@ -263,11 +286,6 @@ React Native~Maps Contributors.
 Django~Software Foundation.
 \newblock Django documentation, 2024.
 
-\bibitem{elmasri2017}
-Ramez Elmasri and Shamkant~B. Navathe.
-\newblock {\em Fundamentals of database systems}.
-\newblock Pearson, 7th edition, 2017.
-
 \bibitem{stonebraker2011}
 Michael Stonebraker and Rick Cattell.
 \newblock 10 rules for scalable performance in ‘simple operation’
@@ -278,18 +296,6 @@ Michael Stonebraker and Rick Cattell.
 Antonio~Mele Vincent.
 \newblock {\em Mastering Django: Core}.
 \newblock Independently published, 2020.
-
-\bibitem{oracle2023}
-Oracle Corporation.
-\newblock Mysql 8.0 reference manual, 2023.
-
-\bibitem{mariadb2023}
-MariaDB Foundation.
-\newblock Mariadb vs mysql, 2023.
-
-\bibitem{mongodb2024}
-Inc. MongoDB.
-\newblock Mongodb manual, 2024.
 
 \bibitem{django_sqlite2024}
 Django~Software Foundation.
@@ -353,5 +359,64 @@ Apache~Software Foundation.
   \url{https://www.glassdoor.es/Sueldos/virtual-reality-developer-sueldo-SRCH_KO0,25.htm},
   2025.
 \newblock Consultado el 13 de junio de 2025.
+
+\bibitem{unwomen2023}
+{ONU Mujeres}.
+\newblock El color morado y su relación con el feminismo.
+\newblock
+  \url{https://www.unwomen.org/es/news-stories/explainer/2023/03/el-color-morado-y-su-relacion-con-el-feminismo},
+  2023.
+\newblock ONU Mujeres.
+
+\bibitem{cochrane2013}
+Kira Cochrane.
+\newblock Why purple is the colour of international women's day.
+\newblock
+  \url{https://www.theguardian.com/lifeandstyle/the-womens-blog-with-jane-martinson/2013/mar/08/purple-colour-international-womens-day},
+  2013.
+\newblock The Guardian.
+
+\bibitem{molina2010}
+Ana Molina.
+\newblock Guía práctica de teoría del color para diseño gráfico.
+\newblock
+  \url{https://www.domestika.org/es/blog/1041-teoria-del-color-guia-practica-para-disenadores},
+  2010.
+\newblock Domestika.
+
+\bibitem{eiseman2000}
+Leatrice Eiseman.
+\newblock {\em Colors for Your Every Mood: Discover Your True Decorating
+  Colors}.
+\newblock Capital Books, 2000.
+
+\bibitem{brooke1996}
+John Brooke.
+\newblock Sus: A 'quick and dirty' usability scale.
+\newblock {\em Usability Evaluation in Industry}, pages 189--194, 1996.
+
+\bibitem{apache_jmeter}
+{The Apache Software Foundation}.
+\newblock Apache jmeter, 2025.
+\newblock Accedido: 2025-01-14.
+
+\bibitem{notsoshort}
+Tobias Oetiker.
+\newblock The not so short introduction to latex2e.
+\newblock \url{https://tobi.oetiker.ch/lshort/lshort.pdf}, 2023.
+
+\bibitem{latexcompanion}
+Frank Mittelbach and Michel Goossens.
+\newblock {\em The LaTeX Companion}.
+\newblock Addison-Wesley, 2nd edition, 2004.
+
+\bibitem{einstein}
+Albert Einstein.
+\newblock Zur elektrodynamik bewegter körper, 1905.
+
+\bibitem{knuthwebsite}
+Donald~E. Knuth.
+\newblock The texbook.
+\newblock \url{https://www.ctan.org/pkg/texbook}, 1986.
 
 \end{thebibliography}

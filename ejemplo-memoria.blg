@@ -5,64 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 17 items.
 Database file #1: bib/bibliografia.bib
-Warning--entry type for "glassdoorJefeProyecto" isn't style-file defined
---line 787 of file bib/bibliografia.bib
-Warning--entry type for "glassdoorFrontend" isn't style-file defined
---line 803 of file bib/bibliografia.bib
-Warning--entry type for "glassdoorBackend" isn't style-file defined
---line 819 of file bib/bibliografia.bib
-Warning--entry type for "glassdoorTester" isn't style-file defined
---line 835 of file bib/bibliografia.bib
-Warning--entry type for "glassdoorModelador3D" isn't style-file defined
---line 851 of file bib/bibliografia.bib
-Warning--entry type for "glassdoorDiseñadr" isn't style-file defined
---line 867 of file bib/bibliografia.bib
-Warning--entry type for "glassdoorARDeveloper" isn't style-file defined
---line 883 of file bib/bibliografia.bib
-Warning--I didn't find a database entry for "nguyen2018"
-Warning--I didn't find a database entry for "notsoshort"
-Warning--I didn't find a database entry for "latexcompanion"
-Warning--I didn't find a database entry for "einstein"
-Warning--I didn't find a database entry for "knuthwebsite"
-You've used 61 entries,
+You've used 72 entries,
             1791 wiz_defined-function locations,
-            742 strings with 11709 characters,
-and the built_in function-call counts, 9616 in all, are:
-= -- 836
-> -- 303
-< -- 3
-+ -- 137
-- -- 76
-* -- 281
-:= -- 1445
-add.period$ -- 188
-call.type$ -- 61
-change.case$ -- 54
+            797 strings with 13167 characters,
+and the built_in function-call counts, 11397 in all, are:
+= -- 1002
+> -- 355
+< -- 4
++ -- 161
+- -- 89
+* -- 329
+:= -- 1715
+add.period$ -- 224
+call.type$ -- 72
+change.case$ -- 64
 chr.to.int$ -- 0
-cite$ -- 61
-duplicate$ -- 444
-empty$ -- 1221
-format.name$ -- 76
-if$ -- 2268
+cite$ -- 72
+duplicate$ -- 526
+empty$ -- 1436
+format.name$ -- 89
+if$ -- 2691
 int.to.chr$ -- 0
-int.to.str$ -- 61
-missing$ -- 30
-newline$ -- 313
-num.names$ -- 58
-pop$ -- 345
+int.to.str$ -- 72
+missing$ -- 36
+newline$ -- 371
+num.names$ -- 69
+pop$ -- 405
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 230
+skip$ -- 272
 stack$ -- 0
-substring$ -- 252
-swap$ -- 92
-text.length$ -- 3
+substring$ -- 303
+swap$ -- 112
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 83
-width$ -- 63
-write$ -- 631
-(There were 12 warnings)
+while$ -- 99
+width$ -- 74
+write$ -- 750

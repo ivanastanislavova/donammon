@@ -3,17 +3,162 @@
 % Las secciones presentadas son orientativas y no representan
 % necesariamente la organización que debe tener este capítulo.
 
+
 \section{Revisión de costes}
+
+Durante el transcurso del desarrollo, ha sido necesario realizar ajustes en la estimación inicial de costes debido a diversas \textbf{incidencias técnicas} que afectaron principalmente a la fase de implementación. Aunque el planteamiento general se ha mantenido dentro de lo previsto, ciertos retos específicos obligaron a extender la duración de algunas tareas.
+
+Las principales desviaciones detectadas se relacionan con la \textbf{adaptación multiplataforma} y la \textbf{tecnología de realidad aumentada}. Por un lado, en dispositivos \textbf{Android} fue necesario modificar el comportamiento de funcionalidades como las notificaciones o el despliegue del mapa emergente, ya que no funcionaban correctamente con la implementación inicial. En el caso de \textbf{iOS}, surgieron limitaciones con permisos y uso de cámara, lo cual requirió una reestructuración parcial del sistema.
+
+Por otro lado, la carga de \textbf{modelos 3D} en la versión web del proyecto presentó más dificultades de las previstas. Aunque se asumió que la plataforma \textbf{GitHub Pages} podría gestionar archivos \texttt{.glb}, surgieron incompatibilidades y problemas de carga, por lo que se optó por alternativas como \textbf{Vercel}. Asimismo, fue necesario reducir el peso de los modelos mediante herramientas de optimización y, en algunos casos, reconstruirlos desde cero para garantizar el \textbf{rendimiento adecuado} en dispositivos móviles.
+
+Estas incidencias derivaron en un aumento del tiempo de trabajo estimado para los perfiles técnicos implicados, especialmente el \textbf{desarrollador frontend}, el \textbf{encargado de la realidad aumentada} y el \textbf{modelador 3D}. Se estima una inversión adicional de \textbf{10 días de trabajo}, lo que equivale a \textbf{80 horas extra} de dedicación.
+
+\begin{table}[H]
+\centering
+\caption{Ampliación de jornadas y costes adicionales}
+\scalebox{0.9}{
+\begin{tabular}{|l|c|c|c|r|}
+\hline
+\textbf{Perfil} & \textbf{Días estimados} & \textbf{Días reales} & \textbf{Diferencia} & \textbf{Coste adicional (€)} \\
+\hline
+Desarrollador Frontend & 16 & 20 & +4 & 1.083,68 \\
+Desarrollador RA       & 7  & 10 & +3 & 461,04 \\
+Modelador 3D           & 15 & 18 & +3 & 239,52 \\
+\hline
+\textbf{Total adicional} & & & & \textbf{1.784,24} \\
+\hline
+\end{tabular}
+}
+\end{table}
+
+Este incremento afecta también al cálculo de los \textbf{costes indirectos}, dado que estos se calculan como un porcentaje sobre los costes directos. Con los nuevos valores, el \textbf{coste total del proyecto} se actualiza de la siguiente manera:
+
+\[
+\text{Nuevos costes directos de personal} = 27.718,95\ € + 1.784,24\ € = \textbf{29.503,19\ €}
+\]
+\[
+\text{Costes indirectos actualizados} = (29.503,19\ € + 212,40\ €) \times 0.20 = \textbf{5.943,12\ €}
+\]
+\[
+\text{Coste total final} = 29.503,19\ € + 212,40\ € + 5.943,12\ € = \boxed{\textbf{35.658,71\ €}}
+\]
+\subsection{Comparativa gráfica}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=15pt,
+    width=0.8\textwidth,
+    height=8cm,
+    enlarge x limits=0.2,
+    ylabel={Coste (€)},
+    symbolic x coords={Personal, Material, Indirectos, Total},
+    xtick=data,
+    ymin=0,
+    ymajorgrids=true,
+    grid style=dashed,
+    legend style={at={(0.5,-0.15)}, anchor=north, legend columns=-1},
+    nodes near coords,
+    nodes near coords align={vertical},
+    every node near coord/.append style={font=\small, rotate=75, xshift=27pt, yshift=-10pt},
+    group style={
+        group name=costes,
+        group size=2 by 1,
+        xlabels at=edge bottom,
+        horizontal sep=3.2cm  % <--- este valor controla la separación entre barras dentro del grupo
+    }
+]
+
+% Grupo 1: Estimado
+\addplot+[fill=blue!50] coordinates {
+    (Personal,27718.95) 
+    (Material,212.40)
+    (Indirectos,5586.27)
+    (Total,33517.62)
+};
+
+% Grupo 2: Real
+\addplot+[fill=green!60] coordinates {
+    (Personal,29503.19)
+    (Material,212.40)
+    (Indirectos,5943.12)
+    (Total,35658.71)
+};
+
+\legend{Estimado, Real}
+\end{axis}
+\end{tikzpicture}
+\vspace{0.5cm}
+\caption{Comparación entre el coste estimado y el coste real}
+\end{figure}
+
+
+
+\subsection{Reflexión final}
+
+El \textbf{coste total final} del proyecto asciende a \textbf{35.658,71 €}, lo que supone un incremento del \textbf{6,4\%} respecto a la previsión inicial. Esta diferencia se justifica por la necesidad de resolver \textbf{desafíos técnicos reales} durante el desarrollo, y se considera razonable para un proyecto con componentes tecnológicos avanzados. Este análisis subraya la importancia de contar con \textbf{márgenes de contingencia} al planificar y dimensionar proyectos similares en entornos profesionales.
 
 \section{Conclusiones}
 
+Tras varios meses de trabajo, puedo afirmar que el desarrollo de \textit{DONA'm MÓN} ha supuesto un reto tanto técnico como personal, por ello observamos dos conclusiones diferenciadas.
+
+
+\subsection{Conclusiones técnicas}
+
+El desarrollo de \textit{DONA'm MÓN} ha demostrado la viabilidad de integrar en un único producto funcionalidades avanzadas como geolocalización, escaneo de códigos QR y realidad aumentada, combinando un \textit{frontend} móvil con React Native y un \textit{backend} en Django con base de datos relacional. Esta integración no solo ha requerido un conocimiento sólido de cada tecnología, sino también la capacidad de resolver problemas derivados de su interoperabilidad, como la gestión de peticiones, la latencia entre cliente y servidor o la carga de modelos 3D optimizados para web.
+
+Uno de los mayores aprendizajes ha sido comprobar la importancia de planificar con flexibilidad: aunque se definió una planificación inicial, la realidad del desarrollo obligó a ajustar tiempos y priorizar funcionalidades críticas, un escenario habitual en proyectos reales. También ha sido clave la gestión de la complejidad: el paso de un prototipo básico a un sistema estructurado y escalable implicó trabajar con patrones de diseño, buenas prácticas en la API REST y un uso responsable de librerías externas.
+
+La experiencia confirma que la combinación de RA y geolocalización en aplicaciones móviles abre un abanico de posibilidades en el ámbito educativo, turístico y cultural. Sin embargo, también plantea retos como la optimización del rendimiento en dispositivos con recursos limitados y la necesidad de ofrecer experiencias inmersivas que sean intuitivas y accesibles para todo tipo de usuarios. Estos aspectos se convierten en líneas claras de mejora para evoluciones futuras.
+
+
+
+
+\subsection{Conclusiones personales}
+
+Realizar este proyecto ha sido una experiencia intensa y, sobre todo, muy enriquecedora. Más allá del resultado final, me quedo con todo lo que he aprendido durante el camino. Una de las cosas que más valoro es haber comprobado lo diferente que es enfrentarse a un proyecto completo respecto a pequeños ejercicios académicos: aquí cada decisión técnica tenía consecuencias, y eso me ha obligado a planificar mejor, anticipar problemas y aprender a priorizar cuando no era posible abarcar todo al mismo tiempo.
+
+También ha sido un reto mantener la motivación cuando aparecían errores inesperados o incompatibilidades entre las tecnologías. Resolverlos me ha enseñado que, en desarrollo, la paciencia y la constancia son tan importantes como el conocimiento técnico. Además, he tenido que aprender a buscar soluciones fuera del temario, explorando documentación oficial, foros y recursos especializados, lo que me ha hecho más autónoma y segura de mí misma a la hora de afrontar problemas complejos.
+
+Por último, este TFG me ha confirmado dos cosas: que me apasiona el desarrollo móvil y que me gustaría seguir creciendo en áreas como la realidad aumentada y la experiencia de usuario. Sé que este es un proyecto que no quiero dar por terminado, me gustaría viéndolo en producción aportando un valor social real, seguir actualizándolo y mejorándolo está dentro de mis planes.  Ahora he descubierto mis puntos fuertes, mis áreas de mejora y, sobre todo, el camino profesional que quiero seguir.
+
+
 \section{Trabajo futuro}
-Hablar con Por Ti Mujer y la Asamblea de Mujeres de Valencia por si les interesa que la aplicación sea un recurso para sus rutas.
-Poder descargar los datos de la base de datos en formato CSV o JSON para su uso en otros proyectos.
-Poder añadir nuevos puntos de interés a la base de datos desde la aplicación móvil.
-Poder añadir nuevos puntos de interés a la base de datos desde el panel de administración.
-Página de contacto para que los usuarios puedan enviar sugerencias o comentarios sobre la aplicación.
-Tener un apartado de preguntas frecuentes (FAQ) para resolver dudas comunes de los usuarios.
-Tener una sección de noticias o novedades sobre la aplicación y las mujeres que aparecen en ella.
-Tener una página para administar todo lo relaciona con la aplicación.
-Expandir la aplicación a otras ciudades de España o del mundo.
+
+A pesar de que la aplicación \textit{DONA'm MÓN} ya ofrece una experiencia completa y funcional, existen múltiples líneas de trabajo que podrían explorarse en el futuro para ampliar su alcance, mejorar su calidad y aumentar su impacto social. A continuación, se detallan algunas de las posibles mejoras y ampliaciones:
+
+\begin{itemize}
+    \item \textbf{Colaboración con asociaciones locales.} Se plantea establecer contacto con organizaciones feministas como \textbf{Por Ti Mujer} y la \textbf{Asamblea de Mujeres de Valencia}, con el objetivo de ofrecer la aplicación como herramienta de apoyo para sus rutas temáticas y actividades educativas.
+
+    \item \textbf{Solicitud de nuevos puntos de interés.} Sería relevante habilitar una funcionalidad en la propia aplicación que permita a las personas usuarias proponer nuevos lugares o figuras femeninas relevantes, fomentando así la participación ciudadana y la expansión colaborativa del contenido.
+
+    \item \textbf{Mejoras en la experiencia de realidad aumentada.} Se propone desarrollar interacciones diferenciadas por ubicación, incorporando animaciones específicas, efectos visuales personalizados o minijuegos que refuercen el vínculo entre cada figura femenina y su entorno.
+
+    \item \textbf{Optimización de los modelos 3D.} Es conveniente seguir trabajando en la mejora visual y técnica de los modelos tridimensionales, buscando un equilibrio entre calidad gráfica, rendimiento y peso de los archivos para garantizar una experiencia fluida en todo tipo de dispositivos.
+
+    \item \textbf{Incorporación de una página de contacto.} Añadir un apartado de contacto dentro de la aplicación permitiría a los usuarios enviar sugerencias, reportar errores o comentar su experiencia de uso, facilitando así un canal de retroalimentación directa.
+
+    \item \textbf{Sección de preguntas frecuentes (FAQ).} Un listado de dudas comunes con sus respectivas respuestas ayudaría a resolver posibles bloqueos o malentendidos sin necesidad de asistencia personalizada.
+
+    \item \textbf{Espacio de noticias y novedades.} Sería útil incorporar una sección que informe sobre las actualizaciones de la aplicación, nuevos puntos añadidos o actividades relacionadas con las mujeres destacadas en la plataforma.
+
+    
+    \item \textbf{Panel de administración mejorado y sistema de análisis.} Aunque el proyecto cuenta con el panel básico de Django Admin, sería interesante desarrollar una interfaz administrativa personalizada que integre:
+    \begin{itemize}
+        \item Dashboard con estadísticas de uso en tiempo real y métricas de comportamiento de usuarios.
+        \item Sistema de análisis avanzado que proporcione insights sobre rutas más populares y puntos de interés más visitados.
+        \item Gestor visual de contenido multimedia, especialmente para modelos 3D.
+        \item Herramientas de moderación para gestionar propuestas de contenido de usuarios.
+        \item Sistema de notificaciones push masivas y comunicación con la comunidad.
+        \item Generación automática de informes de actividad y reportes de uso.
+    \end{itemize}
+
+    \item \textbf{Expansión geográfica.} Una línea natural de crecimiento consistiría en adaptar y extender la aplicación a otras ciudades, tanto de España como de otros países, promoviendo así la visibilidad de figuras femeninas relevantes en diferentes contextos históricos y geográficos.
+
+    \item \textbf{Estrategia de difusión en redes sociales.} Para dar a conocer el proyecto y fomentar su uso, se propone diseñar una campaña de marketing digital basada en plataformas como Instagram o TikTok. Esta estrategia podría incluir vídeos grabados en los puntos de interés reales, mostrando el uso de la app y escaneando los códigos QR, invitando al público a participar y compartir sus experiencias.
+\end{itemize}
+
+Estas líneas de trabajo no solo aportarían nuevas funcionalidades, sino que también contribuirían a la sostenibilidad y escalabilidad del proyecto a largo plazo.

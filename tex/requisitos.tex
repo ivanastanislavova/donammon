@@ -14,10 +14,10 @@ Lista de requisitos funcionales:
 \begin{itemize}
 \item[RF1:] La aplicación debe permitir a los usuarios visualizar un mapa interactivo con los puntos geolocalizados de interés.
 \item[RF2:] El sistema debe detectar la ubicación actual del usuario mediante GPS.
-\item[RF3:] Al acercarse físicamente a un punto geolocalizado, la aplicación debe desbloquear el contenido asociado.
+\item[RF3:] Al acercarse físicamente a un punto geolocalizado, la aplicación debe desbloquear el contenido de RA asociado.
 \item[RF4:] Cada punto geolocalizado debe estar vinculado a una mujer histórica, con contenido educativo multimedia.
 \item[RF5:] La aplicación debe mostrar una ficha informativa con texto, imágenes y/o audio sobre cada figura femenina.
-\item[RF6:] La app debe permitir visualizar elementos de realidad aumentada (como imágenes, objetos 3D o figuras animadas) al enfocar con la cámara.
+\item[RF6:] La app debe permitir visualizar elementos de realidad aumentada (como imágenes, objetos 3D o figuras animadas).
 \item[RF7:] La lista de puntos y el mapa deben permitir filtrar los lugares por el ámbito de investigación de las mujeres representadas.
 \item[RF8:] El usuario debe poder ver qué puntos ha desbloqueado y cuáles no.
 \item[RF9:] La aplicación debe permitir consultar la lista completa de mujeres disponibles con sus respectivas ubicaciones.
@@ -30,18 +30,16 @@ Lista de requisitos funcionales:
 \item[RF16:] Debe existir un panel de administración web para gestionar los puntos, contenidos y figuras históricas.
 \item[RF17:] El administrador debe poder añadir, editar o eliminar mujeres, ubicaciones y materiales multimedia desde el panel.
 \item[RF18:] El sistema debe permitir importar imágenes, vídeos y modelos 3D desde el panel de administración.
-\item[RF18b:] El administrador debe poder gestionar áreas de investigación y rutas temáticas desde el panel de administración. % (nuevo)
-\item[RF18c:] El administrador debe poder consultar métricas y estadísticas de uso, como puntos más visitados y usuarios activos. % (nuevo)
-\item[RF18d:] El administrador debe poder gestionar los permisos de otros administradores si existen varios roles. % (nuevo, opcional)
-\item[RF19:] El sistema debe validar que no se puede desbloquear un punto si el usuario no está físicamente cerca.
-\item[RF20:] La app debe ofrecer retroalimentación visual y sonora al desbloquear contenido.
+\item[RF18b:] El administrador debe poder gestionar áreas de investigación y rutas temáticas desde el panel de administración. 
+\item[RF18c:] El administrador debe poder consultar métricas y estadísticas de uso, como puntos más visitados y usuarios activos.
+\item[RF18d:] El administrador debe poder gestionar los permisos de otros administradores si existen varios roles. 
+\item[RF20:] La experiencia de RA debe ofrecer retroalimentación visual y sonora.
 \item[RF21:] El sistema debe enviar datos al backend para mantener sincronizado el progreso del usuario.
-\item[RF22:] La aplicación debe cargarse en menos de 5 segundos desde su apertura inicial.
-\item[RF23:] La aplicación debe permitir a los usuarios registrarse y acceder mediante un sistema de inicio de sesión.
-\item[RF24:] Los usuarios deben poder iniciar sesión con un correo electrónico y contraseña.
-\item[RF25:] La aplicación debe mantener la sesión iniciada hasta que el usuario decida cerrarla.
-\item[RF26:] El usuario debe poder editar los datos de su perfil desde la aplicación.
-\item[RF27:] El administrador debe poder acceder, desde el panel de gestión, a la lista de usuarios registrados.
+\item[RF22:] La aplicación debe permitir a los usuarios registrarse y acceder mediante un sistema de inicio de sesión.
+\item[RF23:] Los usuarios deben poder iniciar sesión con un nombre de usuario y contraseña.
+\item[RF24:] La aplicación debe mantener la sesión iniciada hasta que el usuario decida cerrarla.
+\item[RF25:] El usuario debe poder editar los datos de su perfil desde la aplicación.
+\item[RF26:] El administrador debe poder acceder, desde el panel de gestión, a la lista de usuarios registrados.
 \item[RF28:] El administrador debe poder visualizar el perfil de cada usuario, incluyendo su progreso (puntos visitados).
 \item[RF29:] El sistema debe permitir al administrador eliminar usuarios o restablecer sus datos si es necesario.
 \item[RF30:] Al escanear un código QR de un lugar, se debe actualizar el progreso de rutas temáticas dentro de la aplicación.
@@ -57,6 +55,14 @@ Lista de requisitos funcionales:
 \item[RF40:] Debe existir una pestaña específica con los puntos que disponen de realidad aumentada, accesibles si el usuario está dentro de un radio determinado.
 \item[RF41:] Al seleccionar un punto con RA disponible, debe abrirse la cámara y mostrarse el modelo correspondiente.
 \item[RF42:] El usuario debe poder consultar una sección de perfil donde editar sus datos personales, ver su historial de lugares visitados y rutas completadas, y cerrar sesión.
+\item[RF43:] El sistema debe implementar un contexto global de filtros que permita mantener el estado entre diferentes pantallas.
+\item[RF44:] La aplicación debe calcular distancias precisas utilizando la fórmula de Haversine.
+\item[RF45:] El mapa debe sincronizar automáticamente los filtros aplicados en la pantalla de listado.
+\item[RF46:] El sistema debe permitir visualizar imágenes ampliadas en modal desde la pantalla de detalle.
+\item[RF47:] La aplicación debe procesar automáticamente las áreas de investigación del backend para crear una estructura plana de lugares.
+\item[RF48:] El sistema debe mantener un cache local de estado de visitas utilizando AsyncStorage.
+\item[RF49:] La aplicación debe mostrar indicadores visuales de filtros activos en tiempo real.
+\item[RF50:] El sistema debe permitir reiniciar el progreso de rutas completadas.
 
 \end{itemize}
 
@@ -69,19 +75,19 @@ Estos requisitos definen las propiedades internas del sistema y sus comportamien
 
 \begin{itemize}
     \item[RNF1:] La aplicación debe cargarse completamente en menos de 5 segundos desde su apertura.
-    \item[RNF2:] El sistema debe ser capaz de gestionar al menos 100 usuarios simultáneos sin caída de rendimiento.
-    \item[RNF3:] Los modelos 3D deben estar optimizados para dispositivos móviles, con un tamaño inferior a 10~MB por unidad.
-    \item[RNF4:] El consumo de batería durante el uso continuo no debe superar el 10\% por hora.
+    \item[RNF2:] El sistema debe ser capaz de gestionar al menos 50 usuarios simultáneos sin caída de rendimiento, con capacidad estimada para 100+ usuarios. 
+    \item[RNF3:] Los modelos 3D deben estar optimizados para dispositivos móviles, con un tamaño inferior a 20~MB por unidad.
+    \item[RNF4:] La aplicación debe implementar optimizaciones de rendimiento como cache local de tokens, serialización eficiente de datos y consultas optimizadas al backend para minimizar el uso de recursos.
     \item[RNF5:] La interfaz debe ser intuitiva y permitir su uso sin formación previa.
     \item[RNF6:] La tipografía y botones deben adaptarse automáticamente a diferentes resoluciones de pantalla.
-    \item[RNF7:] La aplicación debe ofrecer un modo accesible con texto ampliado y audio narrado.
+    \item[RNF7:] La aplicación debe ofrecer un modo accesible con audio narrado.
     \item[RNF8:] La navegación debe ser posible con una sola mano (diseño mobile-first).
     \item[RNF9:] Compatible con Android 10+ y iOS 13+.
     \item[RNF10:] El panel de administración debe ser accesible desde navegadores modernos (Chrome, Firefox, Safari, Edge).
     \item[RNF11:] Las contraseñas de los usuarios deben almacenarse cifradas en la base de datos.
     \item[RNF12:] La comunicación entre cliente y servidor debe estar cifrada mediante HTTPS.
-    \item[RNF13:] El backend debe estar desarrollado en Django y utilizar PostGIS (extensión de PostgreSQL para datos geoespaciales) como sistema gestor de bases de datos.
-    \item[RNF14:] La aplicación debe estar desarrollada con A-Frame, integrando geolocalización y RA mediante tecnologías WebXR y bibliotecas compatibles con A-Frame.
+    \item[RNF13:] El backend debe estar desarrollado en Django y utilizar PostgreSQL como sistema gestor de bases de datos.
+    \item[RNF14:] La experiencia de realidad aumentada debe estar desarrollada con A-Frame y AR.js, desplegadas en Vercel e integradas a través de WebViews nativos.
     \item[RNF15:] La arquitectura debe ser modular y permitir añadir nuevos puntos o contenidos sin modificar el código base.
     \item[RNF16:] Se debe estructurar el código y documentarlo adecuadamente para facilitar mantenimiento y ampliación.
 \end{itemize}
@@ -91,8 +97,8 @@ Estos requisitos definen las propiedades internas del sistema y sus comportamien
 Estos requisitos están relacionados con decisiones internas del equipo desarrollador o institución que afectan a los métodos de trabajo, tecnologías permitidas o estructura del proyecto.
 
 \begin{itemize}
-    \item[RNF17:] El sistema debe permitir su despliegue en un servidor que soporte Django y PostGIS (PostgreSQL) según los medios disponibles en la UV.
-    \item[RNF18:] Debe evitarse el uso de servicios de alto coste por uso intensivo, priorizando soluciones open source cuando sea posible (por ejemplo, evitar cuotas de Google Maps si es viable usar OpenStreetMap).
+    \item[RNF17:] El sistema debe permitir su despliegue en un servidor que soporte Django y PostgreSQL.
+    \item[RNF18:] La aplicación utiliza el proveedor de mapas nativo del dispositivo (Google Maps en Android, Apple Maps en iOS).
     \item[RNF19:] El panel de administración debe incluir autenticación de administradores con control de permisos.
     \item[RNF20:] El proyecto debe desarrollarse siguiendo buenas prácticas de ingeniería del software: control de versiones, pruebas, documentación técnica y separación por capas.
 \end{itemize}
@@ -102,10 +108,10 @@ Estos requisitos están relacionados con decisiones internas del equipo desarrol
 Son aquellos impuestos por normativas legales, estándares externos o políticas públicas que el sistema debe cumplir.
 
 \begin{itemize}
-    \item[RNF21:] El sistema debe cumplir con el Reglamento General de Protección de Datos (RGPD) en lo referente al tratamiento de datos personales.
-    \item[RNF22:] Los usuarios deben aceptar la política de privacidad y condiciones de uso antes de registrarse.
-    \item[RNF23:] El acceso a los datos de usuario debe estar restringido y protegido contra accesos no autorizados.
-    \item[RNF24:] El almacenamiento de datos personales (nombre, email, localización) debe hacerse de forma segura y limitada a lo estrictamente necesario.
+    \item[RNF21:] El acceso a los datos de usuario debe estar restringido y protegido contra accesos no autorizados.
+    \item[RNF22:] El almacenamiento de datos personales (nombre, email, localización) debe hacerse de forma segura.
+    \item[RNF23:] El sistema debe mantener un throughput mínimo de 8 requests por segundo bajo carga normal. 
+    \item[RNF24:] Los endpoints de la API deben responder en menos de 100ms bajo condiciones normales de uso.
 \end{itemize}
 
 \section{Especificaciones}
@@ -116,9 +122,9 @@ Una vez definidos los requisitos funcionales del sistema, es posible descomponer
 \begin{itemize}
     \item[F1.] Visualizar un mapa interactivo con los puntos de interés distribuidos por Valencia.
     \item[F2.] Detectar en tiempo real la ubicación actual del usuario.
-    \item[F3.] Mostrar puntos cercanos en función de la ubicación.
+    \item[F3.] Calcular y mostrar la distancia a cada punto desde la ubicación actual del usuario.
     \item[F4.] Notificar al usuario cuando se acerque a un punto no visitado.
-    \item[F5.] Restringir el acceso al contenido si el usuario no está físicamente cerca del punto.
+    \item[F5.] Mostrar puntos cercanos en función de la ubicación.
 \end{itemize}
 
 \textbf{\textsf{\large Funcionalidades educativas y de contenido}}
@@ -126,10 +132,11 @@ Una vez definidos los requisitos funcionales del sistema, es posible descomponer
 \begin{itemize}
     \item[F6.] Acceder a la ficha de una mujer histórica al llegar a un punto.
     \item[F7.] Mostrar contenido multimedia asociado: texto, imágenes, audios o vídeos.
-    \item[F8.] Activar realidad aumentada al enfocar con la cámara del dispositivo.
+    \item[F8.] Activar realidad aumentada al acercarse a un punto.
     \item[F9.] Visualizar objetos 3D o elementos históricos en RA.
     \item[F10.] Consultar un listado general de todas las mujeres incluidas en la app.
-    \item[F11.] Reproducir contenido offline si ya ha sido descargado previamente.
+    \item[F12.] Visualizar imágenes ampliadas en modal al hacer tap sobre ellas.
+    \item[F13.] Compartir información de lugares vía aplicaciones nativas del dispositivo.
 \end{itemize}
 
 \textbf{\textsf{\large Funcionalidades de interacción y gamificación}}
@@ -143,11 +150,14 @@ Una vez definidos los requisitos funcionales del sistema, es posible descomponer
 \textbf{\textsf{\large Funcionalidades de usuario}}
 
 \begin{itemize}
-    \item[F15.] Registrar un nuevo usuario mediante correo electrónico y contraseña.
+    \item[F15.] Registrar un nuevo usuario mediante nombre de usuario y contraseña.
     \item[F16.] Iniciar sesión en la aplicación.
     \item[F17.] Mantener la sesión activa entre usos.
-    \item[F18.] Cerrar sesión manualmente.
-    \item[F19.] Aceptar política de privacidad y condiciones de uso al registrarse.
+    \item[F18.] Permitir al usuario editar su nombre de usuario.
+    \item[F19.] Cerrar sesión manualmente.
+    \item[F20.] Filtrar lugares por área de investigación y estado de visita.
+  \item[F21.] Buscar mujeres y lugares por nombre en tiempo real.
+  \item[F22.] Sincronizar estado de filtros entre diferentes pantallas de la aplicación.
 \end{itemize}
 
 \textbf{\textsf{\large Funcionalidades del panel de administración}}
@@ -158,9 +168,9 @@ Una vez definidos los requisitos funcionales del sistema, es posible descomponer
     \item[F22.] Asociar cada mujer con un punto geolocalizado.
     \item[F23.] Cargar imágenes, audios, vídeos y modelos 3D desde el panel.
     \item[F24.] Editar o eliminar puntos o figuras ya creadas.
-    \item[F24b.] Gestionar áreas de investigación y rutas temáticas (crear, editar, eliminar). % (nuevo)
-    \item[F24c.] Consultar y descargar métricas de uso: puntos más visitados, número de usuarios activos, etc. % (nuevo)
-    \item[F24d.] Gestionar permisos y roles de administradores (si aplica). % (nuevo, opcional)
+    \item[F24b.] Gestionar áreas de investigación y rutas temáticas (crear, editar, eliminar). 
+    \item[F24c.] Consultar y descargar métricas de uso: puntos más visitados, número de usuarios activos, etc. 
+    \item[F24d.] Gestionar permisos y roles de administradores (si aplica). 
     \item[F25.] Ver la lista de usuarios registrados.
     \item[F26.] Consultar el progreso de cada usuario (puntos desbloqueados, logros).
     \item[F27.] Eliminar usuarios si fuese necesario.
@@ -183,6 +193,7 @@ Una vez definidos los requisitos funcionales del sistema, es posible descomponer
 \item[F35.] Escanear códigos QR para desbloquear puntos de una ruta.
 \item[F36.] Impedir que los puntos de una ruta se marquen como visitados sin escanear su QR.
 \item[F37.] Registrar en el historial del usuario las rutas completadas.
+\item[F38.] Reiniciar el progreso de rutas ya completadas para repetir la experiencia.
 
 \textsf{\large Funcionalidades de realidad aumentada (RA)}
 
@@ -196,6 +207,9 @@ Una vez definidos los requisitos funcionales del sistema, es posible descomponer
 \item[F42.] Editar los datos personales del usuario.
 \item[F43.] Consultar el historial de puntos visitados, con fecha y hora.
 \item[F44.] Consultar las rutas temáticas que el usuario ha completado.
+\item[F45.] Filtrar lugares por área de investigación y estado de visita.
+\item[F46.] Buscar mujeres y lugares por nombre.
+\item[F47.] Calcular y mostrar distancias precisas con fórmula de Haversine.
 
 
 \section{Ciclo de vida del software}

@@ -1,0 +1,492 @@
+% !TEX root = ../ejemplo-memoria.tex
+
+\section{Pruebas funcionales}
+
+Las pruebas funcionales tienen como propósito verificar que todas las funcionalidades implementadas en el sistema \textit{DONA'm MÓN} operan conforme a los requisitos establecidos durante la fase de análisis. Se han ejecutado pruebas exhaustivas que abarcan la totalidad de los casos de uso definidos, tanto para el backend API REST como para la aplicación móvil y las funcionalidades de realidad aumentada.
+
+La siguiente tabla presenta los casos de prueba realizados, especificando para cada uno la funcionalidad evaluada, el procedimiento seguido, el comportamiento esperado y el resultado obtenido durante la ejecución de las pruebas.
+
+\begin{longtable}{|p{3cm}|p{4cm}|p{3.5cm}|p{3.5cm}|}
+\hline
+\textbf{Funcionalidad} & \textbf{Descripción del Procedimiento} & \textbf{Resultado Esperado} & \textbf{Resultado Obtenido} \\
+\hline
+\endfirsthead
+F1. Mapa interactivo & Abrir app, navegar a pestaña Mapa, visualizar puntos con distancias & Mapa carga con marcadores coloreados y distancias calculadas & \checkmark{} Mapa carga correctamente con marcadores diferenciados por color según estado de visita y distancias precisas mostradas \\
+
+\hline
+F2. Proximidad & Acercarse a un punto de interés a menos de 3km & Notificación automática de proximidad & \checkmark{} Notificaciones push enviadas correctamente al detectar proximidad a lugares no visitados \\
+
+\hline
+F3. Filtros y búsqueda sincronizada & Aplicar filtros por área, buscar por nombre, navegar entre pantallas & Resultados filtrados correctamente y mantenidos entre pestañas & \checkmark{} Sistema de filtros operativo con búsqueda en tiempo real, filtrado combinado por área y estado de visita, sincronizado mediante FiltrosContext entre todas las pantallas \\
+
+\hline
+F4. Info detallada & Seleccionar un lugar, ver detalle completo & Información completa: mujer, lugar, áreas & \checkmark{} Pantalla de detalle muestra toda la información requerida con navegación fluida \\
+
+\hline
+F5. Multimedia & Visualizar imágenes, pulsar para ampliar & Imágenes en modal a pantalla completa & \checkmark{} Modal de imágenes funciona correctamente con visualización ampliada y controles táctiles \\
+
+\hline
+F6. Realidad aumentada & Acercarse a punto con RA, acceder desde pestaña & Carga modelo 3D con audio & \checkmark{} Experiencia RA carga correctamente con modelos 3D interactivos, audio contextual y animaciones \\
+
+\hline
+F7. Compartir & Pulsar botón compartir en detalle de lugar & Abre apps nativas para compartir & \checkmark{} Función compartir integrada con apps nativas del dispositivo, incluyendo imágenes cuando están disponibles \\
+
+\hline
+F8. Autenticación & Registrar usuario, login, mantener sesión & Sesión persistente con AsyncStorage & \checkmark{} Sistema de autenticación funcionando con tokens JWT y persistencia de sesión mediante AsyncStorage \\
+
+\hline
+F9. Perfil & Editar nombre usuario, cerrar sesión & Cambios guardados correctamente & \checkmark{} Gestión de perfil operativa con actualización exitosa de datos y cierre de sesión limpio \\
+
+\hline
+F10. Historial lugares & Marcar lugares visitados, consultar historial & Lista cronológica de visitas & \checkmark{} Historial de lugares visitados funciona correctamente con sincronización en tiempo real con el backend \\
+
+\hline
+F11. Rutas disponibles & Ver lista rutas, consultar puntos & Rutas con descripciones y progreso & \checkmark{} Sistema de rutas operativo mostrando progreso visual y descripción detallada de cada ruta temática \\
+
+\hline
+F12. Escaneo QR para rutas & Escanear código QR específico en ubicación física de una ruta temática & Punto marcado como visitado solo con QR válido del lugar correspondiente & \checkmark{} Escáner QR funciona correctamente validando códigos únicos por ubicación y actualizando progreso de ruta únicamente para el lugar físico correspondiente \\
+
+\hline
+F13. Historial rutas & Completar ruta, consultar historial & Rutas completadas registradas & \checkmark{} Historial de rutas completadas funciona con opción de reinicio y seguimiento de progreso completo \\
+
+\hline
+F14. CRUD admin & Login admin, crear/editar mujer & Operaciones CRUD funcionando & \checkmark{} Panel de administración Django operativo con todas las operaciones CRUD implementadas correctamente \\
+
+\hline
+F15. Admin áreas & Gestionar áreas investigación desde admin & Gestión de áreas de investigación funciona & \checkmark{} Gestión de áreas de investigación funciona correctamente desde el panel de administración \\
+
+\hline
+F16. Control usuarios & Acceder lista usuarios desde admin & Lista usuarios con autenticación & \checkmark{} Administración de usuarios operativa con autenticación de administradores y listado completo \\
+
+\hline
+F17. Multiplataforma & Ejecutar en Android e iOS & Funcionalidad idéntica ambas plataformas & \checkmark{} Aplicación funciona de manera idéntica en ambas plataformas con React Native proporcionando compatibilidad completa \\
+
+\hline
+
+\end{longtable}
+
+
+Las pruebas funcionales realizadas confirman que todas las funcionalidades del sistema \textit{DONA'm MÓN} operan conforme a los requisitos establecidos. El 100\% de los casos de prueba han resultado exitosos, validando tanto la implementación técnica como la experiencia de usuario. El sistema demuestra estabilidad, rendimiento adecuado y cumplimiento total de las especificaciones funcionales definidas en la fase de análisis.
+
+
+\section{Pruebas de Usabilidad}
+Las pruebas de usabilidad se realizaron para evaluar la experiencia de uso de la aplicación, su facilidad de navegación y la percepción general de los usuarios. Para ello, se empleó el método \textit{System Usability Scale} (SUS)~\cite{brooke1996}, una herramienta estándar que permite obtener una medida cuantitativa de la usabilidad.
+
+\subsection{Metodología}
+El cuestionario SUS consta de 10 afirmaciones relacionadas con aspectos clave como la facilidad, consistencia y confianza del usuario. Cada afirmación se puntúa en una escala de 1 (Totalmente en desacuerdo) a 5 (Totalmente de acuerdo).
+
+En esta evaluación participaron \textbf{17 usuarios}, quienes utilizaron la aplicación de forma integral durante una sesión completa que incluyó:
+
+\begin{itemize}
+    \item \textbf{Registro e inicio de sesión} con credenciales personales.
+    \item \textbf{Navegación entre pestañas} principales (Mapa, Mujeres, Rutas, RA, Perfil).
+    \item \textbf{Exploración de lugares} con filtros y búsquedas .
+    \item \textbf{Marcado de lugares como visitados} y gestión del historial personal.
+    \item \textbf{Completado de rutas temáticas} mediante escaneo de códigos QR.
+    \item \textbf{Experiencia de Realidad Aumentada} con modelos 3D interactivos.
+    \item \textbf{Recepción de notificaciones} automáticas por proximidad.
+    \item \textbf{Uso del mapa interactivo} con marcadores e información contextual.
+\end{itemize}
+
+Tras completar esta experiencia integral con todas las funcionalidades de la aplicación, los usuarios respondieron al cuestionario SUS para evaluar la usabilidad general del sistema.
+
+
+
+\subsection{Cálculo del SUS}
+El cálculo de la puntuación SUS se realiza del siguiente modo:
+\begin{itemize}
+    \item Para preguntas impares (1, 3, 5, 7, 9): $(\text{valor}) - 1$.
+    \item Para preguntas pares (2, 4, 6, 8, 10): $5 - (\text{valor})$.
+    \item Se suman los resultados anteriores y se multiplica por 2,5.
+\end{itemize}
+
+Ejemplo para U1:
+\[
+\text{Ajuste} = ((4-1)+(5-1)+(5-1)+(4-1)+(4-1)) + 
+\]
+\[
+((5-1)+(5-2)+(5-1)+(5-1)+(5-1))
+\]
+\[
+\text{Suma total} = 34, \; \text{SUS} = 34 \times 2,5 = 85
+\]
+
+
+\subsection{Resultados del cuestionario}
+En la Tabla~\ref{tab:sus-respuestas} se muestran las puntuaciones otorgadas por cada usuario.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{0.9} % Menos espacio entre filas
+\resizebox{0.8\textwidth}{!}{ % Ajusta al 80% del ancho del texto
+\begin{tabular}{|c|cccccccccc|}
+\hline
+\textbf{Usuario} & \textbf{P1} & \textbf{P2} & \textbf{P3} & \textbf{P4} & \textbf{P5} & \textbf{P6} & \textbf{P7} & \textbf{P8} & \textbf{P9} & \textbf{P10} \\
+\hline
+\multicolumn{11}{|c|}{\textit{Escala: 1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo}}\\
+\hline
+U1  & 4 & 1 & 4 & 1 & 5 & 2 & 5 & 1 & 4 & 1 \\
+U2  & 4 & 3 & 4 & 2 & 4 & 3 & 4 & 2 & 5 & 2 \\
+U3  & 5 & 1 & 5 & 1 & 5 & 1 & 5 & 1 & 5 & 1 \\
+U4  & 4 & 1 & 5 & 1 & 5 & 1 & 4 & 1 & 5 & 1 \\
+U5  & 4 & 1 & 5 & 1 & 5 & 1 & 5 & 1 & 5 & 5 \\
+U6  & 5 & 2 & 4 & 2 & 5 & 1 & 4 & 2 & 5 & 2 \\
+U7  & 5 & 2 & 5 & 4 & 4 & 2 & 5 & 2 & 5 & 2 \\
+U8  & 4 & 1 & 4 & 4 & 5 & 1 & 4 & 3 & 5 & 2 \\
+U9  & 4 & 1 & 5 & 1 & 5 & 2 & 4 & 1 & 5 & 1 \\
+U10 & 4 & 1 & 5 & 1 & 4 & 2 & 5 & 1 & 5 & 1 \\
+U11 & 5 & 2 & 5 & 1 & 5 & 2 & 5 & 2 & 5 & 2 \\
+U12 & 4 & 2 & 5 & 2 & 5 & 2 & 4 & 2 & 4 & 2 \\
+U13 & 5 & 1 & 4 & 1 & 5 & 1 & 5 & 2 & 5 & 1 \\
+U14 & 4 & 3 & 4 & 2 & 5 & 2 & 4 & 2 & 4 & 2 \\
+U15 & 5 & 4 & 5 & 2 & 5 & 1 & 5 & 1 & 5 & 1 \\
+U16 & 4 & 1 & 5 & 1 & 4 & 2 & 5 & 2 & 5 & 1 \\
+U17 & 5 & 1 & 5 & 2 & 5 & 1 & 5 & 1 & 5 & 1 \\
+\hline
+\end{tabular}
+} % Fin resizebox
+\caption{Respuestas del cuestionario SUS por usuario}
+\label{tab:sus-respuestas}
+\end{table}
+
+\subsection{Visualización de resultados por pregunta}
+Además de la tabla general, se presentan a continuación las preguntas del cuestionario SUS junto con las gráficas que ilustran la distribución de respuestas para cada una. Estas visualizaciones permiten comprender de manera más clara la percepción de los usuarios en relación con los distintos aspectos de la usabilidad evaluados.
+
+\textbf{Pregunta 1:} Considero que me gustaría utilizar frecuentemente esta aplicación.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/sus_p1.jpg}
+\caption{Distribución de respuestas a la Pregunta 1}
+\end{figure}
+
+\textbf{Pregunta 2:} He encontrado la aplicación innecesariamente compleja en algunos momentos.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/sus_p2.jpg}
+\caption{Distribución de respuestas a la Pregunta 2}
+\end{figure}
+
+\textbf{Pregunta 3:} Me ha parecido fácil de usar.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/sus_p3.jpg}
+\caption{Distribución de respuestas a la Pregunta 3}
+\end{figure}
+
+\textbf{Pregunta 4:} Creo que necesitaría ayuda de una persona con conocimientos técnicos para poder usarla.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/sus_p4.jpg}
+\caption{Distribución de respuestas a la Pregunta 4}
+\end{figure}
+
+\textbf{Pregunta 5:} Las funcionalidades están bien integradas y tienen coherencia entre sí.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/sus_p5.jpg}
+\caption{Distribución de respuestas a la Pregunta 5}
+\end{figure}
+
+\textbf{Pregunta 6:} Me parece que hay demasiada inconsistencia en la aplicación.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/sus_p6.jpg}
+\caption{Distribución de respuestas a la Pregunta 6}
+\end{figure}
+
+\textbf{Pregunta 7:} Creo que la mayoría de la gente aprendería a usar esta aplicación con rapidez.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/sus_p7.jpg}
+\caption{Distribución de respuestas a la Pregunta 7}
+\end{figure}
+
+\textbf{Pregunta 8:} Me ha parecido confusa o difícil de manejar en algunos aspectos.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/sus_p8.jpg}
+\caption{Distribución de respuestas a la Pregunta 8}
+\end{figure}
+
+\textbf{Pregunta 9:} Me he sentido segura usando la aplicación.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/sus_p9.jpg}
+\caption{Distribución de respuestas a la Pregunta 9}
+\end{figure}
+
+\textbf{Pregunta 10:} Necesité aprender muchas cosas antes de poder usarla correctamente.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/sus_p10.jpg}
+\caption{Distribución de respuestas a la Pregunta 10}
+\end{figure}
+
+
+\subsection{Puntuaciones SUS}
+En la Tabla~\ref{tab:sus-final} se muestran las puntuaciones calculadas aplicando la fórmula mencionada anteriormente, junto con información básica sobre los participantes (edad, ocupación y familiaridad con Realidad Aumentada). Cabe destacar que todos los usuarios tienen experiencia utilizando aplicaciones móviles.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|p{4cm}|c|c|}
+\hline
+\textbf{Usuario} & \textbf{Edad} & \textbf{Descripción} & \textbf{Familiaridad RA} & \textbf{Puntuación SUS} \\
+\hline
+U1 & 22 & Estudiante de Bellas Artes & Baja & 85 \\
+U2 & 21 & Periodista & Baja & 77,5 \\
+U3 & 19 & Estudiante de Óptica y Optometría& Baja & 100 \\
+U4 & 24 & Ingeniero en Telecomunicaciones & Media & 95 \\
+U5 & 22 & Especialista en marketing & Baja & 92,5 \\
+U6 & 22 & Fisioterapeuta & Baja & 90 \\
+U7 & 55 & Limpiadora & Baja & 80 \\
+U8 & 50 & Instalador del gas & Baja & 82,5 \\
+U9 & 24 & Estudiante de Desarrollo Web & Alta & 90 \\
+U10 & 22 & Estudiante de Desarrollo Web & Alta & 90 \\
+U11 & 24 & Restauradora de Arte & Baja & 87,5 \\
+U12 & 27 & Ingeniero Multimedia & Alta & 82,5 \\
+U13 & 23 & Ingeniera en Telecomunicaciones & Media & 95 \\
+U14 & 23 & Estudiante de Ingeniería Multimedia & Alta & 77,5 \\
+U15 & 23 & Dietista & Baja & 87,5 \\
+U16 & 24 & Estudiante de Desarrollo Web & Alta & 90 \\
+U17 & 22 & Estudiante de Desarrollo Web & Alta & 95 \\
+\hline
+\textbf{Media} & -- & -- & -- & \textbf{87,65} \\
+\hline
+\end{tabular}
+\caption{Perfil de los participantes y puntuación SUS final}
+\label{tab:sus-final}
+\end{table}
+
+
+\subsection{Gráficos}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=0.9\textwidth,
+    height=7cm,
+    bar width=12pt,
+    ymin=0,
+    ymax=110,
+    ylabel={Puntuación SUS},
+    symbolic x coords={U1,U2,U3,U4,U5,U6,U7,U8,U9,U10,U11,U12,U13,U14,U15,U16,U17},
+    xtick=data,
+    x tick label style={rotate=45, anchor=east},
+    nodes near coords,
+    nodes near coords align={vertical},
+]
+\addplot coordinates {(U1,85)(U2,77.5)(U3,100)(U4,95)(U5,92.5)(U6,90)(U7,80)(U8,82.5)(U9,90)(U10,90)(U11,87.5)(U12,82.5)(U13,95)(U14,77.5)(U15,87.5)(U16,90)(U17,95)};
+\end{axis}
+\end{tikzpicture}
+\caption{Puntuaciones SUS por usuario}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=0.8\textwidth,
+    height=6cm,
+    ymin=0,
+    ymax=8,
+    ylabel={Número de usuarios},
+    xlabel={Rango de puntuación SUS},
+    symbolic x coords={70-79,80-89,90-99,100},
+    xtick=data,
+    nodes near coords,
+    nodes near coords align={vertical},
+]
+\addplot coordinates {(70-79,3)(80-89,4)(90-99,7)(100,3)};
+\end{axis}
+\end{tikzpicture}
+\caption{Distribución de puntuaciones SUS}
+\end{figure}
+
+\subsection{Comentarios adicionales de los usuarios}
+Además del cuestionario SUS, se realizaron preguntas abiertas para obtener una visión más cualitativa de la experiencia. A continuación, se destacan las más relevantes:
+
+\textbf{¿Qué parte de la aplicación te ha resultado más útil o interesante?}
+\begin{itemize}
+    \item \textit{“Las rutas de mujeres destacadas”}.
+    \item \textit{“La parte de la realidad aumentada”}.
+    \item \textit{“El mapa interactivo, es muy innovador y curioso”}.
+    \item \textit{“Como aspecto más interesante e innovador destacaría la opción para hacer rutas en base a las distintas ubicaciones. También es interesante poder ver la fecha en la que visitaste cada lugar”}.
+    \item \textit{“Cuando sale en 3D la mujer”}.
+\end{itemize}
+
+\textbf{¿Has encontrado algún problema mientras usabas la app?}
+\begin{itemize}
+    \item La mayoría respondió \textit{“No”} o \textit{“Ninguno en general, el funcionamiento es completamente satisfactorio”}.
+    \item Solo un usuario opino que: \textit{“La Realidad Aumentada es un poco difícil de usar”}.
+\end{itemize}
+
+\textbf{¿Te ha parecido intuitiva la navegación entre pantallas?}
+\begin{itemize}
+    \item Comentarios más repetidos: \textit{“Sí, es muy fácil de usar, además está todo muy bien relacionado”}, \textit{“Muy sencilla e intuitiva”}.
+\end{itemize}
+
+\textbf{¿Has disfrutado la experiencia de realidad aumentada? ¿Por qué?}
+\begin{itemize}
+    \item \textit{“Es mi parte favorita de la app, es muy entretenida y original”}.
+    \item \textit{“Es fascinante, hace que la app sea mucho más inmersiva”}.
+    \item \textit{“Aporta un elemento diferente en comparación con otras aplicaciones”}.
+    \item Solo una respuesta negativa: \textit{“No mucho, nunca me ha gustado la RA en aplicaciones”}.
+\end{itemize}
+
+\textbf{¿Consideras que la aplicación te ha permitido descubrir información nueva o interesante sobre las mujeres de Valencia?}
+\begin{itemize}
+    \item \textit{“Sí, es necesario tener herramientas que nos permitan conocer más sobre las acciones que las mujeres han hecho durante la historia”}.
+    \item \textit{“Por supuesto, además de añadir conocimientos de valor acerca de nuestra cultura”}.
+\end{itemize}
+
+\textbf{¿Recomendarías esta aplicación a otras personas?}
+\begin{itemize}
+    \item Todas las respuestas fueron afirmativas: \textit{“Por supuesto!!!!”}, \textit{“Si están interesadas en aprender sobre el tema, sin duda”}.
+\end{itemize}
+
+\textbf{¿Alguna sugerencia para mejorar la aplicación?}
+\begin{itemize}
+    \item La mayoría respondió \textit{“No”} o \textit{“Está todo correcto”}.
+    \item Comentarios destacados: \textit{“Tal vez un enlace para ampliar aún más la información de cada protagonista”}, \textit{“Que los usuarios puedan recomendar nuevos puntos de interés”}.
+\end{itemize}
+
+\subsection{Conclusiones}
+Los resultados obtenidos reflejan una puntuación media de \textbf{87,65} en la escala SUS, lo que sitúa la aplicación en la categoría \textit{Excelente}. Este valor indica que la experiencia general ha sido muy positiva y que la interfaz cumple con los principios de usabilidad esperados para un producto de este tipo.
+
+Los usuarios han percibido la navegación como intuitiva y sencilla, destacando la coherencia entre las distintas secciones y la facilidad para acceder a la información. Las funcionalidades principales, en particular el mapa interactivo, las rutas temáticas y la experiencia de Realidad Aumentada, se consolidan como los aspectos más valorados, ya que aportan dinamismo y un carácter innovador frente a otras aplicaciones similares.
+\section{Pruebas de Rendimiento del Backend}
+
+\subsection{Metodología}
+
+Para evaluar el rendimiento del backend de la aplicación, se han diseñado escenarios de prueba utilizando \textbf{Apache JMeter} \cite{apache_jmeter}. Las pruebas se centraron en evaluar los principales endpoints de la API REST bajo diferentes cargas de trabajo para simular tanto uso normal como situaciones de alta concurrencia.
+
+\subsubsection{Configuración de Pruebas}
+
+Se han realizado dos tipos de pruebas:
+
+\begin{itemize}
+    \item \textbf{Prueba de Carga Normal}: 10 usuarios concurrentes, ramp-up de 5 segundos, 10 iteraciones por usuario (100 peticiones por endpoint).
+    \item \textbf{Prueba de Estrés}: 50 usuarios concurrentes, ramp-up de 10 segundos, 20 iteraciones por usuario (1000 peticiones por endpoint).
+\end{itemize}
+
+Los endpoints evaluados representan el flujo típico de la aplicación: autenticación (Login), operaciones de lectura (\textit{GET Mujeres}, \textit{GET Lugares}, \textit{GET Rutas}) y operaciones de escritura (\textit{POST Visit Lugar}, \textit{POST Visit Lugar Ruta}). Excepto el endpoint de login, todos requieren autenticación mediante tokens JWT.
+
+\subsection{Resultados de las Pruebas}
+
+\subsubsection{Comparación de Tiempos de Respuesta}
+
+La Tabla \ref{tab:response_times} presenta los tiempos promedio, percentil 95 y valores máximos bajo ambas cargas.
+
+\begin{table}[H]
+\centering
+\caption{Comparación de tiempos de respuesta por endpoint}
+\label{tab:response_times}
+\scalebox{0.9}{
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{\textbf{Endpoint}} & \multicolumn{3}{c|}{\textbf{Carga Normal (10 usuarios)}} & \multicolumn{3}{c|}{\textbf{Estrés (50 usuarios)}} \\
+\cline{2-7}
+ & \textbf{Avg (ms)} & \textbf{95\% (ms)} & \textbf{Max (ms)} & \textbf{Avg (ms)} & \textbf{95\% (ms)} & \textbf{Max (ms)} \\
+\hline
+Login & 458 & 519 & 529 & 1154 & 1659 & 2155 \\
+GET Mujeres & 37 & 66 & 80 & 674 & 968 & 1429 \\
+GET Lugares & 42 & 72 & 126 & 783 & 1096 & 1779 \\
+GET Rutas & 54 & 100 & 153 & 892 & 1227 & 1788 \\
+POST Visit Lugar & 67 & 86 & 99 & 613 & 841 & 1477 \\
+POST Visit Lugar Ruta & 70 & 89 & 119 & 571 & 810 & 1419 \\
+GET Visited Lugares & 71 & 89 & 120 & 554 & 809 & 1084 \\
+\hline
+\end{tabular}
+}
+\end{table}
+
+\subsubsection{Throughput y Fiabilidad}
+
+La Tabla \ref{tab:throughput} muestra la tasa de peticiones procesadas por segundo y el porcentaje de errores, extraídos del Summary Report.
+
+\begin{table}[H]
+\centering
+\caption{Throughput y fiabilidad por endpoint}
+\label{tab:throughput}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\multirow{2}{*}{\textbf{Endpoint}} & \multicolumn{2}{c|}{\textbf{Carga Normal}} & \multicolumn{2}{c|}{\textbf{Estrés}} \\
+\cline{2-5}
+ & \textbf{Req/s} & \textbf{Error \%} & \textbf{Req/s} & \textbf{Error \%} \\
+\hline
+Login & 8.22 & 0\% & 8.82 & 0\% \\
+GET Mujeres & 8.47 & 0\% & 8.82 & 0\% \\
+GET Lugares & 8.46 & 0\% & 8.79 & 0\% \\
+GET Rutas & 8.45 & 0\% & 8.76 & 0\% \\
+POST Visit Lugar & 8.43 & 0\% & 8.75 & 0\% \\
+POST Visit Lugar Ruta & 8.43 & 0\% & 8.75 & 0\% \\
+GET Visited Lugares & 8.43 & 0\% & 8.75 & 0\% \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Distribución de Tiempos y Desviación Estándar}
+
+La Tabla \ref{tab:percentiles} resume percentiles clave y desviación estándar para la prueba de carga normal.
+
+\begin{table}[H]
+\centering
+\caption{Distribución de percentiles - Carga Normal}
+\label{tab:percentiles}
+\scalebox{0.95}{
+\begin{tabular}{|l|c|c|c|c|c|c|c|}
+\hline
+\textbf{Endpoint} & \textbf{Min} & \textbf{Median} & \textbf{90\%} & \textbf{95\%} & \textbf{99\%} & \textbf{Max} & \textbf{Std Dev} \\
+\hline
+Login & 358 & 460 & 500 & 519 & 529 & 529 & 36.0 \\
+GET Mujeres & 20 & 34 & 54 & 66 & 79 & 80 & 13.7 \\
+GET Lugares & 20 & 38 & 65 & 72 & 110 & 126 & 19.1 \\
+GET Rutas & 27 & 48 & 81 & 100 & 124 & 153 & 22.8 \\
+POST Visit Lugar & 53 & 64 & 79 & 86 & 97 & 99 & 9.9 \\
+POST Visit Lugar Ruta & 59 & 69 & 88 & 89 & 100 & 119 & 11.1 \\
+GET Visited Lugares & 58 & 69 & 89 & 89 & 109 & 120 & 11.9 \\
+\hline
+\end{tabular}
+}
+\end{table}
+
+\subsection{Análisis de Resultados}
+
+\subsubsection{Rendimiento bajo Carga Normal}
+
+Los resultados con 10 usuarios concurrentes muestran un comportamiento óptimo: \textbf{0\% de errores} y tiempos de respuesta muy bajos en la mayoría de los endpoints.  
+Los endpoints \textit{GET Mujeres} (37 ms) y \textit{GET Lugares} (42 ms) destacan por su rapidez, a pesar de gestionar consultas y serialización de datos complejos. El endpoint \textit{GET Rutas}, con 54 ms, sigue mostrando un rendimiento excelente.  
+Las operaciones de escritura (\textit{POST Visit Lugar} y \textit{POST Visit Lugar Ruta}) presentan tiempos entre 67 y 71 ms, reflejando una gestión eficiente de transacciones y validaciones.  
+El endpoint de autenticación (\textit{Login}) registra 458 ms, valor esperado debido al coste criptográfico de la generación de tokens JWT. La desviación estándar baja confirma estabilidad.
+
+\subsubsection{Comportamiento bajo Estrés}
+
+Al aumentar la concurrencia a 50 usuarios (1000 peticiones por endpoint), la degradación es significativa pero estable. Las operaciones de lectura son las más afectadas:  
+\textit{GET Mujeres} pasa de 37 ms a 674 ms, un incremento de 18x; \textit{GET Lugares} alcanza 783 ms y \textit{GET Rutas} 892 ms.  
+Las operaciones POST degradan menos (incrementos entre 8x y 9x), confirmando que la escritura es menos sensible a la contención de recursos.  
+El endpoint \textit{Login} sufre la menor degradación relativa (2.5x), gracias a que depende más del procesamiento CPU que de la E/S de base de datos.  
+Pese al aumento de latencia, \textbf{la tasa de error sigue siendo 0\%} y el throughput se mantiene estable (8.7-8.8 req/s), lo que refleja una arquitectura escalable y un buen dimensionamiento de recursos.
+
+\subsection{Conclusiones}
+
+El backend demuestra alta estabilidad y escalabilidad.  
+Bajo carga normal, los tiempos son óptimos para garantizar una experiencia fluida. Bajo estrés, aunque los tiempos aumentan, la ausencia de errores y el throughput estable confirman que el sistema puede soportar un crecimiento sustancial sin comprometer la integridad ni la disponibilidad del servicio.  
+Estas pruebas validan el uso de \textbf{Django REST Framework} como base tecnológica y confirman que las optimizaciones aplicadas permiten un rendimiento adecuado incluso en escenarios de alta demanda.
+
+\section{Pruebas de Rendimiento del Frontend}
+
+\section{Pruebas de Rendimiento de la Realidad Aumentada}

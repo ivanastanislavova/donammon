@@ -6,7 +6,7 @@
 \titulacion{Grado en Ingeniería Multimedia}
 
 % Editar el título
-\title{DONA’m MÓN: Aplicación móvil para visibilizar la vida y obra de mujeres en puntos geolocalizados de Valencia.}
+\title{DONA'm MÓN: Aplicación móvil para visibilizar la vida y obra de mujeres en puntos geolocalizados de Valencia.}
 
 % Si es una alumna se debe usar
 % \authorlabel{Autora}
@@ -14,10 +14,6 @@
 % Editar el nombre
 \author{Ivana Stanislavova Ivanova}
 
-
-% Si hay varios tutores:
-% \tutorlabel{Tutores}
-% \tutor{Nombre del tutor 1 \\[2mm] Nombre del turor2}
 \tutorlabel{Tutor}
 % Editar
 \tutor{Manuel Pérez Aixendri}
@@ -25,6 +21,8 @@
 % Editar: Poner mes y año de la convocatoria de lectura del TFM
 \convocatoria{Enero 2025}
 
+% Paquetes básicos
+\usepackage[utf8]{inputenc}
 \usepackage{float}
 \usepackage[table]{xcolor}
 \usepackage{tabularx}
@@ -36,21 +34,26 @@
 \usepackage{eurosym}
 \usepackage{pgfgantt}
 \usepackage{pdflscape}
-\usepackage[utf8]{inputenc}
 \usepackage{tikz}
 \usepackage{rotating}
 \usepackage{caption}
-\usepackage{pdflscape}
 \usepackage{capt-of}
- \usepackage{listings}
- \usepackage{xcolor}
- \usepackage{array}
- \usepackage{xcolor}
+\usepackage{listings}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{pgfplots}
+\usepackage{longtable}
+\usepackage{parskip}
+\usepackage{pifont}
+\usepackage{wasysym}
+
+% Configuraciones
+\pgfplotsset{compat=1.18}
 \definecolor{verde}{RGB}{0, 128, 0}
 \definecolor{marron}{RGB}{184, 115, 51}
 \definecolor{rojo}{RGB}{200, 0, 0}
 
- \lstset{
+\lstset{
    basicstyle=\ttfamily\small,
    backgroundcolor=\color{gray!10},
    frame=single,
@@ -60,16 +63,17 @@
    commentstyle=\color{gray}\itshape,
    stringstyle=\color{orange},
    showstringspaces=false
-  }
+}
+
 \usetikzlibrary{arrows.meta, shapes.geometric, positioning}
 \titlespacing*{\section}{0pt}{1.9ex plus 0.8ex minus .2ex}{1.2ex}
 \titlespacing*{\subsection}{0pt}{.4ex plus 0.6ex minus .2ex}{0.9ex}
+\usepgfplotslibrary{groupplots}
 
 % Corregir error de headheight para fancyhdr
 \setlength{\headheight}{14.5pt}
 
 \begin{document}
-
 % NO QUITAR ESTOS ELEMENTOS
 \portada
 \cleardoublepage
@@ -81,26 +85,53 @@
 
 % Editar: Resumen en Español (obligatorio)
 \begin{resumen}
-  Este es el resumen del TFM. Debe ser corto (máximo media página) y cubrir los aspectos principales del TFM.
+\setlength{\parskip}{8pt plus 2pt minus 1pt}
+  Este Trabajo de Fin de Grado pretende dar visibilidad a mujeres históricamente relevantes en Valencia, cuyas aportaciones, aunque presentes en el espacio urbano, son en gran parte desconocidas por la ciudadanía. Esta falta de reconocimiento limita la construcción de referentes para las futuras generaciones y evidencia la necesidad de herramientas innovadoras que unan tecnología, educación e igualdad.
+
+  Con este objetivo se ha desarrollado \textit{DONA'm MÓN}, una aplicación móvil que combina geolocalización, realidad aumentada y contenidos multimedia para rescatar y poner en valor el legado de estas mujeres. La aplicación permite explorar lugares emblemáticos mediante un mapa interactivo, consultar información detallada sobre las protagonistas y sus ubicaciones asociadas, y seguir rutas temáticas donde los usuarios marcan su progreso mediante el escaneo de códigos QR. Además, cuando se encuentran cerca de un lugar, pueden acceder a experiencias en realidad aumentada con modelos 3D interactivos y audios explicativos, fomentando así el aprendizaje activo y la exploración urbana desde una perspectiva inclusiva.
+
+  El desarrollo se ha realizado con React Native para la interfaz, Django y PostgreSQL en el backend y AR.js con A-Frame para la RA, priorizando compatibilidad y escalabilidad. Esta solución no solo digitaliza el patrimonio femenino, sino que también lo vincula con el territorio, transformando la forma en que se vive y se transmite la historia.
 \end{resumen}
 \cleardoublepage
 
 % Editar: Resumen en Inglés
 \begin{abstract}
-  This is the abstract of the TFM. It must be short and cover the main aspects of the TFM.
+\setlength{\parskip}{8pt plus 2pt minus 1pt}
+This Final Degree Project addresses the challenge of giving visibility to historically significant women in Valencia, whose contributions, although present in the urban space, remain largely unknown to the public. This lack of recognition limits the creation of role models for future generations and highlights the need for innovative tools that combine technology, education, and equality.
+
+To achieve this goal, \textit{DONA'm MÓN} has been developed, a mobile application that combines geolocation, augmented reality, and multimedia content to rescue and highlight the legacy of these women. The application allows users to explore iconic locations through an interactive map, access detailed information about the protagonists and their associated sites, and follow thematic routes where they can track their progress by scanning QR codes. Additionally, when users are near a location, they can access augmented reality experiences with interactive 3D models and explanatory audio, thus promoting active learning and urban exploration from an inclusive perspective.
+
+The development was carried out using React Native for the interface, Django and PostgreSQL for the backend, and AR.js with A-Frame for augmented reality, prioritizing compatibility and scalability. This solution not only digitizes female heritage but also connects it to the territory, transforming the way history is experienced and transmitted.
+
 \end{abstract}
 \cleardoublepage
 
 % Editar: Resumen en Valenciano
 \begin{resum}
-  Aquest és el resum del TFM. Ha de ser curt (màxim mitja pàgina) i cobrir els aspectes principals del TFM.
+\setlength{\parskip}{8pt plus 2pt minus 1pt}
+
+Aquest Treball de Fi de Grau aborda el repte de donar visibilitat a dones històricament rellevants a València, les aportacions de les quals, encara que presents en l\textquotesingle espai urbà, són en gran part desconegudes per la ciutadania. Aquesta manca de reconeixement limita la construcció de referents per a les futures generacions i evidencia la necessitat d\textquotesingle eines innovadores que unisquen tecnologia, educació e igualtat.
+
+Amb aquest objectiu s\textquotesingle ha desenvolupat \textit{DONA\textquotesingle m MÓN}, una aplicació mòbil que combina geolocalització, realitat augmentada i continguts multimèdia per rescatar i posar en valor el llegat d\textquotesingle aquestes dones. L\textquotesingle aplicació permet explorar llocs emblemàtics mitjançant un mapa interactiu, consultar informació detallada sobre les protagonistes i les seues ubicacions associades, i seguir rutes temàtiques on els usuaris marquen el seu progrés mitjançant l\textquotesingle escaneig de codis QR. A més, quan es troben prop d\textquotesingle un lloc, poden accedir a experiències en realitat augmentada amb models 3D interactius i àudios explicatius, fomentant així l\textquotesingle aprenentatge actiu i l\textquotesingle exploració urbana des d\textquotesingle una perspectiva inclusiva.
+
+El desenvolupament s\textquotesingle ha realitzat amb React Native per a la interfície, Django i PostgreSQL per al backend i AR.js amb A-Frame per a la RA, prioritzant compatibilitat i escalabilitat. Aquesta solució no sols digitalitza el patrimoni femení, sinó que també el vincula amb el territori, transformant la manera en què es viu i es transmet la història.
+
 \end{resum}
 \cleardoublepage
 
 
 % Editar: Agradecimientos (opcional)
 \begin{agradecimientos}
+\setlength{\parskip}{8pt plus 2pt minus 1pt}
+\textit{Quiero agradecer, en primer lugar, a mis padres, Polina y Stanislav, por haber sacrificado siempre todo por mí, por apoyarme en todas mis decisiones, por estar a mi lado hasta cuando me pongo insufrible por el estrés. No sería nada sin vosotros y sin duda no hubiera podido llegar hasta aquí, os quiero. También agradecer al resto de mi familia, en Alcalá de Henares y en Bulgaria, por celebrar mis logros desde la distancia.}
 
+\textit{A mi tutor Manolo, por confiar en mí desde el principio y ser el mejor de los guías, gracias por todos los consejos, por cada una de las reuniones y por siempre tener un momento para ayudar y transmitir conocimiento. Y a mis compañeros y profesores del IRTIC, por no solo haberme acogido, si no por haberme brindado el mejor de los ambientes de trabajo.}
+
+\textit{A mi pareja, Salva, por estar conmigo desde antes incluso de saber que bachillerato debería hacer hasta el día de hoy. en el que termino el máster, por haber crecido juntos académicamente y como personas, por siempre estar a mi lado en las buenas y en las malas. Gracias de corazón.}
+
+\textit{A mis amigos del grado, del máster y de Gandia, por todos los buenos momentos.}
+
+\textit{A todas las mujeres que han luchado por hacerse ver en este mundo y por las que no pudieron.}
 \end{agradecimientos}
 \cleardoublepage
 
@@ -110,6 +141,14 @@
 \justify
 
 % Las figuras se buscan en el directorio figs
+\listoffigures
+
+\cleardoublepage
+
+% Las tablas se buscan en el directorio tables
+\listoftables
+
+\cleardoublepage
 
 % Cada capítulo está en su propio fichero tex. Ver el directorio tex.
 
@@ -131,6 +170,9 @@
 
 \chapter{Implementación y pruebas}
 \input{tex/implementacion_pruebas.tex}
+\chapter{Pruebas}
+\input{tex/pruebas.tex}
+
 \chapter{Conclusiones}
 \input{tex/conclusiones.tex}
 

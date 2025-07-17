@@ -3,26 +3,34 @@
 
 \subsection{Herramientas, frameworks y lenguajes utilizados}
 
-El backend de la aplicación se ha desarrollado utilizando el framework \textbf{Django} (versión 5.2.2) junto con \textbf{Django REST Framework} para la construcción de la API. Django facilita la definición de modelos, la gestión de usuarios y la exposición de endpoints RESTful de manera segura y eficiente.
+El backend de la aplicación se ha desarrollado utilizando el framework \textbf{Django} (versión 5.2.3) junto con \textbf{Django REST Framework} para la construcción de la API. Django facilita la definición de modelos, la gestión de usuarios y la exposición de endpoints RESTful de manera segura y eficiente.
 
-Para la persistencia de datos se ha empleado \textbf{PostgreSQL} como sistema gestor de bases de datos relacional. El entorno de desarrollo y despliegue se ha gestionado mediante \textbf{Docker} y \textbf{Docker Compose}, lo que permite la portabilidad y la replicabilidad del entorno en diferentes máquinas.
+Para la persistencia de datos se ha empleado \textbf{PostgreSQL} con extensiones \textbf{PostGIS} como sistema gestor de bases de datos relacional. El entorno de desarrollo y despliegue se ha gestionado mediante \textbf{Docker} y \textbf{Docker Compose}, lo que permite la portabilidad y la replicabilidad del entorno en diferentes máquinas.
 
-Las principales herramientas y librerías utilizadas son:
+\textbf{Herramientas y tecnologías:}
 \begin{itemize}
-    \item \textbf{Python 3.10}
-    \item \textbf{Django 5.2.2} 
+    \item \textbf{Python 3.11}
+    \item \textbf{Django 5.2.3} 
     \item \textbf{Django REST Framework} (\texttt{djangorestframework})
+    \item \textbf{PostgreSQL} - Sistema gestor de bases de datos 
     \item \textbf{Docker} y \textbf{Docker Compose} para la gestión de contenedores
+\end{itemize}
+
+\textbf{Principales librerías:}
+\begin{itemize}
     \item \texttt{psycopg2-binary} para la conexión con PostgreSQL
     \item \texttt{django-cors-headers} para permitir peticiones desde el frontend
     \item \texttt{Pillow} para el manejo de imágenes en Django
 \end{itemize}
+
+
 \subsection{Estructura del proyecto y organización del código}
 
 El código fuente del backend se encuentra en la carpeta \texttt{donam-mon-backend/}, que contiene la configuración de Docker, los archivos de requisitos y el proyecto Django propiamente dicho. La estructura principal es la siguiente:
 
 \begin{lstlisting}[language=bash, caption={Estructura principal del backend}]
 donam-mon-backend/
+    .env
     docker-compose.yml
     Dockerfile
     requirements.txt
@@ -30,6 +38,7 @@ donam-mon-backend/
     backend/
         manage.py
         db.sqlite3
+        backup_postgres.sql
 
         config/
             __init__.py
@@ -46,13 +55,22 @@ donam-mon-backend/
             serializers.py
             tests.py
             views.py
-
             migrations/
+
+        fotos/
+            (archivos de imágenes subidas)
+
+        backend/
+            static/
+                (archivos estáticos de Django y DRF)
 \end{lstlisting}
 
 \texttt{config/}: Contiene la configuración global del proyecto Django (ajustes, rutas principales, etc.).
 
 \texttt{mujeres/}: Es la aplicación principal, donde se definen los modelos, vistas, serializers, administración y lógica de negocio.
+
+\texttt{fotos/}: Directorio donde se almacenan las imágenes subidas.
+
 
 \subsection{Modelado de datos}
 
@@ -62,29 +80,49 @@ El modelado de datos es uno de los aspectos más relevantes del backend. Se han 
 class Mujer(models.Model):
     nombre = models.CharField(max_length=100)
     descripcion = models.TextField()
-    foto = models.ImageField(upload_to='fotos/', blank=True, null=True)
-    areas_investigacion = ArrayField(
-        models.CharField(max_length=100), blank=True, default=list, verbose_name='Áreas de investigación'
+    foto = models.ImageField(upload_to='', blank=True, null=True)
+    areas_investigacion = models.ManyToManyField( 
+        'AreaInvestigacion', 
+        blank=True,
+        related_name='mujeres',
+        verbose_name='Áreas de investigación'
     )
     fechas = models.CharField(max_length=100, blank=True, null=True)
+    
+    class Meta: 
+        ordering = ['nombre']
+    
+    def __str__(self):
+        return self.nombre
 \end{lstlisting}
 
-\
-Se ha optado por utilizar \texttt{ArrayField} para el campo \texttt{areas\_investigacion} en el modelo \texttt{Mujer}, aprovechando la capacidad de PostgreSQL para almacenar listas de cadenas en un solo campo. Esta decisión permite simplificar el modelo, evitar tablas intermedias y realizar búsquedas y filtrados eficientes desde la API, facilitando la integración con el frontend. Se evaluó el uso de \texttt{ManyToManyField}, pero se descartó por la simplicidad y rendimiento que ofrece \texttt{ArrayField} en este caso.
+Para las áreas de investigación se utiliza un modelo separado que permite la normalización de datos:
+
+\begin{lstlisting}[language=Python, caption={Modelo AreaInvestigacion}, escapeinside={(*@}{@*)}]
+class AreaInvestigacion(models.Model):
+    nombre = models.CharField(max_length=100, unique=True)
+
+    def __str__(self):
+        return self.nombre
+\end{lstlisting}
+
+Se ha optado por utilizar \texttt{ManyToManyField} para el campo \texttt{areas\_investigacion} en el modelo \texttt{Mujer}, estableciendo una relación con la tabla \texttt{AreaInvestigacion}. 
 
 El modelo \texttt{Lugar} representa los lugares geolocalizados asociados a una mujer, e incluye campos para la latitud, longitud, foto y un enlace a contenido de realidad aumentada.
-En lugar de almacenar los modelos 3D directamente en la base de datos o en el propio backend, se ha optado por subir los archivos 3D y el HTML necesario a un repositorio externo (GitHub Pages) y guardar únicamente la URL de acceso en el campo \texttt{ar\_url}.
-De esta forma, la base de datos y el backend no se ven saturados con archivos grandes ni con peticiones de contenido estático. Además, al utilizar servicios externos optimizados para servir archivos estáticos y contenido web se mejora tanto la velocidad de carga como la escalabilidad de la aplicación. Así, el campo \texttt{ar\_url} actúa como referencia a la experiencia de realidad aumentada, permitiendo que el frontend acceda directamente al recurso externo de forma eficiente y desacoplada del backend. Esta estrategia también facilita la actualización y gestión de los modelos 3D y sus visores HTML, ya que no es necesario modificar ni desplegar el backend cada vez que se realiza un cambio en estos recursos.
+En lugar de almacenar los modelos 3D directamente en la base de datos o en el propio backend, se ha optado por subir los archivos 3D y el HTML necesario a \textbf{Vercel} y guardar únicamente la URL de acceso en el campo \texttt{ar\_url}. De esta forma, la base de datos y el backend no se ven saturados con archivos grandes ni con peticiones de contenido estático. Además, al utilizar \textbf{Vercel} como plataforma optimizada para servir archivos estáticos y contenido web se mejora tanto la velocidad de carga como la escalabilidad de la aplicación gracias a su \textbf{CDN global}. Así, el campo \texttt{ar\_url} actúa como referencia a la experiencia de realidad aumentada, permitiendo que el frontend acceda directamente al recurso externo de forma eficiente y desacoplada del backend. Esta estrategia también facilita la actualización y gestión de los modelos 3D y sus visores HTML, ya que no es necesario modificar ni desplegar el backend cada vez que se realiza un cambio en estos recursos.
 
 \begin{lstlisting}[language=Python, caption={Modelo Lugar}, escapeinside={(*@}{@*)}]
 class Lugar(models.Model):
     nombre = models.CharField(max_length=100)
     descripcion = models.TextField()
-    latitud = models.FloatField(blank=True, null=True)
-    longitud = models.FloatField(blank=True, null=True)
-    foto = models.ImageField(upload_to='fotos/', blank=True, null=True)
-    ar\_url = models.URLField(max_length=300, blank=True, null=True, verbose_name='URL de Realidad Aumentada')
-    mujer = models.ForeignKey(Mujer, on_delete=models.CASCADE, related_name='lugares')
+    latitud = models.FloatField(null=True, blank=True)
+    longitud = models.FloatField(null=True, blank=True)
+    mujer = models.ForeignKey(Mujer, related_name='lugares', on_delete=models.CASCADE)
+    foto = models.ImageField(upload_to='', null=True, blank=True)
+    ar_url = models.URLField(max_length=300, null=True, blank=True, verbose_name='URL de Realidad Aumentada')
+
+    def __str__(self):
+        return self.nombre
 \end{lstlisting}
 
 El modelo \texttt{Ruta} agrupa lugares y mujeres en recorridos temáticos, utilizando relaciones \texttt{ManyToManyField} para maximizar la flexibilidad:
@@ -93,8 +131,11 @@ El modelo \texttt{Ruta} agrupa lugares y mujeres en recorridos temáticos, utili
 class Ruta(models.Model):
     nombre = models.CharField(max_length=100, unique=True)
     descripcion = models.TextField(blank=True)
-    mujeres = models.ManyToManyField(Mujer, related_name='rutas', blank=True)
-    lugares = models.ManyToManyField(Lugar, related_name='rutas', blank=True)
+    mujeres = models.ManyToManyField('Mujer', related_name='rutas', blank=True)
+    lugares = models.ManyToManyField('Lugar', related_name='rutas', blank=True)
+
+    def __str__(self):
+        return self.nombre
 \end{lstlisting}
 
 Para la gestión de usuarios se utiliza el modelo estándar de Django, extendido mediante un modelo \texttt{UserProfile} que almacena información adicional relevante para la aplicación:
@@ -102,50 +143,80 @@ Para la gestión de usuarios se utiliza el modelo estándar de Django, extendido
 \begin{lstlisting}[language=Python, caption={Modelo UserProfile}]
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
-    birth_date = models.DateField(blank=True, null=True)
-    email = models.EmailField(blank=True, null=True)
+    birth_date = models.DateField(null=True, blank=True)
+    email = models.EmailField(max_length=254, unique=True)
+
+    def __str__(self):
+        return self.user.username
 \end{lstlisting}
 
-El historial de visitas se gestiona con los modelos \texttt{VisitedLugar} y \texttt{VisitedLugarRuta}, que permiten registrar tanto visitas individuales como visitas dentro de rutas temáticas:
+
+El historial de visitas se gestiona con los modelos \texttt{VisitedLugar} y \texttt{VisitedLugarRuta}, que permiten registrar tanto visitas individuales como visitas dentro de rutas temáticas, tienen restricciones \texttt{unique\_together} y ordenamiento temporal:
+
 
 \begin{lstlisting}[language=Python, caption={Modelo VisitedLugar}]
 class VisitedLugar(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='visited_lugares')
-    lugar = models.ForeignKey(Lugar, on_delete=models.CASCADE, related_name='visitas')
-    visited_at = models.DateTimeField(auto_now_add=True)
+    lugar = models.ForeignKey(Lugar, on_delete=models.CASCADE)
+    visited_at = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        unique_together = ('user', 'lugar')
+        ordering = ['-visited_at']
+
+    def __str__(self):
+        return f"{self.user.username} visitó {self.lugar.nombre} el {self.visited_at}"
 \end{lstlisting}
+
 
 \begin{lstlisting}[language=Python, caption={Modelo VisitedLugarRuta}]
 class VisitedLugarRuta(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='visited_lugares_ruta')
-    ruta = models.ForeignKey(Ruta, on_delete=models.CASCADE, related_name='visitas')
-    lugar = models.ForeignKey(Lugar, on_delete=models.CASCADE, related_name='visitas_ruta')
-    visited_at = models.DateTimeField(auto_now_add=True)
+    ruta = models.ForeignKey('Ruta', on_delete=models.CASCADE, related_name='visitas')
+    lugar = models.ForeignKey(Lugar, on_delete=models.CASCADE)
+    visited_at = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        unique_together = ('user', 'ruta', 'lugar')
+        ordering = ['-visited_at']
+
+    def __str__(self):
+        return f"{self.user.username} visitó {self.lugar.nombre} en ruta {self.ruta.nombre} el {self.visited_at}"
 \end{lstlisting}
+
 
 \subsection{Gestión de imágenes}
 
+
 Para la gestión de imágenes, se utiliza el campo \texttt{ImageField} en los modelos. En la configuración de Django se define la ruta de almacenamiento y la URL de acceso a los archivos subidos:
+
 
 \begin{lstlisting}[language=Python, caption={Configuración de imágenes en settings.py}]
 MEDIA_URL = '/fotos/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'fotos')
 \end{lstlisting}
 
+
 En \texttt{config/urls.py} se añade la siguiente configuración para servir archivos en desarrollo:
+
 
 \begin{lstlisting}[language=Python, caption={Configuración de media en urls.py}]
 from django.conf import settings
 from django.conf.urls.static import static
+
+# ...
 
 urlpatterns = [
     # ... rutas ...
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 \end{lstlisting}
 
+
 \subsection{Paginación de la API}
 
+
 Para mejorar la eficiencia y la experiencia de usuario, la API implementa paginación por defecto:
+
 
 \begin{lstlisting}[language=Python, caption={Paginación en settings.py}]
 REST_FRAMEWORK = {
@@ -154,9 +225,12 @@ REST_FRAMEWORK = {
 }
 \end{lstlisting}
 
+
 \subsection{Seguridad y permisos}
 
+
 La autenticación de usuarios se gestiona mediante el sistema estándar de Django, complementado con autenticación basada en tokens para la API. En la configuración de Django REST Framework se especifica el uso de \texttt{TokenAuthentication} y los permisos por defecto:
+
 
 \begin{lstlisting}[language=Python, caption={Configuración de autenticación y permisos}]
 REST_FRAMEWORK = {
@@ -169,32 +243,57 @@ REST_FRAMEWORK = {
 }
 \end{lstlisting}
 
-\textbf{Nota:} En producción, \texttt{DEBUG} debe estar siempre en \texttt{False} y el \texttt{SECRET\_KEY} debe obtenerse de una variable de entorno. Además, \texttt{CORS\_ALLOW\_ALL\_ORIGINS = True} es solo para desarrollo; en producción se recomienda restringir los orígenes permitidos.
+\textbf{Nota sobre configuración:}
+
+Para \textbf{desarrollo} se recomienda:
+
+\begin{itemize}
+    \item \texttt{DEBUG = True}: Permite debugging y mensajes de error detallados.
+    \item \texttt{CORS\_ALLOW\_ALL\_ORIGINS = True}: Facilita pruebas desde cualquier origen.
+    \item \texttt{ALLOWED\_HOSTS = []}: Acepta cualquier host en modo debug.
+\end{itemize}
+
+Para \textbf{producción} es obligatorio:
+
+\begin{itemize}
+    \item \texttt{DEBUG = False}
+    \item \texttt{SECRET\_KEY} desde variable de entorno.
+    \item \texttt{CORS\_ALLOWED\_ORIGINS} restringido a dominios específicos.
+    \item \texttt{ALLOWED\_HOSTS} configurado con dominios autorizados.
+\end{itemize}
+
 
 \subsection{Gestión de variables de entorno y configuración segura}
 
 Para evitar exponer credenciales sensibles en el código fuente, se utiliza un archivo \texttt{.env} para definir variables de entorno como las credenciales de la base de datos. El archivo \texttt{docker-compose.yml} y la configuración de Django acceden a estas variables para una gestión segura y flexible.
 
-\begin{lstlisting}[language=bash, caption={Archivo .env}]
-POSTGRES_DB=donamdb
-POSTGRES_USER=donamuser
-POSTGRES_PASSWORD=donampass
+\begin{lstlisting}[language=bash, caption={Variables de entorno para desarrollo}]
+POSTGRES_DB=donamon
+POSTGRES_USER=ivana
+POSTGRES_PASSWORD=superclave
 \end{lstlisting}
+
+\textbf{Nota:} Las credenciales mostradas son apropiadas para el entorno de desarrollo del proyecto. En un despliegue de producción, estas deberían ser reemplazadas por credenciales robustas generadas aleatoriamente.
+
 
 \subsection{Serialización y exposición de la API REST}
 
+
 La serialización de los modelos se realiza mediante clases \texttt{ModelSerializer}, que permiten transformar los objetos de la base de datos en formatos JSON fácilmente consumibles por el frontend y validar los datos recibidos antes de almacenarlos. En este proyecto, los serializers también gestionan relaciones entre modelos y añaden campos personalizados, como URLs absolutas para las imágenes.
 
+
 Por ejemplo, el serializador para el modelo \texttt{Mujer} incluye la serialización anidada de los lugares asociados y un campo calculado para la URL de la foto:
+
 
 \begin{lstlisting}[language=Python, caption={Serializador Mujer}]
 class MujerSerializer(serializers.ModelSerializer):
     lugares = LugarSerializer(many=True, read_only=True)
     foto_url = serializers.SerializerMethodField()
+    areas_investigacion = AreaInvestigacionSerializer(many=True, read_only=True) 
 
     class Meta:
         model = Mujer
-        fields = ('id', 'nombre', 'descripcion', 'foto', 'foto_url', 'lugares', 'areas_investigacion')
+        fields = ('id', 'nombre', 'descripcion', 'foto', 'foto_url', 'lugares', 'areas_investigacion', 'fechas')
 
     def get_foto_url(self, obj):
         request = self.context.get('request')
@@ -208,16 +307,20 @@ class MujerSerializer(serializers.ModelSerializer):
         return None
 \end{lstlisting}
 
+
 El serializador para el modelo \texttt{Lugar} también incluye la relación con la mujer asociada (mostrando su nombre), así como un campo personalizado para la URL de la foto:
+
 
 \begin{lstlisting}[language=Python, caption={Serializador Lugar}]
 class LugarSerializer(serializers.ModelSerializer):
     mujer = serializers.StringRelatedField()
     foto_url = serializers.SerializerMethodField()
 
+
     class Meta:
         model = Lugar
         fields = ('id', 'nombre', 'descripcion', 'latitud', 'longitud', 'mujer', 'foto', 'foto_url', 'ar_url')
+
 
     def get_foto_url(self, obj):
         request = self.context.get('request')
@@ -231,7 +334,9 @@ class LugarSerializer(serializers.ModelSerializer):
         return None
 \end{lstlisting}
 
+
 El serializador de perfil de usuario permite exponer y validar los datos adicionales del usuario:
+
 
 \begin{lstlisting}[language=Python, caption={Serializador UserProfile}]
 class UserProfileSerializer(serializers.ModelSerializer):
@@ -240,7 +345,9 @@ class UserProfileSerializer(serializers.ModelSerializer):
         fields = ['birth_date', 'email']
 \end{lstlisting}
 
+
 El serializador de registro de usuario permite crear un usuario y su perfil asociado en una sola petición:
+
 
 \begin{lstlisting}[language=Python, caption={Serializador UserRegister}]
 class UserRegisterSerializer(serializers.ModelSerializer):
@@ -250,6 +357,7 @@ class UserRegisterSerializer(serializers.ModelSerializer):
         fields = ['username', 'password', 'profile']
         extra_kwargs = {'password': {'write_only': True}}
 
+
     def create(self, validated_data):
         profile_data = validated_data.pop('profile')
         user = User.objects.create_user(username=validated_data['username'], password=validated_data['password'])
@@ -257,7 +365,9 @@ class UserRegisterSerializer(serializers.ModelSerializer):
         return user
 \end{lstlisting}
 
+
 El serializador de visitas a lugares incluye la información completa del lugar visitado:
+
 
 \begin{lstlisting}[language=Python, caption={Serializador VisitedLugar}]
 class VisitedLugarSerializer(serializers.ModelSerializer):
@@ -266,23 +376,29 @@ class VisitedLugarSerializer(serializers.ModelSerializer):
         model = VisitedLugar
         fields = ['id', 'lugar', 'visited_at']
 
+
     def get_lugar(self, obj):
         return LugarSerializer(obj.lugar, context=self.context).data
 \end{lstlisting}
 
+
 El serializador de visitas a lugares dentro de rutas:
+
 
 \begin{lstlisting}[language=Python, caption={Serializador VisitedLugarRuta}]
 class VisitedLugarRutaSerializer(serializers.ModelSerializer):
     lugar = LugarSerializer(read_only=True)
     mujer = serializers.StringRelatedField(read_only=True)
 
+
     class Meta:
         model = VisitedLugarRuta
         fields = ('id', 'user', 'mujer', 'lugar', 'visited_at')
 \end{lstlisting}
 
+
 Y el serializador de rutas, que expone tanto las mujeres como los lugares asociados:
+
 
 \begin{lstlisting}[language=Python, caption={Serializador Ruta}]
 class RutaSerializer(serializers.ModelSerializer):
@@ -293,38 +409,55 @@ class RutaSerializer(serializers.ModelSerializer):
         fields = ('id', 'nombre', 'descripcion', 'mujeres', 'lugares')
 \end{lstlisting}
 
-\subsection{Vistas, lógica de endpoints y ejemplos de lógica relevante}
+
+\subsection{Vistas y endpoints de la API}
+
 
 Las vistas de la API se han implementado principalmente mediante \texttt{ModelViewSet}, lo que permite disponer de endpoints CRUD (crear, leer, actualizar, borrar) de forma automática y segura. Por ejemplo, la vista para el modelo \texttt{Mujer} es:
 
-\begin{lstlisting}[language=Python, caption={Vista MujerViewSet}]
+
+\begin{lstlisting}[language=Python, caption={Vista MujerViewSet con permisos condicionales}]
 class MujerViewSet(viewsets.ModelViewSet):
     queryset = Mujer.objects.all()
     serializer_class = MujerSerializer
+
+    def get_permissions(self):
+        if self.action == 'list':
+            return [AllowAny()]
+        return [IsAuthenticated()]
 \end{lstlisting}
+
+
 
 Para la lógica de visitas, se han implementado endpoints que permiten registrar una visita y consultar el historial de visitas de un usuario. Un ejemplo de lógica relevante en la vista podría ser la validación para evitar duplicados en el historial:
 
-\begin{lstlisting}[language=Python, caption={Lógica para evitar duplicados en visitas}]
-class VisitedLugarViewSet(viewsets.ModelViewSet):
-    queryset = VisitedLugar.objects.all()
-    serializer_class = VisitedLugarSerializer
 
-    def perform_create(self, serializer):
-        user = self.request.user
-        lugar = serializer.validated_data['lugar']
-        if VisitedLugar.objects.filter(user=user, lugar=lugar).exists():
-            raise ValidationError("Ya has registrado una visita a este lugar.")
-        serializer.save(user=user)
+\begin{lstlisting}[language=Python, caption={Vista para gestión de visitas}]
+class VisitedLugarView(APIView):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        lugar_id = request.data.get('lugar_id')
+        if not lugar_id:
+            return Response({'error': 'lugar_id es requerido'}, status=400)
+        lugar = get_object_or_404(Lugar, id=lugar_id)
+        visited, created = VisitedLugar.objects.get_or_create(user=request.user, lugar=lugar)
+        if not created:
+            return Response({'message': 'Ya registrado', 'visited_at': visited.visited_at}, status=200)
+        serializer = VisitedLugarSerializer(visited)
+        return Response(serializer.data, status=201)
 \end{lstlisting}
+
+
 
 \subsection{Administración y gestión de datos}
 
 Django proporciona una interfaz de administración (\textit{Django Admin}) que ha sido personalizada para facilitar la gestión de los modelos principales de la aplicación. En el archivo \texttt{admin.py} de la app \texttt{mujeres}, se han registrado los modelos y se han configurado opciones de visualización y filtrado para mejorar la experiencia de los administradores:
 
-\begin{lstlisting}[language=Python, caption={Registro del modelo Mujer en Django Admin}]
+\begin{lstlisting}[language=Python, caption={Configuración personalizada de Django Admin}]
 from django.contrib import admin
-from .models import Mujer, Lugar, VisitedLugarRuta, Ruta
+from .models import Mujer, Lugar, VisitedLugarRuta, Ruta, AreaInvestigacion
 
 class LugarAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'descripcion', 'latitud', 'longitud', 'ar_url')
@@ -333,6 +466,7 @@ class LugarAdmin(admin.ModelAdmin):
 class MujerAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'descripcion')
     search_fields = ('nombre',)
+    filter_horizontal = ('areas_investigacion',)
 
 class RutaAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'descripcion')
@@ -343,22 +477,48 @@ admin.site.register(Mujer, MujerAdmin)
 admin.site.register(Lugar, LugarAdmin)
 admin.site.register(VisitedLugarRuta)
 admin.site.register(Ruta, RutaAdmin)
+admin.site.register(AreaInvestigacion)
 \end{lstlisting}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/django-admin-mujeres-list.jpg}
+    \caption{Vista de listado del modelo Mujer en Django Admin}
+    \label{fig:django-admin-mujeres-list}
+\end{figure}
+
+La interfaz de listado muestra los campos configurados en \texttt{list\_display} y proporciona funcionalidades de búsqueda basadas en los campos especificados en \texttt{search\_fields}. La paginación automática mejora el rendimiento cuando se gestiona un gran volumen de registros.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/django-admin-mujer-edit.jpg}
+    \caption{Formulario de edición para el modelo Mujer}
+    \label{fig:django-admin-mujer-edit}
+\end{figure}
+
+
+
+El formulario de edición individual presenta una interfaz optimizada para la gestión de relaciones complejas. La configuración \texttt{filter\_horizontal} en el campo \texttt{areas\-\_\-investigacion} proporciona un widget de selección múltiple que facilita la asignación de áreas de investigación a cada mujer, permitiendo búsquedas y selecciones eficientes en relaciones \texttt{ManyToManyField}.
 
 \subsection{Cambio de contraseña del usuario administrador de Django}
 
+
 Si se olvida la contraseña del usuario administrador o es necesario restablecerla, Django permite cambiarla fácilmente mediante un comando de gestión. Dado que el backend se ejecuta en un contenedor Docker, el proceso recomendado es el siguiente:\footnote{Nota: Si se ejecuta Django fuera de Docker, se usa el mismo comando pero directamente en la terminal.}
+
 
 \begin{lstlisting}[language=bash, caption={Cambio de contraseña del usuario administrador en Docker}]
 # Acceder al contenedor donde corre Django (normalmente llamado 'web')
 docker compose exec web python manage.py changepassword <nombre_usuario>
 \end{lstlisting}
 
+
 Por ejemplo, para el usuario \texttt{ivana}:
+
 
 \begin{lstlisting}[language=bash]
 docker compose exec web python manage.py changepassword ivana
 \end{lstlisting}
+
 
 El sistema solicitará la nueva contraseña de forma interactiva.  
 El servicio se llama \texttt{web}, tal y como se indica en el archivo \texttt{docker-compose.yml}.
@@ -367,59 +527,50 @@ El servicio se llama \texttt{web}, tal y como se indica en el archivo \texttt{do
 
 Django utiliza un sistema de migraciones para versionar y aplicar cambios en el esquema de la base de datos. Cada vez que se modifica un modelo, se genera una nueva migración que puede ser aplicada en cualquier entorno, garantizando la coherencia entre desarrollo, pruebas y producción.
 
-En este proyecto, el campo \texttt{areas\_investigacion} del modelo \texttt{Mujer} ha pasado de ser un \texttt{ArrayField} a un \texttt{ManyToManyField} y de nuevo a \texttt{ArrayField}, lo que se refleja en las migraciones generadas automáticamente por Django. Este proceso ha permitido comparar el rendimiento y la simplicidad de ambas aproximaciones, optando finalmente por \texttt{ArrayField} por su integración directa con PostgreSQL y la naturaleza de los datos.
+En este proyecto, el campo \texttt{areas\_investigacion} del modelo \texttt{Mujer} evolucionó desde \texttt{ArrayField} hacia \texttt{ManyToManyField} para mejorar la gestión administrativa del sistema.
 
-\begin{lstlisting}[language=Python, caption={Fragmento de migraciones reales}]
-# 0001_initial.py
+\begin{lstlisting}[language=Python, caption={Migración de ArrayField a ManyToManyField}]
+# 0001_initial.py (Estado inicial con ArrayField)
+migrations.CreateModel(
+    name='AreaInvestigacion',
+    fields=[
+        ('id', models.BigAutoField(auto_created=True, primary_key=True)),
+        ('nombre', models.CharField(max_length=100, unique=True)),
+    ],
+),
 migrations.CreateModel(
     name='Mujer',
     fields=[
-        ('id', models.BigAutoField(primary_key=True)),
-        ('nombre', models.CharField(max_length=100)),
-        ('descripcion', models.TextField()),
-        ('foto', models.ImageField(blank=True, null=True, upload_to='')),
         ('areas_investigacion', django.contrib.postgres.fields.ArrayField(
-            base_field=models.CharField(max_length=100), blank=True, default=list, verbose_name='Áreas de investigación')),
-        ('fechas', models.CharField(blank=True, max_length=100, null=True)),
+            base_field=models.CharField(max_length=100), blank=True, 
+            default=list, verbose_name='Áreas de investigación')),
+        # ... otros campos
     ],
-)
-# 0002: Cambio a ManyToManyField (prueba de diseño)
+),
+
+# 0005_remove_mujer_areas_investigacion_and_more.py
+# Migración a ManyToManyField
 migrations.RemoveField(model_name='mujer', name='areas_investigacion'),
 migrations.AddField(
     model_name='mujer',
     name='areas_investigacion',
-    field=models.ManyToManyField(blank=True, related_name='mujeres', to='mujeres.areainvestigacion'),
-),
-# 0003: Vuelta a ArrayField (por simplicidad y rendimiento)
-migrations.RemoveField(model_name='mujer', name='areas_investigacion'),
-migrations.AddField(
-    model_name='mujer',
-    name='areas_investigacion',
-    field=django.contrib.postgres.fields.ArrayField(
-        base_field=models.CharField(max_length=100), blank=True, default=list, verbose_name='Áreas de investigación'),
+    field=models.ManyToManyField(blank=True, related_name='mujeres', 
+                               to='mujeres.areainvestigacion'),
 ),
 \end{lstlisting}
 
-\textbf{Nota:} El reinicio de migraciones (eliminando archivos y tablas intermedias) solo debe realizarse en entornos de desarrollo, nunca en producción, para evitar la pérdida de datos.
+La decisión de migrar de \texttt{ArrayField} a \texttt{ManyToManyField} se basó principalmente en la mejora de la experiencia administrativa, ya que el widget \texttt{filter\_horizontal} de Django Admin facilita significativamente la gestión de áreas de investigación mediante una interfaz de selección múltiple intuitiva. Adicionalmente, esta aproximación proporciona mayor flexibilidad para futuras extensiones del sistema y aprovecha las funcionalidades nativas de Django para la gestión de relaciones, mientras que el sistema de serialización mantiene la compatibilidad con el frontend móvil convirtiendo automáticamente las relaciones a strings.
 
-\begin{lstlisting}[language=bash, caption={Pasos para reiniciar migraciones}]
-# 1. Eliminar los archivos de migración antiguos en la carpeta mujeres/migrations/
-rm mujeres/migrations/*.py
-
-# 2. Borrar las tablas intermedias o problemáticas directamente en la base de datos PostgreSQL.
-# (Ejemplo usando psql)
-DROP TABLE mujeres_mujer_areas_investigacion;
-
-# 3. Ejecutar los comandos de migración
-python manage.py makemigrations
-python manage.py migrate
-\end{lstlisting}
+\textbf{Nota:} La migración de datos se realizó preservando la información existente, y en entornos de producción es fundamental planificar estas migraciones cuidadosamente para evitar pérdida de datos.
 
 \subsection{Integración con el frontend y gestión de CORS}
 
+
 Para permitir la comunicación entre el frontend (desarrollado en React Native) y el backend, se ha configurado el middleware \texttt{django-cors-headers}, que habilita las peticiones CORS (Cross-Origin Resource Sharing). Esto es fundamental para que la aplicación móvil pueda consumir la API REST sin restricciones de origen.
 
+
 En el archivo \texttt{settings.py} se ha añadido la configuración necesaria:
+
 
 \begin{lstlisting}[language=Python, caption={Configuración de CORS en Django}]
 INSTALLED_APPS = [
@@ -429,20 +580,26 @@ INSTALLED_APPS = [
     'mujeres',
 ]
 
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     # ...otros middlewares...
 ]
 
+
 CORS_ALLOW_ALL_ORIGINS = True  # Para desarrollo; en producción se recomienda restringir los orígenes permitidos
 \end{lstlisting}
 
+
 \subsection{Integración y despliegue con Docker}
 
-El backend se ejecuta en un contenedor Docker. El archivo \texttt{docker-compose.yml} define los servicios necesarios, incluyendo la base de datos PostgreSQL y el servidor de la aplicación Django. 
+
+El backend se ejecuta en un contenedor Docker. El archivo \texttt{docker-compose.yml} define los servicios necesarios, incluyendo la base de datos PostgreSQL y el servidor de la aplicación Django.
+
 
 \begin{lstlisting}[language=bash, caption={docker-compose.yml}]
 version: '3.9'
+
 
 services:
   db:
@@ -453,6 +610,7 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+
 
   web:
     build: .
@@ -465,11 +623,14 @@ services:
       - db
     env_file: .env
 
+
 volumes:
   postgres_data:
 \end{lstlisting}
 
+
 Esto permite levantar todo el entorno de desarrollo y pruebas con un solo comando, garantizando la coherencia entre entornos y facilitando la colaboración.
+
 
 \subsection{Pruebas automáticas}
 
@@ -477,60 +638,49 @@ Para garantizar la calidad y robustez del backend, se han implementado pruebas a
 
 \begin{lstlisting}[language=Python, caption={Test unitario para el modelo Mujer}]
 from django.test import TestCase
-from .models import Mujer
+from .models import Mujer, AreaInvestigacion
 
 class MujerModelTest(TestCase):
     def test_creacion_mujer(self):
+        # Crear áreas de investigación primero
+        area_matematicas = AreaInvestigacion.objects.create(nombre='Matemáticas')
+        area_computacion = AreaInvestigacion.objects.create(nombre='Computación')
+        
         mujer = Mujer.objects.create(
             nombre='Ada Lovelace',
             descripcion='Pionera de la programación',
             foto='fotos/ada.jpg',
-            areas_investigacion=['Matemáticas', 'Computación'],
             fechas='1815-1852'
         )
+        # Agregar áreas después de crear el objeto (ManyToMany)
+        mujer.areas_investigacion.add(area_matematicas, area_computacion)
+        
         self.assertEqual(mujer.nombre, 'Ada Lovelace')
-        self.assertIn('Computación', mujer.areas_investigacion)
+        self.assertIn(area_computacion, mujer.areas_investigacion.all())
 \end{lstlisting}
 
 \begin{lstlisting}[language=Python, caption={Test de API para el endpoint de mujeres}]
 from rest_framework.test import APITestCase
 from django.urls import reverse
-from .models import Mujer
+from .models import Mujer, AreaInvestigacion
+from django.contrib.auth.models import User
+from rest_framework.authtoken.models import Token
 
 class MujerAPITest(APITestCase):
+    def setUp(self):
+        self.user = User.objects.create_user(username='testuser', password='testpass')
+        self.token = Token.objects.create(user=self.user)
+
     def test_listado_mujeres(self):
-        Mujer.objects.create(nombre='Ada', descripcion='Pionera', areas_investigacion=['Matemáticas'])
-        url = reverse('mujer-list')  # Asegúrate de que el router DRF registre este nombre
+        # Crear área y mujer correctamente
+        area = AreaInvestigacion.objects.create(nombre='Matemáticas')
+        mujer = Mujer.objects.create(nombre='Ada', descripcion='Pionera')
+        mujer.areas_investigacion.add(area)
+        
+        url = reverse('mujer-list')
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(len(response.data), 1)
-\end{lstlisting}
-
-\subsection{Gestión de emails y notificaciones}
-
-Para permitir el envío de notificaciones por correo electrónico (por ejemplo, confirmación de registro o recuperación de contraseña), se ha configurado el backend para utilizar un servidor SMTP. En \texttt{settings.py} se definen los parámetros necesarios:
-
-\begin{lstlisting}[language=Python, caption={Configuración de email en settings.py}]
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'tu_email@gmail.com'
-EMAIL_HOST_PASSWORD = 'tu_contraseña'
-\end{lstlisting}
-
-El envío de emails se realiza mediante la función \texttt{send\_mail} de Django:
-
-\begin{lstlisting}[language=Python, caption={Ejemplo de envío de email}]
-from django.core.mail import send_mail
-
-send_mail(
-    'Bienvenido a la app',
-    'Gracias por registrarte.',
-    'tu_email@gmail.com',
-    [usuario.email],
-    fail_silently=False,
-)
+        self.assertEqual(response.data['count'], 1)
 \end{lstlisting}
 
 \subsection{Internacionalización y localización}
@@ -541,7 +691,6 @@ El backend está preparado para soportar varios idiomas, facilitando la internac
 LANGUAGE_CODE = 'es-es'
 TIME_ZONE = 'Europe/Madrid'
 USE_I18N = True
-USE_L10N = True
 USE_TZ = True
 \end{lstlisting}
 
@@ -551,10 +700,10 @@ Para servir archivos estáticos (CSS, JS, imágenes no subidas por usuarios), se
 
 \begin{lstlisting}[language=Python, caption={Archivos estáticos en settings.py}]
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'backend' / 'static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 \end{lstlisting}
 
-Durante el despliegue, se ejecuta el comando \texttt{python manage.py collectstatic} para recopilar todos los archivos estáticos en la carpeta definida.
+Durante el despliegue, se puede ejecutar el comando \texttt{python manage.py collectstatic} para recopilar todos los archivos estáticos en la carpeta definida.
 
 \begin{figure}[H]
     \centering
@@ -562,41 +711,88 @@ Durante el despliegue, se ejecuta el comando \texttt{python manage.py collectsta
     \caption{Recopilación de archivos estáticos con \texttt{collectstatic} en Django}
 \end{figure}
 
-\subsection{Gestión de geolocalización y decisión sobre campos GIS}
 
-Aunque el proyecto tiene incluida la librería \texttt{djangorestframework-gis} (puedes verla en el archivo \texttt{requirements.txt}), en realidad no se está usando porque no se han definido campos GIS como \texttt{PointField} o \texttt{PolygonField}, ni tampoco se utiliza el backend geoespacial de Django (\texttt{django.contrib.gis.db.backends.postgis}).
+\subsection{Gestión de emails y notificaciones}
 
-Para la geolocalización, simplemente se guardan las coordenadas de latitud y longitud como campos \texttt{FloatField} en el modelo \texttt{Lugar}:
 
-\begin{lstlisting}[language=Python, caption={Fragmento del modelo Lugar}]
-class Lugar(models.Model):
-    nombre = models.CharField(max_length=100)
-    descripcion = models.TextField()
-    latitud = models.FloatField(blank=True, null=True)
-    longitud = models.FloatField(blank=True, null=True)
-    # ...otros campos...
+Para permitir el envío de notificaciones por correo electrónico (por ejemplo, confirmación de registro o recuperación de contraseña), se ha configurado el backend para utilizar un servidor SMTP. En \texttt{settings.py} se definen los parámetros necesarios:
+
+
+\begin{lstlisting}[language=Python, caption={Configuración de email en settings.py}]
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'tu_email@gmail.com'
+EMAIL_HOST_PASSWORD = 'tu_contraseña'
 \end{lstlisting}
 
-Esta solución es suficiente para lo que necesita la aplicación ahora mismo: permite guardar y consultar posiciones geográficas sin complicaciones y sin depender de librerías adicionales ni configuraciones avanzadas. Además, facilita la integración y el despliegue usando el backend estándar de PostgreSQL (\texttt{django.db.backends.postgresql}), sin tener que recurrir a PostGIS.
 
-\textbf{Ventajas de este enfoque:}
-\begin{itemize}
-    \item El modelo de datos es más sencillo y fácil de mantener.
-    \item La integración y el despliegue funcionan en cualquier entorno PostgreSQL, sin requisitos especiales.
-    \item Se evitan dependencias y configuraciones extra.
-\end{itemize}
+El envío de emails se realiza mediante la función \texttt{send\_mail} de Django:
 
-En una posible evolución, si en algún momento se necesitan consultas espaciales más avanzadas o funcionalidades GIS (por ejemplo, búsquedas por proximidad o rutas optimizadas), se podría migrar a campos GIS y aprovechar tanto PostGIS como \mbox{\texttt{djangorestframework-gis}} sin demasiada dificultad.
+
+\begin{lstlisting}[language=Python, caption={Ejemplo de envío de email}]
+from django.core.mail import send_mail
+
+
+send_mail(
+    'Bienvenido a la app',
+    'Gracias por registrarte.',
+    'tu_email@gmail.com',
+    [usuario.email],
+    fail_silently=False,
+)
+\end{lstlisting}
+
+
+\subsection{Internacionalización y localización}
+
+El backend está preparado para soportar varios idiomas, facilitando la internacionalización de la aplicación. En \texttt{settings.py} se configuran los parámetros de idioma y zona horaria:
+
+\begin{lstlisting}[language=Python, caption={Internacionalización en settings.py}]
+LANGUAGE_CODE = 'es-es'
+TIME_ZONE = 'Europe/Madrid'
+USE_I18N = True
+USE_TZ = True
+\end{lstlisting}
+
+\subsection{Gestión de archivos estáticos}
+
+Para servir archivos estáticos (CSS, JS, imágenes no subidas por usuarios), se ha configurado la ruta correspondiente en \texttt{settings.py}:
+
+\begin{lstlisting}[language=Python, caption={Archivos estáticos en settings.py}]
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+\end{lstlisting}
+
+Durante el despliegue, se puede ejecutar el comando \texttt{python manage.py collectstatic} para recopilar todos los archivos estáticos en la carpeta definida.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/back.jpg}
+    \caption{Recopilación de archivos estáticos con \texttt{collectstatic} en Django}
+\end{figure}
+
+
+
+
+
+
 \section{Implementación del frontend}
 
 \subsection{Herramientas, frameworks y lenguajes utilizados}
 
 El frontend de la aplicación se ha desarrollado utilizando el framework \textbf{React Native} para asegurar la compatibilidad multiplataforma (Android, iOS y web). Se ha utilizado \textbf{Expo} para simplificar el desarrollo, pruebas y despliegue, así como para acceder a funcionalidades nativas como la cámara, la geolocalización y las notificaciones.
 
-Las principales herramientas y librerías utilizadas son:
+
+\textbf{Herramientas y tecnologías:}
 \begin{itemize}
     \item \textbf{React Native} (v0.79.2)
     \item \textbf{Expo} (v53.0.9)
+\end{itemize}
+
+\textbf{Frameworks y librerías:}
+\begin{itemize}
     \item \textbf{React Navigation} para la gestión de la navegación entre pantallas
     \item \texttt{@react-native-async-storage/async-storage} para almacenamiento local seguro
     \item \texttt{axios} para peticiones HTTP
@@ -656,7 +852,7 @@ my-app/
 
 La navegación principal se gestiona mediante un \textbf{Bottom Tab Navigator} definido en \texttt{Main.js}, que organiza la aplicación en pestañas: Mapa, Mujeres, Rutas, Realidad Aumentada (RA) y Perfil.
 
-\begin{lstlisting}[language=, caption={Definición de pestañas en Main.js}]
+\begin{lstlisting}[language=Python, caption={Definición de pestañas en Main.js}]
 <Tab.Navigator
     screenOptions={{
         tabBarActiveTintColor: '#5f68c4',
@@ -689,7 +885,7 @@ Además, la navegación global de la app se gestiona mediante un \textbf{Stack N
 
 La autenticación de usuarios se realiza mediante peticiones a la API del backend. El login y el registro almacenan el token de autenticación en \texttt{AsyncStorage} para su uso en futuras peticiones.
 
-\begin{lstlisting}[language=, caption={Ejemplo de login en Login.js}]
+\begin{lstlisting}[language=Python, caption={Ejemplo de login en Login.js}]
 const validateLogin = async () => {
     try {
         const response = await fetch('http://192.168.1.44:8000/api/api-token-auth/', {
@@ -714,9 +910,9 @@ El perfil de usuario permite cambiar el nombre de usuario y cerrar sesión, elim
 
 \subsection{Visualización de mujeres y lugares}
 
-La pantalla \texttt{Mujeres.js} muestra una lista de lugares destacados asociados a mujeres relevantes, permitiendo filtrar por área, visitados y búsqueda por nombre.
+El archivo \texttt{Mujeres.js} permite mostrar una lista de lugares destacados asociados a mujeres relevantes, permitiendo filtrar por área, visitados y búsqueda por nombre.
 
-\begin{lstlisting}[language=, caption={Filtrado y renderizado de lugares}]
+\begin{lstlisting}[language=Python, caption={Filtrado y renderizado de lugares}]
 const filteredLugares = allLugares
     .filter(lugar => selectedSection === 'Todas' || lugar.area === selectedSection)
     .filter(lugar => selectedVisited === 'Todas' || (selectedVisited === 'Visitadas' ? lugar.visited : !lugar.visited))
@@ -727,7 +923,7 @@ Cada tarjeta de lugar muestra la imagen, nombre, área, distancia y estado de vi
 
 \subsection{Detalle de lugar y gestión de visitas}
 
-La pantalla \texttt{Detail.js} muestra la información completa de un lugar, incluyendo la mujer asociada, descripción, dirección, fechas, imagen y estado de visita. Permite marcar el lugar como visitado o no visitado, sincronizando el estado con el backend mediante una petición HTTP autenticada. Además, la pantalla ofrece funcionalidades avanzadas para mejorar la experiencia del usuario:
+El archivo \texttt{Detail.js} permite mostrar la información completa de un lugar, incluyendo la mujer asociada, descripción, dirección, fechas, imagen y estado de visita. Permite marcar el lugar como visitado o no visitado, sincronizando el estado con el backend mediante una petición HTTP autenticada. Además, la pantalla ofrece funcionalidades avanzadas para mejorar la experiencia del usuario:
 
 \begin{itemize}
     \item \textbf{Compartir información del lugar:} El usuario puede compartir el lugar y su imagen a través de las opciones nativas del dispositivo. Se genera un mensaje con los datos relevantes y, si existe, se adjunta la imagen descargada temporalmente.
@@ -737,7 +933,7 @@ La pantalla \texttt{Detail.js} muestra la información completa de un lugar, inc
 
 A continuación se muestra un ejemplo de la función para marcar un lugar como visitado o no visitado:
 
-\begin{lstlisting}[language=, caption={Marcar como visitado}]
+\begin{lstlisting}[language=Python, caption={Marcar como visitado}]
 const toggleVisited = async () => {
     const updatedLugar = { ...lugar, visited: !lugar.visited };
     navigation.setParams({ lugar: updatedLugar });
@@ -775,7 +971,7 @@ const toggleVisited = async () => {
 
 Y la función para compartir la información del lugar:
 
-\begin{lstlisting}[language=, caption={Función para compartir la información del lugar}]
+\begin{lstlisting}[language=Python, caption={Función para compartir la información del lugar}]
 const compartirLugar = async () => {
     try {
         let message = "Echa un vistazo a este lugar de la aplicación Dona'm Món!\n\n";
@@ -803,32 +999,69 @@ const compartirLugar = async () => {
 
 \subsection{Mapas y geolocalización}
 
-La pantalla \texttt{Mapa.js} utiliza \texttt{react-native-maps} para mostrar todos los lugares en un mapa, con iconos personalizados y colores según el estado de visita. Permite filtrar lugares y ver detalles al pulsar sobre un marcador.
+El archivo \texttt{Mapa.js} utiliza \texttt{react-native-maps} para mostrar todos los lugares en un mapa, con iconos personalizados y colores según el estado de visita. Permite filtrar lugares y ver detalles al pulsar sobre un marcador.
 
-\begin{lstlisting}[language=, caption={Marcadores en el mapa}]
+La aplicación implementa cálculos de distancia precisos mediante la \texttt{fórmula de Haversine}, que permite determinar la distancia entre la ubicación del usuario y cada lugar en la superficie terrestre:
+
+\begin{lstlisting}[language=Python, caption={Cálculo de distancia con fórmula de Haversine}]
+const getDistance = (lat1, lon1, lat2, lon2) => {
+    if (!lat1 || !lon1 || !lat2 || !lon2) return null;
+    const toRad = x => x * Math.PI / 180;
+    const R = 6371; // Radio de la Tierra en kilómetros
+    const dLat = toRad(lat2 - lat1);
+    const dLon = toRad(lon2 - lon1);
+    const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+        Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c;
+};
+\end{lstlisting}
+
+Esta implementación considera la curvatura de la Tierra para proporcionar distancias precisas en kilómetros, que se muestran tanto en los marcadores del mapa como en las tarjetas de lugares para ayudar al usuario a identificar los sitios más cercanos.
+
+La implementación de los marcadores en el mapa utiliza un código de colores diferenciado: los lugares visitados se muestran en verde (\texttt{\#43a047}) mientras que los no visitados aparecen en azul (\texttt{\#5f68c4}). Cada marcador incluye un \texttt{Callout} que muestra información detallada del lugar, la mujer asociada y la distancia calculada:
+
+\begin{lstlisting}[language=Python, caption={Marcadores en el mapa con información de distancia}]
 <MapView>
-    {filteredLugares.map(lugar => (
-        <Marker
-            key={lugar.id}
-            coordinate={{ latitude: lugar.latitud, longitude: lugar.longitud }}
-            pinColor={lugar.visited ? '#43a047' : '#5f68c4'}
-        >
-            <Callout>
-                <Text>{lugar.nombre}</Text>
-                <Text>{lugar.mujer_nombre}</Text>
-            </Callout>
-        </Marker>
-    ))}
+    {filteredLugares.map((lugar) => {
+        let iconColor = '#5f68c4';
+        if (lugar.visited) iconColor = '#43a047';
+        return (
+            <Marker
+                key={lugar.id}
+                coordinate={{
+                    latitude: lugar.latitud,
+                    longitude: lugar.longitud
+                }}
+            >
+                <View style={[styles.iconContainer]}>
+                    <Icon name="gender-female" size={30} color={iconColor} />
+                </View>
+                <Callout tooltip>
+                    <ScrollView style={styles.callout}>
+                        <Text style={styles.calloutTitle}>{lugar.mujer_nombre}</Text>
+                        <Text style={{ fontWeight: 'bold' }}>{lugar.nombre}</Text>
+                        {lugar.distance !== undefined && (
+                            <Text style={{ color: '#bc5880' }}>
+                                Distancia: {lugar.distance?.toFixed(2)} km
+                            </Text>
+                        )}
+                    </ScrollView>
+                </Callout>
+            </Marker>
+        );
+    })}
 </MapView>
 \end{lstlisting}
 
-La ubicación del usuario se obtiene con \texttt{expo-location}, permitiendo calcular distancias y mostrar solo lugares cercanos si se desea.
+La ubicación del usuario se obtiene mediante \texttt{expo-location} con permisos de geolocalización, y las distancias se actualizan dinámicamente cada vez que el usuario cambia de ubicación o se refrescan los datos.
 
 \subsection{Gestión de rutas temáticas}
 
 La pantalla \texttt{Rutas.js} y \texttt{RutaDetail.js} permiten visualizar rutas temáticas, ver los lugares que las componen y marcar cada lugar como visitado mediante escaneo de QR. El progreso de la ruta se muestra visualmente y se puede reiniciar la ruta si se desea.
 
-\begin{lstlisting}[language=, caption={Escaneo de QR y registro de visita}]
+\begin{lstlisting}[language=Python, caption={Escaneo de QR y registro de visita}]
 const handleBarcodeScanned = async ({ data }) => {
     const lugar = ruta.lugares.find(l => l.nombre.toLowerCase() === data.toLowerCase());
     if (lugar) {
@@ -849,7 +1082,7 @@ const handleBarcodeScanned = async ({ data }) => {
 
 Las pantallas \texttt{HistorialLugares.js} y \texttt{HistorialRutas.js} muestran el historial de lugares y rutas visitadas por el usuario, permitiendo borrar el historial si se desea.
 
-\begin{lstlisting}[language=, caption={Borrado de historial de rutas}]
+\begin{lstlisting}[language=Python, caption={Borrado de historial de rutas}]
 const handleClearHistory = async () => {
     const token = await AsyncStorage.getItem('token');
     for (const ruta of rutasCompletadas) {
@@ -863,11 +1096,65 @@ const handleClearHistory = async () => {
 };
 \end{lstlisting}
 
+\subsection{Sistema de filtros avanzado y gestión de estado}
+
+La aplicación implementa un sistema de filtros avanzado mediante el contexto \texttt{FiltrosContext.js}, que permite mantener el estado de los filtros entre diferentes pantallas y componentes.
+
+\begin{lstlisting}[language=Python, caption={Contexto global de filtros}]
+export const FiltrosProvider = ({ children }) => {
+    const [selectedSection, setSelectedSection] = useState('Todas');
+    const [selectedVisited, setSelectedVisited] = useState('Todas');
+    const [searchTerm, setSearchTerm] = useState('');
+    const [sections, setSections] = useState(['Todas']);
+
+    return (
+        <FiltrosContext.Provider value={{
+            selectedSection, setSelectedSection,
+            selectedVisited, setSelectedVisited,
+            searchTerm, setSearchTerm,
+            sections, setSections
+        }}>
+            {children}
+        </FiltrosContext.Provider>
+    );
+};
+\end{lstlisting}
+
+Este contexto permite que los filtros aplicados en la pantalla de \texttt{MujeresCombinadas} se mantengan al navegar al \texttt{Mapa}, proporcionando una experiencia de usuario coherente.
+
+\subsection{Sincronización de estados de visita}
+
+El sistema implementa una gestión inteligente de los estados de visita que se sincroniza automáticamente entre el almacenamiento local y el backend:
+
+\begin{lstlisting}[language=Python, caption={Sincronización de visitas}]
+const fetchVisitedAndSet = async (lugares) => {
+    try {
+        const token = await AsyncStorage.getItem('token');
+        if (!token) {
+            setMujeres(lugares.map(l => ({ ...l, visited: false })));
+            return;
+        }
+        const response = await fetch('http://192.168.1.44:8000/api/visited-lugares/', {
+            method: 'GET',
+            headers: { 'Authorization': `Token ${token}` },
+        });
+        let visitedIds = [];
+        if (response.ok) {
+            const data = await response.json();
+            visitedIds = data.map(v => v.lugar.id);
+        }
+        setMujeres(lugares.map(l => ({ ...l, visited: visitedIds.includes(l.id) })));
+    } catch (error) {
+        setMujeres(lugares.map(l => ({ ...l, visited: false })));
+    }
+};
+\end{lstlisting}
+
 \subsection{Notificaciones y proximidad}
 
 La app utiliza \texttt{expo-notifications} y \texttt{expo-location} para enviar notificaciones cuando el usuario se acerca a un lugar destacado. El componente \texttt{NotificacionProximidad.js} gestiona esta lógica, comprobando la distancia a los lugares y mostrando alertas contextuales.
 
-\begin{lstlisting}[language=, caption={Notificación de proximidad}]
+\begin{lstlisting}[language=Python, caption={Notificación de proximidad}]
 if (dist !== null && dist <= 3 && !notifiedIds.current.has(lugar.id)) {
     await Notifications.scheduleNotificationAsync({
         content: {
@@ -884,7 +1171,7 @@ if (dist !== null && dist <= 3 && !notifiedIds.current.has(lugar.id)) {
 
 La pantalla \texttt{AR.js} permite acceder a experiencias de realidad aumentada asociadas a ciertos lugares, abriendo el visor web correspondiente si el usuario está cerca del lugar.
 
-\begin{lstlisting}[language=, caption={Acceso a AR}]
+\begin{lstlisting}[language=Python, caption={Acceso a AR}]
 if (distance <= 3) {
     openURL(lugar.ar_url);
 }
@@ -894,7 +1181,7 @@ if (distance <= 3) {
 
 Los estilos se gestionan en archivos como \texttt{styles.js} y \texttt{styles-perfil.js}, utilizando \texttt{StyleSheet} de React Native para mantener la coherencia visual y facilitar la personalización.
 
-\begin{lstlisting}[language=, caption={Ejemplo de estilos en styles.js}]
+\begin{lstlisting}[language=Python, caption={Ejemplo de estilos en styles.js}]
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -921,7 +1208,7 @@ const styles = StyleSheet.create({
 
 Se utiliza \texttt{AsyncStorage} para guardar el token de usuario, preferencias y otros datos persistentes, asegurando que la sesión se mantenga entre reinicios de la app.
 
-\begin{lstlisting}[language=, caption={Uso de AsyncStorage}]
+\begin{lstlisting}[language=Python, caption={Uso de AsyncStorage}]
 await AsyncStorage.setItem('token', data.token);
 const token = await AsyncStorage.getItem('token');
 \end{lstlisting}
@@ -930,7 +1217,7 @@ const token = await AsyncStorage.getItem('token');
 
 Todas las peticiones a la API del backend se realizan mediante \texttt{fetch} o \texttt{axios}, gestionando los errores y mostrando mensajes claros al usuario en caso de fallo.
 
-\begin{lstlisting}[language=, caption={Manejo de errores en peticiones}]
+\begin{lstlisting}[language=Python, caption={Manejo de errores en peticiones}]
 try {
     const response = await fetch('http://192.168.1.44:8000/api/visited-lugares/', { /* ... */ });
     if (!response.ok) throw new Error('Error al cargar lugares visitados');
@@ -945,7 +1232,331 @@ try {
 
 Durante el desarrollo, se han utilizado logs en consola y mensajes de alerta para depurar la lógica de la app y asegurar el correcto funcionamiento de todas las funcionalidades.
 
-\begin{lstlisting}[language=, caption={Ejemplo de logs y alertas}]
+\begin{lstlisting}[language=Python, caption={Ejemplo de logs y alertas}]
 console.log('Detalle lugar:', lugar);
 Alert.alert('Éxito', 'Nombre de usuario actualizado');
 \end{lstlisting}
+
+
+
+\section{Implementación de Realidad Aumentada}
+
+\subsection{Herramientas, frameworks y tecnologías utilizadas}
+
+Para la implementación de las experiencias de realidad aumentada se ha optado por una solución web basada en \textbf{A-Frame}, que permite crear experiencias inmersivas accesibles desde cualquier navegador web moderno sin necesidad de aplicaciones nativas específicas.
+
+Las principales tecnologías utilizadas son:
+\begin{itemize}
+    \item \textbf{A-Frame 1.7.0} - Framework web para realidad virtual y aumentada
+    \item \textbf{WebGL} - Para renderizado 3D en tiempo real
+    \item \textbf{WebRTC} - Para acceso a la cámara del dispositivo
+    \item \textbf{Vercel} - Plataforma de hosting para despliegue de experiencias AR
+    \item \textbf{GLB} - Formato de modelos 3D optimizados para web
+    \item \textbf{MP3} - Audio inmersivo y música ambiental
+\end{itemize}
+
+\subsection{Arquitectura y estructura del proyecto AR}
+
+Cada lugar destacado en la aplicación tiene asociada una experiencia de realidad aumentada independiente, desplegada como una aplicación web estática en Vercel. Esta arquitectura descentralizada proporciona escalabilidad, rendimiento optimizado y facilita el mantenimiento, ya que cada experiencia puede actualizarse de forma independiente.
+
+La estructura típica de una experiencia AR es:
+
+\begin{lstlisting}[language=bash, caption={Estructura de una experiencia AR}]
+experiencia-ar/
+index.html                    # Aplicación principal AR
+mundo.glb                    # Modelo 3D del logo (tierra interactiva)
+lupa.glb                     # Modelo 3D secundario (símbolo de Venus)
+mujer.glb                    # Modelo 3D principal (personaje histórico)
+carmen_audio.mp3             # Audio narrativo específico
+musica_de_fondo_suave.mp3    # Música ambiental
+\end{lstlisting}
+
+\subsection{Diseño de la experiencia interactiva}
+
+\subsubsection{Interfaz inicial y elementos de navegación}
+
+La experiencia AR comienza mostrando un logo interactivo compuesto por dos elementos 3D: un modelo de la Tierra que rota continuamente y un símbolo de Venus estático (representando una lupa). Ambos elementos están agrupados en un contenedor jerárquico que permite la interacción conjunta:
+
+\begin{lstlisting}[language=HTML, caption={Contenedor principal de la interfaz AR}]
+<!-- Contenedor padre para mundo + lupa -->
+<a-entity id="logoContainer" look-at="target: camera"
+          position="0 1.75 -5.5" rotation="0 90 0"
+          class="clickable" visible="true"
+          animation__click="property: scale; to: 0 0 0; startEvents: click; dur: 500"
+          animation__hide="property: visible; to: false; startEvents: click; delay: 500">
+  
+  <!-- Modelo de mundo -->
+  <a-entity id="logoModel" gltf-model="mundo.glb"
+            position="0 0 0" scale="0.6 0.6 0.6" logo-click-handler
+            animation__spin="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true">
+  </a-entity>
+  
+  <!-- Modelo de lupa -->
+  <a-entity id="lupaModel" gltf-model="lupa.glb"
+            position="-0.69968 0.30818 0.37761" rotation="0 270 0" 
+            scale="0.3 0.3 0.3" logo-click-handler>
+  </a-entity>
+</a-entity>
+\end{lstlisting}
+
+Al hacer click en cualquiera de los dos elementos, se inicia una secuencia de animación que hace desaparecer el logo mediante una reducción de escala, dando paso al personaje histórico principal.
+
+\subsubsection{Sistema de transiciones y coordinación temporal}
+
+La transición entre la interfaz inicial y el contenido principal se gestiona mediante un sistema de eventos personalizado que coordina múltiples animaciones de forma secuencial:
+
+\begin{lstlisting}[language=, caption={Gestor de transiciones AR}]
+AFRAME.registerComponent('logo-click-handler', {
+  init: function () {
+    this.el.addEventListener('click', function () {
+      // Iniciar animación de desaparición del logo
+      document.querySelector('#logoContainer').emit('click');
+
+      setTimeout(function () {
+        // Hacer visible el modelo de la mujer
+        const mujerModel = document.querySelector('#mujerModel');
+        mujerModel.emit('makeVisible');
+
+        setTimeout(() => {
+          // Activar animaciones principales y contenido informativo
+          mujerModel.emit('showMujer');
+          document.querySelector('#textoCarmen').emit('showMujer');
+          document.querySelector('#bioCarmen').emit('showMujer');
+          
+          // Gestión sincronizada del audio
+          const fondo = document.getElementById('musicaFondo');
+          const voz = document.getElementById('audioCarmenAsset');
+          
+          if (voz && fondo) {
+            fondo.volume = 0.01;  // Reducir música de fondo
+            voz.volume = 1.0;     // Audio principal al máximo
+            voz.play().catch(e => console.warn("Error al reproducir audio:", e));
+            voz.onended = () => { fondo.volume = 0.02; }; // Restaurar volumen
+          }
+        }, 100);
+      }, 600);
+    });
+  }
+});
+\end{lstlisting}
+
+Este sistema implementa una \textbf{temporización precisa} que controla cada fase de la experiencia, asegurando transiciones fluidas entre estados. La \textbf{gestión de audio inteligente} reduce automáticamente el volumen de la música ambiental durante las narraciones, restaurándolo progresivamente al finalizar.
+
+\subsubsection{Renderizado del personaje principal}
+
+El modelo 3D del personaje histórico utiliza un conjunto de animaciones simultáneas para crear una experiencia inmersiva y natural:
+
+\begin{lstlisting}[language=HTML, caption={Configuración del modelo principal}]
+<!-- Personaje histórico -->
+<a-entity id="mujerModel" gltf-model="mujer.glb" mujer-click-handler
+          look-at="target: camera" position="0 1.75 -8"
+          scale="0 0 0" visible="false" material="transparent: true; opacity: 0"
+          animation__visible="property: visible; to: true; startEvents: makeVisible"
+          animation__show="property: scale; to: 1 1 1; startEvents: showMujer; dur: 1500"
+          animation__move="property: position; to: 0 1.75 -5.5; startEvents: showMujer; dur: 1500"
+          animation__opacity="property: components.material.material.opacity; to: 1; startEvents: showMujer; dur: 1500"
+          animation__spin="property: rotation; to: 0 360 0; dur: 17000; easing: linear; loop: true">
+</a-entity>
+\end{lstlisting}
+
+La secuencia de aparición incluye:
+\begin{itemize}
+    \item \textbf{Aparición gradual}: Transición de invisible a visible mediante escalado y ajuste de opacidad (1.5 segundos)
+    \item \textbf{Movimiento espacial}: Acercamiento desde la posición inicial hacia el usuario
+    \item \textbf{Rotación continua}: Giro lento que permite observar el modelo desde todos los ángulos (17 segundos por vuelta)
+    \item \textbf{Look-at dinámico}: Orientación automática hacia la cámara del usuario
+\end{itemize}
+
+\subsection{Sistema de información contextual}
+
+\subsubsection{Presentación de contenido textual}
+
+El contenido informativo se presenta mediante elementos de texto 3D que aparecen secuencialmente tras la materialización del personaje:
+
+\begin{lstlisting}[language=HTML, caption={Elementos informativos principales}]
+<!-- Nombre del personaje -->
+<a-text id="textoCarmen" value="Carmen Alborch" position="0 0.5 -5.5" 
+        align="center" color="#5863ce" scale="1 1 1" look-at="target: camera"
+        visible="false" animation__showText="property: visible; to: true; 
+        startEvents: showMujer; delay: 300">
+</a-text>
+
+<!-- Descripción breve -->
+<a-text id="bioCarmen" value="Ministra de Cultura, escritora y catedr&aacute;tica de Derecho Mercantil"
+        position="0 0.25 -5.5" align="center" color="#8486ce" width="2.3"
+        visible="false" look-at="target: camera"
+        animation__showText="property: visible; to: true; 
+        startEvents: showMujer; delay: 500">
+</a-text>
+\end{lstlisting}
+
+Para garantizar la correcta visualización de caracteres especiales y acentos, se emplean entidades HTML (\texttt{\&aacute;}, \texttt{\&oacute;}, etc.) en lugar de caracteres Unicode directos.
+
+\subsubsection{Panel informativo expandible}
+
+Se implementa un panel interactivo que proporciona información detallada sobre el personaje histórico:
+
+\begin{lstlisting}[language=HTML, caption={Panel informativo expandible}]
+<!-- Panel informativo -->
+<a-entity id="infoPanel" geometry="primitive: plane; height: 1; width: 2"
+          material="color: #f8d4e6; opacity: 0.8" position="0 -0.036 -3.99313"
+          visible="false">
+  <a-text value="Su compromiso con la igualdad y la cultura la llev&oacute; a dirigir 
+               el Instituto Valenciano de Arte Moderno (IVAM) entre 1988 y 1993..."
+          align="left" position="-0.8571 0.046 0.08175" 
+          color="#bc5880" width="1.8"></a-text>
+</a-entity>
+\end{lstlisting}
+
+Este panel se activa mediante click sobre el modelo 3D del personaje, implementando un sistema de toggle que permite mostrar u ocultar la información extendida según las necesidades del usuario.
+
+\subsection{Gestión de audio inmersivo}
+
+\subsubsection{Arquitectura de audio multicapa}
+
+La experiencia AR implementa un sistema de audio estratificado que combina música ambiental continua con narraciones específicas:
+
+\begin{lstlisting}[language=HTML, caption={Configuración de assets de audio}]
+<a-assets>
+  <audio id="audioCarmenAsset" src="carmen_audio.mp3" preload="auto"></audio>
+  <audio id="musicaFondo" src="musica_de_fondo_suave.mp3" preload="auto" loop></audio>
+</a-assets>
+\end{lstlisting}
+
+El sistema presenta las siguientes características:
+\begin{itemize}
+    \item \textbf{Música ambiental}: Reproducción continua a 2\% del volumen máximo
+    \item \textbf{Audio narrativo}: Contenido educativo específico sobre el personaje histórico
+    \item \textbf{Ducking automático}: Reducción del volumen ambiental al 1\% durante narraciones
+    \item \textbf{Recuperación inteligente}: Restauración automática del volumen original al finalizar
+\end{itemize}
+
+\subsubsection{Compatibilidad con políticas de navegador}
+
+Para cumplir con las restricciones de autoplay de los navegadores modernos, se implementa un sistema de activación progresiva que gestiona la reproducción automática:
+
+\begin{lstlisting}[language=, caption={Gestión de autoplay de audio}]
+AFRAME.registerComponent('background-music', {
+  init: function () {
+    const musicaFondo = document.getElementById('musicaFondo');
+    if (!musicaFondo) return;
+    
+    musicaFondo.volume = 0.02;
+    
+    const tryPlay = () => {
+      musicaFondo.play()
+        .then(() => {
+          document.body.removeEventListener('click', tryPlay);
+        })
+        .catch(() => {
+          document.body.addEventListener('click', tryPlay);
+        });
+    };
+    
+    this.el.addEventListener('loaded', () => {
+      setTimeout(tryPlay, 500);
+    });
+  }
+});
+\end{lstlisting}
+
+Este mecanismo intenta reproducir el audio automáticamente al cargar la escena, pero establece un respaldo que activa la reproducción con la primera interacción del usuario si el navegador bloquea el autoplay inicial.
+
+\subsection{Optimización y consideraciones técnicas}
+
+La implementación utiliza modelos 3D en formato GLB para optimizar el rendimiento, aprovechando la compresión binaria que reduce significativamente el tamaño de los archivos. Los elementos gráficos emplean materiales transparentes y técnicas de renderizado eficientes para mantener una experiencia fluida en dispositivos con capacidades de procesamiento limitadas.
+
+El sistema de coordenadas está calibrado para una altura de usuario estándar (1.75m), y todas las animaciones utilizan interpolación lineal o easing apropiado para generar movimientos naturales sin impacto excesivo en el rendimiento del dispositivo.
+
+\subsection{Despliegue y distribución}
+
+
+\subsubsection{Hosting en Vercel}
+
+
+Cada experiencia AR se despliega independientemente en Vercel, proporcionando:
+\begin{itemize}
+    \item \textbf{CDN global}: Acceso rápido desde cualquier ubicación
+    \item \textbf{HTTPS automático}: Requisito para acceso a cámara y sensores
+    \item \textbf{Escalabilidad automática}: Se adapta al número de usuarios concurrentes
+    \item \textbf{Versionado}: Permite actualizaciones sin interrupciones
+\end{itemize}
+
+
+\subsubsection{Ventajas de la arquitectura distribuida}
+
+
+\textbf{Escalabilidad:}
+\begin{itemize}
+    \item Cada experiencia puede escalarse independientemente
+    \item Recursos distribuidos evitan cuellos de botella
+\end{itemize}
+
+
+\textbf{Mantenimiento:}
+\begin{itemize}
+    \item Actualizaciones de contenido sin afectar el backend principal
+    \item Desarrollo paralelo de múltiples experiencias
+\end{itemize}
+
+
+\textbf{Rendimiento:}
+\begin{itemize}
+    \item Carga únicamente los recursos necesarios para cada experiencia
+    \item Optimización específica para cada contexto histórico
+\end{itemize}
+
+
+\textbf{Flexibilidad:}
+\begin{itemize}
+    \item Permite diferentes tipos de experiencias AR por lugar
+    \item Facilita la experimentación con nuevas tecnologías
+\end{itemize}
+
+
+\subsection{Consideraciones técnicas y limitaciones}
+
+
+\subsubsection{Compatibilidad de dispositivos}
+
+
+\textbf{Requisitos mínimos:}
+\begin{itemize}
+    \item Navegador web moderno con soporte WebGL
+    \item Acceso a cámara (para AR tracking)
+    \item Procesador capaz de renderizado 3D en tiempo real
+\end{itemize}
+
+
+\textbf{Dispositivos soportados:}
+\begin{itemize}
+    \item Smartphones Android (Chrome, Firefox)
+    \item iPhones (Safari, Chrome)
+    \item Tablets con navegadores modernos
+    \item Ordenadores con webcam
+\end{itemize}
+
+
+\subsubsection{Optimizaciones implementadas}
+
+
+\textbf{Gestión de memoria:}
+\begin{itemize}
+    \item Liberación automática de recursos al salir de la experiencia
+    \item Compresión de texturas y modelos 3D
+    \item Uso eficiente de la GPU para renderizado
+\end{itemize}
+
+
+\textbf{Reducción de latencia:}
+\begin{itemize}
+    \item Precarga de recursos críticos
+    \item Minimización de peticiones HTTP
+    \item Optimización de shaders y materiales
+\end{itemize}
+
+
+Esta implementación de realidad aumentada proporciona experiencias inmersivas y educativas que conectan a los usuarios con la historia local de manera innovadora, utilizando tecnologías web estándar para maximizar la accesibilidad y el alcance de la aplicación.
+
+
+

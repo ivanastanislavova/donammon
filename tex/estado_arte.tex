@@ -216,7 +216,7 @@ Por otro lado, Streetmuseum es una aplicación que también aprovecha la RA, per
 
 \subsection{CultuAR}
 
-CultuAR, desarrollada por la empresa española AR Vision, es una aplicación que combina la geolocalización con la realidad aumentada para ofrecer visitas culturales interactivas en más de 200 municipios. Mediante la cámara del dispositivo, los usuarios pueden visualizar reconstrucciones históricas, personajes del pasado o información multimedia superpuesta al entorno real. Una de sus características más valiosas es la capacidad de personalizar rutas culturales por municipios, integrando elementos inmersivos que enriquecen la experiencia turística y patrimonial. Esta aplicación destaca por su integración fluida con el entorno urbano y su enfoque didáctico, lo que representa una clara inspiración para DONA'm MÓN en cuanto a accesibilidad y diseño de experiencias geolocalizadas con RA.
+CultuAR, desarrollada por la empresa española AR Vision, es una aplicación que combina la geolocalización con la realidad aumentada para ofrecer visitas culturales interactivas en más de 200 municipios. Mediante la cámara del dispositivo, los usuarios pueden visualizar reconstrucciones históricas, personajes del pasado o información multimedia superpuesta al entorno real. Una de sus características más valiosas es la capacidad de personalizar rutas culturales por municipios, integrando elementos inmersivos que enriquecen la experiencia turística y patrimonial. Esta aplicación destaca por su integración fluida con el entorno urbano y su enfoque didáctico, lo que representa una clara inspiración para \textit{DONA'm MÓN} en cuanto a accesibilidad y diseño de experiencias geolocalizadas con RA.
 
 \begin{figure}[H]
     \centering
@@ -227,7 +227,7 @@ CultuAR, desarrollada por la empresa española AR Vision, es una aplicación que
 
 \subsection{Historypin}
 
-Finalmente, Historypin se presenta como una plataforma colaborativa que permite a los usuarios subir y explorar fotografías, eventos y recuerdos históricos asociados a ubicaciones específicas. Lo más destacable de esta aplicación es su enfoque participativo, donde los usuarios pueden contribuir activamente al contenido disponible. Este modelo de colaboración inspira la posibilidad de que, en futuras versiones de “DONA’m MÓN”, los usuarios también puedan agregar información o enriquecer las narrativas existentes sobre mujeres de Valencia, convirtiendo la aplicación en una herramienta dinámica y viva.
+Finalmente, Historypin se presenta como una plataforma colaborativa que permite a los usuarios subir y explorar fotografías, eventos y recuerdos históricos asociados a ubicaciones específicas. Lo más destacable de esta aplicación es su enfoque participativo, donde los usuarios pueden contribuir activamente al contenido disponible. Este modelo de colaboración inspira la posibilidad de que, en futuras versiones de \textit{DONA'm MÓN}, los usuarios también puedan agregar información o enriquecer las narrativas existentes sobre mujeres de Valencia, convirtiendo la aplicación en una herramienta dinámica y viva.
 
 \begin{figure}[H]
     \centering
@@ -237,7 +237,7 @@ Finalmente, Historypin se presenta como una plataforma colaborativa que permite 
 \end{figure}
 \subsubsection{}
 
-Estas cuatro aplicaciones ilustran diversas maneras de utilizar la tecnología para crear experiencias inmersivas e interactivas. Cada una de ellas presenta fortalezas únicas que se alinean, en mayor o menor medida, con los objetivos de DONA'm MÓN. De Pokémon GO tomamos la dinámica de exploración y gamificación; de Streetmuseum, la idea de superponer contenido histórico en el entorno actual; de CultuAR, el uso efectivo de RA para la divulgación cultural local; y de Historypin, el potencial de colaboración comunitaria. Esta combinación de estrategias y conceptos pretende hacer de DONA'm MÓN una aplicación única que conecte a los usuarios con la historia de manera inclusiva, educativa e innovadora.
+Estas cuatro aplicaciones ilustran diversas maneras de utilizar la tecnología para crear experiencias inmersivas e interactivas. Cada una de ellas presenta fortalezas únicas que se alinean, en mayor o menor medida, con los objetivos de \textit{DONA'm MÓN}. De Pokémon GO tomamos la dinámica de exploración y gamificación; de Streetmuseum, la idea de superponer contenido histórico en el entorno actual; de CultuAR, el uso efectivo de RA para la divulgación cultural local; y de Historypin, el potencial de colaboración comunitaria. Esta combinación de estrategias y conceptos pretende hacer de \textit{DONA'm MÓN} una aplicación única que conecte a los usuarios con la historia de manera inclusiva, educativa e innovadora.
 
 
 
@@ -357,12 +357,11 @@ Django se basa en la arquitectura Modelo–Vista–Plantilla (MVT), un patrón s
 \end{itemize}
 
 La interacción entre Django y la base de datos está mediada por su ORM, lo que permite manipular los datos mediante objetos Python en lugar de consultas SQL explícitas. Esta capa de abstracción incrementa la seguridad —previniendo ataques como la inyección SQL— y facilita el mantenimiento del código~\cite{vincent2020}.
+\subsubsection{Sistema de Gestión de Bases de Datos: PostgreSQL}
 
-\subsubsection{Sistema de Gestión de Bases de Datos: MySQL}
+Para este proyecto se ha elegido PostgreSQL como sistema de gestión de bases de datos relacional (SGBDR), debido a su robustez, características avanzadas y excelente compatibilidad con Django~\cite{postgresql2024}. PostgreSQL es conocido por su cumplimiento estricto de los estándares SQL, su capacidad para manejar tipos de datos complejos (incluyendo JSON, arrays y tipos geoespaciales), y su rendimiento superior en consultas complejas. Estas características resultan fundamentales para gestionar tanto la información relacionada con las figuras históricas como los datos de geolocalización, multimedia y analíticas del uso de la aplicación.
 
-Para este proyecto se ha elegido MySQL como sistema de gestión de bases de datos relacional (SGBDR), debido a su madurez, rendimiento y plena compatibilidad con Django~\cite{oracle2023}. MySQL permite estructurar los datos de manera eficiente y soporta operaciones complejas con múltiples relaciones entre tablas, lo que resulta fundamental para gestionar tanto la información relacionada con las figuras históricas como los datos de geolocalización, multimedia y analíticas del uso de la app.
-
-La configuración entre Django y MySQL se realiza mediante el uso de controladores compatibles (como \texttt{mysqlclient}), lo que asegura una integración fluida y un rendimiento óptimo.
+La configuración entre Django y PostgreSQL se realiza mediante el uso de controladores compatibles, lo que asegura una integración fluida y un rendimiento óptimo. Además, PostgreSQL ofrece extensiones avanzadas como PostGIS para el manejo de datos geoespaciales, lo que puede resultar útil para futuras mejoras en las funcionalidades de geolocalización.
 
 \subsubsection{Comparativa entre sistemas de bases de datos}
 
@@ -370,26 +369,31 @@ A continuación se muestra una tabla comparativa entre los principales sistemas 
 
 \begin{table}[H]
     \centering
-    \begin{tabular}{|l|c|c|c|c|}
-        \hline
-        \textbf{Característica} & \textbf{SQLite} & \textbf{MySQL} & \textbf{MariaDB} & \textbf{MongoDB} \\ \hline
-        Tipo & Relacional & Relacional & Relacional & No relacional \\ \hline
-        Escalabilidad & Baja & Alta & Alta & Muy alta \\ \hline
-        Rendimiento & Medio & Alto & Muy alto & Alto \\ \hline
-        Integridad referencial & Sí & Sí & Sí & No \\ \hline
-        Compatibilidad Django & Nativa & Completa & Completa & Parcial (con plugins) \\ \hline
-        Flexibilidad de esquema & Baja & Media & Media & Alta \\ \hline
-        Facilidad de configuración & Muy fácil & Media & Media & Media \\ \hline
-        Comunidad y soporte & Moderada & Muy activa & Activa & Muy activa \\ \hline
-    \end{tabular}
-    \caption{Comparativa entre SQLite, MySQL, MariaDB y MongoDB~\cite{elmasri2017, mariadb2023, mongodb2024}.}
+    \renewcommand{\arraystretch}{1.6}
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{|l|c|c|c|c|c|}
+            \hline
+            \rule{0pt}{4.0ex}\textbf{Característica} & \textbf{SQLite} & \textbf{MySQL} & \textbf{PostgreSQL} & \textbf{MariaDB} & \textbf{MongoDB} \\ \hline
+            Tipo & Relacional & Relacional & Relacional & Relacional & No relacional \\ \hline
+            Escalabilidad & \textcolor{rojo}{Baja} & \textcolor{verde}{Alta} & \textcolor{verde}{Muy alta} & \textcolor{verde}{Alta} & \textcolor{verde}{Muy alta} \\ \hline
+            Rendimiento & \textcolor{marron}{Medio} & \textcolor{verde}{Alto} & \textcolor{verde}{Muy alto} & \textcolor{verde}{Muy alto} & \textcolor{verde}{Alto} \\ \hline
+            Integridad referencial & \textcolor{verde}{Sí} & \textcolor{verde}{Sí} & \textcolor{verde}{Sí} & \textcolor{verde}{Sí} & \textcolor{rojo}{No} \\ \hline
+            Compatibilidad Django & \textcolor{verde}{Nativa} & \textcolor{verde}{Completa} & \textcolor{verde}{Excelente} & \textcolor{verde}{Completa} & \textcolor{marron}{\rule{0pt}{5.5ex}\shortstack{Parcial\\(con plugins)}} \\ \hline
+            Flexibilidad de esquema & \textcolor{rojo}{Baja} & \textcolor{marron}{Media} & \textcolor{verde}{Alta} & \textcolor{marron}{Media} & \textcolor{verde}{Muy alta} \\ \hline
+            \rule{0pt}{5.5ex}\shortstack{Facilidad de\\configuración} & \textcolor{verde}{Muy fácil} & \textcolor{marron}{Media} & \textcolor{marron}{Media} & \textcolor{marron}{Media} & \textcolor{marron}{Media} \\ \hline
+            \rule{0pt}{5.5ex}\shortstack{Tipos de datos\\avanzados} & \textcolor{rojo}{No} & \textcolor{marron}{Limitado} & \textcolor{verde}{Excelente} & \textcolor{marron}{Limitado} & \textcolor{verde}{Excelente} \\ \hline
+            \rule{0pt}{5.5ex}\shortstack{Extensiones\\geoespaciales} & \textcolor{rojo}{No} & \textcolor{marron}{Limitado} & \textcolor{verde}{\rule{0pt}{5.5ex}\shortstack{Excelente\\(PostGIS)}} & \textcolor{marron}{Limitado} & \textcolor{marron}{Bueno} \\ \hline
+            \rule{0pt}{5.5ex}\shortstack{Comunidad\\y soporte} & \textcolor{marron}{Moderada} & \textcolor{verde}{Muy activa} & \textcolor{verde}{Muy activa} & \textcolor{verde}{Activa} & \textcolor{verde}{Muy activa} \\ \hline
+        \end{tabular}
+    }
+    \caption{Comparativa entre SQLite, MySQL, PostgreSQL, MariaDB y MongoDB~\cite{elmasri2017, postgresql2024, mariadb2023, mongodb2024}.}
     \label{tabla:comparativa_bases_datos}
 \end{table}
 
-\subsubsection{Consideraciones sobre otras tecnologías: MariaDB, SQLite, MongoDB y Cassandra}
+\subsubsection{Consideraciones sobre otras tecnologías: MariaDB, SQLite, MySQL, MongoDB y Cassandra}
 
-Aunque inicialmente se contempló el uso de MariaDB, una bifurcación de MySQL con mejoras en rendimiento y licencias completamente abiertas, finalmente se optó por MySQL por razones de compatibilidad institucional y soporte técnico~\cite{mariadb2023}. SQLite, si bien está soportada nativamente por Django y resulta útil en fases de desarrollo o en aplicaciones de bajo requerimiento, no ofrece la escalabilidad ni la gestión de concurrencia necesarias para este proyecto~\cite{django_sqlite2024}. 
+Aunque inicialmente se contempló el uso de MySQL, una solución madura y ampliamente utilizada, finalmente se optó por PostgreSQL debido a sus características avanzadas y su mejor soporte para tipos de datos complejos~\cite{postgresql2024}. PostgreSQL ofrece ventajas significativas como el soporte nativo para JSON, arrays, tipos geoespaciales mediante PostGIS, y un motor de consultas más sofisticado que resulta especialmente útil para aplicaciones que manejan datos diversos y complejos.
 
-En cuanto a las bases de datos no relacionales, cabe mencionar tecnologías como MongoDB y Cassandra. MongoDB, basada en documentos JSON, es ampliamente utilizada en aplicaciones que requieren estructuras de datos flexibles y cambios frecuentes en el esquema~\cite{mongodb2024}. Cassandra, por su parte, está orientada a entornos distribuidos con grandes volúmenes de datos y alta disponibilidad~\cite{cassandra2023}. Sin embargo, el enfoque relacional fue considerado más adecuado para las necesidades estructuradas y normalizadas del presente trabajo.
+MariaDB, una bifurcación de MySQL con mejoras en rendimiento y licencias completamente abiertas, también fue considerada, pero PostgreSQL superó esta opción por su ecosistema más rico de extensiones y su mejor integración con Django~\cite{mariadb2023}. SQLite, si bien está soportada nativamente por Django y resulta útil en fases de desarrollo o en aplicaciones de bajo requerimiento, no ofrece la escalabilidad ni la gestión de concurrencia necesarias para este proyecto~\cite{django_sqlite2024}. 
 
-\vspace{1em}
+En cuanto a las bases de datos no relacionales, cabe mencionar tecnologías como MongoDB y Cassandra. MongoDB, basada en documentos JSON, es ampliamente utilizada en aplicaciones que requieren estructuras de datos flexibles y cambios frecuentes en el esquema~\cite{mongodb2024}. Cassandra, por su parte, está orientada a entornos distribuidos con grandes volúmenes de datos y alta disponibilidad~\cite{cassandra2023}. Sin embargo, el enfoque relacional de PostgreSQL fue considerado más adecuado para las necesidades estructuradas y normalizadas del presente trabajo, ofreciendo además la flexibilidad necesaria para futuras expansiones del sistema.

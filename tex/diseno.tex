@@ -6,75 +6,96 @@
 % Diagramas de clases, de secuencia, de despliegue, diseño de
 % pantallas, etc
 
+\section{Diseño de la interfaz}
 
+\subsection{Wirefeframes}
 
+\subsection{Justificación de la paleta cromática}
+
+Desde una perspectiva de diseño gráfico, la selección de colores no solo responde a criterios estéticos, sino también a una intención comunicativa y simbólica clara. En \textit{DONA'm MÓN}, el color \textbf{morado} se ha establecido como tono principal por su profundo vínculo con la historia del feminismo. Su uso se remonta al movimiento sufragista de principios del siglo XX, cuando fue adoptado como símbolo de dignidad, fuerza y justicia por organizaciones como la Women's Social and Political Union en Reino Unido~\cite{unwomen2023, cochrane2013}. Con el paso del tiempo, el morado se ha convertido en un emblema internacional de la lucha por la igualdad de género~\cite{unwomen2023}. De esta manera, la elección de este color refuerza la identidad visual del proyecto y facilita que los usuarios conecten inmediatamente con los valores y objetivos que representa la aplicación.
+
+Junto al morado, la paleta incluye una gama de colores \textbf{análogos}, como el \textbf{violeta}, el \textbf{rosa}, el \textbf{morado claro} y el \textbf{magenta}, que comparten una base cromática cercana dentro del círculo cromático (en torno a los rojos y azules)~\cite{molina2010}. Esta proximidad favorece una \textit{armonía visual suave}, coherente y atractiva, que permite jugar con distintos niveles jerárquicos y transmitir sensaciones de cohesión, calidez y unidad. El \textbf{rosa}, en concreto, se incorpora de forma crítica y resignificada, alejándose de los estereotipos tradicionales y sirviendo como puente entre lo emocional y lo identitario~\cite{eiseman2000}. El \textbf{magenta}, más saturado, aporta energía y destaca elementos clave de la interfaz, como botones o llamadas a la acción, favoreciendo la usabilidad y el enfoque visual.
+
+Por otro lado, el color \textbf{verde} se utiliza como \textit{complementario} del morado, generando contraste y equilibrio dentro del sistema visual según la teoría del color tradicional~\cite{molina2010}. Su inclusión también tiene una base simbólica, ya que formaba parte, junto al morado y al blanco, de la paleta original del movimiento sufragista~\cite{cochrane2013}. Además, el verde sugiere crecimiento, esperanza y transformación, en sintonía con los objetivos educativos y sociales de la aplicación. Finalmente, el uso del \textbf{blanco} como color neutro permite crear espacios de respiro visual, mejorar la legibilidad y favorecer una interfaz clara, accesible y ordenada~\cite{eiseman2000}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/colores.png}
+    \caption{Colores de la paleta cromática con código hexadecimal y RGB.}
+\end{figure}
 
 \section{Diseño de base de datos}
 
-La base de datos de la aplicación está diseñada para almacenar información sobre mujeres, sus lugares asociados, rutas temáticas, usuarios y el historial de visitas. El diseño sigue una estructura relacional y está implementado en \textbf{PostgreSQL} mediante modelos definidos en Django.
-
-\subsection{Elección de la base de datos y justificación}
-
-Se ha seleccionado \textbf{PostgreSQL} como sistema gestor de base de datos por su robustez, soporte avanzado de tipos de datos, integridad referencial y compatibilidad nativa con Django. PostgreSQL permite almacenar listas de valores en un solo campo, lo que resulta útil para atributos como las áreas de investigación asociadas a cada mujer, sin perder la capacidad de realizar consultas eficientes.
+La base de datos de la aplicación está diseñada para almacenar información sobre mujeres, sus lugares asociados, rutas temáticas, usuarios y los historiales de visitas. El diseño sigue una estructura relacional y está implementado en \textbf{PostgreSQL} mediante modelos definidos en Django.
 
 \subsection{Tablas principales y justificación de diseño}
 
 A continuación se describen las tablas principales que conforman el modelo de datos, junto con la justificación de las decisiones tomadas:
 
 \begin{itemize}
-    \item \textbf{AreaInvestigacion}: Permite mantener un catálogo normalizado de áreas de investigación, facilitando la gestión y evitando duplicidades.
+    \item \textbf{AreaInvestigacion}: Permite mantener un catálogo normalizado de áreas de investigación, facilitando la gestión y evitando duplicidades. Se relaciona con las mujeres a través de una relación ManyToMany.
     \begin{itemize}
-        \item \textbf{id} (clave primaria)
-        \item \textbf{nombre}: nombre único del área.
+        \item \textbf{id} (clave primaria, BigAutoField)
+        \item \textbf{nombre}: nombre único del área (CharField, max\_length=100, unique=True).
     \end{itemize}
-    \item \textbf{Mujer}: Representa a una mujer relevante. El campo \texttt{areas\_investigacion} se implementa como un \texttt{ArrayField} de cadenas, aprovechando las capacidades de PostgreSQL para almacenar múltiples áreas directamente en el registro, simplificando la consulta y el filtrado desde la API.
+    
+    \item \textbf{Mujer}: Representa a una mujer relevante. El campo \texttt{areas\_investigacion} se implementa como un \texttt{ManyToManyField} hacia la tabla \texttt{AreaInvestigacion}, proporcionando normalización de datos y facilitando la gestión desde el panel de administración.
     \begin{itemize}
-        \item \textbf{id} (clave primaria)
-        \item \textbf{nombre}
-        \item \textbf{descripcion}
-        \item \textbf{foto}
-        \item \textbf{areas\_investigacion}: lista de cadenas de texto (\texttt{ArrayField}) con los nombres de las áreas de investigación asociadas.
-        \item \textbf{fechas}: información de fechas relevantes.
+        \item \textbf{id} (clave primaria, BigAutoField)
+        \item \textbf{nombre} (CharField, max\_length=100)
+        \item \textbf{descripcion} (TextField)
+        \item \textbf{foto} (ImageField, upload\_to='', null=True, blank=True)
+        \item \textbf{areas\_investigacion}: relación ManyToMany con \texttt{AreaInvestigacion} (related\_name='mujeres', verbose\_name='Áreas de investigación')
+        \item \textbf{fechas}: información de fechas relevantes (CharField, max\_length=100, null=True, blank=True)
+        \item \textbf{Meta}: ordering=['nombre'] para evitar warnings de paginación
     \end{itemize}
+    
     \item \textbf{Lugar}: Almacena información geolocalizada y la relación con una mujer. Se justifica la relación uno-a-muchos para poder asociar varios lugares a una misma mujer.
     \begin{itemize}
-        \item \textbf{id} (clave primaria)
-        \item \textbf{nombre}
-        \item \textbf{descripcion}
-        \item \textbf{latitud}
-        \item \textbf{longitud}
-        \item \textbf{foto}
-        \item \textbf{ar\_url}: enlace a contenido de realidad aumentada.
-        \item \textbf{mujer\_id} (clave foránea): referencia a la mujer destacada.
+        \item \textbf{id} (clave primaria, BigAutoField)
+        \item \textbf{nombre} (CharField, max\_length=100)
+        \item \textbf{descripcion} (TextField)
+        \item \textbf{latitud} (FloatField, null=True, blank=True)
+        \item \textbf{longitud} (FloatField, null=True, blank=True)
+        \item \textbf{foto} (ImageField, upload\_to='', null=True, blank=True)
+        \item \textbf{ar\_url}: enlace a contenido de realidad aumentada (URLField, max\_length=300, null=True, blank=True, verbose\_name='URL de Realidad Aumentada')
+        \item \textbf{mujer\_id} (clave foránea): referencia a la mujer destacada (ForeignKey, related\_name='lugares', on\_delete=CASCADE)
     \end{itemize}
+    
     \item \textbf{Ruta}: Agrupa lugares y mujeres en recorridos temáticos. Se emplean relaciones ManyToMany para maximizar la flexibilidad y permitir que una ruta incluya múltiples mujeres y lugares, y viceversa.
     \begin{itemize}
-        \item \textbf{id} (clave primaria)
-        \item \textbf{nombre}
-        \item \textbf{descripcion}
-        \item Relación de tipo ManyToMany con las tablas \textbf{Mujer} y \textbf{Lugar}.
+        \item \textbf{id} (clave primaria, BigAutoField)
+        \item \textbf{nombre} (CharField, max\_length=100, unique=True)
+        \item \textbf{descripcion} (TextField, blank=True)
+        \item Relación \textbf{mujeres}: ManyToManyField con \texttt{Mujer} (related\_name='rutas', blank=True)
+        \item Relación \textbf{lugares}: ManyToManyField con \texttt{Lugar} (related\_name='rutas', blank=True)
     \end{itemize}
-    \item \textbf{UserProfile}: Extiende el modelo de usuario de Django para almacenar información adicional relevante para la aplicación, como la fecha de nacimiento.
+    
+    \item \textbf{UserProfile}: Extiende el modelo de usuario de Django para almacenar información adicional relevante para la aplicación.
     \begin{itemize}
-        \item \textbf{id} (clave primaria)
-        \item \textbf{user\_id} (relación uno a uno con User)
-        \item \textbf{birth\_date}
-        \item \textbf{email}
+        \item \textbf{id} (clave primaria, BigAutoField)
+        \item \textbf{user\_id} (relación uno a uno con User, related\_name='profile', on\_delete=CASCADE)
+        \item \textbf{birth\_date} (DateField, null=True, blank=True)
+        \item \textbf{email} (EmailField, max\_length=254, unique=True)
     \end{itemize}
+    
     \item \textbf{VisitedLugar}: Permite registrar el historial de visitas de los usuarios a lugares concretos, facilitando la personalización y la obtención de estadísticas.
     \begin{itemize}
-        \item \textbf{id} (clave primaria)
-        \item \textbf{user\_id} (clave foránea)
-        \item \textbf{lugar\_id} (clave foránea)
-        \item \textbf{visited\_at}: fecha y hora de la visita.
+        \item \textbf{id} (clave primaria, BigAutoField)
+        \item \textbf{user\_id} (clave foránea, related\_name='visited\_lugares', on\_delete=CASCADE)
+        \item \textbf{lugar\_id} (clave foránea, on\_delete=CASCADE)
+        \item \textbf{visited\_at}: fecha y hora de la visita (DateTimeField, default=timezone.now)
+        \item \textbf{Meta}: unique\_together=('user', 'lugar'), ordering=['-visited\_at']
     \end{itemize}
+    
     \item \textbf{VisitedLugarRuta}: Permite registrar visitas de usuarios a lugares dentro de rutas específicas, lo que posibilita analizar el recorrido de los usuarios y mejorar la experiencia de gamificación.
     \begin{itemize}
-        \item \textbf{id} (clave primaria)
-        \item \textbf{user\_id} (clave foránea)
-        \item \textbf{ruta\_id} (clave foránea)
-        \item \textbf{lugar\_id} (clave foránea)
-        \item \textbf{visited\_at}: fecha y hora de la visita.
+        \item \textbf{id} (clave primaria, BigAutoField)
+        \item \textbf{user\_id} (clave foránea, related\_name='visited\_lugares\_ruta', on\_delete=CASCADE)
+        \item \textbf{ruta\_id} (clave foránea, related\_name='visitas', on\_delete=CASCADE)
+        \item \textbf{lugar\_id} (clave foránea, on\_delete=CASCADE)
+        \item \textbf{visited\_at}: fecha y hora de la visita (DateTimeField, default=timezone.now)
+        \item \textbf{Meta}: unique\_together=('user', 'ruta', 'lugar'), ordering=['-visited\_at']
     \end{itemize}
 \end{itemize}
 
@@ -83,6 +104,8 @@ A continuación se describen las tablas principales que conforman el modelo de d
 \begin{itemize}
     \item Un \textbf{Lugar} pertenece a una \textbf{Mujer} (relación uno a muchos).
     \item Una \textbf{Mujer} puede tener varios \textbf{Lugares} asociados.
+    \item Una \textbf{Mujer} puede tener múltiples \textbf{AreaInvestigacion} asociadas (relación muchos a muchos).
+    \item Una \textbf{AreaInvestigacion} puede estar asociada con múltiples \textbf{Mujeres}.
     \item Una \textbf{Ruta} puede incluir varias \textbf{Mujeres} y varios \textbf{Lugares} (relaciones ManyToMany).
     \item Un \textbf{UserProfile} extiende a un \textbf{User} de Django (relación uno a uno).
     \item \textbf{VisitedLugar} y \textbf{VisitedLugarRuta} permiten registrar el historial de visitas de los usuarios, tanto de lugares individuales como de lugares dentro de rutas.
@@ -90,27 +113,24 @@ A continuación se describen las tablas principales que conforman el modelo de d
 
 \subsection{Esquema de tablas}
 
-El siguiente esquema resume la estructura de las tablas principales de la base de datos. Para mejorar la visualización y evitar cortes de línea, se utiliza el entorno \texttt{tabularx}:
+El siguiente esquema resume la estructura de las tablas principales de la base de datos:
 
 \begin{table}[H]
 \centering
 \begin{tabularx}{\textwidth}{l X}
 \textbf{Tabla} & \textbf{Campos principales} \\
 \hline
-Mujer & id, nombre, descripcion, foto, areas\_investigacion (ArrayField), fechas \\
-Lugar & id, nombre, descripcion, latitud, longitud, foto, ar\_url, mujer\_id (FK) \\
-Ruta & id, nombre, descripcion, mujeres (M2M), lugares (M2M) \\
-UserProfile & id, user\_id (O2O), birth\_date, email \\
-VisitedLugar & id, user\_id (FK), lugar\_id (FK), visited\_at \\
-VisitedLugarRuta & id, user\_id (FK), ruta\_id (FK), lugar\_id (FK), visited\_at \\
-AreaInvestigacion & id, nombre \\
+AreaInvestigacion & id (BigAutoField), nombre (CharField, unique) \\
+Mujer & id (BigAutoField), nombre, descripcion, foto (ImageField), areas\_investigacion (M2M), fechas, Meta: ordering=['nombre'] \\
+Lugar & id (BigAutoField), nombre, descripcion, latitud, longitud, foto (ImageField), ar\_url (URLField), mujer\_id (FK) \\
+Ruta & id (BigAutoField), nombre (unique), descripcion, mujeres (M2M), lugares (M2M) \\
+UserProfile & id (BigAutoField), user\_id (O2O), birth\_date, email (unique) \\
+VisitedLugar & id (BigAutoField), user\_id (FK), lugar\_id (FK), visited\_at, Meta: unique\_together, ordering \\
+VisitedLugarRuta & id (BigAutoField), user\_id (FK), ruta\_id (FK), lugar\_id (FK), visited\_at, Meta: unique\_together, ordering \\
 \end{tabularx}
 \caption{Esquema resumido de las tablas principales de la base de datos}
 \end{table}
 
-\subsection{Justificación global del diseño}
-
-El modelo de datos relacional implementado garantiza la integridad y la eficiencia en las consultas. El uso de \texttt{ArrayField} en \textbf{Mujer} permite una mayor flexibilidad y rendimiento en la consulta de áreas de investigación, sin necesidad de realizar joins adicionales, lo que es especialmente útil para filtros rápidos en la API. Las tablas de historial de visitas están separadas para facilitar la obtención de estadísticas, la personalización de la experiencia del usuario y la escalabilidad futura (por ejemplo, para añadir logros o recomendaciones personalizadas).
 \begin{landscape}
     \begin{figure}
         \centering
@@ -120,7 +140,7 @@ El modelo de datos relacional implementado garantiza la integridad y la eficienc
 \end{landscape}
 \section{Diseño de la arquitectura del frontend}
 
-El frontend de la aplicación está desarrollado en \textbf{React Native}, siguiendo una arquitectura basada en componentes funcionales y el uso de contextos para la gestión eficiente del estado global.El hecho de que el diseño sea modular y esté desacoplado hace que sea más sencillo de mantener y escalar, además de permitir añadir nuevas funcionalidades sin complicaciones. Esto también ayuda a que la experiencia de usuario sea más fácil de adaptar en un futuro con nuevas necesidades.
+El frontend de la aplicación está desarrollado en \textbf{React Native}, siguiendo una arquitectura basada en componentes funcionales y el uso de contextos para la gestión eficiente del estado global. El hecho de que el diseño sea modular y esté desacoplado hace que sea más sencillo de mantener y escalar, además de permitir añadir nuevas funcionalidades sin complicaciones. Esto también ayuda a que la experiencia de usuario sea más fácil de adaptar en un futuro con nuevas necesidades.
 
 \subsection{Diagrama de clases del frontend}
 
@@ -130,7 +150,7 @@ La Figura~\ref{fig:clases-frontend} muestra el diagrama de clases que representa
 
 Las relaciones entre componentes reflejan tanto el consumo de contexto (\textit{consume}), como la navegación entre pantallas (\textit{navega a}), y el uso de lógica auxiliar (por ejemplo, la integración de notificaciones en el componente principal \texttt{Main}).
 
-\begin{landscape} \vfill \begin{figure}[H] \centering \includegraphics[width=1.2\paperwidth]{figs/prueba.png} \caption{Diagrama de clases del frontend React Native: estructura de componentes y relaciones principales.} \label{fig:clases-frontend} \end{figure} \vfill \end{landscape}
+\begin{landscape} \vfill \begin{figure}[H] \centering \vspace*{2cm} \includegraphics[width=1.2\paperwidth]{figs/prueba.png} \caption{Diagrama de clases del frontend React Native: estructura de componentes y relaciones principales.} \label{fig:clases-frontend} \end{figure} \vfill \end{landscape}
 
 \section{Diagramas de secuencia}
 

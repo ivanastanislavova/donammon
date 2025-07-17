@@ -914,18 +914,16 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \end{tabular}
 \end{table}
 
-
 \clearpage
 \section{Diagramas de Actividad}
 
 Los diagramas de actividad son una herramienta utilizada en el modelado de procesos y flujos de trabajo dentro de un sistema. Permiten representar gráficamente la secuencia de actividades, decisiones y flujos alternativos que pueden ocurrir durante la ejecución de un proceso. Son especialmente útiles para visualizar el comportamiento dinámico de un sistema y entender cómo interactúan los distintos componentes o usuarios.
 
+En este diagrama se observan los primeros pasos que sigue un usuario al acceder a la aplicación, pasando por las opciones de registro o inicio de sesión, la validación de datos para llegar a la visualización de la aplicación (véase la Figura~\ref{fig:diagrama-actividad-usuario-no-registrado}).
+
 El diagrama de la Figura~\ref{fig:diagrama-actividad-usuario-registrado} muestra, de forma paralela, todas las funcionalidades principales a las que puede acceder un usuario tras iniciar sesión en la aplicación. Cada partición corresponde a una sección clave del menú (mapa interactivo, listado de lugares, rutas temáticas, realidad aumentada y perfil personal) o a las notificaciones de proximidad. En cada bloque se detallan las acciones posibles y las decisiones que puede tomar el usuario.
 
-Este diagrama de actividad (véase la Figura~\ref{fig:diagrama-actividad-administrador}) corresponde al panel de administración. Ilustra los principales procesos y decisiones que puede realizar un administrador tras iniciar sesión en la plataforma web. El flujo se divide en varias particiones, cada una dedicada a una funcionalidad específica: gestión de mujeres históricas, gestión de lugares geolocalizados, gestión de usuarios, gestión de visitas e historial, y gestión de rutas temáticas. En cada sección se muestran las operaciones CRUD (crear, leer, actualizar, eliminar) correspondientes, así como acciones adicionales como el registro de nuevos usuarios, la consulta y eliminación de historiales de visitas y rutas, y el reinicio de visitas en rutas para usuarios concretos.
-
-
-En este diagrama se observan los primeros pasos que sigue un usuario al acceder a la aplicación, pasando por las opciones de registro o inicio de sesión, la validación de datos para llegar a la visualización de la aplicación (véase la Figura~\ref{fig:diagrama-actividad-usuario-no-registrado}).
+El diagrama de actividad de la Figura~\ref{fig:diagrama-actividad-administrador} corresponde al panel de administración. Ilustra los principales procesos y decisiones que puede realizar un administrador tras iniciar sesión en la plataforma web. El flujo se divide en varias particiones, cada una dedicada a una funcionalidad específica: gestión de mujeres históricas, gestión de lugares geolocalizados, gestión de usuarios, gestión de visitas e historial, y gestión de rutas temáticas. En cada sección se muestran las operaciones CRUD (crear, leer, actualizar, eliminar) correspondientes, así como acciones adicionales como el registro de nuevos usuarios, la consulta y eliminación de historiales de visitas y rutas, y el reinicio de visitas en rutas para usuarios concretos.
 
 \begin{figure}[H]
     \centering
@@ -934,53 +932,67 @@ En este diagrama se observan los primeros pasos que sigue un usuario al acceder 
     \label{fig:diagrama-actividad-usuario-no-registrado}
 \end{figure}
 
+% Aquí es donde probablemente se inserta la página en blanco
+% Solución: comienza landscape justo con una nueva figura
+
+
+\clearpage
 \begin{landscape}
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1.5\textwidth]{figs/diagrama_actividad_usuario_registrado.png}
-        \caption{Diagrama de actividad de usuario registrado}
+  
+
+    \begin{center}
+        \includegraphics[width=1.45\textwidth]{figs/diagrama_actividad_usuario_registrado.png}
+        \captionof{figure}{Diagrama de actividad de usuario registrado}
         \label{fig:diagrama-actividad-usuario-registrado}
-    \end{figure}
+        \vspace{2cm}
+
+        \includegraphics[width=1.45\textwidth]{figs/diagrama_actividad_administrador.png}
+        \captionof{figure}{Diagrama de actividad del panel de administración}
+        \label{fig:diagrama-actividad-administrador}
+    \end{center}
 \end{landscape}
 
-\begin{landscape}
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1.5\textwidth]{figs/diagrama_actividad_administrador.png}
-        \caption{Diagrama de actividad del panel de administración}
-        \label{fig:diagrama-actividad-administrador}
-    \end{figure}
-\end{landscape}
 
 
 \section{Diagramas de Estado}
 Los diagramas de estado son una herramienta fundamental en el modelado de sistemas software, especialmente útil para describir el comportamiento dinámico de un objeto o componente a lo largo de su ciclo de vida. Un diagrama de estado representa los diferentes estados que puede adoptar un elemento del sistema y las transiciones entre ellos, que se producen como respuesta a eventos o acciones. Estos diagramas permiten visualizar de manera clara cómo reacciona el sistema ante distintas situaciones, facilitando la comprensión y el diseño de su lógica interna.
 
+
+A continuación se presentan \textbf{tres diagramas de estado} que describen el comportamiento de los diferentes tipos de usuarios del sistema. El primer diagrama corresponde al \textbf{usuario no registrado}, mostrando las transiciones básicas desde el acceso inicial hasta el registro o inicio de sesión. El segundo diagrama representa el \textbf{usuario registrado} y, debido a la complejidad y extensión de las funcionalidades disponibles, se ha dividido en \textbf{dos partes} para garantizar una visualización óptima y facilitar su comprensión. El tercer diagrama ilustra el comportamiento del \textbf{administrador} del sistema, incluyendo todas las operaciones de gestión y mantenimiento disponibles desde el panel administrativo.
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{figs/estado_usuario_no_registrado.png}
+    \includegraphics[width=0.65\textwidth]{figs/estado_usuario_no_registrado.png}
     \caption{Diagrama de estado de usuario no registrado}
 \end{figure}
 
 \begin{landscape}
-    \vfill
-    \centering
-    \makebox[\paperwidth]{%
-        \includegraphics[width=1.2\paperwidth]{figs/estado_usuario_registrado.png}
-    }
-    \par\vspace{1ex}
-    \textbf{Figura 4.9: Diagrama de estado de usuario registrado}
-    \vfill
+    \begin{figure}[H]
+        \centering
+        \vspace*{2cm}
+        \includegraphics[width=1.2\paperwidth]{figs/diagrama1.png}
+        \caption{Diagrama de estado de usuario registrado 1}
+        \label{fig:diagrama-estado-usuario-registrado-1}
+    \end{figure}
 \end{landscape}
-
 
 \begin{landscape}
-    \vfill
-    \centering
-    \makebox[\paperwidth]{%
-        \includegraphics[width=1.2\paperwidth]{figs/estado_administrador.png}
-    }
-    \par\vspace{1ex}
-    \textbf{Figura 4.10: Diagrama de estado del panel de administración}
-    \vfill
+    \begin{figure}[H]
+        \centering
+        \vspace*{4cm}
+        \includegraphics[width=1.2\paperwidth]{figs/diagrama2.png}
+        \caption{Diagrama de estado de usuario registrado 2}
+        \label{fig:diagrama-estado-usuario-registrado-2}
+    \end{figure}
 \end{landscape}
+
+\begin{landscape}
+    \begin{figure}[H]
+        \centering
+        \vspace*{4cm} % Ajusta este valor para mover más o menos hacia abajo
+        \includegraphics[width=1.2\paperwidth]{figs/estado_administrador.png}
+        
+        \caption{Diagrama de estado del panel de administración}
+    \end{figure}
+\end{landscape}
+
