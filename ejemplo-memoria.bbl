@@ -1,5 +1,22 @@
 \begin{thebibliography}{10}
 
+\bibitem{smartphone_evolution2023}
+S92063042.
+\newblock History and evolution of smartphones.
+\newblock
+  \url{https://medium.com/@s92063042/history-and-evolution-of-smartphones-17987e6f91d1},
+  2023.
+\newblock Medium. Accedido: 2025-01-17.
+
+\bibitem{cano2019}
+José de~Jesús Cano~Rosales.
+\newblock {\em Desarrollo de una aplicación de realidad aumentada para
+  dispositivos móviles como herramienta de apoyo en el proceso de
+  enseñanza-aprendizaje}.
+\newblock Tesis de grado, Universidad de San Carlos de Guatemala, Guatemala,
+  2019.
+\newblock Facultad de Ingeniería.
+
 \bibitem{elmasri2017}
 Ramez Elmasri and Shamkant~B. Navathe.
 \newblock {\em Fundamentals of database systems}.
@@ -389,6 +406,18 @@ Leatrice Eiseman.
 \newblock {\em Colors for Your Every Mood: Discover Your True Decorating
   Colors}.
 \newblock Capital Books, 2000.
+
+\bibitem{aframe_models}
+{A-Frame}.
+\newblock A-frame documentation: Models.
+\newblock \url{https://aframe.io/docs/1.7.0/introduction/models.html}, 2024.
+\newblock Accedido: 17 de julio de 2025.
+
+\bibitem{vercel_limits}
+{Vercel}.
+\newblock Vercel documentation: Platform limits.
+\newblock \url{https://vercel.com/docs/limits}, 2024.
+\newblock Accedido: 17 de julio de 2025.
 
 \bibitem{brooke1996}
 John Brooke.

@@ -1243,11 +1243,12 @@ Alert.alert('Éxito', 'Nombre de usuario actualizado');
 
 \subsection{Herramientas, frameworks y tecnologías utilizadas}
 
-Para la implementación de las experiencias de realidad aumentada se ha optado por una solución web basada en \textbf{A-Frame}, que permite crear experiencias inmersivas accesibles desde cualquier navegador web moderno sin necesidad de aplicaciones nativas específicas.
+Para la implementación de las experiencias de realidad aumentada se ha optado por una solución web basada en \textbf{A-Frame} con \textbf{AR.js}, que permite crear experiencias inmersivas accesibles desde cualquier navegador web moderno sin necesidad de aplicaciones nativas específicas.
 
 Las principales tecnologías utilizadas son:
 \begin{itemize}
     \item \textbf{A-Frame 1.7.0} - Framework web para realidad virtual y aumentada
+    \item \textbf{AR.js} - Librería JavaScript que añade capacidades de realidad aumentada a A‑Frame 
     \item \textbf{WebGL} - Para renderizado 3D en tiempo real
     \item \textbf{WebRTC} - Para acceso a la cámara del dispositivo
     \item \textbf{Vercel} - Plataforma de hosting para despliegue de experiencias AR
@@ -1270,6 +1271,8 @@ mujer.glb                    # Modelo 3D principal (personaje histórico)
 carmen_audio.mp3             # Audio narrativo específico
 musica_de_fondo_suave.mp3    # Música ambiental
 \end{lstlisting}
+
+Cada experiencia AR se aloja en una URL única, por ejemplo: \texttt{https://ivam.vercel.app/}. Esta URL se asocia a un lugar específico en la base de datos del backend, como hemos mencionado anteriormente.
 
 \subsection{Diseño de la experiencia interactiva}
 
@@ -1559,4 +1562,26 @@ Cada experiencia AR se despliega independientemente en Vercel, proporcionando:
 Esta implementación de realidad aumentada proporciona experiencias inmersivas y educativas que conectan a los usuarios con la historia local de manera innovadora, utilizando tecnologías web estándar para maximizar la accesibilidad y el alcance de la aplicación.
 
 
+\subsection{Formato y optimización de modelos 3D}
+
+Todos los modelos empleados en la experiencia de realidad aumentada se han utilizado en formato \texttt{.glb}. Este formato, perteneciente al estándar glTF 2.0, es uno de los soportados por A‑Frame mediante el componente \texttt{gltf-model} \cite{aframe_models}. A‑Frame también permite el uso de otros formatos como \texttt{.obj} (a través del componente \texttt{obj-model}) y, mediante loaders de \textit{three.js}, formatos adicionales como \texttt{.ply}, \texttt{.fbx} o JSON. Sin embargo, la documentación oficial recomienda el uso de glTF/GLB por sus ventajas: encapsula geometría, texturas, materiales y animaciones en un único archivo binario, optimizado para transmisión web, reduciendo el número de peticiones HTTP y facilitando la carga en dispositivos móviles.
+
+\textbf{Motivos para la elección del formato \texttt{.glb}}:
+\begin{itemize}
+    \item Compatibilidad nativa con A‑Frame.
+    \item Inclusión de texturas y materiales en un único archivo, evitando dependencias adicionales como ocurre en \texttt{.obj}.
+    \item Rendimiento optimizado en entornos web y móviles.
+\end{itemize}
+
+\textbf{Obtención de modelos}: los modelos utilizados se han conseguido de dos formas:
+\begin{enumerate}
+    \item Descargando desde repositorios especializados como Cults3D\footnote{\url{https://cults3d.com/en/3d-model/art/vandana-shiva?srsltid=AfmBOoo2OFfWztX_LpR_AyTC21vPPs9T8Xd-n4IRsIl4syxbvKVhqBf3}} y Thingiverse\footnote{\url{https://www.thingiverse.com/thing:5899901}}, que ofrecen modelos en diferentes formatos posteriormente convertidos a \texttt{.glb}.
+    \item Generándolos mediante inteligencia artificial usando la herramienta Meshy\footnote{\url{https://www.meshy.ai}}. Este proceso consiste en subir una imagen, obtener cuatro modelos generados automáticamente y seleccionar el más adecuado. Posteriormente, Meshy crea una textura para el modelo elegido.
+\end{enumerate}
+
+Es importante destacar que el uso de modelos generados por IA no se plantea como una solución final para la aplicación, sino como una aproximación visual preliminar de cómo podrían lucir los personajes históricos.
+
+\textbf{Optimización y limitaciones técnicas}: durante el desarrollo se presentaron varias restricciones de tamaño. La herramienta Meshy solo admite modelos de hasta 50\,MB, lo que obligó a realizar procesos de optimización y reducción de malla (re‑vectorización) antes de subirlos para generar las texturas. Asimismo, la plataforma de despliegue Vercel establece un límite máximo recomendado de 100\,MB por archivo para proyectos en planes estándar \cite{vercel_limits}. Esto exigió la aplicación de técnicas adicionales de compresión y simplificación para asegurar la compatibilidad.
+
+Finalmente, en algunos casos los modelos descargados desde repositorios carecían de texturas, por lo que se recurrió a Meshy para generarlas. Esto implicó un flujo de trabajo iterativo que combinaba conversión a \texttt{.glb}, reducción de tamaño y texturizado mediante IA, garantizando así la integración con A‑Frame y la correcta visualización en entornos web móviles.
 

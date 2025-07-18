@@ -42,6 +42,8 @@
 \contentsline {subsection}{\numberline {3.1.3}Requisitos no funcionales}{53}{subsection.3.1.3}%
 \contentsline {section}{\numberline {3.2}Especificaciones}{55}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Ciclo de vida del software}{57}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Ventajas del modelo en cascada}{57}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Justificación de su elección}{58}{subsection.3.3.2}%
 \contentsline {section}{\numberline {3.4}Planificaci\'on temporal}{58}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Descomposición de tareas por fases}{58}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Estimación temporal}{61}{subsection.3.4.2}%
@@ -62,153 +64,157 @@
 \contentsline {subsection}{\numberline {3.7.4}Estrategias de mitigación}{70}{subsection.3.7.4}%
 \contentsline {subsection}{\numberline {3.7.5}Planes de contingencia}{70}{subsection.3.7.5}%
 \contentsline {chapter}{\numberline {4}Análisis}{71}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Diagramas de casos de uso}{71}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Especificación de casos de uso}{74}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Caso de uso 1: Login de usuario}{74}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Caso de uso 2: Registro de usuario}{75}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Caso de uso 3: Ver mapa con puntos de interés}{76}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Caso de uso 4: Ver listado de puntos ordenado por cercanía}{77}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Caso de uso 5: Ver ficha del lugar}{78}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Caso de uso 6: Ver rutas y consultar puntos de una ruta}{79}{subsection.4.2.6}%
-\contentsline {subsection}{\numberline {4.2.7}Caso de uso 7: Escanear QR de punto de ruta}{80}{subsection.4.2.7}%
-\contentsline {subsection}{\numberline {4.2.8}Caso de uso 8: Ver puntos RA disponibles}{81}{subsection.4.2.8}%
-\contentsline {subsection}{\numberline {4.2.9}Caso de uso 9: Visualizar contenido RA}{82}{subsection.4.2.9}%
-\contentsline {subsection}{\numberline {4.2.10}Caso de uso 10: Editar perfil de usuario}{83}{subsection.4.2.10}%
-\contentsline {subsection}{\numberline {4.2.11}Caso de uso 11: Ver historial de lugares visitados y rutas completadas}{84}{subsection.4.2.11}%
-\contentsline {subsection}{\numberline {4.2.12}Caso de uso 12: Cerrar sesión}{85}{subsection.4.2.12}%
-\contentsline {subsection}{\numberline {4.2.13}Caso de uso 13: Iniciar sesión como administrador}{86}{subsection.4.2.13}%
-\contentsline {subsection}{\numberline {4.2.14}Caso de uso 14: Gestionar mujeres históricas}{87}{subsection.4.2.14}%
-\contentsline {subsection}{\numberline {4.2.15}Caso de uso 15: Gestionar puntos geolocalizados}{88}{subsection.4.2.15}%
-\contentsline {subsection}{\numberline {4.2.16}Caso de uso 16: Gestionar rutas temáticas}{89}{subsection.4.2.16}%
-\contentsline {subsection}{\numberline {4.2.17}Caso de uso 17: Consultar lista de usuarios}{90}{subsection.4.2.17}%
-\contentsline {subsection}{\numberline {4.2.18}Caso de uso 18: Gestionar materiales multimedia}{91}{subsection.4.2.18}%
-\contentsline {subsection}{\numberline {4.2.19}Caso de uso 19: Consultar métricas de uso}{92}{subsection.4.2.19}%
-\contentsline {subsection}{\numberline {4.2.20}Caso de uso 20: Gestionar áreas de investigación}{93}{subsection.4.2.20}%
-\contentsline {section}{\numberline {4.3}Diagramas de Actividad}{94}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Diagramas de Estado}{97}{section.4.4}%
+\contentsline {section}{\numberline {4.1}Introducción}{71}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Diagramas de casos de uso}{71}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Especificación de casos de uso}{74}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Caso de uso 1: Login de usuario}{74}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Caso de uso 2: Registro de usuario}{75}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Caso de uso 3: Ver mapa con puntos de interés}{76}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Caso de uso 4: Ver listado de puntos ordenado por cercanía}{77}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Caso de uso 5: Ver ficha del lugar}{78}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Caso de uso 6: Ver rutas y consultar puntos de una ruta}{79}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.7}Caso de uso 7: Escanear QR de punto de ruta}{80}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}Caso de uso 8: Ver puntos RA disponibles}{81}{subsection.4.3.8}%
+\contentsline {subsection}{\numberline {4.3.9}Caso de uso 9: Visualizar contenido RA}{82}{subsection.4.3.9}%
+\contentsline {subsection}{\numberline {4.3.10}Caso de uso 10: Editar perfil de usuario}{83}{subsection.4.3.10}%
+\contentsline {subsection}{\numberline {4.3.11}Caso de uso 11: Ver historial de lugares visitados y rutas completadas}{84}{subsection.4.3.11}%
+\contentsline {subsection}{\numberline {4.3.12}Caso de uso 12: Cerrar sesión}{85}{subsection.4.3.12}%
+\contentsline {subsection}{\numberline {4.3.13}Caso de uso 13: Iniciar sesión como administrador}{86}{subsection.4.3.13}%
+\contentsline {subsection}{\numberline {4.3.14}Caso de uso 14: Gestionar mujeres históricas}{87}{subsection.4.3.14}%
+\contentsline {subsection}{\numberline {4.3.15}Caso de uso 15: Gestionar puntos geolocalizados}{88}{subsection.4.3.15}%
+\contentsline {subsection}{\numberline {4.3.16}Caso de uso 16: Gestionar rutas temáticas}{89}{subsection.4.3.16}%
+\contentsline {subsection}{\numberline {4.3.17}Caso de uso 17: Consultar lista de usuarios}{90}{subsection.4.3.17}%
+\contentsline {subsection}{\numberline {4.3.18}Caso de uso 18: Gestionar materiales multimedia}{91}{subsection.4.3.18}%
+\contentsline {subsection}{\numberline {4.3.19}Caso de uso 19: Consultar métricas de uso}{92}{subsection.4.3.19}%
+\contentsline {subsection}{\numberline {4.3.20}Caso de uso 20: Gestionar áreas de investigación}{93}{subsection.4.3.20}%
+\contentsline {section}{\numberline {4.4}Diagramas de Actividad}{94}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Diagramas de Estado}{97}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Diseño}{101}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Diseño de la interfaz}{101}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Wirefeframes}{101}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Justificación de la paleta cromática}{101}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Diseño de base de datos}{102}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Tablas principales y justificación de diseño}{102}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Relaciones entre tablas}{104}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Esquema de tablas}{104}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Diseño de la arquitectura del frontend}{106}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Diagrama de clases del frontend}{106}{subsection.5.3.1}%
-\contentsline {section}{\numberline {5.4}Diagramas de secuencia}{108}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Diagrama de secuencia del caso de uso 1: Login de usuario}{108}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Diagrama de secuencia del caso de uso 2: Registro de usuario}{109}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Diagrama de secuencia del caso de uso 3: Ver mapa con puntos de interés}{109}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Diagrama de secuencia del caso de uso 4: Ver listado de puntos ordenado por cercanía}{110}{subsection.5.4.4}%
-\contentsline {subsection}{\numberline {5.4.5}Diagrama de secuencia del caso de uso 5: Ver ficha del lugar}{110}{subsection.5.4.5}%
-\contentsline {subsection}{\numberline {5.4.6}Diagrama de secuencia del caso de uso 6: Ver rutas y consultar puntos de una ruta}{111}{subsection.5.4.6}%
-\contentsline {subsection}{\numberline {5.4.7}Diagrama de secuencia del caso de uso 7: Escanear QR de punto de ruta}{111}{subsection.5.4.7}%
-\contentsline {subsection}{\numberline {5.4.8}Diagrama de secuencia del caso de uso 8: Ver puntos RA disponibles}{112}{subsection.5.4.8}%
-\contentsline {subsection}{\numberline {5.4.9}Diagrama de secuencia del caso de uso 9: Visualizar contenido RA}{112}{subsection.5.4.9}%
-\contentsline {subsection}{\numberline {5.4.10}Diagrama de secuencia del caso de uso 10: Editar perfil de usuario}{113}{subsection.5.4.10}%
-\contentsline {subsection}{\numberline {5.4.11}Diagrama de secuencia del caso de uso 11: Ver historial de lugares visitados y rutas completadas}{113}{subsection.5.4.11}%
-\contentsline {subsection}{\numberline {5.4.12}Diagrama de secuencia del caso de uso 12: Cerrar sesión}{114}{subsection.5.4.12}%
-\contentsline {subsection}{\numberline {5.4.13}Diagrama de secuencia del caso de uso 13: Iniciar sesión como administrador}{114}{subsection.5.4.13}%
-\contentsline {subsection}{\numberline {5.4.14}Diagrama de secuencia del caso de uso 14: Gestionar mujeres históricas}{115}{subsection.5.4.14}%
-\contentsline {subsection}{\numberline {5.4.15}Diagrama de secuencia del caso de uso 15: Gestionar puntos geolocalizados}{115}{subsection.5.4.15}%
-\contentsline {subsection}{\numberline {5.4.16}Diagrama de secuencia del caso de uso 16: Gestionar rutas temáticas}{116}{subsection.5.4.16}%
-\contentsline {subsection}{\numberline {5.4.17}Diagrama de secuencia del caso de uso 17: Consultar lista de usuarios}{116}{subsection.5.4.17}%
-\contentsline {subsection}{\numberline {5.4.18}Diagrama de secuencia del caso de uso 18: Gestionar materiales multimedia}{117}{subsection.5.4.18}%
-\contentsline {subsection}{\numberline {5.4.19}Diagrama de secuencia del caso de uso 19: Consultar métricas de uso}{117}{subsection.5.4.19}%
-\contentsline {subsection}{\numberline {5.4.20}Diagrama de secuencia del caso de uso 20: Gestionar áreas de investigación}{118}{subsection.5.4.20}%
-\contentsline {chapter}{\numberline {6}Implementación y pruebas}{119}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Implementación del backend}{119}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Herramientas, frameworks y lenguajes utilizados}{119}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Estructura del proyecto y organización del código}{119}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Modelado de datos}{120}{subsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.1.4}Gestión de imágenes}{123}{subsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.1.5}Paginación de la API}{123}{subsection.6.1.5}%
-\contentsline {subsection}{\numberline {6.1.6}Seguridad y permisos}{124}{subsection.6.1.6}%
-\contentsline {subsection}{\numberline {6.1.7}Gestión de variables de entorno y configuración segura}{124}{subsection.6.1.7}%
-\contentsline {subsection}{\numberline {6.1.8}Serialización y exposición de la API REST}{125}{subsection.6.1.8}%
-\contentsline {subsection}{\numberline {6.1.9}Vistas y endpoints de la API}{127}{subsection.6.1.9}%
-\contentsline {subsection}{\numberline {6.1.10}Administración y gestión de datos}{128}{subsection.6.1.10}%
-\contentsline {subsection}{\numberline {6.1.11}Cambio de contraseña del usuario administrador de Django}{130}{subsection.6.1.11}%
-\contentsline {subsection}{\numberline {6.1.12}Gestión de migraciones y consistencia de la base de datos}{130}{subsection.6.1.12}%
-\contentsline {subsection}{\numberline {6.1.13}Integración con el frontend y gestión de CORS}{131}{subsection.6.1.13}%
-\contentsline {subsection}{\numberline {6.1.14}Integración y despliegue con Docker}{131}{subsection.6.1.14}%
-\contentsline {subsection}{\numberline {6.1.15}Pruebas automáticas}{132}{subsection.6.1.15}%
-\contentsline {subsection}{\numberline {6.1.16}Internacionalización y localización}{133}{subsection.6.1.16}%
-\contentsline {subsection}{\numberline {6.1.17}Gestión de archivos estáticos}{133}{subsection.6.1.17}%
-\contentsline {subsection}{\numberline {6.1.18}Gestión de emails y notificaciones}{134}{subsection.6.1.18}%
-\contentsline {subsection}{\numberline {6.1.19}Internacionalización y localización}{134}{subsection.6.1.19}%
-\contentsline {subsection}{\numberline {6.1.20}Gestión de archivos estáticos}{135}{subsection.6.1.20}%
-\contentsline {section}{\numberline {6.2}Implementación del frontend}{135}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Herramientas, frameworks y lenguajes utilizados}{135}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Estructura del proyecto y organización del código}{136}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Navegación y estructura de pantallas}{136}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Gestión de usuarios y autenticación}{137}{subsection.6.2.4}%
-\contentsline {subsection}{\numberline {6.2.5}Visualización de mujeres y lugares}{138}{subsection.6.2.5}%
-\contentsline {subsection}{\numberline {6.2.6}Detalle de lugar y gestión de visitas}{138}{subsection.6.2.6}%
-\contentsline {subsection}{\numberline {6.2.7}Mapas y geolocalización}{140}{subsection.6.2.7}%
-\contentsline {subsection}{\numberline {6.2.8}Gestión de rutas temáticas}{141}{subsection.6.2.8}%
-\contentsline {subsection}{\numberline {6.2.9}Historial de lugares y rutas visitadas}{142}{subsection.6.2.9}%
-\contentsline {subsection}{\numberline {6.2.10}Sistema de filtros avanzado y gestión de estado}{142}{subsection.6.2.10}%
-\contentsline {subsection}{\numberline {6.2.11}Sincronización de estados de visita}{143}{subsection.6.2.11}%
-\contentsline {subsection}{\numberline {6.2.12}Notificaciones y proximidad}{143}{subsection.6.2.12}%
-\contentsline {subsection}{\numberline {6.2.13}Realidad aumentada}{144}{subsection.6.2.13}%
-\contentsline {subsection}{\numberline {6.2.14}Gestión de estilos y diseño}{144}{subsection.6.2.14}%
-\contentsline {subsection}{\numberline {6.2.15}Gestión de almacenamiento local}{144}{subsection.6.2.15}%
-\contentsline {subsection}{\numberline {6.2.16}Integración con la API y manejo de errores}{144}{subsection.6.2.16}%
-\contentsline {subsection}{\numberline {6.2.17}Pruebas y depuración}{145}{subsection.6.2.17}%
-\contentsline {section}{\numberline {6.3}Implementación de Realidad Aumentada}{145}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Herramientas, frameworks y tecnologías utilizadas}{145}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Arquitectura y estructura del proyecto AR}{145}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Diseño de la experiencia interactiva}{146}{subsection.6.3.3}%
-\contentsline {subsubsection}{Interfaz inicial y elementos de navegación}{146}{subsection.6.3.3}%
-\contentsline {subsubsection}{Sistema de transiciones y coordinación temporal}{146}{lstnumber.6.55.19}%
-\contentsline {subsubsection}{Renderizado del personaje principal}{147}{lstnumber.6.56.32}%
-\contentsline {subsection}{\numberline {6.3.4}Sistema de información contextual}{148}{subsection.6.3.4}%
-\contentsline {subsubsection}{Presentación de contenido textual}{148}{subsection.6.3.4}%
-\contentsline {subsubsection}{Panel informativo expandible}{149}{lstnumber.6.58.14}%
-\contentsline {subsection}{\numberline {6.3.5}Gestión de audio inmersivo}{149}{subsection.6.3.5}%
-\contentsline {subsubsection}{Arquitectura de audio multicapa}{149}{subsection.6.3.5}%
-\contentsline {subsubsection}{Compatibilidad con políticas de navegador}{149}{lstnumber.6.60.4}%
-\contentsline {subsection}{\numberline {6.3.6}Optimización y consideraciones técnicas}{150}{subsection.6.3.6}%
-\contentsline {subsection}{\numberline {6.3.7}Despliegue y distribución}{150}{subsection.6.3.7}%
-\contentsline {subsubsection}{Hosting en Vercel}{150}{subsection.6.3.7}%
-\contentsline {subsubsection}{Ventajas de la arquitectura distribuida}{151}{subsection.6.3.7}%
-\contentsline {subsection}{\numberline {6.3.8}Consideraciones técnicas y limitaciones}{151}{subsection.6.3.8}%
-\contentsline {subsubsection}{Compatibilidad de dispositivos}{151}{subsection.6.3.8}%
-\contentsline {subsubsection}{Optimizaciones implementadas}{151}{subsection.6.3.8}%
-\contentsline {chapter}{\numberline {7}Pruebas}{153}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Pruebas funcionales}{153}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Pruebas de Usabilidad}{156}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Metodología}{156}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Cálculo del SUS}{157}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Resultados del cuestionario}{157}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}Visualización de resultados por pregunta}{157}{subsection.7.2.4}%
-\contentsline {subsection}{\numberline {7.2.5}Puntuaciones SUS}{160}{subsection.7.2.5}%
-\contentsline {subsection}{\numberline {7.2.6}Gráficos}{161}{subsection.7.2.6}%
-\contentsline {subsection}{\numberline {7.2.7}Comentarios adicionales de los usuarios}{161}{subsection.7.2.7}%
-\contentsline {subsection}{\numberline {7.2.8}Conclusiones}{162}{subsection.7.2.8}%
-\contentsline {section}{\numberline {7.3}Pruebas de Rendimiento del Backend}{163}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Metodología}{163}{subsection.7.3.1}%
-\contentsline {subsubsection}{Configuración de Pruebas}{163}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Resultados de las Pruebas}{163}{subsection.7.3.2}%
-\contentsline {subsubsection}{Comparación de Tiempos de Respuesta}{163}{subsection.7.3.2}%
-\contentsline {subsubsection}{Throughput y Fiabilidad}{163}{table.caption.95}%
-\contentsline {subsubsection}{Distribución de Tiempos y Desviación Estándar}{164}{table.caption.96}%
-\contentsline {subsection}{\numberline {7.3.3}Análisis de Resultados}{164}{subsection.7.3.3}%
-\contentsline {subsubsection}{Rendimiento bajo Carga Normal}{164}{subsection.7.3.3}%
-\contentsline {subsubsection}{Comportamiento bajo Estrés}{164}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}Conclusiones}{165}{subsection.7.3.4}%
-\contentsline {section}{\numberline {7.4}Pruebas de Rendimiento del Frontend}{165}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Pruebas de Rendimiento de la Realidad Aumentada}{165}{section.7.5}%
-\contentsline {chapter}{\numberline {8}Conclusiones}{167}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Revisión de costes}{167}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Comparativa gráfica}{168}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Reflexión final}{168}{subsection.8.1.2}%
-\contentsline {section}{\numberline {8.2}Conclusiones}{168}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Conclusiones técnicas}{169}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Conclusiones personales}{169}{subsection.8.2.2}%
-\contentsline {section}{\numberline {8.3}Trabajo futuro}{169}{section.8.3}%
-\contentsline {chapter}{\numberline {A}Apéndice}{173}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Ejemplos del lenguaje de marcado Latex}{173}{section.Alph1.1}%
-\contentsline {chapter}{Bibliografía}{174}{lstnumber.-3.4}%
+\contentsline {subsection}{\numberline {5.1.1}Justificación de la paleta cromática}{101}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Wireframes}{102}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Wireframes}{102}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Wireframes}{102}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Wireframes}{102}{subsection.5.1.5}%
+\contentsline {section}{\numberline {5.2}Diseño de base de datos}{103}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Tablas principales y justificación de diseño}{104}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Relaciones entre tablas}{105}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Esquema de tablas}{106}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Diseño de la arquitectura del frontend}{108}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Diagrama de clases del frontend}{108}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Diagramas de secuencia}{110}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Diagrama de secuencia del caso de uso 1: Login de usuario}{110}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Diagrama de secuencia del caso de uso 2: Registro de usuario}{111}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Diagrama de secuencia del caso de uso 3: Ver mapa con puntos de interés}{111}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Diagrama de secuencia del caso de uso 4: Ver listado de puntos ordenado por cercanía}{112}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.4.5}Diagrama de secuencia del caso de uso 5: Ver ficha del lugar}{112}{subsection.5.4.5}%
+\contentsline {subsection}{\numberline {5.4.6}Diagrama de secuencia del caso de uso 6: Ver rutas y consultar puntos de una ruta}{113}{subsection.5.4.6}%
+\contentsline {subsection}{\numberline {5.4.7}Diagrama de secuencia del caso de uso 7: Escanear QR de punto de ruta}{113}{subsection.5.4.7}%
+\contentsline {subsection}{\numberline {5.4.8}Diagrama de secuencia del caso de uso 8: Ver puntos RA disponibles}{114}{subsection.5.4.8}%
+\contentsline {subsection}{\numberline {5.4.9}Diagrama de secuencia del caso de uso 9: Visualizar contenido RA}{114}{subsection.5.4.9}%
+\contentsline {subsection}{\numberline {5.4.10}Diagrama de secuencia del caso de uso 10: Editar perfil de usuario}{115}{subsection.5.4.10}%
+\contentsline {subsection}{\numberline {5.4.11}Diagrama de secuencia del caso de uso 11: Ver historial de lugares visitados y rutas completadas}{115}{subsection.5.4.11}%
+\contentsline {subsection}{\numberline {5.4.12}Diagrama de secuencia del caso de uso 12: Cerrar sesión}{116}{subsection.5.4.12}%
+\contentsline {subsection}{\numberline {5.4.13}Diagrama de secuencia del caso de uso 13: Iniciar sesión como administrador}{116}{subsection.5.4.13}%
+\contentsline {subsection}{\numberline {5.4.14}Diagrama de secuencia del caso de uso 14: Gestionar mujeres históricas}{117}{subsection.5.4.14}%
+\contentsline {subsection}{\numberline {5.4.15}Diagrama de secuencia del caso de uso 15: Gestionar puntos geolocalizados}{117}{subsection.5.4.15}%
+\contentsline {subsection}{\numberline {5.4.16}Diagrama de secuencia del caso de uso 16: Gestionar rutas temáticas}{118}{subsection.5.4.16}%
+\contentsline {subsection}{\numberline {5.4.17}Diagrama de secuencia del caso de uso 17: Consultar lista de usuarios}{118}{subsection.5.4.17}%
+\contentsline {subsection}{\numberline {5.4.18}Diagrama de secuencia del caso de uso 18: Gestionar materiales multimedia}{119}{subsection.5.4.18}%
+\contentsline {subsection}{\numberline {5.4.19}Diagrama de secuencia del caso de uso 19: Consultar métricas de uso}{119}{subsection.5.4.19}%
+\contentsline {subsection}{\numberline {5.4.20}Diagrama de secuencia del caso de uso 20: Gestionar áreas de investigación}{120}{subsection.5.4.20}%
+\contentsline {chapter}{\numberline {6}Implementación y pruebas}{121}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Implementación del backend}{121}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Herramientas, frameworks y lenguajes utilizados}{121}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Estructura del proyecto y organización del código}{121}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Modelado de datos}{122}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Gestión de imágenes}{125}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Paginación de la API}{125}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}Seguridad y permisos}{126}{subsection.6.1.6}%
+\contentsline {subsection}{\numberline {6.1.7}Gestión de variables de entorno y configuración segura}{126}{subsection.6.1.7}%
+\contentsline {subsection}{\numberline {6.1.8}Serialización y exposición de la API REST}{127}{subsection.6.1.8}%
+\contentsline {subsection}{\numberline {6.1.9}Vistas y endpoints de la API}{129}{subsection.6.1.9}%
+\contentsline {subsection}{\numberline {6.1.10}Administración y gestión de datos}{130}{subsection.6.1.10}%
+\contentsline {subsection}{\numberline {6.1.11}Cambio de contraseña del usuario administrador de Django}{132}{subsection.6.1.11}%
+\contentsline {subsection}{\numberline {6.1.12}Gestión de migraciones y consistencia de la base de datos}{132}{subsection.6.1.12}%
+\contentsline {subsection}{\numberline {6.1.13}Integración con el frontend y gestión de CORS}{133}{subsection.6.1.13}%
+\contentsline {subsection}{\numberline {6.1.14}Integración y despliegue con Docker}{133}{subsection.6.1.14}%
+\contentsline {subsection}{\numberline {6.1.15}Pruebas automáticas}{134}{subsection.6.1.15}%
+\contentsline {subsection}{\numberline {6.1.16}Internacionalización y localización}{135}{subsection.6.1.16}%
+\contentsline {subsection}{\numberline {6.1.17}Gestión de archivos estáticos}{135}{subsection.6.1.17}%
+\contentsline {subsection}{\numberline {6.1.18}Gestión de emails y notificaciones}{136}{subsection.6.1.18}%
+\contentsline {subsection}{\numberline {6.1.19}Internacionalización y localización}{136}{subsection.6.1.19}%
+\contentsline {subsection}{\numberline {6.1.20}Gestión de archivos estáticos}{137}{subsection.6.1.20}%
+\contentsline {section}{\numberline {6.2}Implementación del frontend}{137}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Herramientas, frameworks y lenguajes utilizados}{137}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Estructura del proyecto y organización del código}{138}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Navegación y estructura de pantallas}{138}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Gestión de usuarios y autenticación}{139}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Visualización de mujeres y lugares}{140}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.6}Detalle de lugar y gestión de visitas}{140}{subsection.6.2.6}%
+\contentsline {subsection}{\numberline {6.2.7}Mapas y geolocalización}{142}{subsection.6.2.7}%
+\contentsline {subsection}{\numberline {6.2.8}Gestión de rutas temáticas}{143}{subsection.6.2.8}%
+\contentsline {subsection}{\numberline {6.2.9}Historial de lugares y rutas visitadas}{144}{subsection.6.2.9}%
+\contentsline {subsection}{\numberline {6.2.10}Sistema de filtros avanzado y gestión de estado}{144}{subsection.6.2.10}%
+\contentsline {subsection}{\numberline {6.2.11}Sincronización de estados de visita}{145}{subsection.6.2.11}%
+\contentsline {subsection}{\numberline {6.2.12}Notificaciones y proximidad}{145}{subsection.6.2.12}%
+\contentsline {subsection}{\numberline {6.2.13}Realidad aumentada}{146}{subsection.6.2.13}%
+\contentsline {subsection}{\numberline {6.2.14}Gestión de estilos y diseño}{146}{subsection.6.2.14}%
+\contentsline {subsection}{\numberline {6.2.15}Gestión de almacenamiento local}{146}{subsection.6.2.15}%
+\contentsline {subsection}{\numberline {6.2.16}Integración con la API y manejo de errores}{146}{subsection.6.2.16}%
+\contentsline {subsection}{\numberline {6.2.17}Pruebas y depuración}{147}{subsection.6.2.17}%
+\contentsline {section}{\numberline {6.3}Implementación de Realidad Aumentada}{147}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Herramientas, frameworks y tecnologías utilizadas}{147}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Arquitectura y estructura del proyecto AR}{147}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Diseño de la experiencia interactiva}{148}{subsection.6.3.3}%
+\contentsline {subsubsection}{Interfaz inicial y elementos de navegación}{148}{subsection.6.3.3}%
+\contentsline {subsubsection}{Sistema de transiciones y coordinación temporal}{149}{lstnumber.6.55.19}%
+\contentsline {subsubsection}{Renderizado del personaje principal}{149}{lstnumber.6.56.32}%
+\contentsline {subsection}{\numberline {6.3.4}Sistema de información contextual}{150}{subsection.6.3.4}%
+\contentsline {subsubsection}{Presentación de contenido textual}{150}{subsection.6.3.4}%
+\contentsline {subsubsection}{Panel informativo expandible}{151}{lstnumber.6.58.14}%
+\contentsline {subsection}{\numberline {6.3.5}Gestión de audio inmersivo}{151}{subsection.6.3.5}%
+\contentsline {subsubsection}{Arquitectura de audio multicapa}{151}{subsection.6.3.5}%
+\contentsline {subsubsection}{Compatibilidad con políticas de navegador}{151}{lstnumber.6.60.4}%
+\contentsline {subsection}{\numberline {6.3.6}Optimización y consideraciones técnicas}{152}{subsection.6.3.6}%
+\contentsline {subsection}{\numberline {6.3.7}Despliegue y distribución}{152}{subsection.6.3.7}%
+\contentsline {subsubsection}{Hosting en Vercel}{152}{subsection.6.3.7}%
+\contentsline {subsubsection}{Ventajas de la arquitectura distribuida}{153}{subsection.6.3.7}%
+\contentsline {subsection}{\numberline {6.3.8}Consideraciones técnicas y limitaciones}{153}{subsection.6.3.8}%
+\contentsline {subsubsection}{Compatibilidad de dispositivos}{153}{subsection.6.3.8}%
+\contentsline {subsubsection}{Optimizaciones implementadas}{153}{subsection.6.3.8}%
+\contentsline {subsection}{\numberline {6.3.9}Formato y optimización de modelos 3D}{154}{subsection.6.3.9}%
+\contentsline {chapter}{\numberline {7}Pruebas}{157}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Pruebas funcionales}{157}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Pruebas de Usabilidad}{160}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Metodología}{160}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Cálculo del SUS}{161}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Resultados del cuestionario}{161}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Visualización de resultados por pregunta}{161}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5}Puntuaciones SUS}{164}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.2.6}Gráficos}{165}{subsection.7.2.6}%
+\contentsline {subsection}{\numberline {7.2.7}Comentarios adicionales de los usuarios}{165}{subsection.7.2.7}%
+\contentsline {section}{\numberline {7.3}Pruebas de Rendimiento del Backend}{167}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Metodología}{167}{subsection.7.3.1}%
+\contentsline {subsubsection}{Configuración de Pruebas}{167}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Resultados de las Pruebas}{167}{subsection.7.3.2}%
+\contentsline {subsubsection}{Comparación de Tiempos de Respuesta}{167}{subsection.7.3.2}%
+\contentsline {subsubsection}{Throughput y Fiabilidad}{167}{table.caption.96}%
+\contentsline {subsubsection}{Distribución de Tiempos y Desviación Estándar}{168}{table.caption.97}%
+\contentsline {subsection}{\numberline {7.3.3}Análisis de Resultados}{168}{subsection.7.3.3}%
+\contentsline {subsubsection}{Rendimiento bajo Carga Normal}{168}{subsection.7.3.3}%
+\contentsline {subsubsection}{Comportamiento bajo Estrés}{168}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Conclusiones}{169}{subsection.7.3.4}%
+\contentsline {section}{\numberline {7.4}Pruebas de Rendimiento del Frontend}{169}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Pruebas de Rendimiento de la Realidad Aumentada}{169}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Conclusiones}{171}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Revisión de costes}{171}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Comparativa gráfica}{172}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Reflexión final}{172}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Conclusiones}{172}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Conclusiones técnicas}{173}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Conclusiones personales}{173}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}Trabajo futuro}{173}{section.8.3}%
+\contentsline {chapter}{\numberline {A}Apéndice}{177}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Ejemplos del lenguaje de marcado Latex}{177}{section.Alph1.1}%
+\contentsline {chapter}{Bibliografía}{178}{lstnumber.-3.4}%
