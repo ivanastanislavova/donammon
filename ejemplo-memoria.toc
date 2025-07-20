@@ -43,7 +43,7 @@
 \contentsline {section}{\numberline {3.2}Especificaciones}{55}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Ciclo de vida del software}{57}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Ventajas del modelo en cascada}{57}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Justificación de su elección}{58}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.2}Justificación de su elección}{57}{subsection.3.3.2}%
 \contentsline {section}{\numberline {3.4}Planificaci\'on temporal}{58}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Descomposición de tareas por fases}{58}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Estimación temporal}{61}{subsection.3.4.2}%
@@ -91,11 +91,9 @@
 \contentsline {section}{\numberline {4.5}Diagramas de Estado}{97}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Diseño}{101}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Diseño de la interfaz}{101}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Justificación de la paleta cromática}{101}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Wireframes}{102}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.1}Justificación de la Paleta Cromática}{101}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Justificación de la Tipografía}{102}{subsection.5.1.2}%
 \contentsline {subsection}{\numberline {5.1.3}Wireframes}{102}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}Wireframes}{102}{subsection.5.1.4}%
-\contentsline {subsection}{\numberline {5.1.5}Wireframes}{102}{subsection.5.1.5}%
 \contentsline {section}{\numberline {5.2}Diseño de base de datos}{103}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Tablas principales y justificación de diseño}{104}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Relaciones entre tablas}{105}{subsection.5.2.2}%
@@ -183,38 +181,37 @@
 \contentsline {subsection}{\numberline {6.3.8}Consideraciones técnicas y limitaciones}{153}{subsection.6.3.8}%
 \contentsline {subsubsection}{Compatibilidad de dispositivos}{153}{subsection.6.3.8}%
 \contentsline {subsubsection}{Optimizaciones implementadas}{153}{subsection.6.3.8}%
-\contentsline {subsection}{\numberline {6.3.9}Formato y optimización de modelos 3D}{154}{subsection.6.3.9}%
+\contentsline {subsection}{\numberline {6.3.9}Gestión de la tipografía en textos 3D}{154}{subsection.6.3.9}%
+\contentsline {subsection}{\numberline {6.3.10}Formato y optimización de modelos 3D}{155}{subsection.6.3.10}%
 \contentsline {chapter}{\numberline {7}Pruebas}{157}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Pruebas funcionales}{157}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Pruebas de Usabilidad}{160}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Metodología}{160}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Cálculo del SUS}{161}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Resultados del cuestionario}{161}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}Visualización de resultados por pregunta}{161}{subsection.7.2.4}%
-\contentsline {subsection}{\numberline {7.2.5}Puntuaciones SUS}{164}{subsection.7.2.5}%
-\contentsline {subsection}{\numberline {7.2.6}Gráficos}{165}{subsection.7.2.6}%
-\contentsline {subsection}{\numberline {7.2.7}Comentarios adicionales de los usuarios}{165}{subsection.7.2.7}%
-\contentsline {section}{\numberline {7.3}Pruebas de Rendimiento del Backend}{167}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Metodología}{167}{subsection.7.3.1}%
-\contentsline {subsubsection}{Configuración de Pruebas}{167}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Resultados de las Pruebas}{167}{subsection.7.3.2}%
-\contentsline {subsubsection}{Comparación de Tiempos de Respuesta}{167}{subsection.7.3.2}%
-\contentsline {subsubsection}{Throughput y Fiabilidad}{167}{table.caption.96}%
-\contentsline {subsubsection}{Distribución de Tiempos y Desviación Estándar}{168}{table.caption.97}%
-\contentsline {subsection}{\numberline {7.3.3}Análisis de Resultados}{168}{subsection.7.3.3}%
-\contentsline {subsubsection}{Rendimiento bajo Carga Normal}{168}{subsection.7.3.3}%
-\contentsline {subsubsection}{Comportamiento bajo Estrés}{168}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}Conclusiones}{169}{subsection.7.3.4}%
-\contentsline {section}{\numberline {7.4}Pruebas de Rendimiento del Frontend}{169}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Pruebas de Rendimiento de la Realidad Aumentada}{169}{section.7.5}%
-\contentsline {chapter}{\numberline {8}Conclusiones}{171}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Revisión de costes}{171}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Comparativa gráfica}{172}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Reflexión final}{172}{subsection.8.1.2}%
-\contentsline {section}{\numberline {8.2}Conclusiones}{172}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Conclusiones técnicas}{173}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Conclusiones personales}{173}{subsection.8.2.2}%
-\contentsline {section}{\numberline {8.3}Trabajo futuro}{173}{section.8.3}%
-\contentsline {chapter}{\numberline {A}Apéndice}{177}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Ejemplos del lenguaje de marcado Latex}{177}{section.Alph1.1}%
-\contentsline {chapter}{Bibliografía}{178}{lstnumber.-3.4}%
+\contentsline {section}{\numberline {7.2}Pruebas de Usabilidad}{161}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Metodología}{162}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Cálculo del SUS}{163}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Resultados del cuestionario}{163}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Visualización de resultados por pregunta}{163}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5}Puntuaciones SUS}{166}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.2.6}Comentarios adicionales de los usuarios}{168}{subsection.7.2.6}%
+\contentsline {section}{\numberline {7.3}Hardware empleado en las Pruebas de rendimiento}{169}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Pruebas de Rendimiento del Backend}{170}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Metodología}{170}{subsection.7.4.1}%
+\contentsline {subsubsection}{Configuración de Pruebas}{170}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Resultados y Análisis}{170}{subsection.7.4.2}%
+\contentsline {subsubsection}{Carga Normal}{170}{subsection.7.4.2}%
+\contentsline {subsubsection}{Carga de Estrés}{171}{table.caption.99}%
+\contentsline {subsection}{\numberline {7.4.3}Pruebas de Rendimiento del Frontend}{173}{subsection.7.4.3}%
+\contentsline {section}{\numberline {7.5}Pruebas de Rendimiento de la Realidad Aumentada}{175}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Metodología}{175}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Resultados}{176}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Análisis}{177}{subsection.7.5.3}%
+\contentsline {chapter}{\numberline {8}Conclusiones}{179}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Revisión de costes}{179}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Comparativa gráfica}{180}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Reflexión final}{180}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Conclusiones}{180}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Conclusiones técnicas}{181}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Conclusiones personales}{181}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}Trabajo futuro}{181}{section.8.3}%
+\contentsline {chapter}{\numberline {A}Apéndice}{185}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Ejemplos del lenguaje de marcado Latex}{185}{section.Alph1.1}%
+\contentsline {chapter}{Bibliografía}{186}{lstnumber.-3.4}%

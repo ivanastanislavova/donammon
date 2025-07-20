@@ -24,15 +24,13 @@ Lista de requisitos funcionales:
 \item[RF10:] El usuario debe recibir una notificación cuando esté cerca de un punto no visitado.
 \item[RF11:] Debe existir un sistema de rutas que conecten diferentes puntos de interés temáticamente.
 \item[RF12:] Al pulsar sobre un punto en el mapa o la lista, debe abrirse su ficha detallada, desde la cual el usuario podrá marcar el lugar como visitado o no.
-\item[RF13:] El sistema debe permitir guardar el progreso del usuario (puntos visitados).
-\item[RF14:] El usuario debe disponer de un historial donde se registre la fecha y hora de cada punto visitado.
+\item[RF13:] El usuario debe disponer de un historial donde se registre la fecha y hora de cada punto visitado.
+\item[RF14:] El usuario debe disponer de un historial donde se registre la fecha y hora de cada ruta completada.
 \item[RF15:] La aplicación debe ser funcional tanto en dispositivos Android como iOS.
 \item[RF16:] Debe existir un panel de administración web para gestionar los puntos, contenidos y figuras históricas.
 \item[RF17:] El administrador debe poder añadir, editar o eliminar mujeres, ubicaciones y materiales multimedia desde el panel.
 \item[RF18:] El sistema debe permitir importar imágenes, vídeos y modelos 3D desde el panel de administración.
-\item[RF18b:] El administrador debe poder gestionar áreas de investigación y rutas temáticas desde el panel de administración. 
-\item[RF18c:] El administrador debe poder consultar métricas y estadísticas de uso, como puntos más visitados y usuarios activos.
-\item[RF18d:] El administrador debe poder gestionar los permisos de otros administradores si existen varios roles. 
+\item[RF19:] El administrador debe poder gestionar áreas de investigación y rutas temáticas desde el panel de administración. 
 \item[RF20:] La experiencia de RA debe ofrecer retroalimentación visual y sonora.
 \item[RF21:] El sistema debe enviar datos al backend para mantener sincronizado el progreso del usuario.
 \item[RF22:] La aplicación debe permitir a los usuarios registrarse y acceder mediante un sistema de inicio de sesión.
@@ -54,16 +52,16 @@ Lista de requisitos funcionales:
 \item[RF39:] La ruta temática se debe marcar como completa y registrar en el historial del usuario al visitar todos los puntos
 \item[RF40:] Debe existir una pestaña específica con los puntos que disponen de realidad aumentada, accesibles si el usuario está dentro de un radio determinado.
 \item[RF41:] Al seleccionar un punto con RA disponible, debe abrirse la cámara y mostrarse el modelo correspondiente.
-\item[RF42:] El usuario debe poder consultar una sección de perfil donde editar sus datos personales, ver su historial de lugares visitados y rutas completadas, y cerrar sesión.
+\item[RF42:] El usuario debe poder consultar una sección de perfil donde ver su historial de lugares visitados y rutas completadas, y cerrar sesión.
 \item[RF43:] El sistema debe implementar un contexto global de filtros que permita mantener el estado entre diferentes pantallas.
-\item[RF44:] La aplicación debe calcular distancias precisas utilizando la fórmula de Haversine.
+\item[RF44:] La aplicación debe calcular distancias precisas utilizando la fórmula de Haversine\cite{viafirmaHaversine}.
 \item[RF45:] El mapa debe sincronizar automáticamente los filtros aplicados en la pantalla de listado.
 \item[RF46:] El sistema debe permitir visualizar imágenes ampliadas en modal desde la pantalla de detalle.
 \item[RF47:] La aplicación debe procesar automáticamente las áreas de investigación del backend para crear una estructura plana de lugares.
 \item[RF48:] El sistema debe mantener un cache local de estado de visitas utilizando AsyncStorage.
 \item[RF49:] La aplicación debe mostrar indicadores visuales de filtros activos en tiempo real.
 \item[RF50:] El sistema debe permitir reiniciar el progreso de rutas completadas.
-
+\item[RF51:] El usuario debe poder buscar mujeres y lugares por nombre en tiempo real.
 \end{itemize}
 
 \subsection{Requisitos no funcionales}
@@ -117,7 +115,11 @@ Son aquellos impuestos por normativas legales, estándares externos o políticas
 \section{Especificaciones}
 Una vez definidos los requisitos funcionales del sistema, es posible descomponerlos en funcionalidades concretas que formarán parte de la aplicación y su panel de gestión. A continuación se detalla el conjunto de acciones que los usuarios (tanto visitantes como administradores) podrán realizar.
 
+\vspace{0.3cm}
+
 \textbf{\textsf{\large Funcionalidades relacionadas con la geolocalización y el mapa}}
+
+\vspace{0.3cm}
 
 \begin{itemize}
     \item[F1.] Visualizar un mapa interactivo con los puntos de interés distribuidos por Valencia.
@@ -127,89 +129,90 @@ Una vez definidos los requisitos funcionales del sistema, es posible descomponer
     \item[F5.] Mostrar puntos cercanos en función de la ubicación.
 \end{itemize}
 
+\vspace{0.3cm}
+
 \textbf{\textsf{\large Funcionalidades educativas y de contenido}}
+
+\vspace{0.3cm}
 
 \begin{itemize}
     \item[F6.] Acceder a la ficha de una mujer histórica al llegar a un punto.
     \item[F7.] Mostrar contenido multimedia asociado: texto, imágenes, audios o vídeos.
-    \item[F8.] Activar realidad aumentada al acercarse a un punto.
-    \item[F9.] Visualizar objetos 3D o elementos históricos en RA.
-    \item[F10.] Consultar un listado general de todas las mujeres incluidas en la app.
-    \item[F12.] Visualizar imágenes ampliadas en modal al hacer tap sobre ellas.
-    \item[F13.] Compartir información de lugares vía aplicaciones nativas del dispositivo.
+    \item[F8.] Consultar un listado general de todas las mujeres incluidas en la app.
+    \item[F9.] Visualizar imágenes ampliadas en modal al hacer tap sobre ellas.
+    \item[F10.] Compartir información de lugares vía aplicaciones nativas del dispositivo.
 \end{itemize}
 
-\textbf{\textsf{\large Funcionalidades de interacción y gamificación}}
-
-\begin{itemize}
-    \item[F12.] Desbloquear logros al visitar puntos o completar rutas temáticas.
-    \item[F13.] Mostrar estadísticas personales (puntos visitados, logros obtenidos).
-    \item[F14.] Ofrecer retroalimentación visual y sonora al desbloquear un nuevo punto.
-\end{itemize}
+\vspace{0.3cm}
 
 \textbf{\textsf{\large Funcionalidades de usuario}}
 
+\vspace{0.3cm}
+
 \begin{itemize}
-    \item[F15.] Registrar un nuevo usuario mediante nombre de usuario y contraseña.
-    \item[F16.] Iniciar sesión en la aplicación.
-    \item[F17.] Mantener la sesión activa entre usos.
-    \item[F18.] Permitir al usuario editar su nombre de usuario.
-    \item[F19.] Cerrar sesión manualmente.
-    \item[F20.] Filtrar lugares por área de investigación y estado de visita.
-  \item[F21.] Buscar mujeres y lugares por nombre en tiempo real.
-  \item[F22.] Sincronizar estado de filtros entre diferentes pantallas de la aplicación.
+    \item[F11.] Registrar un nuevo usuario mediante nombre de usuario y contraseña.
+    \item[F12.] Iniciar sesión en la aplicación.
+    \item[F13.] Mantener la sesión activa entre usos.
+    \item[F14.] Permitir al usuario editar su nombre de usuario.
+    \item[F15.] Cerrar sesión manualmente.
+    \item[F16.] Filtrar lugares por área de investigación y estado de visita.
+    \item[F17.] Buscar mujeres y lugares por nombre en tiempo real.
+    \item[F18.] Sincronizar estado de filtros entre diferentes pantallas de la aplicación.
+    \item[F19.] Consultar el historial de puntos visitados, con fecha y hora.
+    \item[F20.] Consultar el historial de rutas completadas, con fecha y hora.
 \end{itemize}
+
+\vspace{0.3cm}
 
 \textbf{\textsf{\large Funcionalidades del panel de administración}}
 
+\vspace{0.3cm}
+
 \begin{itemize}
-    \item[F20.] Iniciar sesión como administrador desde el backend web.
-    \item[F21.] Añadir nuevas figuras históricas con nombre, descripción y material multimedia.
-    \item[F22.] Asociar cada mujer con un punto geolocalizado.
-    \item[F23.] Cargar imágenes, audios, vídeos y modelos 3D desde el panel.
-    \item[F24.] Editar o eliminar puntos o figuras ya creadas.
-    \item[F24b.] Gestionar áreas de investigación y rutas temáticas (crear, editar, eliminar). 
-    \item[F24c.] Consultar y descargar métricas de uso: puntos más visitados, número de usuarios activos, etc. 
-    \item[F24d.] Gestionar permisos y roles de administradores (si aplica). 
-    \item[F25.] Ver la lista de usuarios registrados.
-    \item[F26.] Consultar el progreso de cada usuario (puntos desbloqueados, logros).
+    \item[F21.] Iniciar sesión como administrador desde el backend web.
+    \item[F22.] Añadir nuevas figuras históricas con nombre, descripción y material multimedia.
+    \item[F23.] Asociar cada mujer con un punto geolocalizado.
+    \item[F24.] Cargar imágenes, audios, vídeos y modelos 3D desde el panel.
+    \item[F25.] Editar o eliminar puntos o figuras ya creadas.
+    \item[F26.] Ver la lista de usuarios registrados.
     \item[F27.] Eliminar usuarios si fuese necesario.
-    \item[F28.] Consultar métricas de uso: puntos más visitados, número de usuarios activos, etc.
 \end{itemize}
+
+\vspace{0.3cm}
 
 \textbf{\textsf{\large Funcionalidades generales}}
 
+\vspace{0.3cm}
+
 \begin{itemize}
-    \item[F29.] Adaptar la interfaz a distintos tamaños de pantalla.
-    \item[F30.] Activar modo accesible con texto grande y audio.
-    \item[F31.] Navegar por la app de forma intuitiva y con accesibilidad mobile-first.
-    \item[F32.] Garantizar el uso fluido y sin errores tanto en Android como en iOS.
+    \item[F28.] Adaptar la interfaz a distintos tamaños de pantalla.
+    \item[F29.] Navegar por la app de forma intuitiva y con accesibilidad mobile-first.
+    \item[F30.] Garantizar el uso fluido y sin errores tanto en Android como en iOS.
 \end{itemize}
 
-\textsf{\large Funcionalidades relacionadas con rutas y QR}
+\vspace{0.3cm}
 
-\item[F33.] Ver una lista de rutas temáticas con sus nombres y descripciones.
-\item[F34.] Consultar los puntos que forman parte de cada ruta.
-\item[F35.] Escanear códigos QR para desbloquear puntos de una ruta.
-\item[F36.] Impedir que los puntos de una ruta se marquen como visitados sin escanear su QR.
-\item[F37.] Registrar en el historial del usuario las rutas completadas.
-\item[F38.] Reiniciar el progreso de rutas ya completadas para repetir la experiencia.
+\textbf{\textsf{\large Funcionalidades relacionadas con rutas y QRs}}
 
-\textsf{\large Funcionalidades de realidad aumentada (RA)}
+\vspace{0.3cm}
 
-\item[F38.] Ver una lista filtrada de los puntos con contenido RA disponible.
-\item[F39.] Mostrar únicamente los puntos con RA que estén a una distancia determinada del usuario.
-\item[F40.] Al seleccionar uno de estos puntos, abrir automáticamente la cámara y cargar el modelo RA asociado.
+\item[F31.] Ver una lista de rutas temáticas con sus nombres y descripciones.
+\item[F32.] Consultar los puntos que forman parte de cada ruta.
+\item[F33.] Escanear códigos QR para desbloquear puntos de una ruta.
+\item[F34.] Reiniciar el progreso de rutas ya completadas para repetir la experiencia.
 
-\textsf{\large Funcionalidades del perfil de usuario}
+\vspace{0.3cm}
 
-\item[F41.] Acceder a la pantalla de perfil desde el menú principal.
-\item[F42.] Editar los datos personales del usuario.
-\item[F43.] Consultar el historial de puntos visitados, con fecha y hora.
-\item[F44.] Consultar las rutas temáticas que el usuario ha completado.
-\item[F45.] Filtrar lugares por área de investigación y estado de visita.
-\item[F46.] Buscar mujeres y lugares por nombre.
-\item[F47.] Calcular y mostrar distancias precisas con fórmula de Haversine.
+\textbf{\textsf{\large Funcionalidades de realidad aumentada (RA)}}
+
+\vspace{0.3cm}
+
+\item[F35.] Ver una lista de los puntos con contenido RA disponible.
+\item[F36.] Mostrar únicamente los puntos con RA que estén a una distancia determinada del usuario.
+\item[F37.] Al seleccionar uno de estos puntos, abrir automáticamente la cámara y cargar el modelo RA asociado.
+\vspace{0.3cm}
+
+
 
 
 \section{Ciclo de vida del software}
@@ -378,7 +381,7 @@ Cabe destacar que:
     \item No se ha trabajado durante los fines de semana, por lo que los 80 días corresponden exclusivamente a días laborables.
 \end{itemize}
 
-La fecha de inicio del proyecto fue el \textbf{3 de marzo de 2025}, y la fecha de finalización fue el \textbf{20 de junio de 2025}. El proyecto ha sido planificado y ejecutado con el objetivo de ser presentado en la \textbf{primera convocatoria}.
+La fecha de inicio del proyecto fue el \textbf{3 de marzo de 2025}, y la fecha de finalización fue el \textbf{20 de junio de 2025}.
 \clearpage
 \begin{figure}[H]
     \centering

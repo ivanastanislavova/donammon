@@ -5,44 +5,47 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 17 items.
 Database file #1: bib/bibliografia.bib
-You've used 76 entries,
+Warning--entry type for "milewski2018_stackoverflow_utf8_aframe" isn't style-file defined
+--line 1241 of file bib/bibliografia.bib
+You've used 82 entries,
             1791 wiz_defined-function locations,
-            818 strings with 13846 characters,
-and the built_in function-call counts, 11947 in all, are:
-= -- 1056
-> -- 371
+            844 strings with 14838 characters,
+and the built_in function-call counts, 12706 in all, are:
+= -- 1125
+> -- 389
 < -- 4
-+ -- 169
-- -- 93
-* -- 337
-:= -- 1809
-add.period$ -- 240
-call.type$ -- 76
-change.case$ -- 68
++ -- 179
+- -- 97
+* -- 341
+:= -- 1916
+add.period$ -- 261
+call.type$ -- 82
+change.case$ -- 74
 chr.to.int$ -- 0
-cite$ -- 76
-duplicate$ -- 548
-empty$ -- 1501
-format.name$ -- 93
-if$ -- 2818
+cite$ -- 82
+duplicate$ -- 578
+empty$ -- 1609
+format.name$ -- 97
+if$ -- 3005
 int.to.chr$ -- 0
-int.to.str$ -- 76
+int.to.str$ -- 82
 missing$ -- 36
-newline$ -- 395
-num.names$ -- 73
-pop$ -- 424
+newline$ -- 428
+num.names$ -- 77
+pop$ -- 465
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 279
+skip$ -- 294
 stack$ -- 0
 substring$ -- 303
-swap$ -- 116
+swap$ -- 122
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 103
-width$ -- 78
-write$ -- 800
+while$ -- 107
+width$ -- 84
+write$ -- 864
+(There was 1 warning)

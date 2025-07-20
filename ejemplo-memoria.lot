@@ -33,14 +33,15 @@
 \contentsline {table}{\numberline {4.19}{\ignorespaces Caso de uso 19 - Consultar métricas de uso}}{92}{table.caption.46}%
 \contentsline {table}{\numberline {4.20}{\ignorespaces Caso de uso 20 - Gestionar áreas de investigación}}{93}{table.caption.47}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Esquema resumido de las tablas principales de la base de datos}}{106}{table.caption.55}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Esquema resumido de las tablas principales de la base de datos}}{106}{table.caption.56}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.2}{\ignorespaces Respuestas del cuestionario SUS por usuario}}{161}{table.caption.82}%
-\contentsline {table}{\numberline {7.3}{\ignorespaces Perfil de los participantes y puntuación SUS final}}{164}{table.caption.93}%
-\contentsline {table}{\numberline {7.4}{\ignorespaces Comparación de tiempos de respuesta por endpoint}}{167}{table.caption.96}%
-\contentsline {table}{\numberline {7.5}{\ignorespaces Throughput y fiabilidad por endpoint}}{168}{table.caption.97}%
-\contentsline {table}{\numberline {7.6}{\ignorespaces Distribución de percentiles - Carga Normal}}{168}{table.caption.98}%
+\contentsline {table}{\numberline {7.2}{\ignorespaces Respuestas del cuestionario SUS por usuario}}{163}{table.caption.84}%
+\contentsline {table}{\numberline {7.3}{\ignorespaces Perfil de los participantes y puntuación SUS final}}{167}{table.caption.95}%
+\contentsline {table}{\numberline {7.4}{\ignorespaces Especificaciones del hardware utilizado en las pruebas}}{169}{table.caption.98}%
+\contentsline {table}{\numberline {7.5}{\ignorespaces Resultados bajo carga normal (10 usuarios, 100 peticiones por endpoint)}}{170}{table.caption.99}%
+\contentsline {table}{\numberline {7.6}{\ignorespaces Resultados bajo carga de estrés (50 usuarios, 1000 peticiones por endpoint)}}{171}{table.caption.100}%
+\contentsline {table}{\numberline {7.7}{\ignorespaces Tiempos de carga y eventos críticos}}{176}{table.caption.106}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{\ignorespaces Ampliación de jornadas y costes adicionales}}{171}{table.caption.99}%
+\contentsline {table}{\numberline {8.1}{\ignorespaces Ampliación de jornadas y costes adicionales}}{179}{table.caption.108}%
 \addvspace {10\p@ }

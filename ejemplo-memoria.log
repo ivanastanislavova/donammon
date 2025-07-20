@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  18 JUL 2025 20:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.7)  20 JUL 2025 02:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -836,28 +836,28 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `ejemplo-memoria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Info: Redefining \. on input line 77.
-LaTeX Info: Redefining \% on input line 77.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
 \c@lstlisting=\count386
-Package hyperref Info: Link coloring ON on input line 77.
+Package hyperref Info: Link coloring ON on input line 83.
  (ejemplo-memoria.out) (ejemplo-memoria.out)
 \@outlinefile=\write4
 \openout4 = `ejemplo-memoria.out'.
@@ -929,24 +929,24 @@ Couldn't patch \ttl@straight@ii
 <figs/etse_titulo.png, id=790, 374.39874pt x 64.24pt>
 File: figs/etse_titulo.png Graphic file (type png)
 <use figs/etse_titulo.png>
-Package pdftex.def Info: figs/etse_titulo.png  used on input line 79.
+Package pdftex.def Info: figs/etse_titulo.png  used on input line 85.
 (pdftex.def)             Requested size: 250.38562pt x 42.96214pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
 (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
  (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 79.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 85.
  (C:\Users\isiva\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 <figs/escudo_logo_UV_narrow.png, id=791, 602.25pt x 782.925pt>
 File: figs/escudo_logo_UV_narrow.png Graphic file (type png)
 <use figs/escudo_logo_UV_narrow.png>
-Package pdftex.def Info: figs/escudo_logo_UV_narrow.png  used on input line 79.
+Package pdftex.def Info: figs/escudo_logo_UV_narrow.png  used on input line 85.
 (pdftex.def)             Requested size: 182.09485pt x 236.71907pt.
 
 
@@ -960,7 +960,7 @@ Package pdftex.def Info: figs/escudo_logo_UV_narrow.png  used on input line 79.
 <figs/logo-contraportada.png, id=805, 722.7pt x 100.375pt>
 File: figs/logo-contraportada.png Graphic file (type png)
 <use figs/logo-contraportada.png>
-Package pdftex.def Info: figs/logo-contraportada.png  used on input line 81.
+Package pdftex.def Info: figs/logo-contraportada.png  used on input line 87.
 (pdftex.def)             Requested size: 455.24408pt x 63.22891pt.
 
 
@@ -1035,16 +1035,16 @@ LaTeX Info: Redefining \% on input line 1.
 [22] (ejemplo-memoria.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
-\tf@lot=\write7
-\openout7 = `ejemplo-memoria.lot'.
-
 
 
 [23
 
 
-]
+])
+\tf@lot=\write7
+\openout7 = `ejemplo-memoria.lot'.
+
+
 
 [24]
 Cap\'{\i }tulo 1.
@@ -1073,7 +1073,7 @@ Overfull \hbox (5.61359pt too wide) in paragraph at lines 77--77
 ]
 Cap\'{\i }tulo 2.
 (tex/estado_arte.tex
-<figs/evolucion_moviles.jpg, id=1376, 642.4pt x 481.8pt>
+<figs/evolucion_moviles.jpg, id=1395, 642.4pt x 481.8pt>
 File: figs/evolucion_moviles.jpg Graphic file (type jpg)
 <use figs/evolucion_moviles.jpg>
 Package pdftex.def Info: figs/evolucion_moviles.jpg  used on input line 23.
@@ -1093,7 +1093,7 @@ Overfull \hbox (9.04501pt too wide) in paragraph at lines 60--72
 
 
 [33]
-<figs/Sword-of-Damocles.png, id=1414, 236.5638pt x 172.9662pt>
+<figs/Sword-of-Damocles.png, id=1433, 236.5638pt x 172.9662pt>
 File: figs/Sword-of-Damocles.png Graphic file (type png)
 <use figs/Sword-of-Damocles.png>
 Package pdftex.def Info: figs/Sword-of-Damocles.png  used on input line 97.
@@ -1101,12 +1101,12 @@ Package pdftex.def Info: figs/Sword-of-Damocles.png  used on input line 97.
 
 
 [34 <./figs/Sword-of-Damocles.png>]
-<figs/karma.jpg, id=1427, 1188.44pt x 786.94pt>
+<figs/karma.jpg, id=1446, 1188.44pt x 786.94pt>
 File: figs/karma.jpg Graphic file (type jpg)
 <use figs/karma.jpg>
 Package pdftex.def Info: figs/karma.jpg  used on input line 109.
 (pdftex.def)             Requested size: 273.14923pt x 180.87231pt.
-<figs/artoolkit.jpg, id=1430, 213.79875pt x 301.125pt>
+<figs/artoolkit.jpg, id=1449, 213.79875pt x 301.125pt>
 File: figs/artoolkit.jpg Graphic file (type jpg)
 <use figs/artoolkit.jpg>
 Package pdftex.def Info: figs/artoolkit.jpg  used on input line 122.
@@ -1117,7 +1117,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [35 <./figs/karma.jpg>]
-<figs/hololens.jpg, id=1448, 519.44063pt x 292.09125pt>
+<figs/hololens.jpg, id=1467, 519.44063pt x 292.09125pt>
 File: figs/hololens.jpg Graphic file (type jpg)
 <use figs/hololens.jpg>
 Package pdftex.def Info: figs/hololens.jpg  used on input line 143.
@@ -1134,7 +1134,7 @@ Overfull \hbox (21.29373pt too wide) in paragraph at lines 169--170
 
 
 [38]
-<figs/mapa.png, id=1493, 1445.4pt x 813.0375pt>
+<figs/mapa.png, id=1512, 1445.4pt x 813.0375pt>
 File: figs/mapa.png Graphic file (type png)
 <use figs/mapa.png>
 Package pdftex.def Info: figs/mapa.png  used on input line 183.
@@ -1145,12 +1145,12 @@ Underfull \vbox (badness 6236) has occurred while \output is active []
 
 
 [39 <./figs/mapa.png (PNG copy)>]
-<figs/pokemon_go.jpg, id=1501, 803.0pt x 451.6875pt>
+<figs/pokemon_go.jpg, id=1520, 803.0pt x 451.6875pt>
 File: figs/pokemon_go.jpg Graphic file (type jpg)
 <use figs/pokemon_go.jpg>
 Package pdftex.def Info: figs/pokemon_go.jpg  used on input line 201.
 (pdftex.def)             Requested size: 227.62206pt x 128.03615pt.
-<figs/streetmuseum.png, id=1502, 369.38pt x 246.42062pt>
+<figs/streetmuseum.png, id=1521, 369.38pt x 246.42062pt>
 File: figs/streetmuseum.png Graphic file (type png)
 <use figs/streetmuseum.png>
 Package pdftex.def Info: figs/streetmuseum.png  used on input line 212.
@@ -1161,12 +1161,12 @@ Underfull \vbox (badness 1142) has occurred while \output is active []
 
 
 [40 <./figs/pokemon_go.jpg>]
-<figs/cultuar.jpeg, id=1507, 702.625pt x 421.575pt>
+<figs/cultuar.jpeg, id=1526, 702.625pt x 421.575pt>
 File: figs/cultuar.jpeg Graphic file (type jpg)
 <use figs/cultuar.jpeg>
 Package pdftex.def Info: figs/cultuar.jpeg  used on input line 223.
 (pdftex.def)             Requested size: 227.62206pt x 136.57281pt.
-<figs/history-pin.png, id=1508, 805.0075pt x 516.93124pt>
+<figs/history-pin.png, id=1527, 805.0075pt x 516.93124pt>
 File: figs/history-pin.png Graphic file (type png)
 <use figs/history-pin.png>
 Package pdftex.def Info: figs/history-pin.png  used on input line 234.
@@ -1200,6 +1200,11 @@ Cap\'{\i }tulo 3.
 [51]
 
 [52]
+Overfull \hbox (0.44708pt too wide) in paragraph at lines 57--58
+[]\T1/cmr/m/n/12 La apli-ca-ción de-be cal-cu-lar dis-tan-cias pre-ci-sas uti-li-zan-do la fór-mu-la de Haversine[[]]. 
+ []
+
+
 
 [53]
 
@@ -1208,14 +1213,17 @@ Cap\'{\i }tulo 3.
 [55]
 
 [56]
-
-[57]
-<figs/modelo_cascada.jpg, id=1615, 1365.1pt x 682.55pt>
+<figs/modelo_cascada.jpg, id=1631, 1365.1pt x 682.55pt>
 File: figs/modelo_cascada.jpg Graphic file (type jpg)
 <use figs/modelo_cascada.jpg>
-Package pdftex.def Info: figs/modelo_cascada.jpg  used on input line 232.
+Package pdftex.def Info: figs/modelo_cascada.jpg  used on input line 235.
 (pdftex.def)             Requested size: 409.71692pt x 204.8499pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[57]
 
 [58 <./figs/modelo_cascada.jpg>]
 
@@ -1231,10 +1239,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 
 [62]
-<figs/gantt.jpg, id=1643, 248.3679pt x 474.8139pt>
+<figs/gantt.jpg, id=1663, 248.3679pt x 474.8139pt>
 File: figs/gantt.jpg Graphic file (type jpg)
 <use figs/gantt.jpg>
-Package pdftex.def Info: figs/gantt.jpg  used on input line 385.
+Package pdftex.def Info: figs/gantt.jpg  used on input line 388.
 (pdftex.def)             Requested size: 356.30032pt x 681.15225pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1244,22 +1252,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [63
 
  <./figs/gantt.jpg>]
-Overfull \hbox (36.97372pt too wide) in paragraph at lines 411--424
+Overfull \hbox (36.97372pt too wide) in paragraph at lines 414--427
  [][] 
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 445--445
+Underfull \hbox (badness 1675) in paragraph at lines 448--448
 []|\T1/cmr/m/n/12 Integración AR.js, ac-ti-va-ción por
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 447--447
+Underfull \hbox (badness 1521) in paragraph at lines 450--450
 []|\T1/cmr/m/n/12 Pruebas fun-cio-na-les, prue-bas con
  []
 
 
-Overfull \hbox (31.01535pt too wide) in paragraph at lines 435--454
+Overfull \hbox (31.01535pt too wide) in paragraph at lines 438--457
  [][] 
  []
 
@@ -1272,22 +1280,22 @@ Underfull \vbox (badness 1028) has occurred while \output is active []
 
 [65]
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 501.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 504.
 
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 501.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 504.
 
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 501.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 504.
 
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 501.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 504.
 
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 501.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 504.
 
 
-LaTeX Warning: Command \texteuro invalid in math mode on input line 501.
+LaTeX Warning: Command \texteuro invalid in math mode on input line 504.
 
 Missing character: There is no ¿ in font cmr12!
 Missing character: There is no ¿ in font cmr12!
@@ -1300,25 +1308,25 @@ Underfull \vbox (badness 1009) has occurred while \output is active []
 
 
 [67]
-Underfull \hbox (badness 2189) in paragraph at lines 577--577
+Underfull \hbox (badness 2189) in paragraph at lines 580--580
 []|\T1/cmr/m/n/12 Cambios en de-pen-den-cias
  []
 
 
-Underfull \hbox (badness 2894) in paragraph at lines 577--577
+Underfull \hbox (badness 2894) in paragraph at lines 580--580
 []|\T1/cmr/m/n/12 Problemas le-ga-les (da-tos,
  []
 
 
 
 [68]
-<figs/matriz_riesgos.jpg, id=1695, 673.01437pt x 465.99094pt>
+<figs/matriz_riesgos.jpg, id=1715, 673.01437pt x 465.99094pt>
 File: figs/matriz_riesgos.jpg Graphic file (type jpg)
 <use figs/matriz_riesgos.jpg>
-Package pdftex.def Info: figs/matriz_riesgos.jpg  used on input line 620.
+Package pdftex.def Info: figs/matriz_riesgos.jpg  used on input line 623.
 (pdftex.def)             Requested size: 295.90588pt x 204.8802pt.
 
-Underfull \hbox (badness 1199) in paragraph at lines 636--636
+Underfull \hbox (badness 1199) in paragraph at lines 639--639
 []|\T1/cmr/m/n/12 Estimaciones tem-po-ra-les im-
  []
 
@@ -1329,7 +1337,7 @@ Underfull \hbox (badness 1199) in paragraph at lines 636--636
 [70]
 Cap\'{\i }tulo 4.
 (tex/analisis.tex
-<figs/diagrama_administrador.png, id=1706, 633.567pt x 463.7325pt>
+<figs/diagrama_administrador.png, id=1726, 633.567pt x 463.7325pt>
 File: figs/diagrama_administrador.png Graphic file (type png)
 <use figs/diagrama_administrador.png>
 Package pdftex.def Info: figs/diagrama_administrador.png  used on input line 23.
@@ -1342,7 +1350,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [71
 
 ]
-<figs/diagrama_usuario_no_registrado.png, id=1711, 275.8305pt x 124.66576pt>
+<figs/diagrama_usuario_no_registrado.png, id=1731, 275.8305pt x 124.66576pt>
 File: figs/diagrama_usuario_no_registrado.png Graphic file (type png)
 <use figs/diagrama_usuario_no_registrado.png>
 Package pdftex.def Info: figs/diagrama_usuario_no_registrado.png  used on input line 29.
@@ -1350,7 +1358,7 @@ Package pdftex.def Info: figs/diagrama_usuario_no_registrado.png  used on input 
 
 
 [72 <./figs/diagrama_administrador.png> <./figs/diagrama_usuario_no_registrado.png>]
-<figs/diagrama_usuario_registrado.png, id=1718, 1007.56425pt x 464.937pt>
+<figs/diagrama_usuario_registrado.png, id=1738, 1007.56425pt x 464.937pt>
 File: figs/diagrama_usuario_registrado.png Graphic file (type png)
 <use figs/diagrama_usuario_registrado.png>
 Package pdftex.def Info: figs/diagrama_usuario_registrado.png  used on input line 39.
@@ -1460,7 +1468,7 @@ Underfull \hbox (badness 3769) in paragraph at lines 906--906
 [93
 
 ]
-<figs/diagrama_actividad_usuario_no_registrado.png, id=1813, 1863.96375pt x 708.6475pt>
+<figs/diagrama_actividad_usuario_no_registrado.png, id=1833, 1863.96375pt x 708.6475pt>
 File: figs/diagrama_actividad_usuario_no_registrado.png Graphic file (type png)
 <use figs/diagrama_actividad_usuario_no_registrado.png>
 Package pdftex.def Info: figs/diagrama_actividad_usuario_no_registrado.png  used on input line 930.
@@ -1470,7 +1478,7 @@ Package pdftex.def Info: figs/diagrama_actividad_usuario_no_registrado.png  used
 [94
 
  <./figs/diagrama_actividad_usuario_no_registrado.png>]
-<figs/diagrama_actividad_usuario_registrado.png, id=1819, 1555.8125pt x 1041.8925pt>
+<figs/diagrama_actividad_usuario_registrado.png, id=1839, 1555.8125pt x 1041.8925pt>
 File: figs/diagrama_actividad_usuario_registrado.png Graphic file (type png)
 <use figs/diagrama_actividad_usuario_registrado.png>
 Package pdftex.def Info: figs/diagrama_actividad_usuario_registrado.png  used on input line 944.
@@ -1490,7 +1498,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
  <./figs/diagrama_actividad_usuario_registrado.png (PNG copy)>]
-<figs/diagrama_actividad_administrador.png, id=1824, 1522.68875pt x 901.3675pt>
+<figs/diagrama_actividad_administrador.png, id=1844, 1522.68875pt x 901.3675pt>
 File: figs/diagrama_actividad_administrador.png Graphic file (type png)
 <use figs/diagrama_actividad_administrador.png>
 Package pdftex.def Info: figs/diagrama_actividad_administrador.png  used on input line 949.
@@ -1504,7 +1512,7 @@ See the caption package documentation for explanation.
 
 
 [96 <./figs/diagrama_actividad_administrador.png (PNG copy)>]
-<figs/estado_usuario_no_registrado.png, id=1829, 579.16376pt x 779.91376pt>
+<figs/estado_usuario_no_registrado.png, id=1849, 579.16376pt x 779.91376pt>
 File: figs/estado_usuario_no_registrado.png Graphic file (type png)
 <use figs/estado_usuario_no_registrado.png>
 Package pdftex.def Info: figs/estado_usuario_no_registrado.png  used on input line 965.
@@ -1514,7 +1522,7 @@ Package pdftex.def Info: figs/estado_usuario_no_registrado.png  used on input li
 [97
 
  <./figs/estado_usuario_no_registrado.png (PNG copy)>]
-<figs/diagrama1.png, id=1835, 1377.145pt x 683.55376pt>
+<figs/diagrama1.png, id=1855, 1377.145pt x 683.55376pt>
 File: figs/diagrama1.png Graphic file (type png)
 <use figs/diagrama1.png>
 Package pdftex.def Info: figs/diagrama1.png  used on input line 973.
@@ -1524,7 +1532,7 @@ Package pdftex.def Info: figs/diagrama1.png  used on input line 973.
 [98
 
  <./figs/diagrama1.png>]
-<figs/diagrama2.png, id=1841, 1506.62875pt x 444.66125pt>
+<figs/diagrama2.png, id=1861, 1506.62875pt x 444.66125pt>
 File: figs/diagrama2.png Graphic file (type png)
 <use figs/diagrama2.png>
 Package pdftex.def Info: figs/diagrama2.png  used on input line 983.
@@ -1535,7 +1543,7 @@ Package pdftex.def Info: figs/diagrama2.png  used on input line 983.
 
 
  <./figs/diagrama2.png>]
-<figs/estado_administrador.png, id=1847, 1287.81125pt x 270.00874pt>
+<figs/estado_administrador.png, id=1867, 1287.81125pt x 270.00874pt>
 File: figs/estado_administrador.png Graphic file (type png)
 <use figs/estado_administrador.png>
 Package pdftex.def Info: figs/estado_administrador.png  used on input line 993.
@@ -1548,7 +1556,7 @@ Package pdftex.def Info: figs/estado_administrador.png  used on input line 993.
  <./figs/estado_administrador.png (PNG copy)>])
 Cap\'{\i }tulo 5.
 (tex/diseno.tex
-<figs/colores.png, id=1860, 1927.2pt x 346.29375pt>
+<figs/colores.png, id=1880, 1927.2pt x 346.29375pt>
 File: figs/colores.png Graphic file (type png)
 <use figs/colores.png>
 Package pdftex.def Info: figs/colores.png  used on input line 22.
@@ -1562,107 +1570,112 @@ Underfull \vbox (badness 2512) has occurred while \output is active []
 
 
 ]
-<figs/wireframe1.jpg, id=1869, 259.7203pt x 500.62032pt>
+<figs/tipografia.png, id=1890, 1445.4pt x 813.0375pt>
+File: figs/tipografia.png Graphic file (type png)
+<use figs/tipografia.png>
+Package pdftex.def Info: figs/tipografia.png  used on input line 33.
+(pdftex.def)             Requested size: 318.66948pt x 179.25339pt.
+<figs/wireframe1.jpg, id=1893, 259.7203pt x 500.62032pt>
 File: figs/wireframe1.jpg Graphic file (type jpg)
 <use figs/wireframe1.jpg>
-Package pdftex.def Info: figs/wireframe1.jpg  used on input line 47.
+Package pdftex.def Info: figs/wireframe1.jpg  used on input line 45.
 (pdftex.def)             Requested size: 116.5456pt x 224.64304pt.
-<figs/wireframe2.jpg, id=1870, 262.73157pt x 495.35063pt>
+<figs/wireframe2.jpg, id=1894, 262.73157pt x 495.35063pt>
 File: figs/wireframe2.jpg Graphic file (type jpg)
 <use figs/wireframe2.jpg>
-Package pdftex.def Info: figs/wireframe2.jpg  used on input line 53.
+Package pdftex.def Info: figs/wireframe2.jpg  used on input line 51.
 (pdftex.def)             Requested size: 116.5456pt x 219.73119pt.
-<figs/wireframe3.jpg, id=1871, 258.9675pt x 493.845pt>
+<figs/wireframe3.jpg, id=1895, 258.9675pt x 493.845pt>
 File: figs/wireframe3.jpg Graphic file (type jpg)
 <use figs/wireframe3.jpg>
-Package pdftex.def Info: figs/wireframe3.jpg  used on input line 59.
+Package pdftex.def Info: figs/wireframe3.jpg  used on input line 57.
 (pdftex.def)             Requested size: 116.5456pt x 222.2508pt.
-<figs/wireframe4.jpg, id=1872, 265.74281pt x 494.59781pt>
+<figs/wireframe4.jpg, id=1896, 265.74281pt x 494.59781pt>
 File: figs/wireframe4.jpg Graphic file (type jpg)
 <use figs/wireframe4.jpg>
-Package pdftex.def Info: figs/wireframe4.jpg  used on input line 67.
+Package pdftex.def Info: figs/wireframe4.jpg  used on input line 65.
 (pdftex.def)             Requested size: 116.5456pt x 216.91429pt.
 
-Underfull \hbox (badness 2707) in paragraph at lines 68--68
+Underfull \hbox (badness 2707) in paragraph at lines 66--66
 []\T1/cmr/m/n/10.95 (d) |Wi-re-fra-me 4: Per-fil de
  []
 
-<figs/wireframe5.jpg, id=1873, 268.75406pt x 497.60907pt>
+<figs/wireframe5.jpg, id=1897, 268.75406pt x 497.60907pt>
 File: figs/wireframe5.jpg Graphic file (type jpg)
 <use figs/wireframe5.jpg>
-Package pdftex.def Info: figs/wireframe5.jpg  used on input line 73.
+Package pdftex.def Info: figs/wireframe5.jpg  used on input line 71.
 (pdftex.def)             Requested size: 116.5456pt x 215.79002pt.
 
-Underfull \vbox (badness 6412) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[102 <./figs/colores.png>]
+[102 <./figs/colores.png> <./figs/tipografia.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [103 <./figs/wireframe1.jpg> <./figs/wireframe2.jpg> <./figs/wireframe3.jpg> <./figs/wireframe4.jpg> <./figs/wireframe5.jpg>]
-Overfull \hbox (17.67494pt too wide) in paragraph at lines 106--107
+Overfull \hbox (17.67494pt too wide) in paragraph at lines 105--106
 []\T1/cmr/bx/n/12 fechas\T1/cmr/m/n/12 : in-for-ma-ción de fe-chas re-le-van-tes (Char-Field, max_length=100, null=True,
  []
 
 
-Overfull \hbox (10.80873pt too wide) in paragraph at lines 118--119
+Overfull \hbox (10.80873pt too wide) in paragraph at lines 117--118
 []\T1/cmr/bx/n/12 ar_url\T1/cmr/m/n/12 : en-la-ce a con-te-ni-do de reali-dad au-men-ta-da (URL-Field, max_length=300,
  []
 
 
 
 [104]
-Overfull \hbox (41.69272pt too wide) in paragraph at lines 127--128
+Overfull \hbox (41.69272pt too wide) in paragraph at lines 126--127
 []\T1/cmr/m/n/12 Relación \T1/cmr/bx/n/12 mu-je-res\T1/cmr/m/n/12 : Many-To-Many-Field con \T1/cmtt/m/n/12 Mujer \T1/cmr/m/n/12 (re-la-ted_name='rutas', blank=True) 
  []
 
 
-Overfull \hbox (37.59651pt too wide) in paragraph at lines 128--129
+Overfull \hbox (37.59651pt too wide) in paragraph at lines 127--128
 []\T1/cmr/m/n/12 Relación \T1/cmr/bx/n/12 lu-ga-res\T1/cmr/m/n/12 : Many-To-Many-Field con \T1/cmtt/m/n/12 Lugar \T1/cmr/m/n/12 (re-la-ted_name='rutas', blank=True) 
  []
 
 
-Overfull \hbox (45.34496pt too wide) in paragraph at lines 134--135
+Overfull \hbox (45.34496pt too wide) in paragraph at lines 133--134
 []\T1/cmr/bx/n/12 user_id \T1/cmr/m/n/12 (re-la-ción uno a uno con User, re-la-ted_name='profile', on_delete=CASCADE) 
  []
 
 
-Overfull \hbox (19.96216pt too wide) in paragraph at lines 142--143
+Overfull \hbox (19.96216pt too wide) in paragraph at lines 141--142
 []\T1/cmr/bx/n/12 user_id \T1/cmr/m/n/12 (cla-ve fo-rá-nea, re-la-ted_name='visited_lugares', on_delete=CASCADE) 
  []
 
 
-Overfull \hbox (50.63521pt too wide) in paragraph at lines 151--152
+Overfull \hbox (50.63521pt too wide) in paragraph at lines 150--151
 []\T1/cmr/bx/n/12 user_id \T1/cmr/m/n/12 (cla-ve fo-rá-nea, re-la-ted_name='visited_lugares_ruta', on_delete=CASCADE) 
  []
 
 
 
 [105]
-Underfull \hbox (badness 5431) in paragraph at lines 187--187
+Underfull \hbox (badness 5431) in paragraph at lines 186--186
 []|\T1/cmr/m/n/12 id (Bi-gAu-to-Field), nom-bre, des-crip-cion, fo-to (Ima-ge-Field),
  []
 
 
 
 [106]
-<figs/diagrama_clases.png, id=1896, 2020.54875pt x 942.52126pt>
+<figs/diagrama_clases.png, id=1922, 2020.54875pt x 942.52126pt>
 File: figs/diagrama_clases.png Graphic file (type png)
 <use figs/diagrama_clases.png>
-Package pdftex.def Info: figs/diagrama_clases.png  used on input line 194.
+Package pdftex.def Info: figs/diagrama_clases.png  used on input line 193.
 (pdftex.def)             Requested size: 717.00761pt x 334.46077pt.
 
 
 [107 <./figs/diagrama_clases.png (PNG copy)>]
-Overfull \hbox (20.5572pt too wide) in paragraph at lines 206--206
+Overfull \hbox (20.5572pt too wide) in paragraph at lines 205--205
 []\T1/cmr/bx/n/12 Componentes de Usua-rio: \T1/cmr/m/n/12 In-clu-yen las pan-ta-llas de au-ten-ti-ca-ción (\T1/cmtt/m/n/12 Login\T1/cmr/m/n/12 , \T1/cmtt/m/n/12 Register\T1/cmr/m/n/12 ),
  []
 
 
-Overfull \hbox (9.51173pt too wide) in paragraph at lines 206--206
+Overfull \hbox (9.51173pt too wide) in paragraph at lines 205--205
 \T1/cmr/m/n/12 men-ta-da (\T1/cmtt/m/n/12 AR\T1/cmr/m/n/12 ), y la ló-gi-ca de no-ti-fi-ca-cio-nes de pro-xi-mi-dad (\T1/cmtt/m/n/12 NotificacionProximidad\T1/cmr/m/n/12 ),
  []
 
@@ -1672,40 +1685,40 @@ Overfull \hbox (9.51173pt too wide) in paragraph at lines 206--206
 
 
 ]
-<figs/prueba.png, id=1906, 2947.01pt x 1345.025pt>
+<figs/prueba.png, id=1932, 2947.01pt x 1345.025pt>
 File: figs/prueba.png Graphic file (type png)
 <use figs/prueba.png>
-Package pdftex.def Info: figs/prueba.png  used on input line 210.
+Package pdftex.def Info: figs/prueba.png  used on input line 209.
 (pdftex.def)             Requested size: 717.00761pt x 327.22513pt.
 
 
 [109
 
  <./figs/prueba.png (PNG copy)>]
-<figs/caso1.png, id=1913, 860.21375pt x 534.99875pt>
+<figs/caso1.png, id=1939, 860.21375pt x 534.99875pt>
 File: figs/caso1.png Graphic file (type png)
 <use figs/caso1.png>
-Package pdftex.def Info: figs/caso1.png  used on input line 222.
+Package pdftex.def Info: figs/caso1.png  used on input line 221.
 (pdftex.def)             Requested size: 364.19667pt x 226.51021pt.
 
 
 [110
 
  <./figs/caso1.png (PNG copy)>]
-<figs/caso2.png, id=1918, 881.2925pt x 549.05125pt>
+<figs/caso2.png, id=1944, 881.2925pt x 549.05125pt>
 File: figs/caso2.png Graphic file (type png)
 <use figs/caso2.png>
-Package pdftex.def Info: figs/caso2.png  used on input line 230.
+Package pdftex.def Info: figs/caso2.png  used on input line 229.
 (pdftex.def)             Requested size: 364.19667pt x 226.89694pt.
-<figs/caso3.png, id=1919, 1042.89626pt x 796.9775pt>
+<figs/caso3.png, id=1945, 1042.89626pt x 796.9775pt>
 File: figs/caso3.png Graphic file (type png)
 <use figs/caso3.png>
-Package pdftex.def Info: figs/caso3.png  used on input line 237.
+Package pdftex.def Info: figs/caso3.png  used on input line 236.
 (pdftex.def)             Requested size: 364.19667pt x 278.31393pt.
-<figs/caso4.png, id=1920, 877.2775pt x 791.95876pt>
+<figs/caso4.png, id=1946, 877.2775pt x 791.95876pt>
 File: figs/caso4.png Graphic file (type png)
 <use figs/caso4.png>
-Package pdftex.def Info: figs/caso4.png  used on input line 244.
+Package pdftex.def Info: figs/caso4.png  used on input line 243.
 (pdftex.def)             Requested size: 364.19667pt x 328.7776pt.
 
 Underfull \vbox (badness 3838) has occurred while \output is active []
@@ -1715,28 +1728,28 @@ Underfull \vbox (badness 3838) has occurred while \output is active []
 [111
 
  <./figs/caso2.png (PNG copy)> <./figs/caso3.png (PNG copy)>]
-<figs/caso5.png, id=1925, 998.73125pt x 561.09625pt>
+<figs/caso5.png, id=1951, 998.73125pt x 561.09625pt>
 File: figs/caso5.png Graphic file (type png)
 <use figs/caso5.png>
-Package pdftex.def Info: figs/caso5.png  used on input line 251.
+Package pdftex.def Info: figs/caso5.png  used on input line 250.
 (pdftex.def)             Requested size: 364.19667pt x 204.60579pt.
-<figs/caso6.png, id=1926, 864.22874pt x 606.265pt>
+<figs/caso6.png, id=1952, 864.22874pt x 606.265pt>
 File: figs/caso6.png Graphic file (type png)
 <use figs/caso6.png>
-Package pdftex.def Info: figs/caso6.png  used on input line 258.
+Package pdftex.def Info: figs/caso6.png  used on input line 257.
 (pdftex.def)             Requested size: 364.19667pt x 255.48064pt.
 
 
 [112 <./figs/caso4.png (PNG copy)> <./figs/caso5.png (PNG copy)>]
-<figs/caso7.png, id=1931, 1161.33875pt x 666.49pt>
+<figs/caso7.png, id=1957, 1161.33875pt x 666.49pt>
 File: figs/caso7.png Graphic file (type png)
 <use figs/caso7.png>
-Package pdftex.def Info: figs/caso7.png  used on input line 265.
+Package pdftex.def Info: figs/caso7.png  used on input line 264.
 (pdftex.def)             Requested size: 364.19667pt x 209.00984pt.
-<figs/caso8.png, id=1932, 1005.7575pt x 428.60126pt>
+<figs/caso8.png, id=1958, 1005.7575pt x 428.60126pt>
 File: figs/caso8.png Graphic file (type png)
 <use figs/caso8.png>
-Package pdftex.def Info: figs/caso8.png  used on input line 272.
+Package pdftex.def Info: figs/caso8.png  used on input line 271.
 (pdftex.def)             Requested size: 364.19667pt x 155.19884pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1744,15 +1757,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [113 <./figs/caso6.png (PNG copy)> <./figs/caso7.png (PNG copy)>]
-<figs/caso9.png, id=1937, 1165.35374pt x 561.09625pt>
+<figs/caso9.png, id=1963, 1165.35374pt x 561.09625pt>
 File: figs/caso9.png Graphic file (type png)
 <use figs/caso9.png>
-Package pdftex.def Info: figs/caso9.png  used on input line 279.
+Package pdftex.def Info: figs/caso9.png  used on input line 278.
 (pdftex.def)             Requested size: 364.19667pt x 175.35071pt.
-<figs/caso10.png, id=1938, 990.70125pt x 549.05125pt>
+<figs/caso10.png, id=1964, 990.70125pt x 549.05125pt>
 File: figs/caso10.png Graphic file (type png)
 <use figs/caso10.png>
-Package pdftex.def Info: figs/caso10.png  used on input line 286.
+Package pdftex.def Info: figs/caso10.png  used on input line 285.
 (pdftex.def)             Requested size: 364.19667pt x 201.83884pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1760,15 +1773,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [114 <./figs/caso8.png (PNG copy)> <./figs/caso9.png (PNG copy)>]
-<figs/caso11.png, id=1943, 846.16125pt x 473.77pt>
+<figs/caso11.png, id=1969, 846.16125pt x 473.77pt>
 File: figs/caso11.png Graphic file (type png)
 <use figs/caso11.png>
-Package pdftex.def Info: figs/caso11.png  used on input line 293.
+Package pdftex.def Info: figs/caso11.png  used on input line 292.
 (pdftex.def)             Requested size: 364.19667pt x 203.91231pt.
-<figs/caso12.png, id=1944, 558.085pt x 327.2225pt>
+<figs/caso12.png, id=1970, 558.085pt x 327.2225pt>
 File: figs/caso12.png Graphic file (type png)
 <use figs/caso12.png>
-Package pdftex.def Info: figs/caso12.png  used on input line 300.
+Package pdftex.def Info: figs/caso12.png  used on input line 299.
 (pdftex.def)             Requested size: 364.19667pt x 213.5459pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1776,15 +1789,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [115 <./figs/caso10.png (PNG copy)> <./figs/caso11.png (PNG copy)>]
-<figs/caso13.png, id=1950, 1048.91875pt x 519.9425pt>
+<figs/caso13.png, id=1976, 1048.91875pt x 519.9425pt>
 File: figs/caso13.png Graphic file (type png)
 <use figs/caso13.png>
-Package pdftex.def Info: figs/caso13.png  used on input line 307.
+Package pdftex.def Info: figs/caso13.png  used on input line 306.
 (pdftex.def)             Requested size: 364.19667pt x 180.53073pt.
-<figs/caso14.png, id=1951, 916.42375pt x 653.44125pt>
+<figs/caso14.png, id=1977, 916.42375pt x 653.44125pt>
 File: figs/caso14.png Graphic file (type png)
 <use figs/caso14.png>
-Package pdftex.def Info: figs/caso14.png  used on input line 314.
+Package pdftex.def Info: figs/caso14.png  used on input line 313.
 (pdftex.def)             Requested size: 364.19667pt x 259.68681pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1792,15 +1805,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [116 <./figs/caso12.png (PNG copy)> <./figs/caso13.png (PNG copy)>]
-<figs/caso15.png, id=1956, 1110.1475pt x 711.65875pt>
+<figs/caso15.png, id=1982, 1110.1475pt x 711.65875pt>
 File: figs/caso15.png Graphic file (type png)
 <use figs/caso15.png>
-Package pdftex.def Info: figs/caso15.png  used on input line 321.
+Package pdftex.def Info: figs/caso15.png  used on input line 320.
 (pdftex.def)             Requested size: 364.19667pt x 233.46901pt.
-<figs/caso16.png, id=1957, 1186.4325pt x 711.65875pt>
+<figs/caso16.png, id=1983, 1186.4325pt x 711.65875pt>
 File: figs/caso16.png Graphic file (type png)
 <use figs/caso16.png>
-Package pdftex.def Info: figs/caso16.png  used on input line 328.
+Package pdftex.def Info: figs/caso16.png  used on input line 327.
 (pdftex.def)             Requested size: 364.19667pt x 218.45099pt.
 
 Underfull \vbox (badness 7415) has occurred while \output is active []
@@ -1808,15 +1821,15 @@ Underfull \vbox (badness 7415) has occurred while \output is active []
 
 
 [117 <./figs/caso14.png (PNG copy)> <./figs/caso15.png (PNG copy)>]
-<figs/caso17.png, id=1962, 941.5175pt x 707.64375pt>
+<figs/caso17.png, id=1988, 941.5175pt x 707.64375pt>
 File: figs/caso17.png Graphic file (type png)
 <use figs/caso17.png>
-Package pdftex.def Info: figs/caso17.png  used on input line 335.
+Package pdftex.def Info: figs/caso17.png  used on input line 334.
 (pdftex.def)             Requested size: 364.19667pt x 273.73402pt.
-<figs/caso18.png, id=1963, 1166.3575pt x 756.8275pt>
+<figs/caso18.png, id=1989, 1166.3575pt x 756.8275pt>
 File: figs/caso18.png Graphic file (type png)
 <use figs/caso18.png>
-Package pdftex.def Info: figs/caso18.png  used on input line 342.
+Package pdftex.def Info: figs/caso18.png  used on input line 341.
 (pdftex.def)             Requested size: 364.19667pt x 236.31169pt.
 
 Underfull \vbox (badness 7777) has occurred while \output is active []
@@ -1824,15 +1837,15 @@ Underfull \vbox (badness 7777) has occurred while \output is active []
 
 
 [118 <./figs/caso16.png (PNG copy)> <./figs/caso17.png (PNG copy)>]
-<figs/caso19.png, id=1968, 827.09pt x 386.44376pt>
+<figs/caso19.png, id=1994, 827.09pt x 386.44376pt>
 File: figs/caso19.png Graphic file (type png)
 <use figs/caso19.png>
-Package pdftex.def Info: figs/caso19.png  used on input line 349.
+Package pdftex.def Info: figs/caso19.png  used on input line 348.
 (pdftex.def)             Requested size: 364.19667pt x 170.1655pt.
-<figs/caso20.png, id=1969, 945.5325pt x 624.3325pt>
+<figs/caso20.png, id=1995, 945.5325pt x 624.3325pt>
 File: figs/caso20.png Graphic file (type png)
 <use figs/caso20.png>
-Package pdftex.def Info: figs/caso20.png  used on input line 356.
+Package pdftex.def Info: figs/caso20.png  used on input line 355.
 (pdftex.def)             Requested size: 364.19667pt x 240.4783pt.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1875,7 +1888,7 @@ File: lstlang1.sty 2024/09/23 1.10c listings language file
 [128]
 
 [129]
-<figs/django-admin-mujeres-list.jpg, id=2265, 1204.5pt x 606.01407pt>
+<figs/django-admin-mujeres-list.jpg, id=2291, 1204.5pt x 606.01407pt>
 File: figs/django-admin-mujeres-list.jpg Graphic file (type jpg)
 <use figs/django-admin-mujeres-list.jpg>
 Package pdftex.def Info: figs/django-admin-mujeres-list.jpg  used on input line 485.
@@ -1886,7 +1899,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [130]
-<figs/django-admin-mujer-edit.jpg, id=2299, 1204.5pt x 733.23938pt>
+<figs/django-admin-mujer-edit.jpg, id=2325, 1204.5pt x 733.23938pt>
 File: figs/django-admin-mujer-edit.jpg Graphic file (type jpg)
 <use figs/django-admin-mujer-edit.jpg>
 Package pdftex.def Info: figs/django-admin-mujer-edit.jpg  used on input line 494.
@@ -1909,7 +1922,7 @@ Overfull \hbox (9.25221pt too wide) in paragraph at lines 706--707
 []\T1/cmr/m/n/12 Durante el des-plie-gue, se pue-de eje-cu-tar el co-man-do \T1/cmtt/m/n/12 python manage.py collectstatic
  []
 
-<figs/back.jpg, id=2451, 636.87938pt x 70.76437pt>
+<figs/back.jpg, id=2477, 636.87938pt x 70.76437pt>
 File: figs/back.jpg Graphic file (type jpg)
 <use figs/back.jpg>
 Package pdftex.def Info: figs/back.jpg  used on input line 710.
@@ -1941,8 +1954,8 @@ Overfull \hbox (4.72281pt too wide) in paragraph at lines 808--809
 [140]
 
 [141]
-Overfull \hbox (29.54984pt too wide) in paragraph at lines 1004--1005
-[]\T1/cmr/m/n/12 La apli-ca-ción im-ple-men-ta cálcu-los de dis-tan-cia pre-ci-sos me-dian-te la \T1/cmtt/m/n/12 fórmula de Haversine\T1/cmr/m/n/12 ,
+Overfull \hbox (47.82312pt too wide) in paragraph at lines 1004--1005
+[]\T1/cmr/m/n/12 La apli-ca-ción im-ple-men-ta cálcu-los de dis-tan-cia pre-ci-sos me-dian-te la \T1/cmtt/m/n/12 fórmula de Haversine\T1/cmr/m/n/12 [[]],
  []
 
 
@@ -1968,7 +1981,7 @@ Overfull \hbox (3.29114pt too wide) in paragraph at lines 1251--1252
 
 
 [147]
-Overfull \hbox (25.32309pt too wide) in paragraph at lines 1275--1276
+Overfull \hbox (25.32309pt too wide) in paragraph at lines 1276--1277
 []\T1/cmr/m/n/12 Cada ex-pe-rien-cia AR se alo-ja en una URL úni-ca, por ejem-plo: \T1/cmtt/m/n/12 https://ivam.vercel.app/\T1/cmr/m/n/12 .
  []
 
@@ -1985,16 +1998,21 @@ Overfull \hbox (25.32309pt too wide) in paragraph at lines 1275--1276
 [152]
 
 [153]
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1569.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1578--1578
-[][][][][]$\T1/cmr/m/n/8 https : / / cults3d . com / en / 3d-[]model / art / vandana-[]shiva ? srsltid = AfmBOoo2OFfWztX _ LpR _
+Overfull \hbox (8.8662pt too wide) in paragraph at lines 1575--1576
+[]\T1/cmr/m/n/12 Posteriormente, se de-fi-nió un pa-nel in-for-ma-ti-vo en la es-ce-na con un ele-men-to \T1/cmtt/m/n/12 <a-entity>
  []
 
 
 
-[154])
+[154]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1600.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1609--1609
+[][][][][]$\T1/cmr/m/n/8 https : / / cults3d . com / en / 3d-[]model / art / vandana-[]shiva ? srsltid = AfmBOoo2OFfWztX _ LpR _
+ []
+
+)
 
 [155]
 
@@ -2008,458 +2026,764 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--11
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
-[]|\T1/cmr/m/n/12 Mapa car-ga con
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]|\T1/cmr/bx/n/12 Resultado
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
-\T1/cmr/m/n/12 mar-ca-do-res co-lo-
+Overfull \hbox (21.54718pt too wide) in alignment at lines 9--13
+ [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-[]|[] \T1/cmr/m/n/12 Ma-pa car-ga
+Underfull \hbox (badness 1817) in paragraph at lines 15--15
+\T1/cmr/m/n/12 tri-bui-dos por Va-len-
  []
 
 
-Underfull \hbox (badness 2781) in paragraph at lines 14--15
-\T1/cmr/m/n/12 co-rrec-ta-men-te con
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]|\T1/cmr/m/n/12 El ma-pa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-\T1/cmr/m/n/12 mar-ca-do-res di-fe-
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+\T1/cmr/m/n/12 mues-tra co-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-\T1/cmr/m/n/12 se-gún es-ta-do de
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+\T1/cmr/m/n/12 rrec-ta-men-te
  []
 
 
-Underfull \hbox (badness 6542) in paragraph at lines 17--17
-[]|\T1/cmr/m/n/12 Notificación au-to-
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+\T1/cmr/m/n/12 to-dos los
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-[]|[] \T1/cmr/m/n/12 No-ti-fi-ca-cio-nes
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+\T1/cmr/m/n/12 pun-tos de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-\T1/cmr/m/n/12 push en-via-das
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+\T1/cmr/m/n/12 in-te-rés en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-\T1/cmr/m/n/12 co-rrec-ta-men-te al
+Underfull \hbox (badness 1077) in paragraph at lines 18--18
+\T1/cmr/m/n/12 po real la ubi-ca-ción
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-\T1/cmr/m/n/12 de-tec-tar pro-xi-mi-
+Underfull \hbox (badness 1337) in paragraph at lines 18--18
+\T1/cmr/m/n/12 y com-pro-bar que la
  []
 
 
-Underfull \hbox (badness 1558) in paragraph at lines 17--18
-\T1/cmr/m/n/12 dad a lu-ga-res no
+Underfull \hbox (badness 2478) in paragraph at lines 18--18
+[]|\T1/cmr/m/n/12 La ubi-ca-ción
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
-[]|\T1/cmr/m/n/12 F3. Fil-tros y
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+\T1/cmr/m/n/12 del usua-rio
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
-\T1/cmr/m/n/12 bús-que-da sin-
+Underfull \hbox (badness 1688) in paragraph at lines 18--18
+\T1/cmr/m/n/12 se de-tec-ta y
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
-[]|\T1/cmr/m/n/12 Aplicar fil-tros por
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+\T1/cmr/m/n/12 ac-tua-li-za en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
-\T1/cmr/m/n/12 bre, na-ve-gar en-tre
+Underfull \hbox (badness 1314) in paragraph at lines 18--19
+\T1/cmr/m/n/12 po-si-cio-na co-rrec-ta-men-te
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
-[]|\T1/cmr/m/n/12 Resultados fil-tra-
+Underfull \hbox (badness 7047) in paragraph at lines 21--21
+[]|\T1/cmr/m/n/12 Se mues-tran
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 20--20
-\T1/cmr/m/n/12 dos co-rrec-ta-men-te
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+\T1/cmr/m/n/12 la ubi-ca-ción
  []
 
 
-Underfull \hbox (badness 4647) in paragraph at lines 20--21
-\T1/cmr/m/n/12 que-da en tiem-po
+Underfull \hbox (badness 1430) in paragraph at lines 21--22
+\T1/cmr/m/n/12 ki-ló-me-tros, que cam-bia
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 20--21
-\T1/cmr/m/n/12 Fil-tros-Con-text en-
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\T1/cmr/m/n/12 El usua-rio
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
-[]|\T1/cmr/m/n/12 Información com-
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\T1/cmr/m/n/12 re-ci-be una
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-[]|\T1/cmr/m/n/12 Visualizar imá-ge-nes,
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\T1/cmr/m/n/12 no-ti-fi-ca-ción
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-\T1/cmr/m/n/12 RA, ac-ce-der des-de
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\T1/cmr/m/n/12 au-to-má-ti-ca
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 29--29
-[]|\T1/cmr/m/n/12 Carga mo-de-lo 3D
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\T1/cmr/m/n/12 de pro-xi-mi-
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 29--30
-\T1/cmr/m/n/12 in-ter-ac-ti-vos, au-dio
+Underfull \hbox (badness 3240) in paragraph at lines 24--25
+[]|[] \T1/cmr/m/n/12 Al acer-car-se a un
  []
 
 
-Underfull \hbox (badness 3219) in paragraph at lines 29--30
-\T1/cmr/m/n/12 con-tex-tual y ani-
+Underfull \hbox (badness 1472) in paragraph at lines 24--25
+\T1/cmr/m/n/12 pun-to, la app mues-tra
  []
 
 
-Underfull \hbox (badness 7238) in paragraph at lines 32--33
-[]|[] \T1/cmr/m/n/12 Fun-ción com-
+Underfull \hbox (badness 4391) in paragraph at lines 24--25
+\T1/cmr/m/n/12 una no-ti-fi-ca-ción emer-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-\T1/cmr/m/n/12 par-tir in-te-gra-da
+Underfull \hbox (badness 4518) in paragraph at lines 27--27
+[]|\T1/cmr/m/n/12 F5. Mos-trar pun-tos
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 32--33
-\T1/cmr/m/n/12 con apps na-ti-vas
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+\T1/cmr/m/n/12 tran los
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-\T1/cmr/m/n/12 del dis-po-si-ti-vo,
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+\T1/cmr/m/n/12 pun-tos cer-
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 32--33
-\T1/cmr/m/n/12 in-clu-yen-do imá-ge-
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+\T1/cmr/m/n/12 ca-nos a la
  []
 
 
-Underfull \hbox (badness 2875) in paragraph at lines 32--33
-\T1/cmr/m/n/12 nes cuan-do es-tán
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+\T1/cmr/m/n/12 ubi-ca-ción
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
-[]|\T1/cmr/m/n/12 F8. Au-ten-ti-ca-
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+[]|\T1/cmr/m/n/12 Se mues-tra
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
-[]|\T1/cmr/m/n/12 Sesión per-sis-ten-te
+Underfull \hbox (badness 2173) in paragraph at lines 33--33
+\T1/cmr/m/n/12 do: tex-to, imá-ge-nes,
  []
 
 
-Underfull \hbox (badness 1616) in paragraph at lines 35--36
-\T1/cmr/m/n/12 ten-ti-ca-ción fun-cio-
+Underfull \hbox (badness 4913) in paragraph at lines 33--33
+\T1/cmr/m/n/12 tra co-rrec-ta-
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 35--36
-\T1/cmr/m/n/12 nan-do con to-kens
+Underfull \hbox (badness 2600) in paragraph at lines 36--36
+\T1/cmr/m/n/12 lis-ta com-ple-
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 38--39
-\T1/cmr/m/n/12 tua-li-za-ción exi-to-sa
+Underfull \hbox (badness 1264) in paragraph at lines 39--39
+\T1/cmr/m/n/12 ta-lla com-ple-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
-[]|\T1/cmr/m/n/12 F10. His-to-rial
+Underfull \hbox (badness 6859) in paragraph at lines 42--42
+[]|\T1/cmr/m/n/12 F10. Com-par-tir in-
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 41--41
-\T1/cmr/m/n/12 dos, con-sul-tar his-to-
+Underfull \hbox (badness 3525) in paragraph at lines 42--42
+[]|\T1/cmr/m/n/12 Pulsar el bo-tón de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
-[]|\T1/cmr/m/n/12 Lista cro-no-ló-gi-ca
+Underfull \hbox (badness 5924) in paragraph at lines 42--42
+\T1/cmr/m/n/12 nú de apps
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 41--42
-\T1/cmr/m/n/12 te con sin-cro-ni-za-
+Underfull \hbox (badness 7047) in paragraph at lines 42--42
+\T1/cmr/m/n/12 na-ti-vas pa-ra
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
-[]|\T1/cmr/m/n/12 F12. Es-ca-neo
+Underfull \hbox (badness 6380) in paragraph at lines 42--42
+\T1/cmr/m/n/12 com-par-tir la
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 47--47
-[]|\T1/cmr/m/n/12 Escanear có-di-go QR
+Underfull \hbox (badness 1817) in paragraph at lines 45--45
+\T1/cmr/m/n/12 vo usua-rio me-dian-te
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
-[]|\T1/cmr/m/n/12 Punto mar-ca-do
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+\T1/cmr/m/n/12 re-gis-tra co-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
-\T1/cmr/m/n/12 lu-gar co-rres-pon-
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+\T1/cmr/m/n/12 rrec-ta-men-te
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
-[]|\T1/cmr/m/n/12 F13. His-to-rial
+Underfull \hbox (badness 3579) in paragraph at lines 48--48
+[]|\T1/cmr/m/n/12 Introducir cre-den-cia-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-[]|[] \T1/cmr/m/n/12 His-to-rial de
+Underfull \hbox (badness 5924) in paragraph at lines 48--48
+\T1/cmr/m/n/12 men-te a su
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-\T1/cmr/m/n/12 ru-tas com-ple-ta-
+Underfull \hbox (badness 3690) in paragraph at lines 51--51
+\T1/cmr/m/n/12 ma-ne-ce ac-ti-
  []
 
 
-Underfull \hbox (badness 4279) in paragraph at lines 50--51
-\T1/cmr/m/n/12 das fun-cio-na con
+Underfull \hbox (badness 2644) in paragraph at lines 51--51
+\T1/cmr/m/n/12 a ini-ciar se-
  []
 
 
-Underfull \hbox (badness 1292) in paragraph at lines 50--51
-\T1/cmr/m/n/12 op-ción de re-ini-cio
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/cmr/m/n/12 guar-da co-
  []
 
 
-Underfull \hbox (badness 3977) in paragraph at lines 50--51
-\T1/cmr/m/n/12 y se-gui-mien-to de
+Underfull \hbox (badness 2035) in paragraph at lines 54--54
+\T1/cmr/m/n/12 se re-fle-ja en
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 53--54
-[]|[] \T1/cmr/m/n/12 Pa-nel de ad-
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/cmr/m/n/12 des-co-nec-ta-do
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 53--54
-\T1/cmr/m/n/12 das las ope-ra-cio-
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/cmr/m/n/12 pan-ta-lla de
  []
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 53--54
-\T1/cmr/m/n/12 nes CRUD im-ple-
+Underfull \hbox (badness 4120) in paragraph at lines 60--60
+[]|\T1/cmr/m/n/12 F16. Fil-trar lu-ga-res
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
-[]|\T1/cmr/m/n/12 F15. Ad-min
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]|\T1/cmr/m/n/12 Los re-sul-
  []
 
 
-Underfull \hbox (badness 5105) in paragraph at lines 56--56
-[]|\T1/cmr/m/n/12 Gestión de áreas
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+\T1/cmr/m/n/12 ta-dos se
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
-\T1/cmr/m/n/12 de in-ves-ti-ga-ción
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+\T1/cmr/m/n/12 ac-tua-li-zan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-\T1/cmr/m/n/12 de in-ves-ti-ga-ción
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+\T1/cmr/m/n/12 co-rrec-ta-men-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-\T1/cmr/m/n/12 fun-cio-na co-rrec-
+Underfull \hbox (badness 2189) in paragraph at lines 60--60
+\T1/cmr/m/n/12 te se-gún los
  []
 
 
-Underfull \hbox (badness 4279) in paragraph at lines 56--57
-\T1/cmr/m/n/12 ta-men-te des-de el
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+\T1/cmr/m/n/12 fil-tros se-lec-
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 56--57
-\T1/cmr/m/n/12 pa-nel de ad-mi-nis-
+Underfull \hbox (badness 2689) in paragraph at lines 60--61
+\T1/cmr/m/n/12 tua-li-za mos-tran-do so-lo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--59
-[]|\T1/cmr/m/n/12 F16. Con-trol
+Underfull \hbox (badness 1783) in paragraph at lines 63--63
+[]|\T1/cmr/m/n/12 Escribir tex-to en el
  []
 
 
-Underfull \hbox (badness 5161) in paragraph at lines 59--60
-[]|[] \T1/cmr/m/n/12 Ad-mi-nis-tra-ción
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
+[]|\T1/cmr/m/n/12 Los re-sul-ta-
  []
 
 
-Underfull \hbox (badness 5331) in paragraph at lines 59--60
-\T1/cmr/m/n/12 ti-va con au-ten-ti-
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
+\T1/cmr/m/n/12 en tiem-po
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 59--60
-\T1/cmr/m/n/12 tra-do-res y lis-ta-do
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
+\T1/cmr/m/n/12 tex-to in-tro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--62
-[]|\T1/cmr/m/n/12 Funcionalidad
+Underfull \hbox (badness 3471) in paragraph at lines 63--64
+[]|[] \T1/cmr/m/n/12 Al es-cri-bir, la lis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--62
-\T1/cmr/m/n/12 idén-ti-ca am-bas
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+[]|\T1/cmr/m/n/12 Los fil-tros
  []
 
 
-Underfull \hbox (badness 6063) in paragraph at lines 62--63
-\T1/cmr/m/n/12 cio-na de ma-ne-ra
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+\T1/cmr/m/n/12 apli-ca-dos se
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-\T1/cmr/m/n/12 idén-ti-ca en am-
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+\T1/cmr/m/n/12 man-tie-nen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-\T1/cmr/m/n/12 bas pla-ta-for-mas
+Underfull \hbox (badness 1655) in paragraph at lines 66--66
+\T1/cmr/m/n/12 en to-das las
  []
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 62--63
-\T1/cmr/m/n/12 con React Na-ti-ve
+Underfull \hbox (badness 1210) in paragraph at lines 69--69
+\T1/cmr/m/n/12 lis-ta cro-no-ló-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-\T1/cmr/m/n/12 pro-por-cio-nan-do
+Underfull \hbox (badness 6708) in paragraph at lines 69--69
+\T1/cmr/m/n/12 res vi-si-ta-dos
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-\T1/cmr/m/n/12 com-pa-ti-bi-li-dad
+Underfull \hbox (badness 3977) in paragraph at lines 69--69
+\T1/cmr/m/n/12 con fe-cha y
  []
 
-[157] [158] [159]
 
-[160]
-<figs/sus_p1.jpg, id=3031, 535.2497pt x 167.87718pt>
+Underfull \hbox (badness 5548) in paragraph at lines 72--72
+\T1/cmr/m/n/12 lis-ta de ru-
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 75--75
+[]|\T1/cmr/m/n/12 Acceder al pa-nel de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
+[]|\T1/cmr/m/n/12 El ad-mi-nis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
+\T1/cmr/m/n/12 co-rrec-ta-men-
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 75--76
+\T1/cmr/m/n/12 den-cia-les, se ac-ce-de al
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 78--78
+\T1/cmr/m/n/12 gu-ras his-tó-ri-cas con
+ []
+
+
+Underfull \hbox (badness 2134) in paragraph at lines 78--78
+[]|\T1/cmr/m/n/12 La fi-gu-ra se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/cmr/m/n/12 ta-men-te y
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 81--81
+\T1/cmr/m/n/12 se guar-da y
+ []
+
+
+Underfull \hbox (badness 6461) in paragraph at lines 84--84
+[]|\T1/cmr/m/n/12 Los ar-chi-vos
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 84--84
+\T1/cmr/m/n/12 mues-tran co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+\T1/cmr/m/n/12 rrec-ta-men-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]|\T1/cmr/m/n/12 Modificar o bo-rrar
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 87--87
+\T1/cmr/m/n/12 una fi-gu-ra o pun-to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]|\T1/cmr/m/n/12 Los cam-bios
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+\T1/cmr/m/n/12 rrec-ta-men-te
+ []
+
+
+Underfull \hbox (badness 2600) in paragraph at lines 90--90
+\T1/cmr/m/n/12 lis-ta com-ple-
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 93--93
+[]|\T1/cmr/m/n/12 F27. Eli-mi-nar usua-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--93
+\T1/cmr/m/n/12 rrec-ta-men-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+[]|\T1/cmr/m/n/12 La in-ter-faz
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/cmr/m/n/12 rrec-ta-men-te
+ []
+
+
+Underfull \hbox (badness 6625) in paragraph at lines 96--96
+\T1/cmr/m/n/12 a to-dos los
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/cmr/m/n/12 ta-ma-ños de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]|\T1/cmr/m/n/12 La na-ve-ga-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\T1/cmr/m/n/12 in-tui-ti-va y
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 102--102
+\T1/cmr/m/n/12 flui-do y sin erro-res
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+[]|\T1/cmr/m/n/12 La app
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+\T1/cmr/m/n/12 fun-cio-na co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+\T1/cmr/m/n/12 rrec-ta-men-te
+ []
+
+
+Underfull \hbox (badness 3803) in paragraph at lines 105--105
+\T1/cmr/m/n/12 ru-tas te-má-ti-cas con
+ []
+
+
+Underfull \hbox (badness 5548) in paragraph at lines 105--105
+\T1/cmr/m/n/12 lis-ta de ru-
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 105--105
+\T1/cmr/m/n/12 con sus des-
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 105--106
+\T1/cmr/m/n/12 ru-tas dis-po-ni-bles, ca-da
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\T1/cmr/m/n/12 F32. Con-sul-tar los
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\T1/cmr/m/n/12 pun-tos que for-man
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 108--108
+[]|\T1/cmr/m/n/12 Se mues-tran
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\T1/cmr/m/n/12 co-rrec-ta-men-
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 111--111
+[]|\T1/cmr/m/n/12 El pun-to se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\T1/cmr/m/n/12 mar-ca co-mo
+ []
+
+
+Underfull \hbox (badness 5331) in paragraph at lines 111--111
+\T1/cmr/m/n/12 vi-si-ta-do so-lo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\T1/cmr/m/n/12 con el QR
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
+[]|\T1/cmr/m/n/12 El pro-gre-so
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
+\T1/cmr/m/n/12 re-ini-cia co-
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 117--117
+\T1/cmr/m/n/12 tos con RA
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 117--118
+[]|[] \T1/cmr/m/n/12 La sec-ción de RA
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 120--120
+[]|\T1/cmr/m/n/12 F36. Mos-trar úni-ca-
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 120--120
+\T1/cmr/m/n/12 RA des-de di-fe-ren-tes
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 120--120
+\T1/cmr/m/n/12 tos con RA
+ []
+
+
+Underfull \hbox (badness 7203) in paragraph at lines 123--123
+[]|\T1/cmr/m/n/12 F37. Al se-lec-cio-nar
+ []
+
+
+Underfull \hbox (badness 2469) in paragraph at lines 123--123
+\T1/cmr/m/n/12 ga el mo-de-
+ []
+
+
+Overfull \hbox (21.54718pt too wide) in alignment at lines 13--126
+ [] [] [] [] 
+ []
+
+[157] [158] [159] [160]
+
+[161]
+<figs/usuario.jpg, id=3080, 3035.34pt x 4047.12pt>
+File: figs/usuario.jpg Graphic file (type jpg)
+<use figs/usuario.jpg>
+Package pdftex.def Info: figs/usuario.jpg  used on input line 156.
+(pdftex.def)             Requested size: 223.07211pt x 297.40726pt.
+<figs/usuario3.jpg, id=3081, 728.4816pt x 971.3088pt>
+File: figs/usuario3.jpg Graphic file (type jpg)
+<use figs/usuario3.jpg>
+Package pdftex.def Info: figs/usuario3.jpg  used on input line 161.
+(pdftex.def)             Requested size: 223.07211pt x 297.42702pt.
+
+
+[162 <./figs/usuario.jpg> <./figs/usuario3.jpg>]
+<figs/sus_p1.jpg, id=3087, 535.2497pt x 167.87718pt>
 File: figs/sus_p1.jpg Graphic file (type jpg)
 <use figs/sus_p1.jpg>
-Package pdftex.def Info: figs/sus_p1.jpg  used on input line 159.
+Package pdftex.def Info: figs/sus_p1.jpg  used on input line 232.
 (pdftex.def)             Requested size: 318.66948pt x 99.95348pt.
 
 
-[161]
-<figs/sus_p2.jpg, id=3036, 536.0025pt x 167.12437pt>
+[163]
+<figs/sus_p2.jpg, id=3093, 536.0025pt x 167.12437pt>
 File: figs/sus_p2.jpg Graphic file (type jpg)
 <use figs/sus_p2.jpg>
-Package pdftex.def Info: figs/sus_p2.jpg  used on input line 167.
+Package pdftex.def Info: figs/sus_p2.jpg  used on input line 240.
 (pdftex.def)             Requested size: 318.66948pt x 99.3599pt.
-<figs/sus_p3.jpg, id=3037, 536.75531pt x 170.88844pt>
+<figs/sus_p3.jpg, id=3094, 536.75531pt x 170.88844pt>
 File: figs/sus_p3.jpg Graphic file (type jpg)
 <use figs/sus_p3.jpg>
-Package pdftex.def Info: figs/sus_p3.jpg  used on input line 175.
+Package pdftex.def Info: figs/sus_p3.jpg  used on input line 248.
 (pdftex.def)             Requested size: 318.66948pt x 101.45432pt.
-<figs/sus_p4.jpg, id=3038, 534.49687pt x 168.63pt>
+<figs/sus_p4.jpg, id=3095, 534.49687pt x 168.63pt>
 File: figs/sus_p4.jpg Graphic file (type jpg)
 <use figs/sus_p4.jpg>
-Package pdftex.def Info: figs/sus_p4.jpg  used on input line 183.
+Package pdftex.def Info: figs/sus_p4.jpg  used on input line 256.
 (pdftex.def)             Requested size: 318.66948pt x 100.54065pt.
-<figs/sus_p5.jpg, id=3039, 534.49687pt x 167.87718pt>
+<figs/sus_p5.jpg, id=3096, 534.49687pt x 167.87718pt>
 File: figs/sus_p5.jpg Graphic file (type jpg)
 <use figs/sus_p5.jpg>
-Package pdftex.def Info: figs/sus_p5.jpg  used on input line 191.
+Package pdftex.def Info: figs/sus_p5.jpg  used on input line 264.
 (pdftex.def)             Requested size: 318.66948pt x 100.0918pt.
 
 
-[162 <./figs/sus_p1.jpg> <./figs/sus_p2.jpg> <./figs/sus_p3.jpg> <./figs/sus_p4.jpg>]
-<figs/sus_p6.jpg, id=3044, 533.74406pt x 170.88844pt>
+[164 <./figs/sus_p1.jpg> <./figs/sus_p2.jpg> <./figs/sus_p3.jpg> <./figs/sus_p4.jpg>]
+<figs/sus_p6.jpg, id=3101, 533.74406pt x 170.88844pt>
 File: figs/sus_p6.jpg Graphic file (type jpg)
 <use figs/sus_p6.jpg>
-Package pdftex.def Info: figs/sus_p6.jpg  used on input line 199.
+Package pdftex.def Info: figs/sus_p6.jpg  used on input line 272.
 (pdftex.def)             Requested size: 318.66948pt x 102.0306pt.
-<figs/sus_p7.jpg, id=3045, 533.74406pt x 170.88844pt>
+<figs/sus_p7.jpg, id=3102, 533.74406pt x 170.88844pt>
 File: figs/sus_p7.jpg Graphic file (type jpg)
 <use figs/sus_p7.jpg>
-Package pdftex.def Info: figs/sus_p7.jpg  used on input line 207.
+Package pdftex.def Info: figs/sus_p7.jpg  used on input line 280.
 (pdftex.def)             Requested size: 318.66948pt x 102.0306pt.
-<figs/sus_p8.jpg, id=3046, 533.74406pt x 168.63pt>
+<figs/sus_p8.jpg, id=3103, 533.74406pt x 168.63pt>
 File: figs/sus_p8.jpg Graphic file (type jpg)
 <use figs/sus_p8.jpg>
-Package pdftex.def Info: figs/sus_p8.jpg  used on input line 215.
+Package pdftex.def Info: figs/sus_p8.jpg  used on input line 288.
 (pdftex.def)             Requested size: 318.66948pt x 100.68216pt.
-<figs/sus_p9.jpg, id=3047, 535.2497pt x 167.87718pt>
+<figs/sus_p9.jpg, id=3104, 535.2497pt x 167.87718pt>
 File: figs/sus_p9.jpg Graphic file (type jpg)
 <use figs/sus_p9.jpg>
-Package pdftex.def Info: figs/sus_p9.jpg  used on input line 223.
+Package pdftex.def Info: figs/sus_p9.jpg  used on input line 296.
 (pdftex.def)             Requested size: 318.66948pt x 99.95348pt.
 
 
-[163 <./figs/sus_p5.jpg> <./figs/sus_p6.jpg> <./figs/sus_p7.jpg> <./figs/sus_p8.jpg>]
-<figs/sus_p10.jpg, id=3053, 536.0025pt x 170.13562pt>
+[165 <./figs/sus_p5.jpg> <./figs/sus_p6.jpg> <./figs/sus_p7.jpg> <./figs/sus_p8.jpg>]
+<figs/sus_p10.jpg, id=3109, 536.0025pt x 170.13562pt>
 File: figs/sus_p10.jpg Graphic file (type jpg)
 <use figs/sus_p10.jpg>
-Package pdftex.def Info: figs/sus_p10.jpg  used on input line 231.
+Package pdftex.def Info: figs/sus_p10.jpg  used on input line 304.
 (pdftex.def)             Requested size: 318.66948pt x 101.15016pt.
 
-
-[164 <./figs/sus_p9.jpg> <./figs/sus_p10.jpg>]
-Package pgfplots info on input line 291: Using 'lua backend=false' for axis: x coord trafo unsupported.
-Package pgfplots info on input line 313: Using 'lua backend=false' for axis: x coord trafo unsupported.
-
-
-[165]
-Underfull \vbox (badness 2005) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[166]
-Overfull \hbox (48.96793pt too wide) in paragraph at lines 413--414
- [][] 
- []
+[166 <./figs/sus_p9.jpg> <./figs/sus_p10.jpg>]
+Package pgfplots info on input line 366: Using 'lua backend=false' for axis: x coord trafo unsupported.
+Package pgfplots info on input line 389: Using 'lua backend=false' for axis: x coord trafo unsupported.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [167]
 
-[168])
+[168]
+Underfull \hbox (badness 2158) in paragraph at lines 473--474
+[]|\T1/cmr/m/n/12 Wi-Fi 802.11ax, Blue-tooth
+ []
+
+
 
 [169]
 
-[170
+[170]
+Package pgfplots info on input line 578: Using 'lua backend=false' for axis: x coord trafo unsupported.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[171]
+Package pgfplots info on input line 608: Using 'lua backend=false' for axis: x coord trafo unsupported.
+Package pgfplots info on input line 637: Using 'lua backend=false' for axis: x coord trafo unsupported.
+
+
+[172]
+
+[173]
+<figs/performance_monitor.jpg, id=3163, 831.105pt x 1798.72pt>
+File: figs/performance_monitor.jpg Graphic file (type jpg)
+<use figs/performance_monitor.jpg>
+Package pdftex.def Info: figs/performance_monitor.jpg  used on input line 675.
+(pdftex.def)             Requested size: 227.62206pt x 492.63223pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[174 <./figs/performance_monitor.jpg>]
+<figs/captura_logs.jpg, id=3171, 741.77126pt x 1606.0pt>
+File: figs/captura_logs.jpg Graphic file (type jpg)
+<use figs/captura_logs.jpg>
+Package pdftex.def Info: figs/captura_logs.jpg  used on input line 689.
+(pdftex.def)             Requested size: 182.09486pt x 394.24538pt.
+
+
+[175 <./figs/captura_logs.jpg>]
+
+[176])
+
+[177]
+
+[178
 
 ]
 Cap\'{\i }tulo 8.
@@ -2484,7 +2808,7 @@ Missing character: There is no ¿ in font cmr12!
 Missing character: There is no ¿ in font cmr12!
 
 
-[171]
+[179]
 
 LaTeX Warning: Command \texteuro invalid in math mode on input line 41.
 
@@ -2523,28 +2847,28 @@ Missing character: There is no ¿ in font cmr12!
 Package pgfplots info on input line 73: Using 'lua backend=false' for axis: x coord trafo unsupported.
 
 
-[172]
+[180]
 
-[173]
+[181]
 
-[174])
+[182])
 
-[175]
+[183]
 
-[176
+[184
 
 ]
 Ap\'{e}ndice A.
 (tex/apendice.tex
 
-LaTeX Warning: Reference `fig:diagrama' on page 177 undefined on input line 52.
+LaTeX Warning: Reference `fig:diagrama' on page 185 undefined on input line 52.
 
 
 Overfull \hbox (36.36346pt too wide) in paragraph at lines 52--53
 []\T1/cmr/m/n/12 En la fi-gu-ra [] se mues-tra un dia-gra-ma rea-li-za-do con [][]https://www.yworks.com/products/yed[][]: 
  []
 
-<figs/diagrama.pdf, id=3129, 420.57124pt x 221.82875pt>
+<figs/diagrama.pdf, id=3247, 420.57124pt x 221.82875pt>
 File: figs/diagrama.pdf Graphic file (type pdf)
 <use figs/diagrama.pdf>
 Package pdftex.def Info: figs/diagrama.pdf  used on input line 57.
@@ -2555,49 +2879,61 @@ Package pdftex.def Info: figs/diagrama.pdf  used on input line 57.
 (pdftex.def)             Requested size: 182.09486pt x 96.04453pt.
 
 
-[177]) (ejemplo-memoria.bbl
+[185]) (ejemplo-memoria.bbl
 
-[178 <./figs/diagrama.pdf>]
+[186 <./figs/diagrama.pdf>]
 
-[179
+[187
 
 ]
 
-[180]
+[188]
 
-[181]
-Underfull \hbox (badness 10000) in paragraph at lines 326--332
+[189]
+Underfull \hbox (badness 10000) in paragraph at lines 334--340
 []\T1/cmr/m/n/12 Glassdoor.  Suel-do de je-fe de pro-yec-to.  [][]$\T1/cmr/m/n/8 https : / / www . glassdoor . es / Sueldos /
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 334--340
+Underfull \hbox (badness 1448) in paragraph at lines 342--348
 []\T1/cmr/m/n/12 Glassdoor.  Suel-do de de-sa-rro-lla-dor react na-ti-ve.  [][]$\T1/cmr/m/n/8 https : / / www . glassdoor . es / Sueldos /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--363
+Underfull \hbox (badness 10000) in paragraph at lines 365--371
 []\T1/cmr/m/n/12 Glassdoor.  Suel-do de mo-de-la-dor 3d.  [][]$\T1/cmr/m/n/8 https : / / www . glassdoor . es / Sueldos /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--371
+Underfull \hbox (badness 10000) in paragraph at lines 373--379
 []\T1/cmr/m/n/12 Glassdoor.  Suel-do de di-se-ña-dor grá-fi-co.  [][]$\T1/cmr/m/n/8 https : / / www . glassdoor . es / Sueldos /
  []
 
 
-Underfull \hbox (badness 7081) in paragraph at lines 389--395
+Underfull \hbox (badness 7081) in paragraph at lines 397--403
 []\T1/cmr/m/n/12 Kira Co-chra-ne.  Why pur-ple is the co-lour of in-ter-na-tio-nal wo-men's
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--395
+Underfull \hbox (badness 10000) in paragraph at lines 397--403
 \T1/cmr/m/n/12 day.  [][]$\T1/cmr/m/n/8 https : / / www . theguardian . com / lifeandstyle / the-[]womens-[]blog-[]with-[]jane-[]martinson / 2013 / mar / 08 /
  []
 
-)
 
-[182] (ejemplo-memoria.aux
+Underfull \hbox (badness 10000) in paragraph at lines 448--453
+[]\T1/cmr/m/n/12 Asus rog strix g15 g513ic-hn004 amd ry-zen 7
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--453
+\T1/cmr/m/n/12 4800h/16gb/512gb ss-d/rtx 3050/15.6".  [][]$\T1/cmr/m/n/8 https : / / www . pccomponentes . com /
+ []
+
+
+
+[190])
+
+[191] (ejemplo-memoria.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -2610,20 +2946,20 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `ejemplo-memoria.out' has not changed.
-(rerunfilecheck)             Checksum: A64445D6B94F1C89CB746EA7F8CF7C43;54165.
+(rerunfilecheck)             Checksum: F23E0059BCC9606EFBD0A17517915B3B;54557.
  ) 
 Here is how much of TeX's memory you used:
- 44073 strings out of 473523
- 980307 string characters out of 5714631
- 1937811 words of memory out of 5000000
- 65113 multiletter control sequences out of 15000+600000
- 591903 words of font info for 113 fonts, out of 8000000 for 9000
+ 44266 strings out of 473523
+ 984063 string characters out of 5714631
+ 1939606 words of memory out of 5000000
+ 65251 multiletter control sequences out of 15000+600000
+ 590364 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,19n,105p,2013b,2395s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecit1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2074.pk><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ejemplo-memoria.pdf (182 pages, 9232875 bytes).
+ 99i,19n,105p,2013b,2393s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecit1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\isiva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2074.pk><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/isiva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on ejemplo-memoria.pdf (191 pages, 15756571 bytes).
 PDF statistics:
- 4639 PDF objects out of 5155 (max. 8388607)
- 1437 named destinations out of 1440 (max. 500000)
- 1921 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4777 PDF objects out of 5155 (max. 8388607)
+ 1494 named destinations out of 1728 (max. 500000)
+ 1946 words of extra memory for PDF output out of 10000 (max. 10000000)
 

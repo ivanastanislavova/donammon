@@ -322,6 +322,14 @@ Django~Software Foundation.
 Apache~Software Foundation.
 \newblock Apache cassandra documentation, 2023.
 
+\bibitem{viafirmaHaversine}
+{Viafirma}.
+\newblock Implementación de la fórmula haversine en java.
+\newblock
+  \url{https://www.viafirma.com/es/implementacion-de-la-formula-haversine-en-java/},
+  2022.
+\newblock Consultado en 2025.
+
 \bibitem{glassdoorJefeProyecto}
 {Glassdoor}.
 \newblock Sueldo de jefe de proyecto.
@@ -407,6 +415,18 @@ Leatrice Eiseman.
   Colors}.
 \newblock Capital Books, 2000.
 
+\bibitem{canva}
+{Canva Pty Ltd}.
+\newblock Canva: Herramienta de diseño gráfico online.
+\newblock \url{https://www.canva.com/}, 2025.
+\newblock Consultado en 2025.
+
+\bibitem{milewski2018_stackoverflow_utf8_aframe}
+Piotr~Adam Milewski.
+\newblock Display utf8 text with accents in aframe like á í ñ, 2018.
+\newblock Stack Overflow answer (mar 14, 2018).
+  \url{https://stackoverflow.com/questions/49276815/display-utf8-text-with-accents-in-aframe-like-%C3%A1-%C3%AD-%C3%B1}.
+
 \bibitem{aframe_models}
 {A-Frame}.
 \newblock A-frame documentation: Models.
@@ -424,10 +444,28 @@ John Brooke.
 \newblock Sus: A 'quick and dirty' usability scale.
 \newblock {\em Usability Evaluation in Industry}, pages 189--194, 1996.
 
+\bibitem{asus_rog_strix}
+Asus rog strix g15 g513ic-hn004 amd ryzen 7 4800h/16gb/512gb ssd/rtx
+  3050/15.6".
+\newblock
+  \url{https://www.pccomponentes.com/asus-rog-strix-g15-g513ic-hn004-amd-ryzen-7-4800h-16gb-512gb-ssd-rtx-3050-156}.
+\newblock Accedido: 19/07/2025.
+
+\bibitem{iphone_11_specs}
+iphone 11 - especificaciones técnicas.
+\newblock \url{https://support.apple.com/es-es/111865}.
+\newblock Accedido: 19/07/2025.
+
 \bibitem{apache_jmeter}
 {The Apache Software Foundation}.
 \newblock Apache jmeter, 2025.
 \newblock Accedido: 2025-01-14.
+
+\bibitem{eruda}
+Jiajian Liri.
+\newblock Eruda: Console for mobile browsers.
+\newblock \url{https://github.com/liriliri/eruda}, 2015.
+\newblock Versión consultada en 2025.
 
 \bibitem{notsoshort}
 Tobias Oetiker.

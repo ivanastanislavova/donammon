@@ -1001,7 +1001,7 @@ const compartirLugar = async () => {
 
 El archivo \texttt{Mapa.js} utiliza \texttt{react-native-maps} para mostrar todos los lugares en un mapa, con iconos personalizados y colores según el estado de visita. Permite filtrar lugares y ver detalles al pulsar sobre un marcador.
 
-La aplicación implementa cálculos de distancia precisos mediante la \texttt{fórmula de Haversine}, que permite determinar la distancia entre la ubicación del usuario y cada lugar en la superficie terrestre:
+La aplicación implementa cálculos de distancia precisos mediante la \texttt{fórmula de Haversine}\cite{viafirmaHaversine}, que permite determinar la distancia entre la ubicación del usuario y cada lugar en la superficie terrestre:
 
 \begin{lstlisting}[language=Python, caption={Cálculo de distancia con fórmula de Haversine}]
 const getDistance = (lat1, lon1, lat2, lon2) => {
@@ -1270,6 +1270,7 @@ lupa.glb                     # Modelo 3D secundario (símbolo de Venus)
 mujer.glb                    # Modelo 3D principal (personaje histórico)
 carmen_audio.mp3             # Audio narrativo específico
 musica_de_fondo_suave.mp3    # Música ambiental
+Roboto-Regular.ttf         # Fuente tipográfica utilizada
 \end{lstlisting}
 
 Cada experiencia AR se aloja en una URL única, por ejemplo: \texttt{https://ivam.vercel.app/}. Esta URL se asocia a un lugar específico en la base de datos del backend, como hemos mencionado anteriormente.
@@ -1560,6 +1561,36 @@ Cada experiencia AR se despliega independientemente en Vercel, proporcionando:
 
 
 Esta implementación de realidad aumentada proporciona experiencias inmersivas y educativas que conectan a los usuarios con la historia local de manera innovadora, utilizando tecnologías web estándar para maximizar la accesibilidad y el alcance de la aplicación.
+
+\subsection{Gestión de la tipografía en textos 3D}
+
+Durante la implementación de los elementos textuales en la escena 3D, se identificó una limitación en el componente nativo \texttt{<a-text>} de A-Frame, el cual no soporta caracteres extendidos como acentos o la letra “ñ” debido a que utiliza fuentes basadas en texturas MSDF con un conjunto restringido de caracteres. Esta restricción impedía mostrar correctamente textos en castellano, incluso cuando la codificación del documento se establecía en UTF-8 \cite{milewski2018_stackoverflow_utf8_aframe}. 
+
+Para solventar este problema, se incorporó el componente \texttt{aframe-troika-text}, que permite renderizar tipografía en tiempo real a partir de fuentes en formatos estándar (TTF o WOFF) y ofrece soporte completo para caracteres Unicode. Esto se consigue añadiendo la librería mediante la siguiente instrucción en el documento HTML:
+
+\begin{lstlisting}[language=HTML, caption={Inclusión del componente aframe-troika-text.}]
+<script src="https://unpkg.com/aframe-troika-text/dist/aframe-troika-text.min.js"></script>
+\end{lstlisting}
+
+Posteriormente, se definió un panel informativo en la escena con un elemento \texttt{<a-entity>} que emplea el componente \texttt{troika-text}, configurando propiedades como el texto, la fuente personalizada (en este caso, \textit{Roboto} en formato TTF), el color, el tamaño y el ancho máximo. El siguiente fragmento de código muestra la implementación:
+
+\begin{lstlisting}[language=HTML, caption={Uso de aframe-troika-text para mostrar texto con acentos.}]
+<!-- Panel informativo -->
+<a-entity id="infoPanel" geometry="primitive: plane; height: 1; width: 2"
+  material="color: #f8d4e6; opacity: 0.8" position="0 -0.036 -3.99313"
+  visible="false" troika-text="
+    value: Su compromiso con la igualdad y la cultura la llevó a dirigir el Instituto Valenciano de Arte Moderno (IVAM) entre 1988 y 1993;
+    font: ./fonts/Roboto-Regular.ttf;
+    color: #33C3F0;
+    fontSize: 0.13;
+    maxWidth: 1.8;
+    align: left
+" position="-0.8571 0.046 0.08175">
+</a-entity>
+\end{lstlisting}
+
+Gracias a esta solución, se logró una visualización correcta y estilizada de los textos en español dentro de la experiencia de realidad aumentada.
+
 
 
 \subsection{Formato y optimización de modelos 3D}
