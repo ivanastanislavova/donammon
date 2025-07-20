@@ -453,7 +453,7 @@ class VisitedLugarView(APIView):
 
 \subsection{Administración y gestión de datos}
 
-Django proporciona una interfaz de administración (\textit{Django Admin}) que ha sido personalizada para facilitar la gestión de los modelos principales de la aplicación. En el archivo \texttt{admin.py} de la app \texttt{mujeres}, se han registrado los modelos y se han configurado opciones de visualización y filtrado para mejorar la experiencia de los administradores:
+Django proporciona una interfaz de administración (\textit{Django Admin}) que ha sido personalizada para facilitar la gestión de los modelos principales de la aplicación (véase la figura \ref{fig:django-admin-mujeres-list}). En el archivo \texttt{admin.py} de la app \texttt{mujeres}, se han registrado los modelos y se han configurado opciones de visualización y filtrado para mejorar la experiencia de los administradores:
 
 \begin{lstlisting}[language=Python, caption={Configuración personalizada de Django Admin}]
 from django.contrib import admin
@@ -480,6 +480,9 @@ admin.site.register(Ruta, RutaAdmin)
 admin.site.register(AreaInvestigacion)
 \end{lstlisting}
 
+
+La interfaz de listado muestra los campos configurados en \texttt{list\_display} y proporciona funcionalidades de búsqueda basadas en los campos especificados en \texttt{search\_fields}. La paginación automática mejora el rendimiento cuando se gestiona un gran volumen de registros.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{figs/django-admin-mujeres-list.jpg}
@@ -487,7 +490,9 @@ admin.site.register(AreaInvestigacion)
     \label{fig:django-admin-mujeres-list}
 \end{figure}
 
-La interfaz de listado muestra los campos configurados en \texttt{list\_display} y proporciona funcionalidades de búsqueda basadas en los campos especificados en \texttt{search\_fields}. La paginación automática mejora el rendimiento cuando se gestiona un gran volumen de registros.
+
+
+El formulario de edición individual presenta una interfaz optimizada para la gestión de relaciones complejas. La configuración \texttt{filter\_horizontal} en el campo \texttt{areas\-\_\-investigacion} proporciona un widget de selección múltiple que facilita la asignación de áreas de investigación a cada mujer, permitiendo búsquedas y selecciones eficientes en relaciones \texttt{ManyToManyField} como se muestra en la figura \ref{fig:django-admin-mujer-edit}:
 
 \begin{figure}[H]
     \centering
@@ -497,9 +502,6 @@ La interfaz de listado muestra los campos configurados en \texttt{list\_display}
 \end{figure}
 
 
-
-El formulario de edición individual presenta una interfaz optimizada para la gestión de relaciones complejas. La configuración \texttt{filter\_horizontal} en el campo \texttt{areas\-\_\-investigacion} proporciona un widget de selección múltiple que facilita la asignación de áreas de investigación a cada mujer, permitiendo búsquedas y selecciones eficientes en relaciones \texttt{ManyToManyField}.
-
 \subsection{Cambio de contraseña del usuario administrador de Django}
 
 
@@ -508,14 +510,6 @@ Si se olvida la contraseña del usuario administrador o es necesario restablecer
 
 \begin{lstlisting}[language=bash, caption={Cambio de contraseña del usuario administrador en Docker}]
 # Acceder al contenedor donde corre Django (normalmente llamado 'web')
-docker compose exec web python manage.py changepassword <nombre_usuario>
-\end{lstlisting}
-
-
-Por ejemplo, para el usuario \texttt{ivana}:
-
-
-\begin{lstlisting}[language=bash]
 docker compose exec web python manage.py changepassword ivana
 \end{lstlisting}
 
@@ -755,25 +749,6 @@ TIME_ZONE = 'Europe/Madrid'
 USE_I18N = True
 USE_TZ = True
 \end{lstlisting}
-
-\subsection{Gestión de archivos estáticos}
-
-Para servir archivos estáticos (CSS, JS, imágenes no subidas por usuarios), se ha configurado la ruta correspondiente en \texttt{settings.py}:
-
-\begin{lstlisting}[language=Python, caption={Archivos estáticos en settings.py}]
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-\end{lstlisting}
-
-Durante el despliegue, se puede ejecutar el comando \texttt{python manage.py collectstatic} para recopilar todos los archivos estáticos en la carpeta definida.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{figs/back.jpg}
-    \caption{Recopilación de archivos estáticos con \texttt{collectstatic} en Django}
-\end{figure}
-
-
 
 
 
@@ -1250,7 +1225,7 @@ Las principales tecnologías utilizadas son:
     \item \textbf{A-Frame 1.7.0} - Framework web para realidad virtual y aumentada
     \item \textbf{AR.js} - Librería JavaScript que añade capacidades de realidad aumentada a A‑Frame 
     \item \textbf{WebGL} - Para renderizado 3D en tiempo real
-    \item \textbf{WebRTC} - Para acceso a la cámara del dispositivo
+    \item \textbf{Troika Text} - Renderizado avanzado de texto 3D en WebGL para A-Frame
     \item \textbf{Vercel} - Plataforma de hosting para despliegue de experiencias AR
     \item \textbf{GLB} - Formato de modelos 3D optimizados para web
     \item \textbf{MP3} - Audio inmersivo y música ambiental
@@ -1264,13 +1239,13 @@ La estructura típica de una experiencia AR es:
 
 \begin{lstlisting}[language=bash, caption={Estructura de una experiencia AR}]
 experiencia-ar/
-index.html                    # Aplicación principal AR
-mundo.glb                    # Modelo 3D del logo (tierra interactiva)
-lupa.glb                     # Modelo 3D secundario (símbolo de Venus)
-mujer.glb                    # Modelo 3D principal (personaje histórico)
-carmen_audio.mp3             # Audio narrativo específico
-musica_de_fondo_suave.mp3    # Música ambiental
-Roboto-Regular.ttf         # Fuente tipográfica utilizada
+    index.html                    # Aplicación principal AR
+    mundo.glb                    # Modelo 3D del logo (tierra interactiva)
+    lupa.glb                     # Modelo 3D secundario (símbolo de Venus)
+    mujer.glb                    # Modelo 3D principal (personaje histórico)
+    carmen_audio.mp3             # Audio narrativo específico
+    musica_de_fondo_suave.mp3    # Música ambiental
+    Roboto-Regular.ttf         # Fuente tipográfica utilizada
 \end{lstlisting}
 
 Cada experiencia AR se aloja en una URL única, por ejemplo: \texttt{https://ivam.vercel.app/}. Esta URL se asocia a un lugar específico en la base de datos del backend, como hemos mencionado anteriormente.
@@ -1305,11 +1280,38 @@ La experiencia AR comienza mostrando un logo interactivo compuesto por dos eleme
 
 Al hacer click en cualquiera de los dos elementos, se inicia una secuencia de animación que hace desaparecer el logo mediante una reducción de escala, dando paso al personaje histórico principal.
 
+
+\subsubsection{Renderizado del personaje principal}
+
+El modelo 3D del personaje histórico utiliza un conjunto de animaciones simultáneas para crear una experiencia inmersiva y natural:
+
+\begin{lstlisting}[language=HTML, caption={Configuración del modelo principal}]
+<!-- Personaje histórico -->
+<a-entity id="mujerModel" gltf-model="mujer.glb" mujer-click-handler
+          look-at="target: camera" position="0 1.75 -8"
+          scale="0 0 0" visible="false" material="transparent: true; opacity: 0"
+          animation__visible="property: visible; to: true; startEvents: makeVisible"
+          animation__show="property: scale; to: 1 1 1; startEvents: showMujer; dur: 1500"
+          animation__move="property: position; to: 0 1.75 -5.5; startEvents: showMujer; dur: 1500"
+          animation__opacity="property: components.material.material.opacity; to: 1; startEvents: showMujer; dur: 1500"
+          animation__spin="property: rotation; to: 0 360 0; dur: 17000; easing: linear; loop: true">
+</a-entity>
+\end{lstlisting}
+
+La secuencia de aparición incluye:
+\begin{itemize}
+    \item \textbf{Aparición gradual}: Transición de invisible a visible mediante escalado y ajuste de opacidad (1.5 segundos)
+    \item \textbf{Movimiento espacial}: Acercamiento desde la posición inicial hacia el usuario
+    \item \textbf{Rotación continua}: Giro lento que permite observar el modelo desde todos los ángulos (17 segundos por vuelta)
+    \item \textbf{Look-at dinámico}: Orientación automática hacia la cámara del usuario
+\end{itemize}
+
+
 \subsubsection{Sistema de transiciones y coordinación temporal}
 
 La transición entre la interfaz inicial y el contenido principal se gestiona mediante un sistema de eventos personalizado que coordina múltiples animaciones de forma secuencial:
 
-\begin{lstlisting}[language=, caption={Gestor de transiciones AR}]
+\begin{lstlisting}[language=HTML, caption={Gestor de transiciones AR}]
 AFRAME.registerComponent('logo-click-handler', {
   init: function () {
     this.el.addEventListener('click', function () {
@@ -1344,88 +1346,12 @@ AFRAME.registerComponent('logo-click-handler', {
 });
 \end{lstlisting}
 
-Este sistema implementa una \textbf{temporización precisa} que controla cada fase de la experiencia, asegurando transiciones fluidas entre estados. La \textbf{gestión de audio inteligente} reduce automáticamente el volumen de la música ambiental durante las narraciones, restaurándolo progresivamente al finalizar.
+Este sistema implementa una \textbf{temporización precisa} que controla cada fase de la experiencia, asegurando transiciones fluidas entre estados. 
 
-\subsubsection{Renderizado del personaje principal}
-
-El modelo 3D del personaje histórico utiliza un conjunto de animaciones simultáneas para crear una experiencia inmersiva y natural:
-
-\begin{lstlisting}[language=HTML, caption={Configuración del modelo principal}]
-<!-- Personaje histórico -->
-<a-entity id="mujerModel" gltf-model="mujer.glb" mujer-click-handler
-          look-at="target: camera" position="0 1.75 -8"
-          scale="0 0 0" visible="false" material="transparent: true; opacity: 0"
-          animation__visible="property: visible; to: true; startEvents: makeVisible"
-          animation__show="property: scale; to: 1 1 1; startEvents: showMujer; dur: 1500"
-          animation__move="property: position; to: 0 1.75 -5.5; startEvents: showMujer; dur: 1500"
-          animation__opacity="property: components.material.material.opacity; to: 1; startEvents: showMujer; dur: 1500"
-          animation__spin="property: rotation; to: 0 360 0; dur: 17000; easing: linear; loop: true">
-</a-entity>
-\end{lstlisting}
-
-La secuencia de aparición incluye:
-\begin{itemize}
-    \item \textbf{Aparición gradual}: Transición de invisible a visible mediante escalado y ajuste de opacidad (1.5 segundos)
-    \item \textbf{Movimiento espacial}: Acercamiento desde la posición inicial hacia el usuario
-    \item \textbf{Rotación continua}: Giro lento que permite observar el modelo desde todos los ángulos (17 segundos por vuelta)
-    \item \textbf{Look-at dinámico}: Orientación automática hacia la cámara del usuario
-\end{itemize}
-
-\subsection{Sistema de información contextual}
-
-\subsubsection{Presentación de contenido textual}
-
-El contenido informativo se presenta mediante elementos de texto 3D que aparecen secuencialmente tras la materialización del personaje:
-
-\begin{lstlisting}[language=HTML, caption={Elementos informativos principales}]
-<!-- Nombre del personaje -->
-<a-text id="textoCarmen" value="Carmen Alborch" position="0 0.5 -5.5" 
-        align="center" color="#5863ce" scale="1 1 1" look-at="target: camera"
-        visible="false" animation__showText="property: visible; to: true; 
-        startEvents: showMujer; delay: 300">
-</a-text>
-
-<!-- Descripción breve -->
-<a-text id="bioCarmen" value="Ministra de Cultura, escritora y catedr&aacute;tica de Derecho Mercantil"
-        position="0 0.25 -5.5" align="center" color="#8486ce" width="2.3"
-        visible="false" look-at="target: camera"
-        animation__showText="property: visible; to: true; 
-        startEvents: showMujer; delay: 500">
-</a-text>
-\end{lstlisting}
-
-Para garantizar la correcta visualización de caracteres especiales y acentos, se emplean entidades HTML (\texttt{\&aacute;}, \texttt{\&oacute;}, etc.) en lugar de caracteres Unicode directos.
-
-\subsubsection{Panel informativo expandible}
-
-Se implementa un panel interactivo que proporciona información detallada sobre el personaje histórico:
-
-\begin{lstlisting}[language=HTML, caption={Panel informativo expandible}]
-<!-- Panel informativo -->
-<a-entity id="infoPanel" geometry="primitive: plane; height: 1; width: 2"
-          material="color: #f8d4e6; opacity: 0.8" position="0 -0.036 -3.99313"
-          visible="false">
-  <a-text value="Su compromiso con la igualdad y la cultura la llev&oacute; a dirigir 
-               el Instituto Valenciano de Arte Moderno (IVAM) entre 1988 y 1993..."
-          align="left" position="-0.8571 0.046 0.08175" 
-          color="#bc5880" width="1.8"></a-text>
-</a-entity>
-\end{lstlisting}
-
-Este panel se activa mediante click sobre el modelo 3D del personaje, implementando un sistema de toggle que permite mostrar u ocultar la información extendida según las necesidades del usuario.
-
-\subsection{Gestión de audio inmersivo}
 
 \subsubsection{Arquitectura de audio multicapa}
 
-La experiencia AR implementa un sistema de audio estratificado que combina música ambiental continua con narraciones específicas:
-
-\begin{lstlisting}[language=HTML, caption={Configuración de assets de audio}]
-<a-assets>
-  <audio id="audioCarmenAsset" src="carmen_audio.mp3" preload="auto"></audio>
-  <audio id="musicaFondo" src="musica_de_fondo_suave.mp3" preload="auto" loop></audio>
-</a-assets>
-\end{lstlisting}
+En el código del apartado anterior, también se muestra la \textbf{gestión de audio inteligente} que reduce automáticamente el volumen de la música ambiental durante las narraciones, restaurándolo progresivamente al finalizar. Para la música ambiental se ha escogido la ``Canción sin miedo'' de Vivir Quintana \cite{wpJn20WoEWM} y las narraciones son audios propios sobre las mujeres y sus lugares asociados, que se reproducen al mostrarse el modelo de la mujer.
 
 El sistema presenta las siguientes características:
 \begin{itemize}
@@ -1435,11 +1361,19 @@ El sistema presenta las siguientes características:
     \item \textbf{Recuperación inteligente}: Restauración automática del volumen original al finalizar
 \end{itemize}
 
+\begin{lstlisting}[language=HTML, caption={Configuración de assets de audio}]
+<a-assets>
+  <audio id="audioCarmenAsset" src="carmen_audio.mp3" preload="auto"></audio>
+  <audio id="musicaFondo" src="musica_de_fondo_suave.mp3" preload="auto" loop></audio>
+</a-assets>
+\end{lstlisting}
+
+
 \subsubsection{Compatibilidad con políticas de navegador}
 
 Para cumplir con las restricciones de autoplay de los navegadores modernos, se implementa un sistema de activación progresiva que gestiona la reproducción automática:
 
-\begin{lstlisting}[language=, caption={Gestión de autoplay de audio}]
+\begin{lstlisting}[language=Python, caption={Gestión de autoplay de audio}]
 AFRAME.registerComponent('background-music', {
   init: function () {
     const musicaFondo = document.getElementById('musicaFondo');
@@ -1466,11 +1400,92 @@ AFRAME.registerComponent('background-music', {
 
 Este mecanismo intenta reproducir el audio automáticamente al cargar la escena, pero establece un respaldo que activa la reproducción con la primera interacción del usuario si el navegador bloquea el autoplay inicial.
 
-\subsection{Optimización y consideraciones técnicas}
 
-La implementación utiliza modelos 3D en formato GLB para optimizar el rendimiento, aprovechando la compresión binaria que reduce significativamente el tamaño de los archivos. Los elementos gráficos emplean materiales transparentes y técnicas de renderizado eficientes para mantener una experiencia fluida en dispositivos con capacidades de procesamiento limitadas.
 
-El sistema de coordenadas está calibrado para una altura de usuario estándar (1.75m), y todas las animaciones utilizan interpolación lineal o easing apropiado para generar movimientos naturales sin impacto excesivo en el rendimiento del dispositivo.
+\subsection{Gestión de la tipografía en textos 3D}
+
+Durante la implementación de los elementos textuales en la escena 3D, se identificó una limitación en el componente nativo \texttt{<a-text>} de A-Frame, el cual no soporta caracteres extendidos como acentos o la letra “ñ” debido a que utiliza fuentes basadas en texturas MSDF con un conjunto restringido de caracteres. Esta restricción impedía mostrar correctamente textos en castellano, incluso cuando la codificación del documento se establecía en UTF-8 \cite{milewski2018_stackoverflow_utf8_aframe}. 
+
+Para solventar este problema, se incorporó el componente \texttt{aframe-troika-text}, que permite renderizar tipografía en tiempo real a partir de fuentes en formatos estándar (TTF o WOFF) y ofrece soporte completo para caracteres Unicode. Esto se consigue añadiendo la librería mediante la siguiente instrucción en el documento HTML:
+
+\begin{lstlisting}[language=HTML, caption={Inclusión del componente aframe-troika-text.}]
+<script src="https://unpkg.com/aframe-troika-text/dist/aframe-troika-text.min.js"></script>
+\end{lstlisting}
+
+Posteriormente, se definió un panel informativo en la escena con un elemento \texttt{<a-entity>} que emplea el componente \texttt{troika-text}, configurando propiedades como el texto, la fuente personalizada (en este caso, \textit{Roboto} en formato TTF), el color, el tamaño y el ancho máximo. El siguiente fragmento de código muestra la implementación:
+
+\begin{lstlisting}[language=HTML, caption={Uso de aframe-troika-text para mostrar texto con acentos.}]
+<!-- Panel informativo -->
+<a-entity id="infoPanel"
+    geometry="primitive: plane; height: 1; width: 2"
+    material="color: #f8d4e6; opacity: 0.8"
+    position="0 -0.036 -3.99313"
+    visible="false">
+    <a-entity troika-text="value: Su compromiso con la igualdad y la cultura la llevó a dirigir el Instituto Valenciano de Arte Moderno (IVAM) entre 1988 y 1993, etapa en la que el museo se consolidó como referente nacional e internacional del arte contemporáneo. Desde allí impulsó una programación abierta, crítica y sensible al papel de las mujeres en la creación artística.; 
+    font: ./fonts/Roboto-Regular.ttf; 
+    color: #bc5880; 
+    fontSize: 0.09; 
+    maxWidth: 1.8; 
+    align: left"
+    position="0 0.060 0.136"></a-entity>
+</a-entity>
+\end{lstlisting}
+
+El fragmento anterior, corresponde al panel interactivo que proporciona información detallada sobre la mujer (siendo el mismo contenido que se escucha en los audios correspondientes). Este panel se activa pulsando sobre el modelo 3D de la mujer, implementando un sistema de toggle que permite mostrar u ocultar la información extendida según las necesidades del usuario.
+
+
+
+\subsection{Formato y optimización de modelos 3D}
+
+Todos los modelos empleados en la experiencia de realidad aumentada se han utilizado en formato \texttt{.glb}. Este formato, perteneciente al estándar glTF 2.0, es uno de los soportados por A‑Frame mediante el componente \texttt{gltf-model} \cite{aframe_models}. A‑Frame también permite el uso de otros formatos como \texttt{.obj} (a través del componente \texttt{obj-model}) y, mediante loaders de \textit{three.js}, formatos adicionales como \texttt{.ply}, \texttt{.fbx} o JSON. Sin embargo, la documentación oficial recomienda el uso de glTF/GLB por sus ventajas: encapsula geometría, texturas, materiales y animaciones en un único archivo binario, optimizado para transmisión web, reduciendo el número de peticiones HTTP y facilitando la carga en dispositivos móviles.
+
+
+\textbf{Obtención de modelos}
+
+Los modelos utilizados se han conseguido de dos formas:
+\begin{enumerate}
+    \item Descargando desde repositorios especializados como Cults3D\footnote{\url{https://cults3d.com/en/3d-model/art/vandana-shiva?srsltid=AfmBOoo2OFfWztX_LpR_AyTC21vPPs9T8Xd-n4IRsIl4syxbvKVhqBf3}} y Thingiverse\footnote{\url{https://www.thingiverse.com/thing:5899901}}, que ofrecen modelos en diferentes formatos posteriormente convertidos a \texttt{.glb}.
+    \item Generándolos mediante inteligencia artificial usando la herramienta Meshy\footnote{\url{https://www.meshy.ai}}. Este proceso consiste en subir una imagen, obtener cuatro modelos generados automáticamente y seleccionar el más adecuado. Posteriormente, Meshy crea una textura para el modelo elegido (como se observa en la figuras \ref{fig:meshy1}, \ref{fig:meshy2} y \ref{fig:manuela_solis}).
+\end{enumerate}
+
+Es importante destacar que el uso de modelos generados por IA no se plantea como una solución final para la aplicación, sino como una aproximación visual preliminar de cómo podrían lucir los personajes históricos.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figs/meshy1.jpg}
+    \caption{Cuatro modelos generados automáticamente por Meshy a partir de una imagen de entrada.}
+    \label{fig:meshy1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figs/meshy2.jpg}
+    \caption{Modelo seleccionado de los cuatro generados, ya con la textura aplicada por Meshy.}
+    \label{fig:meshy2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{figs/manuela_solis.jpg}
+    \caption{Imagen original de Manuela Solís que se utiliza como entrada en Meshy para la generación automática de modelos 3D.}
+    \label{fig:manuela_solis}
+\end{figure}
+
+\textbf{Optimización y limitaciones técnicas}
+
+Durante el desarrollo se presentaron varias restricciones de tamaño. La herramienta Meshy solo admite modelos de hasta 50\,MB, lo que obligó a realizar procesos de optimización y reducción de malla (re‑vectorización) antes de subirlos para generar las texturas. Asimismo, la plataforma de despliegue Vercel establece un límite máximo recomendado de 10\,MB por archivo para proyectos conectados por repositorios GitHub \cite{vercel_limits}, como es nuestro caso. Esto exigió la aplicación de técnicas adicionales de compresión y simplificación para asegurar la compatibilidad.
+
+Finalmente, en algunos casos los modelos descargados desde repositorios carecían de texturas, por lo que se recurrió a Meshy para generarlas. Esto implicó un flujo de trabajo iterativo que combinaba conversión a \texttt{.glb}, reducción de tamaño y texturizado mediante IA.
+
+\subsection{Implementación del sistema de tracking en AR}
+
+Como se ha mencionado anteriormente, la experiencia de realidad aumentada se implementó usando \textbf{A-Frame} junto con la librería \textbf{AR.js}. Esta combinación permite integrar modelos 3D en entornos web mediante tecnologías abiertas como WebGL y WebRTC, sin requerir aplicaciones nativas. No obstante, presenta una limitación fundamental: \textbf{AR.js no incorpora seguimiento posicional basado en el entorno (SLAM)}, sino que se apoya en \textbf{marcadores visuales} o en coordenadas GPS para determinar la posición del contenido en la escena. Como consecuencia, no es posible anclar los objetos 3D a superficies reales ni proporcionar una experiencia completamente inmersiva con movimiento libre.
+
+Una solución a esta carencia es el uso de la \textbf{API WebXR}, que ofrece soporte nativo para AR con capacidades de seguimiento posicional en navegadores modernos. Sin embargo, esta alternativa presenta un problema de compatibilidad relevante: actualmente, \textbf{Safari en iOS no soporta la API WebXR}, lo que imposibilita su uso en dispositivos Apple \cite{mdn_webxr,caniuse_webxr}. Este aspecto limita su adopción en escenarios donde se busca garantizar la disponibilidad multiplataforma.
+
+Ante esta restricción, se diseñó un mecanismo alternativo que simula el comportamiento del anclaje espacial, como un \textit{tracking visual simulado}. Este enfoque consiste en mantener el modelo 3D en una posición fija dentro de la escena virtual, aplicando transformaciones relativas a la cámara. De este modo, al rotar el dispositivo, el objeto parece permanecer en un punto del espacio, generando la \textbf{sensación de anclaje} aunque en realidad no se esté realizando un seguimiento del entorno. Si bien este método no sustituye al SLAM real, permite mejorar la percepción de estabilidad en la experiencia y reduce la disonancia visual en comparación con un objeto flotante sin referencia.
+
+
 
 \subsection{Despliegue y distribución}
 
@@ -1539,80 +1554,3 @@ Cada experiencia AR se despliega independientemente en Vercel, proporcionando:
     \item Tablets con navegadores modernos
     \item Ordenadores con webcam
 \end{itemize}
-
-
-\subsubsection{Optimizaciones implementadas}
-
-
-\textbf{Gestión de memoria:}
-\begin{itemize}
-    \item Liberación automática de recursos al salir de la experiencia
-    \item Compresión de texturas y modelos 3D
-    \item Uso eficiente de la GPU para renderizado
-\end{itemize}
-
-
-\textbf{Reducción de latencia:}
-\begin{itemize}
-    \item Precarga de recursos críticos
-    \item Minimización de peticiones HTTP
-    \item Optimización de shaders y materiales
-\end{itemize}
-
-
-Esta implementación de realidad aumentada proporciona experiencias inmersivas y educativas que conectan a los usuarios con la historia local de manera innovadora, utilizando tecnologías web estándar para maximizar la accesibilidad y el alcance de la aplicación.
-
-\subsection{Gestión de la tipografía en textos 3D}
-
-Durante la implementación de los elementos textuales en la escena 3D, se identificó una limitación en el componente nativo \texttt{<a-text>} de A-Frame, el cual no soporta caracteres extendidos como acentos o la letra “ñ” debido a que utiliza fuentes basadas en texturas MSDF con un conjunto restringido de caracteres. Esta restricción impedía mostrar correctamente textos en castellano, incluso cuando la codificación del documento se establecía en UTF-8 \cite{milewski2018_stackoverflow_utf8_aframe}. 
-
-Para solventar este problema, se incorporó el componente \texttt{aframe-troika-text}, que permite renderizar tipografía en tiempo real a partir de fuentes en formatos estándar (TTF o WOFF) y ofrece soporte completo para caracteres Unicode. Esto se consigue añadiendo la librería mediante la siguiente instrucción en el documento HTML:
-
-\begin{lstlisting}[language=HTML, caption={Inclusión del componente aframe-troika-text.}]
-<script src="https://unpkg.com/aframe-troika-text/dist/aframe-troika-text.min.js"></script>
-\end{lstlisting}
-
-Posteriormente, se definió un panel informativo en la escena con un elemento \texttt{<a-entity>} que emplea el componente \texttt{troika-text}, configurando propiedades como el texto, la fuente personalizada (en este caso, \textit{Roboto} en formato TTF), el color, el tamaño y el ancho máximo. El siguiente fragmento de código muestra la implementación:
-
-\begin{lstlisting}[language=HTML, caption={Uso de aframe-troika-text para mostrar texto con acentos.}]
-<!-- Panel informativo -->
-<a-entity id="infoPanel" geometry="primitive: plane; height: 1; width: 2"
-  material="color: #f8d4e6; opacity: 0.8" position="0 -0.036 -3.99313"
-  visible="false" troika-text="
-    value: Su compromiso con la igualdad y la cultura la llevó a dirigir el Instituto Valenciano de Arte Moderno (IVAM) entre 1988 y 1993;
-    font: ./fonts/Roboto-Regular.ttf;
-    color: #33C3F0;
-    fontSize: 0.13;
-    maxWidth: 1.8;
-    align: left
-" position="-0.8571 0.046 0.08175">
-</a-entity>
-\end{lstlisting}
-
-Gracias a esta solución, se logró una visualización correcta y estilizada de los textos en español dentro de la experiencia de realidad aumentada.
-
-
-
-\subsection{Formato y optimización de modelos 3D}
-
-Todos los modelos empleados en la experiencia de realidad aumentada se han utilizado en formato \texttt{.glb}. Este formato, perteneciente al estándar glTF 2.0, es uno de los soportados por A‑Frame mediante el componente \texttt{gltf-model} \cite{aframe_models}. A‑Frame también permite el uso de otros formatos como \texttt{.obj} (a través del componente \texttt{obj-model}) y, mediante loaders de \textit{three.js}, formatos adicionales como \texttt{.ply}, \texttt{.fbx} o JSON. Sin embargo, la documentación oficial recomienda el uso de glTF/GLB por sus ventajas: encapsula geometría, texturas, materiales y animaciones en un único archivo binario, optimizado para transmisión web, reduciendo el número de peticiones HTTP y facilitando la carga en dispositivos móviles.
-
-\textbf{Motivos para la elección del formato \texttt{.glb}}:
-\begin{itemize}
-    \item Compatibilidad nativa con A‑Frame.
-    \item Inclusión de texturas y materiales en un único archivo, evitando dependencias adicionales como ocurre en \texttt{.obj}.
-    \item Rendimiento optimizado en entornos web y móviles.
-\end{itemize}
-
-\textbf{Obtención de modelos}: los modelos utilizados se han conseguido de dos formas:
-\begin{enumerate}
-    \item Descargando desde repositorios especializados como Cults3D\footnote{\url{https://cults3d.com/en/3d-model/art/vandana-shiva?srsltid=AfmBOoo2OFfWztX_LpR_AyTC21vPPs9T8Xd-n4IRsIl4syxbvKVhqBf3}} y Thingiverse\footnote{\url{https://www.thingiverse.com/thing:5899901}}, que ofrecen modelos en diferentes formatos posteriormente convertidos a \texttt{.glb}.
-    \item Generándolos mediante inteligencia artificial usando la herramienta Meshy\footnote{\url{https://www.meshy.ai}}. Este proceso consiste en subir una imagen, obtener cuatro modelos generados automáticamente y seleccionar el más adecuado. Posteriormente, Meshy crea una textura para el modelo elegido.
-\end{enumerate}
-
-Es importante destacar que el uso de modelos generados por IA no se plantea como una solución final para la aplicación, sino como una aproximación visual preliminar de cómo podrían lucir los personajes históricos.
-
-\textbf{Optimización y limitaciones técnicas}: durante el desarrollo se presentaron varias restricciones de tamaño. La herramienta Meshy solo admite modelos de hasta 50\,MB, lo que obligó a realizar procesos de optimización y reducción de malla (re‑vectorización) antes de subirlos para generar las texturas. Asimismo, la plataforma de despliegue Vercel establece un límite máximo recomendado de 100\,MB por archivo para proyectos en planes estándar \cite{vercel_limits}. Esto exigió la aplicación de técnicas adicionales de compresión y simplificación para asegurar la compatibilidad.
-
-Finalmente, en algunos casos los modelos descargados desde repositorios carecían de texturas, por lo que se recurrió a Meshy para generarlas. Esto implicó un flujo de trabajo iterativo que combinaba conversión a \texttt{.glb}, reducción de tamaño y texturizado mediante IA, garantizando así la integración con A‑Frame y la correcta visualización en entornos web móviles.
-

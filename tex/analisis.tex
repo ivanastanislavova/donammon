@@ -59,13 +59,13 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \hline
 \textbf{Actores} & Usuario no registrado (principal), Sistema (secundario) \\
 \hline
-\textbf{Propósito} & Permitir que el usuario acceda a su cuenta personal mediante correo electrónico y contraseña. \\
+\textbf{Propósito} & Permitir que el usuario acceda a su cuenta personal mediante nombre de usuario y contraseña. \\
 \hline
 \textbf{Resumen} & Este caso de uso describe el proceso de inicio de sesión mediante credenciales para acceder a las funcionalidades personalizadas de la app. \\
 \hline
 \textbf{Tipo} & Primario \\
 \hline
-\textbf{Referencias} & RF23, RF24, RF25 \\
+\textbf{Referencias} & RF23, RF24 \\
 \hline
 \textbf{Precondiciones} & El usuario debe tener una cuenta creada previamente. El sistema debe estar operativo y conectado a internet. \\
 \hline
@@ -102,15 +102,15 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \hline
 \textbf{Actores} & Usuario no registrado (principal), Sistema (secundario) \\
 \hline
-\textbf{Propósito} & Permitir que nuevos usuarios creen una cuenta personal mediante un formulario con correo electrónico y contraseña. \\
+\textbf{Propósito} & Permitir que nuevos usuarios creen una cuenta personal mediante un formulario con nombre de usuario, correo electrónico, fecha de nacimiento y contraseña. \\
 \hline
-\textbf{Resumen} & Este caso de uso describe el proceso por el cual un usuario puede registrarse en la aplicación, aceptando las condiciones de uso y política de privacidad. \\
+\textbf{Resumen} & Este caso de uso describe el proceso por el cual un usuario puede registrarse en la aplicación. \\
 \hline
 \textbf{Tipo} & Primario \\
 \hline
-\textbf{Referencias} & RF23, RF24, RF25, RNF21, RNF22 \\
+\textbf{Referencias} & RF24, RNF21, RNF22 \\
 \hline
-\textbf{Precondiciones} & El sistema debe estar operativo y conectado. El usuario no debe tener una cuenta registrada con ese correo. \\
+\textbf{Precondiciones} & El sistema debe estar operativo y conectado. El usuario no debe tener una cuenta registrada con ese correo o nombre de usuario. \\
 \hline
 \textbf{Postcondiciones} & El usuario queda registrado y accede automáticamente a la pantalla principal con sesión iniciada. \\
 \hline
@@ -118,13 +118,13 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \hline
 \textbf{Actor} & \textbf{Sistema} \\
 \hline
-1. El usuario pulsa sobre "Registrarse" en la pantalla de login. & \\
+1. El usuario pulsa sobre ``Registrarse'' en la pantalla de login. & \\
 \hline
-& 2. El sistema muestra el formulario de registro con los campos de correo, contraseña y checkbox de aceptación legal. \\
+& 2. El sistema muestra el formulario de registro con los campos de correo, nombre de usuario, fecha de nacimiento y contraseña. \\
 \hline
-3. El usuario introduce sus datos y acepta la política de privacidad. & \\
+3. El usuario introduce sus datos. & \\
 \hline
-& 4. El sistema verifica que el correo no exista previamente en la base de datos. \\
+& 4. El sistema verifica que el correo y nombre de usuario no exista previamente en la base de datos. \\
 \hline
 & 5. El sistema guarda los datos cifrados y crea la nueva cuenta. \\
 \hline
@@ -249,7 +249,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \hline
 \textbf{Tipo} & Primario \\
 \hline
-\textbf{Referencias} & RF4, RF5, RF12, RF13, RF14, RF36 \\
+\textbf{Referencias} & RF4, RF5, RF12, RF13, RF36 \\
 \hline
 \textbf{Precondiciones} & El usuario debe haber accedido desde el mapa o listado, seleccionando un punto. \\
 \hline
@@ -423,7 +423,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \hline
 \textbf{Tipo} & Primario \\
 \hline
-\textbf{Referencias} & RF41 \\
+\textbf{Referencias} & RF41, RF6, RF20 \\
 \hline
 \textbf{Precondiciones} & El usuario debe haber accedido a la pestaña RA, seleccionado un punto válido y concedido permiso de cámara. \\
 \hline
@@ -466,7 +466,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \hline
 \textbf{Tipo} & Primario \\
 \hline
-\textbf{Referencias} & RF26, RF42 \\
+\textbf{Referencias} & RF25, RF42 \\
 \hline
 \textbf{Precondiciones} & El usuario debe tener sesión iniciada. Debe estar en la sección de perfil. \\
 \hline
@@ -478,11 +478,11 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \hline
 1. El usuario accede a la pestaña de perfil. & \\
 \hline
-2. El usuario pulsa el botón "Editar perfil". & \\
+2. El usuario pulsa el botón ``Editar perfil''. & \\
 \hline
 3. El usuario modifica los campos deseados. & \\
 \hline
-4. El usuario pulsa el botón "Guardar cambios". & \\
+4. El usuario pulsa el botón ``Guardar cambios''. & \\
 \hline
 & 5. El sistema valida los nuevos datos. \\
 \hline
@@ -511,7 +511,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \hline
 \textbf{Tipo} & Primario \\
 \hline
-\textbf{Referencias} & RF14, RF42, F43, F44 \\
+\textbf{Referencias} & RF14, RF42, RF13 \\
 \hline
 \textbf{Precondiciones} & El usuario debe tener sesión iniciada. \\
 \hline
@@ -552,7 +552,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \hline
 \textbf{Tipo} & Primario \\
 \hline
-\textbf{Referencias} & RF25, RF42 \\
+\textbf{Referencias} & RF24, RF42 \\
 \hline
 \textbf{Precondiciones} & El usuario debe tener sesión iniciada. \\
 \hline
@@ -591,7 +591,7 @@ A continuación se detallan los casos de uso principales de la aplicación:
 \hline
 \textbf{Tipo} & Primario \\
 \hline
-\textbf{Referencias} & RF16, F20, RNF19 \\
+\textbf{Referencias} & RF16, RNF19 \\
 \hline
 \textbf{Precondiciones} & El administrador debe estar registrado en el sistema y disponer de credenciales válidas. \\
 \hline
@@ -634,7 +634,7 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \hline
 \textbf{Tipo} & Primario \\
 \hline
-\textbf{Referencias} & RF17, RF18, F21, F22, F24 \\
+\textbf{Referencias} & RF17, RF18 \\
 \hline
 \textbf{Precondiciones} & El administrador debe haber iniciado sesión correctamente en el panel de administración. \\
 \hline
@@ -679,7 +679,7 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \hline
 \textbf{Tipo} & Primario \\
 \hline
-\textbf{Referencias} & RF17, RF18, F22, F24 \\
+\textbf{Referencias} & RF17, RF18 \\
 \hline
 \textbf{Precondiciones} & El administrador debe haber iniciado sesión correctamente en el panel de administración. \\
 \hline
@@ -724,7 +724,7 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \hline
 \textbf{Tipo} & Primario \\
 \hline
-\textbf{Referencias} & RF11, RF18b, F24b, F33, F34 \\
+\textbf{Referencias} & RF11, RF19 \\
 \hline
 \textbf{Precondiciones} & El administrador debe haber iniciado sesión correctamente en el panel de administración. \\
 \hline
@@ -769,7 +769,7 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \hline
 \textbf{Tipo} & Primario \\
 \hline
-\textbf{Referencias} & RF27, RF28, RF29, F25, F26, F27 \\
+\textbf{Referencias} & RF26, RF28, RF29 \\
 \hline
 \textbf{Precondiciones} & El administrador debe haber iniciado sesión correctamente en el panel de administración. \\
 \hline
@@ -810,7 +810,7 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \hline
 \textbf{Tipo} & Primario \\
 \hline
-\textbf{Referencias} & RF18, F23, F24 \\
+\textbf{Referencias} & RF18 \\
 \hline
 \textbf{Precondiciones} & El administrador debe haber iniciado sesión correctamente en el panel de administración. \\
 \hline
@@ -835,48 +835,13 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \end{tabular}
 \end{table}
 
+
 \clearpage
-\subsection{Caso de uso 19: Consultar métricas de uso}
+\subsection{Caso de uso 19: Gestionar áreas de investigación}
 
 \begin{table}[H]
 \centering
-\caption{Caso de uso 19 - Consultar métricas de uso}
-\begin{tabular}{|p{4.5cm}|p{10.5cm}|}
-\hline
-\textbf{Nombre del caso de uso} & Consultar métricas de uso \\
-\hline
-\textbf{Actores} & Administrador (principal), Sistema (secundario) \\
-\hline
-\textbf{Propósito} & Permitir al administrador visualizar estadísticas y métricas sobre el uso de la aplicación. \\
-\hline
-\textbf{Resumen} & El administrador puede consultar datos como puntos más visitados, número de usuarios activos, rutas más populares, etc., para tomar decisiones informadas sobre el contenido y la gestión. \\
-\hline
-\textbf{Tipo} & Primario \\
-\hline
-\textbf{Referencias} & RF18c, F24c, F28 \\
-\hline
-\textbf{Precondiciones} & El administrador debe haber iniciado sesión correctamente en el panel de administración. \\
-\hline
-\textbf{Postcondiciones} & No aplica (consulta de información). \\
-\hline
-\multicolumn{2}{|c|}{\textbf{Flujo de eventos principal}} \\
-\hline
-\textbf{Actor} & \textbf{Sistema} \\
-\hline
-1. El administrador accede a la sección de métricas del panel. & \\
-\hline
-2. El administrador selecciona el tipo de métrica o informe a consultar. & \\
-\hline
-& 3. El sistema muestra los datos solicitados en pantalla. \\
-\hline
-\end{tabular}
-\end{table}
-\clearpage
-\subsection{Caso de uso 20: Gestionar áreas de investigación}
-
-\begin{table}[H]
-\centering
-\caption{Caso de uso 20 - Gestionar áreas de investigación}
+\caption{Caso de uso 19 - Gestionar áreas de investigación}
 \begin{tabular}{|p{4.5cm}|p{10.5cm}|}
 \hline
 \textbf{Nombre del caso de uso} & Gestionar áreas de investigación \\
@@ -889,7 +854,7 @@ El administrador pulsa el botón de “Iniciar sesión”. & \\
 \hline
 \textbf{Tipo} & Primario \\
 \hline
-\textbf{Referencias} & RF18b, F24b \\
+\textbf{Referencias} & RF19 \\
 \hline
 \textbf{Precondiciones} & El administrador debe haber iniciado sesión correctamente en el panel de administración. \\
 \hline

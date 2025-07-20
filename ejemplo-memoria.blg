@@ -7,45 +7,47 @@ Reallocating 'name_of_file' (item size: 1) to 17 items.
 Database file #1: bib/bibliografia.bib
 Warning--entry type for "milewski2018_stackoverflow_utf8_aframe" isn't style-file defined
 --line 1241 of file bib/bibliografia.bib
-You've used 82 entries,
+Warning--entry type for "wpJn20WoEWM" isn't style-file defined
+--line 1329 of file bib/bibliografia.bib
+You've used 85 entries,
             1791 wiz_defined-function locations,
-            844 strings with 14838 characters,
-and the built_in function-call counts, 12706 in all, are:
-= -- 1125
-> -- 389
+            856 strings with 15111 characters,
+and the built_in function-call counts, 13087 in all, are:
+= -- 1155
+> -- 401
 < -- 4
-+ -- 179
-- -- 97
-* -- 341
-:= -- 1916
-add.period$ -- 261
-call.type$ -- 82
-change.case$ -- 74
++ -- 185
+- -- 100
+* -- 344
+:= -- 1973
+add.period$ -- 270
+call.type$ -- 85
+change.case$ -- 77
 chr.to.int$ -- 0
-cite$ -- 82
-duplicate$ -- 578
-empty$ -- 1609
-format.name$ -- 97
-if$ -- 3005
+cite$ -- 85
+duplicate$ -- 593
+empty$ -- 1663
+format.name$ -- 100
+if$ -- 3095
 int.to.chr$ -- 0
-int.to.str$ -- 82
+int.to.str$ -- 85
 missing$ -- 36
-newline$ -- 428
-num.names$ -- 77
-pop$ -- 465
+newline$ -- 443
+num.names$ -- 80
+pop$ -- 486
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 294
+skip$ -- 303
 stack$ -- 0
 substring$ -- 303
-swap$ -- 122
+swap$ -- 125
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 107
-width$ -- 84
-write$ -- 864
-(There was 1 warning)
+while$ -- 110
+width$ -- 87
+write$ -- 894
+(There were 2 warnings)

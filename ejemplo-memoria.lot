@@ -1,47 +1,47 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Comparación entre tipos de aplicaciones móviles}}{33}{table.caption.5}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Comparativa entre SQLite, MySQL, PostgreSQL, MariaDB y MongoDB~\cite {elmasri2017, postgresql2024, mariadb2023, mongodb2024}.}}{49}{table.caption.15}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Comparación entre tipos de aplicaciones móviles}}{35}{table.caption.5}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Comparativa entre SQLite, MySQL, PostgreSQL, MariaDB y MongoDB~\cite {elmasri2017, postgresql2024, mariadb2023, mongodb2024}.}}{51}{table.caption.15}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Estimación por tres valores de las tareas del proyecto}}{61}{table.caption.17}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Perfiles y costes de personal (según cotización SS 2025)}}{64}{table.caption.19}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Asignación de tareas y costes por perfil}}{65}{table.caption.20}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Elementos utilizados y coste amortizado durante el desarrollo (80 días)}}{65}{table.caption.21}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Resumen de costes del proyecto}}{66}{table.caption.22}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Principales riesgos identificados}}{68}{table.caption.23}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Resumen cualitativo de evaluación de riesgos}}{69}{table.caption.25}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Estimación por tres valores de las tareas del proyecto}}{63}{table.caption.17}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Perfiles y costes de personal (según cotización SS 2025)}}{66}{table.caption.19}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Asignación de tareas y costes por perfil}}{67}{table.caption.20}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Elementos utilizados y coste amortizado durante el desarrollo (80 días)}}{67}{table.caption.21}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Resumen de costes del proyecto}}{68}{table.caption.22}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Principales riesgos identificados}}{70}{table.caption.23}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Resumen cualitativo de evaluación de riesgos}}{71}{table.caption.25}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Caso de uso 1 - Login de usuario}}{74}{table.caption.28}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Caso de uso 2 - Registro de usuario}}{75}{table.caption.29}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Caso de uso 3 - Ver mapa con puntos de interés}}{76}{table.caption.30}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Caso de uso 4 - Ver listado de puntos ordenado por cercanía}}{77}{table.caption.31}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Caso de uso 1.5 - Ver ficha del lugar}}{78}{table.caption.32}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Caso de uso 6 - Ver rutas y consultar puntos de una ruta}}{79}{table.caption.33}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces Caso de uso 7 - Escanear QR de punto de ruta}}{80}{table.caption.34}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Caso de uso 8 - Ver puntos RA disponibles}}{81}{table.caption.35}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Caso de uso 9 - Visualizar contenido RA}}{82}{table.caption.36}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces Caso de uso 10 - Editar datos del perfil}}{83}{table.caption.37}%
-\contentsline {table}{\numberline {4.11}{\ignorespaces Caso de uso 11 - Ver historial de lugares visitados y rutas completadas}}{84}{table.caption.38}%
-\contentsline {table}{\numberline {4.12}{\ignorespaces Caso de uso 12 - Cerrar sesión}}{85}{table.caption.39}%
-\contentsline {table}{\numberline {4.13}{\ignorespaces Caso de uso 13 - Iniciar sesión como administrador}}{86}{table.caption.40}%
-\contentsline {table}{\numberline {4.14}{\ignorespaces Caso de uso 14 - Gestionar mujeres históricas}}{87}{table.caption.41}%
-\contentsline {table}{\numberline {4.15}{\ignorespaces Caso de uso 15 - Gestionar puntos geolocalizados}}{88}{table.caption.42}%
-\contentsline {table}{\numberline {4.16}{\ignorespaces Caso de uso 16 - Gestionar rutas temáticas}}{89}{table.caption.43}%
-\contentsline {table}{\numberline {4.17}{\ignorespaces Caso de uso 17 - Consultar lista de usuarios}}{90}{table.caption.44}%
-\contentsline {table}{\numberline {4.18}{\ignorespaces Caso de uso 18 - Gestionar materiales multimedia}}{91}{table.caption.45}%
-\contentsline {table}{\numberline {4.19}{\ignorespaces Caso de uso 19 - Consultar métricas de uso}}{92}{table.caption.46}%
-\contentsline {table}{\numberline {4.20}{\ignorespaces Caso de uso 20 - Gestionar áreas de investigación}}{93}{table.caption.47}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Caso de uso 1 - Login de usuario}}{76}{table.caption.28}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Caso de uso 2 - Registro de usuario}}{77}{table.caption.29}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Caso de uso 3 - Ver mapa con puntos de interés}}{78}{table.caption.30}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Caso de uso 4 - Ver listado de puntos ordenado por cercanía}}{79}{table.caption.31}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Caso de uso 1.5 - Ver ficha del lugar}}{80}{table.caption.32}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Caso de uso 6 - Ver rutas y consultar puntos de una ruta}}{81}{table.caption.33}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Caso de uso 7 - Escanear QR de punto de ruta}}{82}{table.caption.34}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Caso de uso 8 - Ver puntos RA disponibles}}{83}{table.caption.35}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Caso de uso 9 - Visualizar contenido RA}}{84}{table.caption.36}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Caso de uso 10 - Editar datos del perfil}}{85}{table.caption.37}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Caso de uso 11 - Ver historial de lugares visitados y rutas completadas}}{86}{table.caption.38}%
+\contentsline {table}{\numberline {4.12}{\ignorespaces Caso de uso 12 - Cerrar sesión}}{87}{table.caption.39}%
+\contentsline {table}{\numberline {4.13}{\ignorespaces Caso de uso 13 - Iniciar sesión como administrador}}{88}{table.caption.40}%
+\contentsline {table}{\numberline {4.14}{\ignorespaces Caso de uso 14 - Gestionar mujeres históricas}}{89}{table.caption.41}%
+\contentsline {table}{\numberline {4.15}{\ignorespaces Caso de uso 15 - Gestionar puntos geolocalizados}}{90}{table.caption.42}%
+\contentsline {table}{\numberline {4.16}{\ignorespaces Caso de uso 16 - Gestionar rutas temáticas}}{91}{table.caption.43}%
+\contentsline {table}{\numberline {4.17}{\ignorespaces Caso de uso 17 - Consultar lista de usuarios}}{92}{table.caption.44}%
+\contentsline {table}{\numberline {4.18}{\ignorespaces Caso de uso 18 - Gestionar materiales multimedia}}{93}{table.caption.45}%
+\contentsline {table}{\numberline {4.19}{\ignorespaces Caso de uso 19 - Gestionar áreas de investigación}}{94}{table.caption.46}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Esquema resumido de las tablas principales de la base de datos}}{106}{table.caption.56}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Esquema resumido de las tablas principales de la base de datos}}{108}{table.caption.55}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.2}{\ignorespaces Respuestas del cuestionario SUS por usuario}}{163}{table.caption.84}%
-\contentsline {table}{\numberline {7.3}{\ignorespaces Perfil de los participantes y puntuación SUS final}}{167}{table.caption.95}%
-\contentsline {table}{\numberline {7.4}{\ignorespaces Especificaciones del hardware utilizado en las pruebas}}{169}{table.caption.98}%
-\contentsline {table}{\numberline {7.5}{\ignorespaces Resultados bajo carga normal (10 usuarios, 100 peticiones por endpoint)}}{170}{table.caption.99}%
-\contentsline {table}{\numberline {7.6}{\ignorespaces Resultados bajo carga de estrés (50 usuarios, 1000 peticiones por endpoint)}}{171}{table.caption.100}%
-\contentsline {table}{\numberline {7.7}{\ignorespaces Tiempos de carga y eventos críticos}}{176}{table.caption.106}%
+\contentsline {table}{\numberline {7.2}{\ignorespaces Respuestas del cuestionario SUS por usuario}}{165}{table.caption.84}%
+\contentsline {table}{\numberline {7.3}{\ignorespaces Perfil de los participantes y puntuación SUS final}}{169}{table.caption.95}%
+\contentsline {table}{\numberline {7.4}{\ignorespaces Especificaciones del hardware utilizado en las pruebas}}{171}{table.caption.98}%
+\contentsline {table}{\numberline {7.5}{\ignorespaces Resultados bajo carga normal (10 usuarios, 100 peticiones por endpoint)}}{172}{table.caption.99}%
+\contentsline {table}{\numberline {7.6}{\ignorespaces Resultados bajo carga de estrés (50 usuarios, 1000 peticiones por endpoint)}}{173}{table.caption.100}%
+\contentsline {table}{\numberline {7.7}{\ignorespaces Tiempos de carga y eventos críticos}}{178}{table.caption.106}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{\ignorespaces Ampliación de jornadas y costes adicionales}}{179}{table.caption.108}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {9.1}{\ignorespaces Ampliación de jornadas y costes adicionales}}{191}{table.caption.124}%
 \addvspace {10\p@ }

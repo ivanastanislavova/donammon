@@ -519,13 +519,13 @@ GET Visited Lugares & 71 & 58 & 69 & 89 & 89 & 120 & 11.9 & 8.42 & 0 \\
 \hline
 \end{tabular}
 \end{table}
-\textbf{Análisis:} Bajo carga normal, el sistema presenta un comportamiento óptimo tanto en velocidad como en estabilidad. Como se aprecia en la Tabla \ref{tab:normal}, la mayoría de endpoints procesan las peticiones en menos de 100 ms, garantizando una experiencia de usuario fluida y sin retardos perceptibles.
+Bajo carga normal, el sistema presenta un comportamiento óptimo tanto en velocidad como en estabilidad. Como se aprecia en la Tabla \ref{tab:normal}, la mayoría de endpoints procesan las peticiones en menos de 100 ms, garantizando una experiencia de usuario fluida y sin retardos perceptibles.
 
 Las operaciones de lectura destacan por su rapidez: \textit{GET Mujeres} responde en apenas 37 ms, y \textit{GET Lugares} en 42 ms, valores excelentes considerando que implican consultas y serialización de datos JSON. Incluso \textit{GET Rutas}, con 54 ms, mantiene tiempos muy bajos. Las operaciones de escritura (\textit{POST Visit Lugar} y \textit{POST Visit Lugar Ruta}) son ligeramente más costosas, situándose en torno a 67-70 ms, debido a la validación de datos y la inserción en base de datos, pero siguen siendo muy rápidas.
 
 El único endpoint que supera los 400 ms es \textit{Login} (458 ms), lo cual era esperado porque incluye la generación y firma criptográfica del token JWT, una operación CPU-bound.
 
-La baja desviación estándar ($\leq$ 36 ms en todos los casos) evidencia que la latencia es estable y predecible, sin picos relevantes. Además, no se registraron errores (0) y el throughput ronda las 8.4 req/s, lo que indica que el backend no solo es rápido, sino también consistente. Este comportamiento confirma que la arquitectura actual es adecuada para escenarios de uso normal sin comprometer la experiencia del usuario.
+La baja desviación estándar ($\leq$ 36 ms en todos los casos) evidencia que la latencia es estable y predecible, sin picos relevantes. Además, no se registraron errores (0) y el throughput ronda las 8.4 req/s, lo que indica que el backend no solo es rápido, sino también consistente. 
 \subsubsection{Carga de Estrés}
 
 La Tabla \ref{tab:stress} presenta los resultados con 50 usuarios y 1000 peticiones por endpoint.
@@ -549,7 +549,7 @@ GET Visited Lugares & 554 & 69 & 570 & 741 & 809 & 1084 & 177.1 & 8.74 & 0 \\
 \hline
 \end{tabular}
 \end{table}
-\textbf{Análisis:} Bajo carga de estrés, la latencia aumenta significativamente, especialmente en operaciones de lectura (\textit{GET}), que llegan a 892 ms en \textit{GET Rutas} y 783 ms en \textit{GET Lugares}. Las operaciones de escritura escalan mejor, aunque también se incrementan a valores cercanos a 600 ms. El endpoint \textit{Login} alcanza 1154 ms, pero mantiene una degradación proporcionalmente menor ($\approx$2.5x).
+Bajo carga de estrés, la latencia aumenta significativamente, especialmente en operaciones de lectura (\textit{GET}), que llegan a 892 ms en \textit{GET Rutas} y 783 ms en \textit{GET Lugares}. Las operaciones de escritura escalan mejor, aunque también se incrementan a valores cercanos a 600 ms. El endpoint \textit{Login} alcanza 1154 ms, pero mantiene una degradación proporcionalmente menor ($\approx$2.5x).
 
 A pesar del aumento, la ausencia de errores y un throughput constante de 8.7 req/s demuestran que el sistema sigue siendo estable y no pierde peticiones, sacrificando únicamente velocidad. Sin embargo, estos tiempos podrían impactar la experiencia en escenarios de alta concurrencia prolongada, lo que sugiere que optimizaciones a nivel de consultas y cacheado serían recomendables para mejorar la escalabilidad.
 

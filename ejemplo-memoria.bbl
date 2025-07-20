@@ -421,6 +421,12 @@ Leatrice Eiseman.
 \newblock \url{https://www.canva.com/}, 2025.
 \newblock Consultado en 2025.
 
+\bibitem{wpJn20WoEWM}
+Sara Ember.
+\newblock Canción sin miedo - vivir quintana - violin cover by sara ember,
+  2021.
+\newblock Video en YouTube. Accedido: 19/05/2025.
+
 \bibitem{milewski2018_stackoverflow_utf8_aframe}
 Piotr~Adam Milewski.
 \newblock Display utf8 text with accents in aframe like á í ñ, 2018.
@@ -438,6 +444,16 @@ Piotr~Adam Milewski.
 \newblock Vercel documentation: Platform limits.
 \newblock \url{https://vercel.com/docs/limits}, 2024.
 \newblock Accedido: 17 de julio de 2025.
+
+\bibitem{mdn_webxr}
+{Mozilla Developer Network}.
+\newblock Webxr device api - browser compatibility, 2024.
+\newblock Accedido: 18 julio 2025.
+
+\bibitem{caniuse_webxr}
+{Can I Use}.
+\newblock Webxr device api, 2024.
+\newblock Accedido: 18 julio 2025.
 
 \bibitem{brooke1996}
 John Brooke.
